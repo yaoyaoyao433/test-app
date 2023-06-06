@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.restaurant.poicontainer.views.GoodsCategoryRecyclerView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rv_goods_category" android:background="@color/wm_restaurant_dish_default" android:paddingBottom="135dp" android:clipToPadding="false" android:layout_width="80dp" android:layout_height="match_parent"/>

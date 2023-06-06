@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_local_share_view_layout" android:visibility="invisible" android:layout_width="210dp" android:layout_height="170dp">
+    <ImageView android:id="@+id/local_share_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:minWidth="210dp" android:minHeight="170dp"/>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/wm_share_bottom_mask_bg" android:paddingLeft="6dp" android:paddingRight="20dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="85dp">
+        <com.sankuai.waimai.platform.widget.AutoWrapHorizontalLayout android:id="@+id/local_share_bottom_label_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" custom:horizontal_divider="4dp" custom:max_lines="1"/>
+    </LinearLayout>
+</FrameLayout>

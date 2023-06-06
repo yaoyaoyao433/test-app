@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.business.page.common.view.nested.NestedSmoothRecyclerView android:id="@+id/future_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_common_layout_refresh_info"/>
+    <include layout="@layout/wm_page_home_future_filter_bar"/>
+</FrameLayout>

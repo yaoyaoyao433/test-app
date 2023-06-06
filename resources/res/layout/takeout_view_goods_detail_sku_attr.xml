@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_sku_and_attr" android:background="@drawable/wm_restaurant_choosesku_dialog_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#34322c" android:ellipsize="end" android:id="@+id/title_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="12dp" android:maxLines="1"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_sku_and_attr_holder" android:paddingLeft="@dimen/wm_common_padding_horizontal2" android:paddingRight="@dimen/wm_common_padding_horizontal2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+    <TextView android:textSize="@dimen/wm_common_text_size_small_new" android:textColor="@color/wm_common_text_main" android:id="@+id/txt_choose_info" android:background="#fafafa" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="6dp"/>
+</LinearLayout>

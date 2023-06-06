@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/layout_search_result" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.sankuai.waimai.business.search.ui.result.dragtop.DragTopLayout android:id="@+id/result_drag_top_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:dtlOverDrag="true" app:dtlTopView="@+id/result_top_block" app:dtlDragContentView="@+id/result_content_block">
+            <FrameLayout android:id="@+id/result_top_block" android:background="#fff5f5f6" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <android.support.design.widget.CoordinatorLayout android:id="@+id/result_content_block" android:background="@drawable/wm_nox_search_shape_bg_poi_list" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/recyclerview_behavior_container" android:background="@drawable/wm_nox_search_shape_bg_poi_list" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/wm_nox_sticky_container_behavior">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.sankuai.waimai.business.search.common.view.StickyContainerFrameLayout android:id="@+id/layout_container" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <com.sankuai.waimai.log.judas.StatisticsRecyclerView android:id="@+id/list_poiSearch_poiList" android:background="@null" android:paddingTop="0dp" android:paddingBottom="30dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:dividerHeight="0dp" android:overScrollMode="never" app:exposeBlockId="poiSearch_poiList" style="@style/wm_nox_search_style_poi_global_list"/>
+                        </com.sankuai.waimai.business.search.common.view.StickyContainerFrameLayout>
+                        <RelativeLayout android:id="@+id/layout_float_filter_bar" android:background="@color/transparent" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/guide_query_container" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/wm_nox_header_behavior">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/guide_query_container_content" android:background="@drawable/wm_nox_search_guide_query_container" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <android.support.v7.widget.RecyclerView android:id="@+id/wm_nox_guide_query_tab" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <android.support.v7.widget.RecyclerView android:id="@+id/wm_nox_guide_query" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View android:layout_gravity="center" android:id="@+id/guide_query_container_indicator" android:background="#ffe1e1e1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+                </LinearLayout>
+            </android.support.design.widget.CoordinatorLayout>
+        </com.sankuai.waimai.business.search.ui.result.dragtop.DragTopLayout>
+        <include android:id="@+id/search_abnormal_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_common_layout_refresh_info"/>
+        <com.sankuai.waimai.business.search.common.view.EasterEggLayout android:id="@+id/search_easter_egg_layout" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="end" android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@+id/bottom_btn_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/drug_im_entrance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+            <LinearLayout android:gravity="end" android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@+id/bottom_normal_btn_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp">
+                <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/btn_global_cart" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginBottom="10dp" app:project="waimai_c" app:srcName="waimai_c_searchkit_icon_shop_cart"/>
+                <LinearLayout android:gravity="end|center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/tv_feedback_tips" android:background="@drawable/wm_nox_search_feedback_tips_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:paddingStart="12dp" android:paddingEnd="12dp" android:layout_marginStart="70dp" android:layout_marginEnd="2dp"/>
+                    <ImageView android:id="@+id/btn_feedback" android:layout_width="54dp" android:layout_height="54dp" android:src="@drawable/wm_nox_search_ic_feedback"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/to_top_img_poiList" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginBottom="10dp" android:src="@drawable/wm_nox_search_ic_to_top"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/search_float_coupon_card_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp"/>
+    </FrameLayout>
+    <ViewStub android:id="@+id/view_stub_guide_query" android:layout="@layout/wm_nox_search_guide_query_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/takeout_list_dynamic_progress_bar_global" android:visibility="gone" layout="@layout/wm_nox_search_dynamic_progress"/>
+</FrameLayout>

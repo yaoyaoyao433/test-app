@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_tab_layout_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_tablayout_item_desc" android:paddingTop="@dimen/wm_sc_common_dimen_4" android:paddingBottom="@dimen/wm_sc_common_dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/iv_poi_tab_image" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_17" android:textStyle="bold" android:textColor="@color/wm_sg_color_222426" android:gravity="center" android:id="@+id/tv_tablayout_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_ll_tablayout_pic_indicator" android:layout_width="@dimen/wm_sc_common_dimen_11" android:layout_height="@dimen/wm_sc_common_dimen_6" android:layout_marginBottom="@dimen/wm_sc_common_dimen_5" android:src="@drawable/wm_sc_sub_indicator_default" android:scaleType="fitCenter" android:layout_below="@+id/ll_tablayout_item_desc" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

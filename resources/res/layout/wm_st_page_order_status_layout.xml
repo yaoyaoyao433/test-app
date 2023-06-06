@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40dp">
+        <com.sankuai.waimai.platform.widget.RoundImageView android:id="@+id/img_status" android:padding="2dp" android:layout_width="33dp" android:layout_height="33dp" android:layout_marginLeft="4.5dp" android:scaleType="centerCrop"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout_mid" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="4dp">
+            <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/wm_sg_color_333333" android:id="@+id/txt_bottom_status_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240dp" android:minWidth="80dp"/>
+            <TextView android:textSize="10dp" android:textColor="@color/wm_sg_color_333333" android:id="@+id/txt_bottom_status_second" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240dp" android:minWidth="80dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/img_bottom_status_close" android:padding="@dimen/wm_sc_common_dimen_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+    </LinearLayout>
+</FrameLayout>

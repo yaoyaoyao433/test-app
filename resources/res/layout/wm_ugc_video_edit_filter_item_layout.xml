@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/ugc_video_edit_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp">
+    <com.sankuai.waimai.ugc.creator.widgets.round.RoundCornerFrameLayout android:id="@+id/fl_thumbnail_container" android:layout_width="54dp" android:layout_height="54dp" app:cornerRadius="6dp">
+        <ImageView android:id="@+id/ugc_edit_video_filter_item_img" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/wm_ugc_creator_img_placeholder_1" android:scaleType="centerCrop"/>
+    </com.sankuai.waimai.ugc.creator.widgets.round.RoundCornerFrameLayout>
+    <TextView android:textSize="12dp" android:textColor="#ffffff" android:id="@+id/ugc_edit_video_filter_item_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textAlignment="center"/>
+</LinearLayout>

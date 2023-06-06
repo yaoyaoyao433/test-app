@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageButton android:id="@+id/bgImageVIew" android:background="@drawable/wm_cross_order_confirm_icon_poi_float_sign" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/contentView" android:layout_alignRight="@+id/contentView" android:layout_centerInParent="true"/>
+    <LinearLayout android:id="@+id/contentView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <Button android:id="@+id/leftButton" android:background="#00ffffff" android:layout_width="42dp" android:layout_height="wrap_content"/>
+        <TextView android:textColor="#33312d" android:id="@+id/poiLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:text="商家 " android:includeFontPadding="false" android:textAlignment="center"/>
+        <TextView android:textSize="18sp" android:textColor="#33312d" android:id="@+id/indexLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:text="1" android:includeFontPadding="false" android:textAlignment="center"/>
+        <TextView android:textSize="12sp" android:textColor="#666460" android:id="@+id/totalCountLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:text="/3" android:includeFontPadding="false" android:textAlignment="center"/>
+        <Button android:id="@+id/rightButton" android:background="#00ffffff" android:layout_width="42dp" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

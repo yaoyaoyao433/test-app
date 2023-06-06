@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.base.BaseCustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="0dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="50dp">
+            <com.sankuai.waimai.store.drug.coupons.CouponsTitleWithIndicator android:id="@+id/indicator" android:background="#f5f5f6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wm_sc_common_dimen_30" android:layout_centerVertical="true"/>
+            <TextView android:textColor="@color/wm_sg_color_333333" android:gravity="center" android:id="@+id/dialog_middle_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/close" android:layout_width="@dimen/wm_sc_common_dimen_20" android:layout_height="@dimen/wm_sc_common_dimen_20" android:src="@drawable/wm_drug_common_close_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.sankuai.waimai.store.view.banner.SCBaseViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.sankuai.waimai.store.base.BaseCustomLinearLayout>

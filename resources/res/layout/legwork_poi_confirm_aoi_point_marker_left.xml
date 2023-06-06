@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="126dp" android:layout_height="35dp">
+        <com.meituan.android.legwork.ui.view.StrokeTextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/legwork_common_text_color_FF333333" android:ellipsize="end" android:id="@+id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:layout_toRightOf="@+id/aoi_point_icon"/>
+        <ImageView android:id="@+id/aoi_point_icon" android:background="@drawable/legwork_poi_aoi_point" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="3dp"/>
+    </RelativeLayout>
+</merge>

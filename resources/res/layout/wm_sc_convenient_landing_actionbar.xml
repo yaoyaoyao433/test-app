@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="88dp">
+        <ImageView android:id="@+id/convenient_landing_actionbar_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_actionbar_back" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginBottom="6dp" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/convenient_landing_actionbar_back_img" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/wm_sc_convenient_left_arrow"/>
+            <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_000000" android:layout_gravity="center" android:id="@+id/convenient_landing_actionbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_1" android:text="超级便利店"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_action_bar_search" android:background="@drawable/wm_sc_convenieent_landing_searchbg" android:visibility="gone" android:layout_width="138dp" android:layout_height="32dp" android:layout_marginRight="12dp" android:layout_marginBottom="6dp" android:layout_alignTop="@+id/ll_actionbar_back" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/iv_convenientlanding_search" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="12dp" android:src="@drawable/wm_sg_convenientlanding_search" android:layout_centerVertical="true"/>
+            <TextView android:textSize="13sp" android:textColor="#666460" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="搜索商家或商品" android:layout_toRightOf="@+id/iv_convenientlanding_search" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/convenient_landing_filter" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="6dp" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/convenient_landing_bottom_view" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="6dp"/>
+</LinearLayout>

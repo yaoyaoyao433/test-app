@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.roodesign.resfetcher.widgets.RooImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/smart_assistant_img_poiList" android:layout_width="@dimen/wm_page_smart_assistant_icon_width" android:layout_height="@dimen/wm_page_smart_assistant_icon_height" android:layout_marginRight="16dp" android:layout_marginBottom="35dp" app:project="waimai_c" app:srcName="waimai_c_page_image_smart_assistant_btn"/>

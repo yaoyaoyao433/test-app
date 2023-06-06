@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/video_loading_container" android:background="@color/transparent" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/video_loading_progressbar" android:layout_width="28dp" android:layout_height="38dp" android:progressDrawable="@drawable/ptim_commonbus_video_operate_progress_bg" style="@android:style/Widget.ProgressBar"/>
+        <LinearLayout android:id="@+id/video_loading_progress_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/video_loading_progress_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频生成中…"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/video_loading_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请耐心等待，勿离开当前页面"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/cashier_main_layout" android:background="@color/cashier__bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/cashier_content_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.meituan.android.paybase.widgets.notice.NoticeView android:id="@+id/notice_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp"/>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/layout_cashier_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17.5dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_cashier_remaining_time" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_business_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_below="@+id/layout_cashier_remaining_time"/>
+        </RelativeLayout>
+        <com.meituan.android.cashier.widget.MTCashierScrollView android:id="@+id/cashier_scroll_layout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.meituan.android.cashier.widget.NativeStandardCashierAreaView android:orientation="vertical" android:id="@+id/cashier__pay_type" android:paddingBottom="150dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.meituan.android.cashier.widget.MTCashierScrollView>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/cashier_bottom_layout" android:background="@drawable/cashier__bottom_shadow" android:paddingLeft="12dp" android:paddingRight="12dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/cashier__discount_view" android:background="@drawable/cashier__bg_circle_corner" android:paddingTop="3dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="96dp"/>
+            <com.meituan.android.cashier.widget.CashierMarketingGuideFloatView android:orientation="vertical" android:id="@+id/cashier_discount_guide" android:background="@drawable/cashier__bg_circle_corner" android:paddingTop="10dp" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="96dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/remind_layout" android:background="@drawable/cashier__bg_circle_corner" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="27dp"/>
+            <com.meituan.android.paybase.widgets.ProgressButton android:textSize="16dp" android:textStyle="bold" android:textColor="#1e1e1e" android:layout_gravity="bottom" android:id="@+id/btn_cashier_pay_confirm" android:layout_height="48dp" android:layout_marginTop="0dp" android:layout_marginBottom="0dp" android:text="@string/cashier__pay_confirm" style="@style/cashier__button"/>
+        </FrameLayout>
+        <View android:id="@+id/view_bottom_blank" android:layout_width="match_parent" android:layout_height="15dp" android:importantForAccessibility="no"/>
+    </LinearLayout>
+</FrameLayout>

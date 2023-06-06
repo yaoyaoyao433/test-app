@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@+id/container_scrollview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/layout_header_container" android:layout_width="match_parent" android:layout_height="132dp"/>
+            <FrameLayout android:id="@+id/layout_content_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView>
+    <View android:id="@+id/gradient_helper_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_25" android:alpha="0"/>
+    <FrameLayout android:id="@+id/shop_action_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/gradient_helper_layout"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:translationY="10.25dp">
+        <com.meituan.android.yoda.widget.view.VoiceRippleView android:id="@+id/voice_print_view" android:layout_width="200dp" android:layout_height="200dp"/>
+        <com.meituan.android.yoda.widget.view.BaseImageView android:layout_gravity="center" android:id="@+id/voice_icon" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/yoda_voice_button_normal" android:tint="?attr/yodaVoiceVerifyTintColor"/>
+        <com.meituan.android.yoda.widget.view.BaseImageView android:layout_gravity="center" android:id="@+id/voice_icon_mic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yoda_voice_button_mic_normal"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/bubble_component" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/img_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yoda_voiceprint_bubble"/>
+        <com.meituan.android.yoda.widget.view.BaseTextView android:textSize="17sp" android:textColor="#222222" android:layout_gravity="center_horizontal" android:id="@+id/tv_bubble_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/yoda_voice_verify_press_hold_button"/>
+    </FrameLayout>
+</RelativeLayout>

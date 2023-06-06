@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/paybase__half_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="32dp">
+        <Button android:id="@+id/webview_close" android:background="@drawable/paycommon__icon_close" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:background="@drawable/paybase__network_error_round_conner_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="30dp" android:layout_above="@+id/webview_close">
+            <com.meituan.android.paycommon.lib.widgets.CornersLinearLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

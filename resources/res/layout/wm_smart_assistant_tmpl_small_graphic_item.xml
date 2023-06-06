@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/small_graphic_container" android:background="@drawable/wm_smart_assistant_item_bg_shape" android:layout_width="106dp" android:layout_height="115dp">
+    <com.sankuai.waimai.platform.widget.RoundImageView android:id="@+id/small_graphic_img" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/small_graphic_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="8dp" android:layout_marginRight="17dp" android:maxLines="1" android:layout_below="@+id/small_graphic_img" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

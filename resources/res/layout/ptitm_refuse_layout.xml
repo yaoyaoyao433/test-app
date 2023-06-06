@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/refuse_lin" android:background="@drawable/ptim_refuse_bg" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/refuse_img" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ptim_refuse_unchecked"/>
+    <TextView android:textSize="12sp" android:textColor="#5a000000" android:id="@+id/refuse_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点此拒收"/>
+</LinearLayout>

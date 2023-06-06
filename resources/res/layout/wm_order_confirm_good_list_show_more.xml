@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/takeout_black11" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_order_good_list_show_more" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="8dp" android:layout_width="73dp" android:layout_height="wrap_content" android:text="@string/wm_order_base_click_to_retract" android:drawableRight="@drawable/wm_order_base_good_list_show_more_arrow"/>
+</FrameLayout>

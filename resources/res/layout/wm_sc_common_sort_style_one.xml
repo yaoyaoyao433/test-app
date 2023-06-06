@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="12sp" android:id="@+id/tv_sort_text" android:paddingLeft="@dimen/wm_sc_common_dimen_12" android:paddingRight="@dimen/wm_sc_common_dimen_12" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/WmScText"/>

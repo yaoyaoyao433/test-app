@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.base.BaseRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_layout" android:background="@color/wm_st_common_fff4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/poi_dish_categories" android:layout_width="@dimen/wm_sc_common_dimen_80" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+    <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@+id/priority_scrollview" android:background="@color/wm_st_common_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/poi_dish_categories">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/poi_header_layout" layout="@layout/wm_sc_shop_content_spu_head_layout"/>
+            <com.sankuai.waimai.store.goods.list.templet.newmarket.spulist.ShopContentRecyclerView android:id="@+id/poi_pinned_layout" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_40" android:layout_toRightOf="@+id/poi_dish_categories" layout="@layout/wm_sc_shop_content_tab_list"/>
+    <include android:id="@+id/poi_all_category_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/poi_dish_categories" layout="@layout/wm_sc_shop_content_all_category_layout"/>
+    <FrameLayout android:id="@+id/fl_brand_drowdown_container" android:background="@color/wm_sc_half_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/wm_sc_common_dimen_72" android:layout_toRightOf="@+id/poi_dish_categories"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_marginBottom="106dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.sankuai.waimai.store.feedback.view.UserFeedbackView android:layout_gravity="right" android:id="@+id/shop_content_feedback" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/shop_content_back_to_top" android:background="@drawable/wm_sc_back_to_top_new_three" android:visibility="visible" android:layout_width="@dimen/wm_sc_common_dimen_56" android:layout_height="@dimen/wm_sc_common_dimen_56" android:layout_marginTop="@dimen/wm_sc_common_dimen_7" android:scaleType="fitXY"/>
+    </LinearLayout>
+</com.sankuai.waimai.store.base.BaseRelativeLayout>

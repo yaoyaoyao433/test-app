@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/wm_sc_goods_list_header_item_board_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:minHeight="20dp"/>
+    <TextView android:textSize="14sp" android:textColor="#33312d" android:ellipsize="end" android:id="@+id/wm_sc_goods_list_header_item_board_sub_description" android:background="@drawable/wm_sc_goods_list_activity_bottom_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="13dp" android:layout_marginBottom="13dp" android:text="望京综合超市类排行第1名望京综合超市类排行第1名望京综合超市类排行第1名望京综合超市类排行第1名" android:singleLine="true" android:layout_weight="1"/>
+    <ImageView android:id="@+id/wm_sc_goods_list_layout_header_item_board_arrow" android:layout_width="4dp" android:layout_height="7dp" android:layout_marginLeft="10dp" android:layout_marginRight="20dp"/>
+</LinearLayout>

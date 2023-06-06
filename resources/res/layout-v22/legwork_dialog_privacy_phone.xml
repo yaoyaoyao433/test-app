@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/legwork_privacy_base_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/legwork_privacy_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="30dp" android:src="@drawable/legwork_bg_privacy_phone"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/legwork_color_E6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="将使用该号码 "/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/legwork_color_E6000000" android:id="@+id/legwork_privacy_bind_phone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/legwork_color_E6000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 加密呼出"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="#3488ff" android:gravity="center_vertical" android:id="@+id/legwork_privacy_change_bind_phone" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legwork_privacy_change_bind_phone_text" android:drawablePadding="3dp"/>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="3dp" android:layout_marginTop="1dp" android:src="@drawable/legwork_privacy_phone_right_arrow"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/legwork_color_E6000000" android:gravity="center" android:id="@+id/legwork_privacy_positive_btn" android:background="@drawable/legwork_privacy_phone_call" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="15dp" android:text="立即拨打" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/privacy_msg_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="32dp">
+                <TextView android:textSize="12sp" android:textColor="@color/legwork_common_text_color_FF666666" android:gravity="center" android:id="@+id/privacy_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/legwork_common_text_color_FF333333" android:gravity="center" android:layout_gravity="end" android:id="@+id/legwork_privacy_negative_btn" android:padding="18dp" android:layout_width="56dp" android:layout_height="56dp" android:drawableStart="@drawable/legwork_pay_mode_close" android:drawableTint="@color/legwork_color_FFD1D1D1"/>
+    </FrameLayout>
+</RelativeLayout>

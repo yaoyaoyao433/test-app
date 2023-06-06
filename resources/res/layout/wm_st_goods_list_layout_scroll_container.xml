@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/shop_background_image" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_171" android:scaleType="centerCrop"/>
+    <ImageView android:id="@+id/img_poi_blurred_bg" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_171" android:scaleType="fitXY"/>
+    <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/layout_actionbar_blank" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_collapsed_hint_container"/>
+                <FrameLayout android:id="@+id/layout_header_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wm_sc_common_dimen_6" android:layout_below="@+id/layout_collapsed_hint_container"/>
+                <FrameLayout android:id="@+id/layout_content_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layout_header_container"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/shop_header_actionbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/gradient_helper_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_25" android:alpha="0"/>
+        <FrameLayout android:id="@+id/shop_action_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

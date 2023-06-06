@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/record_container" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+        <com.sankuai.meituan.mtlive.ugc.library.MTUgcView android:layout_gravity="center_vertical" android:id="@+id/record_preview_bg" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/record_top_back" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:src="@drawable/ptim_commonbus_video_close_icon"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_camera_function" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/record_top_switch_camera" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ptim_commonbus_record_switch_camera_icon" android:scaleType="fitXY"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_record_top_switch_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ptim_commonbus_video_record_switch_camera" style="@style/text_shadow_record"/>
+        <ImageView android:id="@+id/record_top_light" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="22dp" android:src="@drawable/ptim_commonbus_record_light_close_icon" android:scaleType="fitXY"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_record_top_switch_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ptim_commonbus_video_record_switch_light" style="@style/text_shadow_record"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/record_top_seek_container" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:layout_alignParentBottom="true">
+        <com.meituan.android.ptcommonim.video.record.view.RecordProgressView android:id="@+id/record_progress_view" android:layout_width="match_parent" android:layout_height="4dp"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/video_bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="102dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36dp" android:layout_toLeftOf="@+id/record_button" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/record_bottom_delete_last" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ptim_commonbus_record_delete_icon"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_record_bottom_delete_last" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回删" android:includeFontPadding="false" style="@style/text_shadow_record"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_upload" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36dp" android:layout_toLeftOf="@+id/record_button" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/record_bottom_upload" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ptim_commonbus_record_upload_icon"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_record_bottom_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择视频" android:includeFontPadding="false" style="@style/text_shadow_record"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/record_button" android:layout_width="92dp" android:layout_height="92dp" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_record_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_toRightOf="@+id/record_button" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/record_finish_button" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/ptim_commonbus_record_next_step_disable_icon"/>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_record_finish_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一步" android:includeFontPadding="false" style="@style/text_shadow_record"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/record_top_current_position" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.5dp" android:includeFontPadding="false" android:layout_above="@+id/video_bottom_container" android:layout_centerHorizontal="true" style="@style/text_shadow_record"/>
+</RelativeLayout>

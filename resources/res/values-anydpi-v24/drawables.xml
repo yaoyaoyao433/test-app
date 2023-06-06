@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="cs_floating_icon">r/q/ah1.xml</drawable>
+    <drawable name="ptim_close_btn">r/q/ah8.xml</drawable>
+    <drawable name="roo_check_box_icon_svg">r/q/ah9.xml</drawable>
+    <drawable name="roo_check_box_white_icon_svg1">r/q/ah_.xml</drawable>
+    <drawable name="skeleton_kingkong_mig">r/q/aha.xml</drawable>
+    <drawable name="skeleton_kingkong_poi">r/q/ahb.xml</drawable>
+    <drawable name="skeleton_kingkong_pt">r/q/ahc.xml</drawable>
+    <drawable name="skeleton_kingkong_search">r/q/ahd.xml</drawable>
+    <drawable name="xm_sdk_vd_del_btn_mask">r/q/ahe.xml</drawable>
+    <drawable name="xm_sdk_vd_recording_press_btn_bg_for_record">r/q/ahf.xml</drawable>
+    <drawable name="xm_sdk_vd_del_btn_mask_1">r/q/c0f.xml</drawable>
+    <drawable name="xm_sdk_vd_del_btn_mask_2">r/q/c0g.xml</drawable>
+    <drawable name="xm_sdk_vd_del_btn_mask_3">r/q/c0h.xml</drawable>
+    <drawable name="xm_sdk_vd_recording_press_btn_bg_for_record_1">r/q/c0i.xml</drawable>
+</resources>

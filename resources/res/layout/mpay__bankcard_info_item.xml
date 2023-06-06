@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider_up" android:visibility="gone" style="@style/paybase__horizonal_divider"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/mpay__simple_type_textview"/>
+        <com.meituan.android.pay.widget.BankCardNumEditText android:id="@+id/bankinfo_edittext" style="@style/mpay__BankInfoEditText"/>
+    </FrameLayout>
+    <TextView android:id="@+id/error_tip" style="@style/mpay__BankInfoEditTextErrorTip"/>
+    <View android:id="@+id/divider_down" android:layout_marginLeft="@dimen/paycommon__global_padding" android:layout_marginTop="@dimen/mpay__bankinfo_item_divider_down_margin_top" style="@style/paybase__horizonal_divider"/>
+    <include layout="@layout/mpay__layout_bottom_tip"/>
+</LinearLayout>

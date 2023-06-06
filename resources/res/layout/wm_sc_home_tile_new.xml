@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/fl_tile_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/sg_def_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="center"/>
+    <FrameLayout android:id="@+id/layout_mach_def" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

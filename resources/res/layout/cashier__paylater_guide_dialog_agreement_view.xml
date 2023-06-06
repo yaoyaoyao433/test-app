@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/cashier__paylater_guide_dialog_agreement_checkbox" android:paddingTop="@dimen/cashier__paylater_guide_dialog_agreement_paddingTop" android:paddingRight="6dp" android:paddingBottom="@dimen/cashier__paylater_guide_dialog_agreement_paddingBottom" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.meituan.android.paycommon.lib.widgets.ThemeRelatedCheckBox android:layout_gravity="top|left" android:id="@+id/cashier__paylater_guide_dialog_agreement_checkbox_view" android:background="@drawable/mtpaysdk__payment_checkbox_selector" android:visibility="gone" android:clickable="false" android:layout_width="18dp" android:layout_height="18dp" android:button="@null"/>
+    </LinearLayout>
+    <TextView android:id="@+id/agreement" style="@style/cashier__paylater_guide_dialog_agreement"/>
+</LinearLayout>

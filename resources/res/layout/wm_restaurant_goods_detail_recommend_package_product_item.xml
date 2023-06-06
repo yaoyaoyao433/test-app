@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/package_goods_container" android:background="@drawable/wm_restaurant_recommend_package_bg" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:cornerRadius="6dp">
+    <FrameLayout android:layout_gravity="left" android:id="@+id/product_icon_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.RatioImageView android:id="@+id/product_icon" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/wm_restaurant_recommend_error" android:scaleType="centerCrop" app:ratio="0.75"/>
+        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/product_label" android:background="@drawable/wm_restaurant_goods_detail_base_info_recommd_reason_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="20dp" android:maxLines="1"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_product_info_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/wm_restaurant_222426" android:ellipsize="end" android:id="@+id/product_name" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="2"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+            <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#33312d" android:id="@+id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12dp" android:textColor="#666460" android:ellipsize="end" android:id="@+id/product_attr_sku" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:maxLines="1" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/wm_st_aggregation_goods_list_adapter_category_name"/>
+    <RelativeLayout android:id="@+id/sub_category_layout" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_44">
+        <ImageView android:id="@+id/tab_ic" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/tab_lv" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/tab_ic" android:layout_centerVertical="true"/>
+        <View android:id="@+id/tab_v1" android:layout_width="15dp" android:layout_height="match_parent" android:layout_alignRight="@+id/tab_lv"/>
+    </RelativeLayout>
+</FrameLayout>

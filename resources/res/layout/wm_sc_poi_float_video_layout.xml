@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.view.RoundedCornerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_cover_view" android:layout_width="@dimen/wm_sc_common_dimen_100" android:layout_height="@dimen/wm_sc_common_dimen_56" app:cornerRadius="@dimen/wm_sc_common_dimen_6">
+    <ImageView android:id="@+id/img_player_close" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/wm_sc_poi_float_video_close" android:layout_alignParentRight="true"/>
+</com.sankuai.waimai.store.view.RoundedCornerRelativeLayout>

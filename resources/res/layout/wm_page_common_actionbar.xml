@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/wm_action_bar" android:background="@color/wm_core_white_4" android:layout_width="match_parent" android:layout_height="@dimen/wm_actionbar_height">
+    <TextView android:id="@+id/left_action_view" android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/wm_actionbar_ic_back" android:layout_centerVertical="true"/>
+    <View android:id="@+id/seperator" android:background="@color/wm_actionbar_seperator" android:layout_width="0.5dp" android:layout_height="12dp" android:layout_toRightOf="@+id/left_action_view" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/wm_actionbar_bg" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/seperator" android:layout_centerVertical="true"/>
+    <TextView android:textSize="13sp" android:textColor="@color/wm_actionbar_bg" android:id="@+id/right_action_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

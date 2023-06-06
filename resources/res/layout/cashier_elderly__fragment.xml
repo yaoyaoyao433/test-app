@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/cashier_main_layout" android:background="@color/cashier__bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.meituan.android.elderly.view.ElderlyCashierScrollView android:id="@+id/cashier_scroll_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/cashier_content_layout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_cashier_elderly_remaining_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_cashier_elderly_business_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false"/>
+            </LinearLayout>
+            <com.meituan.android.elderly.view.ElderlyCashierPaymentAreaView android:orientation="vertical" android:id="@+id/cashier__pay_type" android:paddingBottom="150dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cashierelderly___pay_mt_payment_margin_top"/>
+        </LinearLayout>
+    </com.meituan.android.elderly.view.ElderlyCashierScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/cashier_elderly_bottom_layout" android:background="@drawable/cashier__bottom_shadow" android:paddingLeft="12dp" android:paddingRight="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.meituan.android.paybase.widgets.ProgressButton android:textSize="22dp" android:textStyle="bold" android:textColor="#1e1e1e" android:layout_gravity="bottom" android:id="@+id/btn_cashier_elderly_pay_confirm" android:layout_height="60dp" android:layout_marginTop="0dp" android:layout_marginBottom="0dp" android:text="@string/cashierelderly__pay_confirm" style="@style/cashier_elderly__button"/>
+        </FrameLayout>
+        <View android:id="@+id/view_bottom_blank" android:layout_width="match_parent" android:layout_height="12dp" android:importantForAccessibility="no"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_food_count" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <ImageView android:layout_gravity="left" android:id="@+id/img_shop_cart" android:layout_width="44dp" android:layout_height="wrap_content"/>
+    <TextView android:textSize="11sp" android:textColor="@color/wm_st_common_white" android:gravity="center" android:layout_gravity="bottom|right" android:id="@+id/txt_food_num" android:background="@drawable/wm_sc_common_food_list_count" android:visibility="visible" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="-5dp" android:layout_marginBottom="19dp"/>
+</FrameLayout>

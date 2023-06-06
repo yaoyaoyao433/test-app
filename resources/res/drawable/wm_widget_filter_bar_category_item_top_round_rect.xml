@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/takeout_widget_filter_bar_filter_main_category_bg"/>
+    <corners android:topRightRadius="6dp"/>
+</shape>

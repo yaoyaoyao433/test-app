@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/status_node_top_timeline" android:background="#ffd161" android:layout_width="1dp" android:layout_height="40dp" android:layout_marginLeft="9.5dp"/>
+    <View android:id="@+id/status_node_bottom_timeline" android:background="#ffd161" android:layout_width="1dp" android:layout_height="0dp" android:layout_marginLeft="9.5dp" android:layout_below="@+id/status_node_top_timeline" android:layout_alignBottom="@+id/status_node_desc_layout"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/status_node_desc_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+        <ImageView android:id="@+id/status_node_icon" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="14dp" android:textColor="#33322e" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/status_node_desc" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="2" android:layout_weight="1" android:lineSpacingMultiplier="1.25"/>
+        <TextView android:textSize="12dp" android:textColor="#999794" android:gravity="top|right" android:layout_gravity="top" android:id="@+id/status_node_time" android:layout_width="84dp" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="1.5dp" android:maxLines="1" android:layout_alignTop="@+id/status_node_desc"/>
+    </LinearLayout>
+</RelativeLayout>

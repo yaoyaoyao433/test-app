@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/weather_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/mask_weather_iv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="450dp" android:src="@drawable/wm_widget_weather_mask"/>
+        <include layout="@layout/wm_widget_weather_high_temp_new"/>
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/weather_strong_wind" android:visibility="gone" android:layout_width="@dimen/wm_widget_weather_strong_wind_image_width" android:layout_height="327dp" app:project="waimai_c" app:srcName="waimai_c_weather_wind"/>
+        <include layout="@layout/wm_widget_weather_strong_wind"/>
+        <com.sankuai.waimai.platform.widget.weather.ScrollImageView android:id="@+id/weather_smog" android:visibility="gone" android:layout_width="match_parent" android:layout_height="120dp" app:scroll_direction="scroll_right"/>
+        <FrameLayout android:gravity="start|top" android:id="@+id/dust_storm_img_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_leaf_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" app:project="waimai_c" app:srcName="waimai_c_weather_sand_storm_leaf_1"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_leaf_second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" app:project="waimai_c" app:srcName="waimai_c_weather_sand_storm_leaf_1"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_leaf_third" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" app:project="waimai_c" app:srcName="waimai_c_weather_sand_storm_leaf_1"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_stone_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" app:project="waimai_c" app:srcName="waimai_c_weather_sand_storm_particle_1"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_stone_second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" app:project="waimai_c" app:srcName="waimai_c_weather_sand_storm_particle_1"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_stone_third" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" app:project="waimai_c" app:srcName="waimai_c_weather_sand_storm_particle_1"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_cloud_first" android:visibility="gone" android:layout_width="575dp" android:layout_height="209dp" android:scaleType="fitCenter" app:project="waimai_c" app:srcName="waimai_c_weather_sandstorm"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_cloud_second" android:visibility="gone" android:layout_width="575dp" android:layout_height="209dp" android:scaleType="fitCenter" app:project="waimai_c" app:srcName="waimai_c_weather_sandstorm"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/dust_storm_grass" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_sand_storm_tumbleweed_1"/>
+        </FrameLayout>
+        <com.sankuai.waimai.platform.widget.weather.WeatherView android:id="@+id/weather_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/animation_under_cloud" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-20dp" android:scaleType="fitStart"/>
+        <FrameLayout android:id="@+id/weather_cloud_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="right" android:id="@+id/weather_cloud_fast2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="right" android:id="@+id/weather_cloud_fast1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="right" android:id="@+id/weather_cloud_slow2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="right" android:id="@+id/weather_cloud_slow1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/rain_bounce" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="400dp" android:scaleType="center"/>
+    </FrameLayout>
+</FrameLayout>

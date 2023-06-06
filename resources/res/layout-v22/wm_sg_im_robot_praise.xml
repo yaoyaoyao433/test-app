@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_praise_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/wm_sg_color_DDDDDD" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_half"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/sg_im_robot_praise" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/wm_sg_color_999999" android:layout_width="0dp" android:layout_height="wrap_content" android:text="此消息由机器人自动发送" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/sg_im_robot_praise_grate" android:paddingTop="@dimen/wm_sc_common_dimen_12" android:paddingBottom="@dimen/wm_sc_common_dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10dp">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/wm_sg_color_666666" android:id="@+id/tv_robot_grate" android:layout_width="wrap_content" android:layout_height="16dp" android:text="赞"/>
+            <ImageView android:id="@+id/iv_robot_praise_grate" android:layout_width="@dimen/wm_sc_common_dimen_12" android:layout_height="@dimen/wm_sc_common_dimen_12" android:layout_marginLeft="@dimen/wm_sc_common_dimen_2" android:src="@drawable/wm_sg_im_praise_great"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/sg_im_robot_praise_low" android:paddingLeft="@dimen/wm_sc_common_dimen_10" android:paddingTop="@dimen/wm_sc_common_dimen_12" android:paddingBottom="@dimen/wm_sc_common_dimen_12" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/wm_sg_color_666666" android:id="@+id/tv_robot_low" android:layout_width="wrap_content" android:layout_height="16dp" android:text="踩"/>
+            <ImageView android:id="@+id/iv_robot_praise_low" android:layout_width="@dimen/wm_sc_common_dimen_12" android:layout_height="@dimen/wm_sc_common_dimen_12" android:layout_marginLeft="@dimen/wm_sc_common_dimen_2" android:layout_marginTop="@dimen/wm_sc_common_dimen_1" android:src="@drawable/wm_sg_im_praise_low"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

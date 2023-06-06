@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@color/wm_sg_color_FFFFFF" android:layout_width="match_parent" android:layout_height="40dp">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/ll_sale_out_layout" android:layout_width="139dp" android:layout_height="40dp">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_13" android:textColor="@color/white" android:id="@+id/txt_sale_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_common_sold_out" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/wm_sc_selector_subscribe_text_color" android:gravity="center" android:id="@+id/tv_subscribe_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/wm_sg_detail_spu_subscribe_on" android:drawableLeft="@drawable/wm_sc_selector_subscribe_icon" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

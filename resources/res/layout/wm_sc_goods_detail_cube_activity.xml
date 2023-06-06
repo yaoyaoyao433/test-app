@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/wm_st_good_detail_liveview" android:background="#f5f5f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/rv_content_list" android:fadingEdge="none" android:fadingEdgeLength="0dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rl_detail_pinned_layout" android:background="@drawable/wm_sc_detail_header_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_negative_2" android:layout_below="@+id/rl_action_bar">
+        <FrameLayout android:id="@+id/ll_detail_pinned_price_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/rl_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/recipe_root_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/drug_consultation_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="129dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/wm_st_drug_consultation_entry"/>
+    <include android:visibility="gone" layout="@layout/wm_st_shopcart_whole"/>
+    <include android:visibility="gone" layout="@layout/wm_st_mrn_shopcart_whole"/>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/wm_st_good_detail_net" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/fl_wm_sg_collage_tip_container" style="@style/WmSgCollageTipsLoopBlockStyle"/>
+</RelativeLayout>

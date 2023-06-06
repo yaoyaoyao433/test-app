@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/wm_sc_common_dimen_12_half" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_11" android:textColor="@color/wm_sg_color_858687" android:id="@+id/protocal_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

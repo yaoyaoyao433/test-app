@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/rl_tab_layout_root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_80">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="top" android:id="@+id/rl_left_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/wm_sc_common_dimen_53">
+        <ImageView android:layout_gravity="bottom|center_horizontal" android:id="@+id/v_selected_bg" android:visibility="visible" android:layout_width="53dp" android:layout_height="63dp" android:src="@drawable/view_bg_selected" android:scaleType="center" android:layout_centerHorizontal="true"/>
+        <FrameLayout android:id="@+id/fl_poi_tab_title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <View android:layout_gravity="bottom|center_horizontal" android:id="@+id/view_image_bg" android:visibility="gone" android:layout_width="50dp" android:layout_height="37dp"/>
+            <ImageView android:layout_gravity="bottom|center_horizontal" android:id="@+id/iv_poi_tab_image" android:layout_width="50dp" android:layout_height="50dp" android:scaleType="fitXY"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wm_sc_common_dimen_2" android:layout_below="@+id/fl_poi_tab_title_container" android:layout_centerHorizontal="true">
+            <TextView android:layout_gravity="bottom|center_horizontal" android:id="@+id/tv_tablayout_item_name_indicator" android:layout_width="match_parent" android:layout_height="5dp" android:layout_marginBottom="2dp" android:includeFontPadding="false" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/wm_sg_widget_filter_bar_text_white" android:layout_gravity="center_horizontal" android:id="@+id/tv_tablayout_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="6" android:singleLine="true" android:includeFontPadding="false" android:layout_centerHorizontal="true"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_tablayout_item_icon_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15dp" android:layout_marginTop="2dp" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/iv_tag_icon" android:visibility="gone" android:layout_width="32dp" android:layout_height="24dp" android:scaleType="fitStart" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

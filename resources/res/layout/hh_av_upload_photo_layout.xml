@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@string/hh_sdk_image_name"/>
+    <TextView android:textSize="10sp" android:textColor="@android:color/white" android:id="@+id/count" android:background="@color/hp_sdk_alpha_black" android:paddingTop="1dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/hh_normal_margin" android:paddingEnd="@dimen/hh_normal_margin" android:layout_alignParentEnd="true"/>
+    <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="4dp" android:layout_margin="@dimen/hh_normal_margin" android:max="100" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal"/>
+    <RelativeLayout android:id="@+id/error_tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hh_sdk_error_red_icon" android:layout_centerInParent="true" android:contentDescription="@string/hh_sdk_image_name"/>
+        <TextView android:textSize="9sp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:background="@color/hp_sdk_alpha_black" android:paddingTop="1dp" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hh_vue" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

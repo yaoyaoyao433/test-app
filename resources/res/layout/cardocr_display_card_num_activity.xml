@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_view" android:background="@color/paybase__transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/display_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/paybase__bg_pay_dialog" android:layout_width="311dp" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="17sp" android:textColor="@color/paybase__text_color_2" android:gravity="center" android:id="@+id/display_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cardocr__camera_display_title" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/close_display" android:layout_height="match_parent" android:layout_marginRight="18dp" style="@style/paybase__hello_pay_dialog_close"/>
+            </RelativeLayout>
+            <View android:background="@color/paybase__divider_color" style="@style/paybase__horizonal_divider"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="281dp" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/display_pic" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="15dp" android:scaleType="fitXY"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/display_num_layout" android:layout_width="match_parent" android:layout_height="50dp"/>
+                <View style="@style/paybase__horizonal_divider"/>
+            </LinearLayout>
+            <Button android:id="@+id/confirm__num_button" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:text="@string/cardocr__display_button" style="@style/mtpaysdk_button"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

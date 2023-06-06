@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/wm_sc_common_dimen_4" android:paddingTop="@dimen/wm_sc_common_dimen_6" android:paddingBottom="@dimen/wm_sc_common_dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/complex_sort_filter_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/sort_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@+id/all_filter_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_8" android:layout_weight="1"/>
+</LinearLayout>

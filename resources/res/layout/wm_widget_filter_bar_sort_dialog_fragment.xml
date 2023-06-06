@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/block_filter" android:background="@drawable/wm_common_bg_guide_poi_list" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout android:orientation="horizontal" android:id="@+id/ll_cond_container" android:background="@color/takeout_widget_filter_bar_background" android:paddingTop="2dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:cornerRadius="17dp">
+        <com.sankuai.waimai.platform.widget.filterbar.view.view.DynamicHeightListView android:id="@+id/list_sort" android:background="@color/takeout_widget_filter_bar_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="@null"/>
+    </com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>
+</RelativeLayout>

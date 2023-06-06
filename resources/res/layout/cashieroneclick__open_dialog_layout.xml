@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/cashieroneclick__dialog_bg" android:layout_width="310dp" android:layout_height="368dp">
+    <ImageView android:layout_gravity="right" android:id="@+id/dialog_close" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="17dp" android:layout_marginRight="17dp" android:src="@drawable/cashieroneclick_close_icon"/>
+    <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/cashieroneclick__confirm_dialog_title" android:gravity="center_horizontal" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="14dp" android:textColor="@color/cashieroneclick__confirm_dialog_title" android:gravity="center_horizontal" android:id="@+id/tv_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <ImageView android:id="@+id/igv_marketing" android:layout_width="match_parent" android:layout_height="134dp" android:layout_marginTop="15dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginRight="15dp">
+        <TextView android:textSize="12dp" android:textColor="@color/cashieroneclick__agreement_prefix" android:id="@+id/tv_agreement_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12dp" android:textColor="@color/cashieroneclick__agreement" android:ellipsize="end" android:id="@+id/tv_agreement1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textSize="12dp" android:textColor="@color/cashieroneclick__agreement" android:ellipsize="end" android:id="@+id/tv_agreement2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:singleLine="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp">
+        <Button android:textSize="14dp" android:textStyle="normal" android:id="@+id/btn_left" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginRight="5dp" android:text="继续极速支付" android:layout_weight="1" style="@style/cashieroneclick__week_button"/>
+        <Button android:textSize="14dp" android:id="@+id/btn_right" android:layout_width="0dp" android:layout_height="45dp" android:layout_marginLeft="5dp" android:layout_marginTop="0dp" android:layout_marginBottom="0dp" android:text="开启买单并支付" android:layout_weight="1" style="@style/cashieroneclick__button"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/msc_loading_bg" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/msc_loading" android:layout="@layout/msc_activity_loading" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/msc_error" android:layout="@layout/msc_load_error" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

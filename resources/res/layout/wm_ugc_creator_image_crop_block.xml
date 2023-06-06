@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/wm_ugc_creator_common_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_image_crop_preview_area" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.sankuai.waimai.ugc.creator.widgets.imageview.CropImageView android:id="@+id/iv_image_crop" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <include layout="@layout/wm_ugc_creator_image_crop_control_bar"/>
+    <FrameLayout android:id="@+id/fl_image_crop_actionbar_block" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="34dp"/>
+</LinearLayout>

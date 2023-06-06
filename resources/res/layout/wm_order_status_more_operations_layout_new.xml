@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+    <com.sankuai.waimai.bussiness.order.detailnew.widget.OperationButtonGroup android:id="@+id/operation_button_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" app:lineSpacing="4dp" app:maxColumn="5"/>
+    <com.meituan.roodesign.widgets.button.RooButton android:id="@+id/button_cancel" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/cancel" style="@style/Widget.RooDesign.Button.WeakButton"/>
+</LinearLayout>

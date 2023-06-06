@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/wm_sg_color_FAFAFA" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/shop_cart_han_price_item_divider" android:background="@color/wm_sg_color_D3D3D3" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_half" android:layout_marginTop="@dimen/wm_sc_common_dimen_5" android:layout_marginBottom="@dimen/wm_sc_common_dimen_5"/>
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/wm_sc_common_dimen_9" android:paddingBottom="@dimen/wm_sc_common_dimen_9" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/wm_sc_color_222426" android:ellipsize="end" android:id="@+id/shop_cart_han_price_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/wm_sc_common_dimen_3"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textStyle="bold" android:id="@+id/shop_cart_han_price_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_858687" android:ellipsize="end" android:id="@+id/shop_cart_han_price_item_sub_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_8" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

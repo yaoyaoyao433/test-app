@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/mpay__dialog_discount_detail_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mpay__discount_title" android:layout_width="match_parent" android:layout_height="66dp">
+        <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/mpay__black0" android:id="@+id/mpay_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mpay__discount_title" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/mpay__dialog_cancel" android:padding="17dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mpay__dialog_discount_detail_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/mpay__discount_list" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="129dp" android:listSelector="@drawable/mpay__bg_selector" android:divider="@color/transparent" android:layout_below="@+id/mpay__discount_title"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/cashier_bottom_layout" android:background="#ffffff" android:paddingLeft="18dp" android:paddingRight="18dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginBottom="45dp">
+                <TextView android:textSize="12dp" android:textColor="#b3000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:layout_marginBottom="21dp" android:text="已省钱:  "/>
+                <TextView android:textSize="12dp" android:textColor="#ffff6000" android:id="@+id/mpay_reduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:layout_marginBottom="21dp" android:text="￥7.50"/>
+                <TextView android:textSize="12dp" android:textColor="#ffff6000" android:id="@+id/mpay_reduce_prefix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="21dp" android:layout_marginBottom="21dp" android:text="@string/mpay__discount_max"/>
+            </LinearLayout>
+            <com.meituan.android.paybase.widgets.ProgressButton android:textSize="14dp" android:textStyle="bold" android:textColor="#b3000000" android:layout_gravity="bottom" android:id="@+id/btn_dialog_discount_confirm" android:layout_height="45dp" android:layout_marginTop="0dp" android:layout_marginBottom="0dp" android:text="确定" style="@style/discount_dialog_btn"/>
+        </FrameLayout>
+        <View android:id="@+id/view_bottom_blank" android:layout_width="match_parent" android:layout_height="18dp" android:importantForAccessibility="no"/>
+    </LinearLayout>
+</RelativeLayout>

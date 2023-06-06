@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/floating_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:visibility="gone" layout="@layout/wm_page_kingkong_fkk_category"/>
+    <com.sankuai.waimai.business.page.kingkong.view.poilist.filterbar.FilterBarFrameLayout android:id="@+id/layout_float_filter_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

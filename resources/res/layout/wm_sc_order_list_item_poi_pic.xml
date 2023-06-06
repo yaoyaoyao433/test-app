@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.newwidgets.RoundedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cornerRadius="2dp">
+    <ImageView android:id="@+id/img_poi_image" android:layout_width="@dimen/wm_sc_common_dimen_35" android:layout_height="@dimen/wm_sc_common_dimen_35" android:scaleType="centerCrop"/>
+    <TextView android:textSize="10dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/txt_poi_img_status" android:background="#b2000000" android:paddingLeft="1dp" android:paddingRight="1dp" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_35" android:layout_height="15dp" android:singleLine="true"/>
+    <View android:id="@+id/img_poi_image_border" android:background="@drawable/wm_sc_order_list_item_bg_poi_image_border_with_corner" android:layout_width="@dimen/wm_sc_common_dimen_35" android:layout_height="@dimen/wm_sc_common_dimen_35"/>
+</com.sankuai.waimai.store.newwidgets.RoundedFrameLayout>

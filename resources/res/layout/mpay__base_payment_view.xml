@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/payment_view_root" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/payment_view_container" android:paddingLeft="@dimen/mpay__common_payment_add_icon_padding_left" android:paddingRight="@dimen/mpay__common_payment_padding_right" android:layout_width="match_parent" android:layout_height="67.5dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/name_label_desc_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/cashier_pay_icon" android:layout_width="@dimen/mpay__common_payment_icon_size" android:layout_height="@dimen/mpay__common_payment_icon_size" android:layout_marginRight="7dp" android:scaleType="fitXY"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/name_and_label_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/mpay__payment_name_color_selector" android:ellipsize="middle" android:id="@+id/txt_cashier_pay_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/mpay__payment_name_margin_right" android:singleLine="true"/>
+                    <com.meituan.android.paycommon.lib.widgets.PayLabelContainer android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/right_label_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/paybase__black3" android:ellipsize="end" android:id="@+id/txt_cashier_pay_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mpay__common_payment_name_padding_left" android:layout_marginTop="@dimen/mpay__payment_item_name_margin_bottom" android:maxLines="2"/>
+            <com.meituan.android.paycommon.lib.widgets.PayLabelContainer android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bottom_label_layout" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mpay__common_payment_name_padding_left" android:layout_marginTop="@dimen/mpay__payment_item_name_margin_bottom"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/attach_icon" android:visibility="visible" android:layout_width="63dp" android:layout_height="18dp"/>
+        <TextView android:textSize="12dp" android:id="@+id/attach_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.meituan.android.paycommon.lib.widgets.ThemeRelatedCheckBox android:id="@+id/ckb_cashier_pay_check" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" style="@style/mtpaysdk__payment_checkbox_bg"/>
+    </LinearLayout>
+</LinearLayout>

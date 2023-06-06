@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/passport_divider_horizontal" android:showDividers="end|beginning">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="43dp" android:layout_marginLeft="12dp">
+            <com.meituan.passport.view.InputMobileView android:id="@+id/mobile_edittext" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="@drawable/passport_divider_horizontal" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="43dp" android:layout_marginLeft="12dp">
+            <TextView android:textSize="@dimen/passport_text_size_h15" android:textColor="@color/passport_black1" android:layout_width="55dp" android:layout_height="wrap_content" android:text="@string/passport_code"/>
+            <com.meituan.passport.view.PassportEditText android:textSize="@dimen/passport_text_size_h15" android:id="@+id/dynamicCode" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="20dp" android:layout_weight="1" android:inputType="phone" style="@style/passport_editText"/>
+            <com.meituan.passport.view.PassportClearTextView android:id="@+id/clear_code" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginRight="8dp" android:src="@drawable/passport_password_close" android:scaleType="center"/>
+            <com.meituan.passport.view.PassportButton android:textSize="@dimen/passport_text_size_h13" android:textColor="@color/passport_code_selector" android:id="@+id/getCode" android:background="@drawable/passport_retrieve_code_background" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:minHeight="30dp" android:text="@string/passport_retrieve_code" android:elevation="0dp" android:stateListAnimator="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.meituan.passport.view.PassportButton android:theme="@style/PassportButtonStyleNew" android:textSize="@dimen/passport_text_size_h16" android:id="@+id/login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="16dp" android:layout_marginRight="12dp" android:minHeight="44dp" android:text="@string/passport_login"/>
+</LinearLayout>

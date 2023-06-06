@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/hh_certificate_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/hh_doctor_certificate" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/hh_certificate_close" android:paddingTop="42dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hh_close_icon_white" android:contentDescription="@string/hh_sdk_image_name" android:paddingStart="16dp" android:paddingEnd="28dp" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

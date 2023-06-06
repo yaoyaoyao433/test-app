@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_search_sort_filter_container" android:background="@color/wm_sc_search_global_f5f5f6_bg" android:paddingLeft="@dimen/wm_sc_common_dimen_12" android:paddingRight="@dimen/wm_sc_common_dimen_12" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_35">
+        <com.sankuai.waimai.store.search.common.view.SortFilterTextView android:id="@+id/tv_search_sort_button" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_search_quick_filter_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/wm_sc_common_dimen_24" android:layout_toRightOf="@+id/tv_search_sort_button"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_search_quick_sort_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toRightOf="@+id/ll_search_quick_filter_container"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:divider="@drawable/wm_sc_nox_search_sort_filter_button_divider" android:layout_alignParentRight="true" android:showDividers="middle" android:dividerPadding="@dimen/wm_sc_common_dimen_14">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/wm_sc_nox_search_label_text" android:gravity="center_vertical" android:id="@+id/tv_search_mode_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="@dimen/wm_sc_common_dimen_4"/>
+            <com.sankuai.waimai.store.search.common.view.SortFilterTextView android:gravity="center_vertical" android:id="@+id/tv_search_filter_button" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/wm_sc_nox_search_filter" app:customRightDrawable="@drawable/wm_sc_search_icon_filter"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom_filter_area" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

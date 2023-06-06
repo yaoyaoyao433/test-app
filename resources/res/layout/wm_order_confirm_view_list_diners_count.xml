@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/wm_order_confirm_tableware_hint_color" android:layout_gravity="center_horizontal" android:id="@+id/txt_order_confirm_tableware_advocate_title" android:visibility="gone" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:drawableLeft="@drawable/wm_order_confirm_tableware_icon_neat" android:drawablePadding="5dp" style="@style/WmText"/>
+    <com.sankuai.waimai.platform.widget.MaxHeightListView android:id="@+id/lv_order_confirm_tableware_count" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/WmListView.NoDivider"/>
+</LinearLayout>

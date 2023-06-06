@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/mpay__suggestion_item_height">
+    <View android:layout_marginLeft="@dimen/mpay__bankinfo_padding" style="@style/paybase__horizonal_divider"/>
+    <TextView android:textSize="15dp" android:textColor="@color/paybase__text_color_2" android:id="@+id/suggestion_phone_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mpay__bankinfo_padding" android:layout_marginTop="11dp"/>
+    <TextView android:textSize="12dp" android:textColor="@color/paybase__text_color_3" android:id="@+id/suggestion_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mpay__bankinfo_padding" android:layout_marginBottom="11dp"/>
+</LinearLayout>

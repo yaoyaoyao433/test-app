@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:id="@+id/config" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp" style="@style/dev_editText"/>
+    <Button android:id="@+id/read_config" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_page_mine_read_config" android:layout_below="@+id/config" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

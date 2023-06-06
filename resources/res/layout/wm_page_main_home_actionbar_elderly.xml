@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/wm_page_all_f" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/action_bar_root_elderly" android:background="@drawable/wm_page_home_actionbar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_location_box_container" android:layout_width="match_parent" android:layout_height="67dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/weather_container" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginRight="10dp" android:minHeight="30dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/message_center_home_layout" android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#222426" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息"/>
+                    <RelativeLayout android:layout_width="25dp" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/message_center_home_icon" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="fitCenter"/>
+                        <TextView android:textSize="8sp" android:textColor="@color/takeout_white" android:gravity="center" android:id="@+id/message_center_home_bubble_count" android:background="@drawable/wm_common_count_bg" android:paddingLeft="3dp" android:paddingRight="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                        <ImageView android:id="@+id/message_center_home_bubble" android:visibility="gone" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginRight="2dp" android:src="@drawable/wm_common_dot_red" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_location_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_page_home_padding" android:layout_marginTop="15dp">
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20dp" android:id="@+id/img_location" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="2dp" android:text="@string/wm_c_iconfont_14dingwei"/>
+                <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#222426" android:id="@+id/txt_location" android:text="@string/wm_page_poiList_progressbar_locating" android:maxEms="7" style="@style/WmText"/>
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="15dp" android:id="@+id/img_location_arrow" android:layout_width="15dp" android:layout_height="15dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_search_box_container" android:background="@drawable/wm_page_home_search_box_bg" android:layout_width="match_parent" android:layout_height="72dp">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/layout_search_box_normal" android:background="@drawable/wm_page_main_search_bg_elderly" android:padding="4dp" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="@dimen/wm_page_home_padding" android:layout_marginTop="@dimen/wm_page_home_padding" android:layout_marginRight="@dimen/wm_page_home_padding">
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="24sp" android:textColor="@color/roo_default_color_gray_darker" android:id="@+id/icon_search" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:text="@string/wm_c_iconfont_27fangdajing"/>
+                <TextView android:textSize="20sp" android:textColorHint="@color/wm_page_home_search_hint_text_color" android:id="@+id/txt_search_normal" android:layout_width="0dp" android:hint="输入商家/商品名" android:layout_weight="1" style="@style/WmText"/>
+                <Button android:textSize="22sp" android:textStyle="bold" android:textColor="#222426" android:layout_gravity="right" android:id="@+id/button_search" android:background="@null" android:layout_width="84dp" android:layout_height="match_parent" android:layout_marginRight="0dp" android:text="搜索" style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@drawable/wm_page_home_actionbar_padding_elder" android:layout_width="match_parent" android:layout_height="14dp"/>
+    </LinearLayout>
+</FrameLayout>

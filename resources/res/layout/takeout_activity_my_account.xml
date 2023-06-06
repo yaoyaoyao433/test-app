@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/WmPage.Secondary">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:id="@+id/layout" style="@style/WmCard.WithDivider">
+            <LinearLayout android:id="@+id/row_avatar" style="@style/WmCell.Clickable">
+                <TextView android:text="@string/avatar" style="@style/WmText.Weighted"/>
+                <ImageView android:id="@+id/img_avatar" android:layout_width="@dimen/takeout_my_account_avatar_width" android:layout_height="@dimen/takeout_my_account_avatar_height" android:scaleType="centerCrop"/>
+                <include layout="@layout/wm_common_view_cell_arrow_right"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/row_username" style="@style/WmCell.Clickable">
+                <TextView android:text="@string/change_user_name" style="@style/WmText"/>
+                <TextView android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_username" style="@style/WmText.Weighted.Right"/>
+                <include layout="@layout/wm_common_view_cell_arrow_right"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/row_password" style="@style/WmCell.Clickable">
+                <TextView android:text="@string/user_password_modify" style="@style/WmText.Weighted"/>
+                <TextView android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_user_password_modify" style="@style/WmText.Weighted.Right"/>
+                <include layout="@layout/wm_common_view_cell_arrow_right"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/row_phone" style="@style/WmCell.Clickable">
+                <TextView android:id="@+id/txt_bind_phone" android:text="@string/bind_phone" style="@style/WmText"/>
+                <TextView android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_bind_phone_hint" style="@style/WmText.Weighted.Right"/>
+                <include layout="@layout/wm_common_view_cell_arrow_right"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/unbind_wx" android:visibility="gone" style="@style/WmCell.Clickable">
+                <TextView android:id="@+id/txt_unbind_wx" android:text="@string/manage_wx_account" style="@style/WmText"/>
+                <TextView android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_unbind_wx_hint" android:text="@string/takeout_user_account_myaccount_unbind_wx" style="@style/WmText.Weighted.Right"/>
+                <include layout="@layout/wm_common_view_cell_arrow_right"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/cancel_account" android:visibility="visible" style="@style/WmCell.Clickable">
+                <TextView android:id="@+id/txt_cancel_account" android:text="@string/manage_cancel_account" style="@style/WmText"/>
+                <TextView android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_cancel_account_hint" android:text="@string/manage_cancel_account_hint" style="@style/WmText.Weighted.Right"/>
+                <include layout="@layout/wm_common_view_cell_arrow_right"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:textColor="@color/wm_common_text_emphasize" android:id="@+id/btn_logout" android:background="@color/takeout_white" android:layout_height="50dp" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:text="@string/logout" android:layout_alignParentBottom="true" style="@style/WmButton.FullWidth.Solid"/>
+    <include layout="@layout/wm_common_layout_refresh_info"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:id="@+id/txt_address_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <TextView android:textSize="12sp" android:textColor="#858687" android:ellipsize="end" android:id="@+id/txt_address_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxLines="1"/>
+    <com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:layout_width="match_parent" android:layout_height="128dp" android:layout_marginTop="6dp" app:cornerRadius="4dp">
+        <com.sankuai.waimai.business.im.common.view.LocationMessageMapView android:id="@+id/wm_im_location_message_map_view" android:layout_width="match_parent" android:layout_height="128dp" app:mapsdk_key="49058660-1de4-4c13-a401-a7f237e85065"/>
+        <View android:id="@+id/click_handler" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="128dp"/>
+    </com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>
+</LinearLayout>

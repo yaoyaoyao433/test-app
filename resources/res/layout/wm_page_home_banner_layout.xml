@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/home_banner_area" android:background="@color/wm_common_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/wm_page_home_pager_banner_layout"/>
+    <FrameLayout android:layout_gravity="bottom|right" android:id="@+id/qualification_layout_banner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

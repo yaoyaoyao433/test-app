@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="137" android:drawable="@drawable/wm_common_pull_anim01"/>
+    <item android:duration="137" android:drawable="@drawable/wm_common_pull_anim02"/>
+    <item android:duration="137" android:drawable="@drawable/wm_common_pull_anim03"/>
+    <item android:duration="137" android:drawable="@drawable/wm_common_pull_anim04"/>
+    <item android:duration="137" android:drawable="@drawable/wm_common_pull_anim05"/>
+    <item android:duration="137" android:drawable="@drawable/wm_common_pull_anim06"/>
+    <item android:duration="137" android:drawable="@drawable/wm_common_pull_anim07"/>
+    <item android:duration="137" android:drawable="@drawable/wm_common_pull_anim11"/>
+</animation-list>

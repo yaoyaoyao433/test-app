@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.page.home.list.future.feedbackdialog.item.poi.InterceptLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/ll_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.meituan.roodesign.widgets.checkbox.RooCheckBox android:enabled="true" android:textColor="#848687" android:gravity="center_vertical" android:id="@+id/cb_item" android:paddingLeft="7.5dp" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="false" app:backgroundColor="@color/roo_dark_default_color_primary"/>
+</com.sankuai.waimai.business.page.home.list.future.feedbackdialog.item.poi.InterceptLinearLayout>

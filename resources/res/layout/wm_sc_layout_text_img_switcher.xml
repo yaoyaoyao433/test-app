@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_33312d" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_spu_praise_list" android:layout_width="@dimen/wm_sc_common_dimen_130" android:layout_height="@dimen/wm_sc_common_dimen_32" android:maxLines="1" android:drawableRight="@drawable/wm_sc_goods_comment_adapter_praise" android:drawablePadding="2dp"/>

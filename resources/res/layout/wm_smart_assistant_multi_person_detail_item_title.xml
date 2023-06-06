@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="37dp">
+    <ImageView android:id="@+id/wm_smart_assistant_multi_person_more_item_title_icon" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="15.5dp" android:src="@drawable/wm_smart_assistant_multi_person_category_default" android:scaleType="centerCrop"/>
+    <TextView android:textSize="12sp" android:textColor="#ff333333" android:id="@+id/wm_smart_assistant_multi_person_more_item_title_name" android:layout_width="wrap_content" android:layout_height="16.5dp" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:text="adsfasdfa" android:layout_toRightOf="@+id/wm_smart_assistant_multi_person_more_item_title_icon"/>
+</RelativeLayout>

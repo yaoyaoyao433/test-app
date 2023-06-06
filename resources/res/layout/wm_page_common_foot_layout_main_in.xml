@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="right" android:layout_gravity="end|bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_to_top_img_poiList" android:paddingRight="12dp" android:visibility="visible" android:layout_width="66dp" android:layout_height="54dp" android:layout_marginBottom="20dp">
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/to_top_img_poiList" android:layout_width="54dp" android:layout_height="54dp" app:project="waimai_c" app:srcName="waimai_c_page_icon_poi_list_totop"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layer_intelligent_entrance" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+        <ImageView android:id="@+id/intelligent_entrance_icon" android:layout_width="54dp" android:layout_height="54dp" android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <include android:layout_width="66dp" android:layout_height="65dp" android:layout_marginBottom="8dp" layout="@layout/wm_page_common_global_mvp_hongbao_layout"/>
+    <include layout="@layout/wm_page_marking_sidebar_layout"/>
+    <include layout="@layout/wm_page_common_global_cart_icon_layout"/>
+    <include layout="@layout/wm_page_multi_order_global_cart_icon_layout"/>
+    <LinearLayout android:id="@+id/qualification_rule" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/wm_page_common_qualification_rule_icon_layout"/>
+    </LinearLayout>
+    <include android:id="@+id/bottom_location_permission_layer" layout="@layout/wm_page_home_location_permission_layer"/>
+    <View android:id="@+id/placeholder_for_bottom_status_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="43dp"/>
+    <View android:id="@+id/placeholder_for_second_page_poi_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50dp"/>
+</LinearLayout>

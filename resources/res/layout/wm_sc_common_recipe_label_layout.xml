@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/label_view" android:background="#f5f5f6" android:paddingLeft="9dp" android:paddingTop="12dp" android:paddingRight="9dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/fold" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/tab_ic" android:visibility="visible" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/tab_lv" android:layout_width="match_parent" android:layout_height="40dp" android:layout_toLeftOf="@+id/tab_ic" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.sankuai.waimai.store.newwidgets.flowlayout.FlowLayout android:id="@+id/unfold" android:background="#f5f5f6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

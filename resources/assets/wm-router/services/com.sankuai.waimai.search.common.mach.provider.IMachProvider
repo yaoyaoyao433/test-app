@@ -1,0 +1,2 @@
+sg:com.sankuai.waimai.store.search.isomorphism.StoreSearchIsomorphismProvider:singleton
+wm:com.sankuai.waimai.business.search.ui.result.mach.provider.WMMachProviderImpl:singleton

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_adapter_comment_poi" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/wm_common_padding_horizontal" android:paddingRight="@dimen/wm_common_padding_horizontal" android:layout_width="match_parent" android:layout_height="@dimen/wm_common_cell_fixed_height">
+            <com.sankuai.waimai.platform.widget.RoundedCornerImageView android:id="@+id/txt_adapter_comment_poi_pic" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="0.5dp" android:layout_marginRight="8dp" android:scaleType="fitXY" custom:cornerRadius="4dp" custom:civ_border_width="0.5dp" custom:civ_border_color="@color/common_f4"/>
+            <TextView android:textSize="14sp" android:textColor="#222426" android:id="@+id/txt_adapter_comment_poi_name" android:layout_width="0dp" android:layout_height="match_parent" android:drawableRight="@drawable/wm_common_arrow_right" android:drawablePadding="@dimen/wm_common_padding_drawable_left" android:layout_weight="1" style="@style/WmText"/>
+        </LinearLayout>
+        <include layout="@layout/wm_common_view_divider_horizontal"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16dp" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="@drawable/wm_common_border_round_avatar" android:layout_width="@dimen/wm_comment_avatar_size" android:layout_height="@dimen/wm_comment_avatar_size">
+            <com.sankuai.waimai.platform.widget.RoundImageView android:id="@+id/img_avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0.5dp" android:scaleType="centerCrop" custom:civ_border_width="0.5dp" custom:civ_border_color="@color/wm_common_border_avatar"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <include layout="@layout/wm_comment_list_adapter_content"/>
+            <include android:id="@+id/view_adapter_comment_item_divider" layout="@layout/wm_common_view_divider_horizontal"/>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/txt_adapter_comment_share_comment" android:text="@string/wm_comment_share_comment" android:drawableLeft="@drawable/wm_comment_ic_share_item_share" style="@style/wm_comment_adapter_button"/>
+                <TextView android:id="@+id/txt_adapter_comment_add_comment" android:text="@string/wm_comment_add_comment" android:drawableLeft="@drawable/wm_comment_ic_share_item_add_comment" style="@style/wm_comment_adapter_button"/>
+                <TextView android:id="@+id/txt_adapter_comment_delete_comment" android:text="@string/wm_comment_delete_comment" android:drawableLeft="@drawable/wm_comment_ic_delete" style="@style/wm_comment_adapter_button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_adapter_comment_float_bar" android:background="@drawable/wm_common_floatbar_yellow_bottom" android:layout_width="match_parent" android:layout_height="40dp">
+        <com.sankuai.waimai.platform.widget.TextWithImageLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/wm_common_theme_dark" android:gravity="center_vertical" android:id="@+id/txt_remind" android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:drawableLeft="@drawable/wm_comment_ic_info" android:drawablePadding="10dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/wm_common_text_highlight" android:gravity="center_vertical" android:id="@+id/txt_remind_check_rules" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </com.sankuai.waimai.platform.widget.TextWithImageLayout>
+        <ImageView android:id="@+id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/wm_comment_ic_close"/>
+    </LinearLayout>
+    <LinearLayout android:background="@color/wm_common_background_page" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

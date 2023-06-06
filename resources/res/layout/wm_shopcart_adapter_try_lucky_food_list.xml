@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_food_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+    <ImageView android:id="@+id/shop_cart_poi_icon" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="14.5dp" android:layout_marginTop="15dp" android:scaleType="center"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/shop_cart_price_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="13dp" android:layout_toRightOf="@+id/shop_cart_poi_icon">
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="#222426" android:ellipsize="end" android:id="@+id/txt_food_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:maxLines="2"/>
+        <TextView android:textSize="10sp" android:textColor="#858687" android:id="@+id/txt_food_attrs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:minHeight="15dp"/>
+        <RelativeLayout android:id="@+id/rl_show_cart_price" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="16sp" android:textColor="#fb4e44" android:gravity="bottom" android:id="@+id/txt_food_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.meituan.roodesign.widgets.stepper.RooStepper android:layout_gravity="top|right" android:id="@+id/roo_stepper" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:layout_alignBottom="@+id/shop_cart_price_layout" android:layout_alignParentRight="true" app:collapsible="noFold"/>
+    <View android:id="@+id/layout_food_item_divider_short_line" android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="78dp" android:layout_marginRight="14.5dp" android:layout_below="@+id/shop_cart_price_layout"/>
+</RelativeLayout>

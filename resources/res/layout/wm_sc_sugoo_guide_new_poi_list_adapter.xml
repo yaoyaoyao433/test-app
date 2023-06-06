@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_poi_list_item_container" android:background="@drawable/wm_sc_poi_list_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginTop="@dimen/wm_sc_common_dimen_8" android:layout_marginRight="@dimen/wm_sc_common_dimen_12">
+            <LinearLayout android:orientation="vertical" android:id="@+id/root_layout" android:paddingTop="2dp" android:paddingBottom="12dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ViewStub android:id="@+id/wx_binding" android:layout="@layout/wm_sc_sugoo_weixin_image" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="90dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_alignParentTop="true">
+                        <ImageView android:id="@+id/img_special_bg_icon" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_90" android:scaleType="centerCrop"/>
+                        <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_90"/>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <include layout="@layout/wm_sc_sugoo_page_main_poi_list_adapter_image_new"/>
+                            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="8dp" android:layout_marginRight="10dp" layout="@layout/wm_sc_sugoo_page_main_poi_list_adapter_content_new"/>
+                        </LinearLayout>
+                        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_92" layout="@layout/wm_sc_sugoo_ui_list_poi_list_item_normal_a_bottom_activities_new"/>
+                        <ViewStub android:id="@+id/vs_products_layout" android:clipToPadding="false" android:layout="@layout/wm_sc_sugoo_page_main_poi_list_adapter_products_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_10"/>
+                    </LinearLayout>
+                    <TextView android:textSize="10sp" android:textColor="@color/wm_st_common_white" android:gravity="center" android:id="@+id/txt_order_num" android:background="@drawable/wm_st_poi_order_prompt_count" android:layout_marginLeft="@dimen/wm_sc_common_dimen_76" android:layout_marginTop="51dp" android:minWidth="@dimen/wm_sc_common_dimen_15" android:minHeight="@dimen/wm_sc_common_dimen_15" style="@style/WmStStoreText"/>
+                    <ImageView android:layout_gravity="top|right" android:id="@+id/noworries_tag" android:layout_width="@dimen/wm_sc_common_dimen_25" android:layout_height="28dp" android:layout_marginRight="10dp" android:src="@drawable/wm_sc_sugoo_meituan_poi_icon" android:scaleType="centerCrop"/>
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/fl_poi_recommend_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/root_layout"/>
+            <View android:id="@+id/view_closed" android:background="@drawable/wm_sc_sugoo_poi_closed_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/root_layout" android:layout_alignTop="@+id/root_layout" android:layout_alignRight="@+id/root_layout" android:layout_alignBottom="@+id/root_layout"/>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_st_common_222426" android:layout_gravity="top|right" android:id="@+id/txt_poi_list_subscribe" android:paddingLeft="@dimen/wm_sc_common_dimen_8" android:paddingTop="@dimen/wm_sc_common_dimen_3" android:paddingRight="@dimen/wm_sc_common_dimen_8" android:paddingBottom="@dimen/wm_sc_common_dimen_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_10" android:layout_marginRight="@dimen/wm_sc_common_dimen_10" android:drawablePadding="@dimen/wm_sc_common_dimen_1" android:layout_alignTop="@+id/root_layout" android:layout_alignRight="@+id/root_layout"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/fl_poi_recommend_vertical_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/container"/>
+    </LinearLayout>
+</FrameLayout>

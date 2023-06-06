@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mpay__quickbind_button" android:background="@drawable/mpay__quickbind_button_bg" android:layout_width="match_parent" android:layout_height="50dp">
+    <ImageView android:id="@+id/quickbind_button_icon" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="20dp" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/quickbind_button_arrow" android:background="@drawable/mpay__quickbind_button_arrow_right" android:layout_width="6dp" android:layout_height="10dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="16dp" android:textColor="@color/mpay__black1" android:id="@+id/quickbind_button_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/quickbind_button_arrow" android:layout_toRightOf="@+id/quickbind_button_icon" android:layout_centerVertical="true"/>
+</RelativeLayout>

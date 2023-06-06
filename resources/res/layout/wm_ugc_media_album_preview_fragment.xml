@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/wm_ugc_creator_common_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_media_preview_actionbar_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="44dp">
+        <android.support.v4.view.ViewPager android:id="@+id/vp_photos" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:gravity="center" android:layout_gravity="end" android:id="@+id/v_selected" android:padding="8dp" android:clickable="true" android:layout_width="39dp" android:layout_height="39dp" android:src="@drawable/wm_ugc_media_picker_checkbox_bg"/>
+        <TextView android:textSize="14sp" android:textColor="#222426" android:gravity="center" android:layout_gravity="end" android:id="@+id/tv_selected" android:layout_width="39dp" android:layout_height="39dp"/>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/bottom_layout" android:background="#aa1a1a1a" android:paddingTop="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="130dp"/>
+    </FrameLayout>
+</LinearLayout>

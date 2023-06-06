@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/identifycard_recognizer_photo_menu"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_image" android:scrollbars="vertical" android:fadingEdge="none" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_layout_upload" android:layout_below="@+id/rl_top_bar" android:layout_alignParentLeft="true" android:overScrollMode="never" android:layout_alignParentStart="true"/>
+    <RelativeLayout android:id="@+id/lay_masking" android:background="#55000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_top_bar">
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv_folder" android:background="#ffffffff" android:paddingLeft="5dp" android:paddingRight="5dp" android:scrollbars="vertical" android:fadingEdge="none" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="100dp" android:overScrollMode="never"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/bottom_layout_upload" android:background="@drawable/identifycard_recognizer_bg_uoload_preview" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <Button android:enabled="false" android:textSize="14sp" android:textColor="@color/identifycard_recognizer_color_selector_button_text" android:gravity="center" android:id="@+id/btn_prev_upload" android:background="@drawable/identifycard_recognizer_bg_button_upload_preview" android:layout_width="60dp" android:layout_height="30dp" android:layout_marginRight="15dp" android:text="上传" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+</RelativeLayout>

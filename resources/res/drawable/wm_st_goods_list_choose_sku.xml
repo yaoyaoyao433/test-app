@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/wm_st_common_theme_light" android:endColor="@color/wm_st_shopcart_theme_gradient_end_color" android:angle="0"/>
+    <stroke android:width="@dimen/wm_sc_common_dimen_15" android:color="@color/wm_st_common_theme_light"/>
+    <corners android:radius="@dimen/wm_sc_common_dimen_14_half"/>
+    <padding android:left="10dp" android:right="10dp"/>
+</shape>

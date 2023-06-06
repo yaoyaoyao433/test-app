@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="265dp" android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout android:background="@drawable/wm_page_home_tab_ugc_feed_guide_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#222426" android:id="@+id/tv_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textColor="#222426" android:id="@+id/tv_guide_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_guide_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxHeight="233dp"/>
+                <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/default_guide_pic_new_user" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxHeight="233dp" app:project="waimai_c" app:srcName="waimai_c_page_image_home_ugc_new_user_guide"/>
+                <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/default_guide_pic_old_user" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxHeight="233dp" app:project="waimai_c" app:srcName="waimai_c_page_image_home_ugc_old_user_guide"/>
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6dp" android:src="@drawable/wm_page_home_tab_ugc_feed_guide_close" android:scaleType="center" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/guide_triangle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8dp">
+        <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="8dp"/>
+        <com.sankuai.waimai.business.page.home.widget.TriangleView android:layout_width="13dp" android:layout_height="5dp" app:triangleColor="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>

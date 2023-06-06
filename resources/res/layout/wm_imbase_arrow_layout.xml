@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="#333333" android:id="@+id/wm_imbase_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4sp"/>
+    <ImageView android:id="@+id/wm_imbase_arrow" android:layout_width="5dp" android:layout_height="8dp" android:src="@drawable/wm_imbase_arrow_right"/>
+</FrameLayout>

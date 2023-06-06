@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="@dimen/wm_sc_common_dimen_3_half" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/poi_top_img" android:layout_width="@dimen/wm_sc_common_dimen_20" android:layout_height="@dimen/wm_sc_common_dimen_20" android:layout_marginTop="@dimen/wm_sc_common_dimen_7" android:src="@drawable/wm_sc_shop_cart_poi_enter" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_10" android:textColor="@color/wm_sg_color_575859" android:id="@+id/poi_bottom_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_2" android:text="店铺" android:layout_below="@+id/poi_top_img" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

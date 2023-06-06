@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:imui="http://schemas.android.com/apk/res-auto" android:background="@color/legwork_color_FFF6F6F6" style="@style/xm_sdk_send_panel_normal_style">
+    <com.sankuai.xm.imui.common.panel.plugin.VoicePlugin android:id="@+id/voice_plugin" android:layout_width="wrap_content" android:layout_height="wrap_content" imui:plugin_icon="@drawable/legwork_xm_sdk_chat_set_mode_btn" imui:plugin_next_focus="@+id/editor_plugin"/>
+    <com.sankuai.xm.imui.common.panel.plugin.InputEditorPlugin android:id="@+id/editor_plugin" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.meituan.android.legwork.ui.view.CustomPlugin android:layout_gravity="center_vertical" android:id="@+id/custom_plugin" android:layout_width="wrap_content" android:layout_height="wrap_content" imui:plugin_click_closable="true" imui:plugin_next_focus="@+id/editor_plugin" imui:plugin_use_keyboard_height="false"/>
+    <com.sankuai.xm.imui.common.panel.plugin.ExtraPlugin android:layout_gravity="center_vertical" android:id="@+id/extra_plugin" android:tag="ALT:SEND" android:background="@color/legwork_color_FFF6F6F6" android:layout_width="wrap_content" android:layout_height="wrap_content" imui:plugin_icon="@drawable/legwork_xm_sdk_chat_plugin_btn" imui:plugin_next_focus="@+id/editor_plugin"/>
+    <com.sankuai.xm.imui.common.panel.plugin.SendPlugin android:id="@+id/send_plugin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

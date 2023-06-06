@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abc_background_cache_hint_selector_material_dark">r/u/b0w.xml</color>
+    <color name="abc_background_cache_hint_selector_material_light">r/u/b0x.xml</color>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/cashier__paylater_guide_dialog_toast_text_size" android:textColor="#ffffff" android:gravity="top|center_horizontal" android:id="@+id/ensure" android:background="@drawable/cashier__bg_paylater_guide_toast" android:paddingTop="@dimen/cashier__paylater_guide_dialog_toast_padding_top" android:paddingBottom="@dimen/cashier__paylater_guide_dialog_toast_padding_top" android:layout_width="@dimen/cashier__paylater_guide_dialog_toast_width" android:layout_height="@dimen/cashier__paylater_guide_dialog_toast_height" android:text="@string/cashier__paylater_guide_dialog_toast_context"/>
+</LinearLayout>

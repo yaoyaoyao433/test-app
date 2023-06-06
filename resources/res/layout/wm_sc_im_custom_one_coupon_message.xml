@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/wm_sc_im_doctor_session_prescription_img_bg" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/wm_sc_im_custom_one_coupon_left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/wm_sg_im_color_FFC300" android:id="@+id/wm_sc_im_custom_one_coupon_money_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_commen_currecy_unit"/>
+                    <TextView android:textSize="36sp" android:textStyle="bold" android:textColor="@color/wm_sg_im_color_FFC300" android:id="@+id/wm_sc_im_custom_one_coupon_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:singleLine="true"/>
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/wm_sg_im_color_FFC300" android:id="@+id/wm_sc_im_custom_one_coupon_discount_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_common_coupon_dicount"/>
+                </LinearLayout>
+                <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/wm_sg_im_color_FFC300" android:ellipsize="end" android:id="@+id/wm_sc_im_custom_one_coupon_sub_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_16" android:textStyle="bold" android:textColor="#e6000000" android:id="@+id/wm_sc_im_custom_one_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_15" android:text="商家优惠券"/>
+        </LinearLayout>
+        <View android:background="#0f000000" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_half" android:layout_marginTop="@dimen/wm_sc_common_dimen_8"/>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_8">
+            <TextView android:textSize="12sp" android:textColor="#80000000" android:ellipsize="end" android:id="@+id/wm_sc_im_custom_one_coupon_valid_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textColor="@color/wm_sg_im_color_FFC300" android:id="@+id/wm_sc_im_tv_touse" android:paddingLeft="@dimen/wm_sc_common_dimen_12" android:paddingTop="@dimen/wm_sc_common_dimen_3" android:paddingRight="@dimen/wm_sc_common_dimen_12" android:paddingBottom="@dimen/wm_sc_common_dimen_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

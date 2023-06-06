@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+    <TextView android:textSize="11sp" android:textColor="#999999" android:id="@+id/txt_poi_status_tip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</RelativeLayout>

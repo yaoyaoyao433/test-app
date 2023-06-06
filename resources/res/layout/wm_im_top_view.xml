@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="#575859" android:ellipsize="end" android:id="@+id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="" android:singleLine="true" android:layout_weight="1"/>
+    <TextView android:textSize="10sp" android:textColor="#575859" android:layout_gravity="center_vertical" android:id="@+id/role_name" android:background="@drawable/wm_im_user_role_bg" android:paddingLeft="3dp" android:paddingTop="1dp" android:paddingRight="3dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="2dp" android:layout_marginRight="45dp" android:layout_marginBottom="3dp" android:text="管理员"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.drug.widgets.shimmer.DrugShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" app:drug_shimmer_base_alpha="0.75" app:drug_shimmer_highlight_alpha="1" app:drug_shimmer_duration="1000" app:drug_shimmer_direction="left_to_right"/>

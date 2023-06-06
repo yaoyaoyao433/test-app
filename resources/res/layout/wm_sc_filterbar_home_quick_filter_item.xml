@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_quick_filter_container" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_32" android:layout_marginTop="@dimen/wm_sc_common_dimen_10">
+        <ImageView android:id="@+id/iv_quick_filter_image_background" android:layout_width="match_parent" android:layout_height="15dp" android:layout_marginLeft="7.5dp" android:layout_marginRight="7.5dp" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_quick_filter_button_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/iv_quick_filter_title_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="3dp" android:scaleType="fitCenter"/>
+            <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/tv_quick_filter_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:id="@+id/v_filter_text_bubble" android:background="@drawable/wm_sg_widget_filter_bar_background_tab_bubble" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginTop="5dp" android:layout_marginRight="-6dp" android:layout_alignRight="@+id/ll_quick_filter_button_container"/>
+        <View android:id="@+id/v_filter_img_background_bubble" android:background="@drawable/wm_sg_widget_filter_bar_background_tab_bubble" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_alignTop="@+id/ll_quick_filter_button_container" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="10sp" android:textColor="@color/wm_st_common_white" android:gravity="center" android:id="@+id/tv_quick_filter_bubble" android:background="@drawable/wm_sg_widget_filter_bar_background_item_bubble" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_1" android:text="NEW" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.dialog.view.AnimatableImageView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom|center_horizontal" android:id="@+id/refresh_img" android:layout_width="41dp" android:layout_height="50dp" android:scaleType="centerInside" android:contentDescription="@null"/>

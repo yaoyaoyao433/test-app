@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="254.5dp" android:layout_height="55dp">
+    <ImageView android:layout_width="10dp" android:layout_height="5dp" android:layout_marginLeft="16dp" android:src="@drawable/wm_order_confirm_layout_mt_deliver_address_tips_arrow"/>
+    <RelativeLayout android:background="@drawable/wm_order_confirm_layout_mt_deliver_address_tips_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4.5dp">
+        <TextView android:textSize="12dp" android:textColor="@android:color/white" android:id="@+id/txt_empty_address_prefix" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_status_send_to" android:singleLine="true"/>
+        <TextView android:textSize="12dp" android:textColor="@android:color/white" android:id="@+id/txt_empty_address" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/txt_empty_address_prefix"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_below="@+id/txt_empty_address" android:layout_alignLeft="@+id/txt_empty_address">
+            <TextView android:textSize="12dp" android:textColor="@android:color/white" android:id="@+id/txt_empty_name" android:maxWidth="70dp" style="@style/wm_order_base_address_item_name"/>
+            <TextView android:textSize="12dp" android:textColor="@android:color/white" android:id="@+id/txt_empty_gender" android:layout_marginRight="10dp" style="@style/wm_order_base_address_item_gender"/>
+            <TextView android:textSize="12dp" android:textColor="@android:color/white" android:id="@+id/txt_empty_phone" style="@style/wm_order_base_address_item_phone"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/address_empty_tip_close_icon" android:background="@drawable/wm_order_confirm_layout_mt_deliver_address_tips_add_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="44dp" android:layout_height="match_parent" android:layout_marginTop="4.5dp" android:src="@drawable/wm_order_confirm_layout_mt_deliver_address_tips_add" android:scaleType="center" android:layout_alignParentRight="true"/>
+</RelativeLayout>

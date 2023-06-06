@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.bussiness.order.detailnew.widget.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/sv_confirm_order" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/bg_head_title" android:background="@drawable/wm_order_confirm_head_bg" android:layout_width="match_parent" android:layout_height="250dp"/>
+        <ViewStub android:id="@+id/cross_order_scroll_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize"/>
+    </FrameLayout>
+</com.sankuai.waimai.bussiness.order.detailnew.widget.ObservableScrollView>

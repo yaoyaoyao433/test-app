@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/wm_imbase_push_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/wm_imbase_bg_f2f2f2_r6_top" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="32.5dp">
+        <TextView android:textSize="11sp" android:textColor="#999999" android:id="@+id/txt_im_in_app_push_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刚刚" android:layout_alignParentRight="true"/>
+        <TextView android:textColor="#666666" android:ellipsize="end" android:id="@+id/txt_im_in_app_push_title" android:text="商家" android:maxLines="1" android:layout_toLeftOf="@+id/txt_im_in_app_push_time" android:layout_alignBottom="@+id/txt_im_in_app_push_time" android:layout_alignParentLeft="true" style="@style/Wm_IMbase_Text"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_alignParentRight="true">
+        <TextView android:textSize="12sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/txt_im_in_app_push_content" android:layout_width="0dp" android:layout_height="wrap_content" android:text="您好,由于恶劣天气,请谅解" android:maxLines="2" android:layout_weight="1" android:lineSpacingExtra="4sp"/>
+    </LinearLayout>
+    <View android:layout_gravity="center_horizontal" android:background="#d6d6d6" android:layout_width="22dp" android:layout_height="1.5dp" android:layout_marginTop="10dp"/>
+    <View android:layout_gravity="center_horizontal" android:background="#d6d6d6" android:layout_width="22dp" android:layout_height="1.5dp" android:layout_marginTop="2dp" android:layout_marginBottom="10dp"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_category" android:background="@color/white" android:layout_width="match_parent" android:layout_height="46dp">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rl_category_item" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="46dp">
+        <TextView android:textSize="14dp" android:textColor="@color/takeout_widget_filter_bar_filter_category_dialog_name_text_normal" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/txt_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:text="@string/takeout_widget_filter_bar_comprehensive_rank" android:singleLine="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="4dp"/>
+        <TextView android:textSize="12dp" android:textColor="@color/takeout_widget_filter_bar_filter_category_dialog_count_text_normal" android:gravity="center" android:id="@+id/txt_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:singleLine="true" android:layout_toRightOf="@+id/txt_text" android:layout_centerVertical="true" android:layout_marginStart="4dp" android:layout_toEndOf="@+id/txt_text"/>
+    </RelativeLayout>
+</RelativeLayout>

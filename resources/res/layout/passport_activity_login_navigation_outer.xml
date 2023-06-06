@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_root" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <fragment android:name="com.sankuai.meituan.navigation.fragment.NavHostFragment" android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" app:navGraph="@layout/passport_navigation_outer_login" app:defaultNavHost="false"/>
+        <com.meituan.passport.view.PassportToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="45dp"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/ProgressBar" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/passport_outer_loading_img" android:indeterminateDuration="3000"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fragment_container_identify" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

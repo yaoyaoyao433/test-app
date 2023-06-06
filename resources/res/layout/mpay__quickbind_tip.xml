@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mpay__quickbind_tip" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/mpay__quickbind_title_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="40dp">
+        <TextView android:textSize="12dp" android:textColor="@color/mpay__black3" android:id="@+id/mpay__quickbind_title" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <View android:background="@color/mpay__mtwallet_divider" android:layout_width="30dp" android:layout_toLeftOf="@+id/mpay__quickbind_title" android:layout_centerVertical="true" style="@style/paybase__horizonal_divider"/>
+        <View android:background="@color/mpay__mtwallet_divider" android:layout_width="30dp" android:layout_toRightOf="@+id/mpay__quickbind_title" android:layout_centerVertical="true" style="@style/paybase__horizonal_divider"/>
+    </RelativeLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/mpay__black0" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@+id/quickbind_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_below="@+id/mpay__quickbind_title_layout"/>
+</RelativeLayout>

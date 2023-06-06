@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.sankuai.waimai.platform.widget.SquareImageView android:id="@+id/img_image_select" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+    <View android:id="@+id/mask_image_select" android:background="#80000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <CheckBox android:layout_gravity="top|right" android:id="@+id/checkbox_image_select" style="@style/WmCheckBox.Single.Orange"/>
+</FrameLayout>

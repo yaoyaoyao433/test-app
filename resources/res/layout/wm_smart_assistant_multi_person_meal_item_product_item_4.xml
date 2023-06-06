@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/wm_smart_assistant_multi_person_meal_item_product_item" android:background="@drawable/wm_smart_assistant_item_bg_shape" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2" android:layout_weight="1">
+        <include android:id="@+id/wm_smart_assistant_multi_person_meal_item_product_item_1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/wm_smart_assistant_multi_person_meal_item_product_item"/>
+        <include android:id="@+id/wm_smart_assistant_multi_person_meal_item_product_item_2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/wm_smart_assistant_multi_person_meal_item_product_item"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="2" android:layout_weight="1">
+        <include android:id="@+id/wm_smart_assistant_multi_person_meal_item_product_item_3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/wm_smart_assistant_multi_person_meal_item_product_item"/>
+        <include android:id="@+id/wm_smart_assistant_multi_person_meal_item_product_item_4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/wm_smart_assistant_multi_person_meal_item_product_item"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_tab_layout_root" android:paddingRight="@dimen/wm_sc_common_dimen_28" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_16" android:textColor="@color/wm_sg_color_666666" android:gravity="center" android:id="@+id/tv_tab_info" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="28.5dp" android:singleLine="true"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_10" android:textColor="@color/wm_sg_color_999794" android:gravity="bottom" android:id="@+id/tv_comment_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.5dp" android:layout_marginLeft="2dp" android:layout_marginBottom="5dp" android:singleLine="true" android:layout_toRightOf="@+id/tv_tab_info" android:layout_alignBottom="@+id/tv_tab_info"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_2" android:layout_below="@+id/tv_tab_info" android:layout_alignLeft="@+id/tv_tab_info" android:layout_alignRight="@+id/tv_tab_info">
+        <View android:id="@+id/v_item_indicator" android:background="@color/wm_st_common_text_highlight" android:layout_width="@dimen/wm_sc_common_dimen_20" android:layout_height="@dimen/wm_sc_common_dimen_2" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

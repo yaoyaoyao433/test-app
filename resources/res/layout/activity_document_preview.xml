@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageView android:id="@+id/img_back" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/mmp_back" android:scaleType="centerInside" android:paddingStart="16dp"/>
+        <TextView android:textSize="20sp" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/mmp_reader_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

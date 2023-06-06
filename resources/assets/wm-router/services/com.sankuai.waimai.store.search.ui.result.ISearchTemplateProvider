@@ -1,0 +1,2 @@
+StoreSearchTemplateProvider:com.sankuai.waimai.store.search.StoreSearchTemplateProvider
+DrugSearchTemplateProvider:com.sankuai.waimai.store.drug.search.DrugSearchTemplateProvider

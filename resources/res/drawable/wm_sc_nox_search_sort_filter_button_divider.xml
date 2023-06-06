@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/wm_sc_common_dimen_12" android:right="@dimen/wm_sc_common_dimen_12">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/wm_sc_nox_search_color_E3E2E1"/>
+            <size android:width="1px"/>
+        </shape>
+    </item>
+</layer-list>

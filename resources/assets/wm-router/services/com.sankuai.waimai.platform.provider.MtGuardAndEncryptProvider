@@ -1,0 +1,7 @@
+sc_store_search:com.sankuai.waimai.store.search.service.NoxMtGuardAndEncryptProvider
+wm_im:com.sankuai.waimai.business.im.api.WMIMMTGuardAndEncryptProvider
+wm_user:com.sankuai.waimai.business.user.UserMtGuardAndEncryptProvider
+wm_order:com.sankuai.waimai.bussiness.order.base.provider.OrderMtGuardAndEncryptProvider
+store:com.sankuai.waimai.store.base.net.sg.StoreGuardAndEncryptProvider
+wm_page:com.sankuai.waimai.business.page.common.provider.PageMtGuardAndEncryptProvider
+drug:com.sankuai.waimai.store.drug.base.net.DrugMtGuardAndEncryptProvider

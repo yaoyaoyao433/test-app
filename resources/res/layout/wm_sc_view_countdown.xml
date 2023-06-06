@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_9" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/countdown_hour" android:background="@drawable/wm_sc_detail_countdown_num_bg" android:layout_width="@dimen/wm_sc_common_dimen_15" android:layout_height="@dimen/wm_sc_common_dimen_15" android:text="00" android:includeFontPadding="false" android:maxLength="2" style="@style/WmScLabel"/>
+    <RelativeLayout android:layout_width="@dimen/wm_sc_common_dimen_8" android:layout_height="@dimen/wm_sc_common_dimen_15">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.sankuai.waimai.store.view.RoundedCornerImageView android:background="@color/wm_sg_color_F94B86" android:layout_width="@dimen/wm_sc_common_dimen_2" android:layout_height="@dimen/wm_sc_common_dimen_2" android:scaleType="fitCenter" app:cornerRadius="@dimen/wm_sc_common_dimen_1"/>
+            <com.sankuai.waimai.store.view.RoundedCornerImageView android:background="@color/wm_sg_color_F94B86" android:layout_width="@dimen/wm_sc_common_dimen_2" android:layout_height="@dimen/wm_sc_common_dimen_2" android:layout_marginTop="@dimen/wm_sc_common_dimen_3" android:scaleType="fitCenter" app:cornerRadius="@dimen/wm_sc_common_dimen_1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_9" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/countdown_minute" android:background="@drawable/wm_sc_detail_countdown_num_bg" android:layout_width="@dimen/wm_sc_common_dimen_15" android:layout_height="@dimen/wm_sc_common_dimen_15" android:text="00" android:includeFontPadding="false" android:maxLength="2" style="@style/WmScLabel"/>
+    <RelativeLayout android:layout_width="@dimen/wm_sc_common_dimen_8" android:layout_height="@dimen/wm_sc_common_dimen_15">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.sankuai.waimai.store.view.RoundedCornerImageView android:background="@color/wm_sg_color_F94B86" android:layout_width="@dimen/wm_sc_common_dimen_2" android:layout_height="@dimen/wm_sc_common_dimen_2" android:scaleType="fitCenter" app:cornerRadius="@dimen/wm_sc_common_dimen_1"/>
+            <com.sankuai.waimai.store.view.RoundedCornerImageView android:background="@color/wm_sg_color_F94B86" android:layout_width="@dimen/wm_sc_common_dimen_2" android:layout_height="@dimen/wm_sc_common_dimen_2" android:layout_marginTop="@dimen/wm_sc_common_dimen_3" android:scaleType="fitCenter" app:cornerRadius="@dimen/wm_sc_common_dimen_1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_9" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/countdown_second" android:background="@drawable/wm_sc_detail_countdown_num_bg" android:layout_width="@dimen/wm_sc_common_dimen_15" android:layout_height="@dimen/wm_sc_common_dimen_15" android:text="00" android:includeFontPadding="false" android:maxLength="2" style="@style/WmScLabel"/>
+</LinearLayout>

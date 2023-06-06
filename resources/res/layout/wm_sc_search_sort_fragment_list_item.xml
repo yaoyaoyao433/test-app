@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_12" android:gravity="center_vertical" android:id="@+id/tv_search_sort_list_item_text" android:paddingLeft="@dimen/wm_sc_common_dimen_15" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_45"/>
+    <View android:layout_gravity="bottom" android:id="@+id/v_search_sort_list_item_divider" android:background="@color/wm_sc_nox_search_f1f1f2" android:layout_width="match_parent" android:layout_height="1px"/>
+</FrameLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.foundation.core.widget.AnimatableImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/wm_core_bg_progress_round" android:layout_width="@dimen/wm_common_progress_round_width" android:layout_height="@dimen/wm_common_progress_round_height" android:scaleType="centerInside" app:coreDrawableRes="@drawable/wm_common_progress_rotate"/>

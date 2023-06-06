@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/ll_simple_poi_marker_root_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@+id/view_oval_point" android:background="@drawable/wm_order_detail_oval_bg" android:layout_width="14dp" android:layout_height="5.5dp" android:layout_marginBottom="7dp" android:layout_alignBottom="@+id/ll_simple_info_window_container" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_simple_info_window_container" android:background="@drawable/wm_order_status_map_infowindow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@+id/img_map_avator" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="4dp" android:scaleType="centerCrop" app:cornerRadius="8dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/wm_common_text_auxiliary" android:id="@+id/txt_poi_bubble_sub_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:gravity="center_horizontal" android:id="@+id/img_poi_pot" android:visibility="gone" android:layout_width="71dp" android:layout_height="71dp" android:layout_marginTop="-15dp"/>
+</LinearLayout>

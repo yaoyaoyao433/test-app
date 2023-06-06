@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_footer_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#ffe4e4e4" android:layout_width="0dp" android:layout_height="@dimen/wm_sc_common_dimen_half" android:layout_marginRight="10dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_999999" android:id="@+id/tv_list_footer_no_more_tip" android:text="@string/wm_sc_common_goods_no_more" style="@style/WmScText"/>
+    <View android:background="#ffe4e4e4" android:layout_width="0dp" android:layout_height="@dimen/wm_sc_common_dimen_half" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1"/>
+</LinearLayout>

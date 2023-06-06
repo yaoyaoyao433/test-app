@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/wm_st_common_FF8000"/>
+    <item android:state_enabled="false" android:color="@color/wm_sg_color_D3D3D3"/>
+    <item android:color="@color/wm_st_common_text_title"/>
+</selector>

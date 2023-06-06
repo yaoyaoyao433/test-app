@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent" style="@style/WmPage.NoBackground">
+    <View android:id="@+id/empty_statubar" android:background="@color/wm_st_common_white" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_48"/>
+    <android.support.v7.widget.Toolbar android:id="@+id/actionbar_rl" android:background="@color/wm_st_common_white" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_48" android:layout_below="@+id/empty_statubar" app:contentInsetStart="0dp">
+        <include layout="@layout/wm_sc_view_simple_action_bar"/>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout android:id="@+id/fl_unread_message_container" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_48" android:layout_marginRight="10dp" android:layout_below="@+id/empty_statubar" android:layout_alignParentRight="true"/>
+    <LinearLayout android:id="@+id/layout_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/actionbar_rl">
+        <include android:id="@+id/list_pager" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wm_sc_order_list_pager"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/actionbar_rl" layout="@layout/wm_st_common_layout_refresh_info"/>
+</RelativeLayout>

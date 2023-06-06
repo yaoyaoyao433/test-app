@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_privacy_hint" android:background="@drawable/privacy_circle_green" android:layout_width="60dp" android:layout_height="60dp">
+        <TextView android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/tv_privacy_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正常"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_privacy_list" android:background="@android:color/holo_purple" android:padding="5dp" android:visibility="gone" android:layout_width="200dp" android:layout_height="500dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="非法隐私权限授权记录"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btn_privacy_hide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最小化"/>
+            <Button android:id="@+id/btn_privacy_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除"/>
+        </LinearLayout>
+        <ListView android:id="@+id/lv_privacy_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

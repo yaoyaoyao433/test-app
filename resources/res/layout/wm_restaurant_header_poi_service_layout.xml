@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/shop_impression_expand_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:alpha="0">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_restaurant_222426" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:text="@string/wm_restaurant_header_impression_label"/>
+    <com.sankuai.waimai.platform.widget.HorizontalFlowLayout android:id="@+id/shop_impression_expand_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:childDivider="@drawable/wm_restaurant_shop_impress_vertical_divider" app:childHeight="14dp" app:childMarginHorizontal="16dp"/>
+</LinearLayout>

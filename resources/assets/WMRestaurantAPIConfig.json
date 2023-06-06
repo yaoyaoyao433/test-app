@@ -1,0 +1,65 @@
+{
+  "data": {
+    "menber_card": {
+      "member_template": ["member_template"]
+    },
+    "shopping_cart_data": {
+      "shopping_cart": ["shopping_cart"],
+      "required_tag_info": ["required_tag_info"],
+      "delivery_type": ["poi_info" ,"delivery_type"],
+      "min_price": ["poi_info", "min_price"],
+      "discount_restrict": ["poi_info", "min_price"],
+      "new_user_discount_restrict": ["poi_info", "new_user_discount_restrict"],
+      "new_user_discount_restrict_toast": ["poi_info", "new_user_discount_restrict_toast"],
+      "shipping_fee": ["poi_info", "shipping_fee"],
+      "phone_list": ["poi_info", "phone_list"],
+      "bottom_poi_im_info": ["poi_info", "bottom_poi_im_info"],
+      "style_template_id": ["style_template_id"],
+      "function_control": ["function_control"]
+    },
+    "smart_assist": {
+      "phone_list": ["poi_info", "phone_list"]
+    }
+  },
+  "layout_info":  [
+    {
+      "native_id": "wm_r_scroll_container",
+      "children": [
+        {
+          "native_id": "wm_r_menber_card",
+          "data_key": "menber_card"
+        },
+        {
+          "native_id": "wm_r_sliding_bar",
+          "children": [
+            {
+              "native_id": "wm_r_reviews",
+              "data_key": ""
+            },
+            {
+              "native_id": "wm_r_poi_info_mach_pro",
+              "data_key": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "native_id": "wm_r_float_container",
+      "children": [
+        {
+          "native_id": "wm_r_smart_assist_mach_pro",
+          "data_key": "smart_assist"
+        },
+        {
+          "native_id": "wm_r_shopping_cart",
+          "data_key": "shopping_cart_data"
+        },
+        {
+          "native_id": "wm_r_coupon_popup_container",
+          "data_key": ""
+        }
+      ]
+    }
+  ]
+}

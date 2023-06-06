@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/first_listView_bg" android:background="#f5f5f6" android:layout_width="110dp" android:layout_height="match_parent" android:layout_below="@+id/first_listView"/>
+    <ListView android:id="@+id/first_listView" android:scrollbars="none" android:layout_width="110dp" android:layout_height="wrap_content" android:divider="@null" android:choiceMode="singleChoice"/>
+    <com.sankuai.waimai.log.judas.StatisticsListView android:id="@+id/sub_listView" android:paddingLeft="16dp" android:paddingRight="16dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#f5f5f6" android:dividerHeight="0.5dp" android:choiceMode="singleChoice" android:layout_toRightOf="@+id/first_listView"/>
+</merge>

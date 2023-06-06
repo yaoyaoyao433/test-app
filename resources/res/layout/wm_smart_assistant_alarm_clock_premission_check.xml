@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.5dp" android:layout_marginRight="42.5dp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/wm_smart_assistant_alarm_clock_pressmission_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="33dp">
+            <ImageView android:layout_gravity="end" android:id="@+id/alarm_clock_premission_check" android:padding="1dp" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="16.5dp" android:layout_marginRight="16.5dp" android:src="@drawable/wm_smart_assistant_bottom_dialog_close"/>
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#333333" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="@string/wm_sa_alarm_clock_premission_main_title"/>
+            <TextView android:textSize="14sp" android:layout_gravity="center" android:layout_width="228dp" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/wm_sa_alarm_clock_premission_sub_title"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/alarm_clock_premission_check_bg" android:background="@drawable/wm_smart_assistant_alarm_clock_pressmission_check_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="50dp" android:layout_marginTop="30dp" android:layout_marginRight="50dp" android:layout_marginBottom="20dp" android:text="@string/wm_sa_alarm_clock_premission_check"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="top|center_horizontal" android:layout_width="61dp" android:layout_height="66dp" android:src="@drawable/wm_smart_assistant_alarm_clock_icon"/>
+    </FrameLayout>
+</RelativeLayout>

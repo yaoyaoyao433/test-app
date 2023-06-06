@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/wm_sc_common_sku_choose_dlalog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout android:orientation="horizontal" android:id="@+id/ll_top_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/iv_close_dialog" android:padding="8dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="8dp" android:src="@drawable/wm_sc_goods_list_goods_ic_choosesku_close" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_33312E" android:ellipsize="end" android:id="@+id/tv_title" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="0px" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="头孢拉丁口服液 0.25ml*1瓶/盒" android:singleLine="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/iv_close_dialog" app:layout_constraintTop_toTopOf="0"/>
+    </android.support.constraint.ConstraintLayout>
+    <FrameLayout android:id="@+id/layout_bottom_price_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0"/>
+    <ScrollView android:id="@+id/layout_skus_container" android:layout_width="match_parent" android:layout_height="0px" app:layout_constraintBottom_toTopOf="@+id/layout_bottom_price_container" app:layout_constraintTop_toBottomOf="@+id/ll_top_container">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_sku_and_attr_holder" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

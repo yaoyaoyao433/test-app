@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_25">
+    <TextView android:textSize="12sp" android:textColor="@color/wm_sg_color_333333" android:ellipsize="end" android:id="@+id/product_name" android:layout_width="220dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:singleLine="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/wm_sg_color_858687" android:ellipsize="end" android:id="@+id/box_fee_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_20" android:singleLine="true" android:layout_toLeftOf="@+id/box_fee_price" android:layout_toRightOf="@+id/product_name" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/wm_sg_color_222426" android:ellipsize="end" android:id="@+id/box_fee_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

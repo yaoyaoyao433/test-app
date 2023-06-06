@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.newwidgets.RoundedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/wm_sc_black8" android:padding="@dimen/wm_sc_common_dimen_20" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cornerRadius="8dp">
+    <com.sankuai.waimai.store.newwidgets.AnimatableImageView android:id="@+id/wm_sc_im_upload_img_progress_bar" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_47" android:scaleType="centerInside" app:drawableRes="@drawable/wm_st_common_progress_rotate"/>
+    <TextView android:textSize="14sp" android:textColor="@color/wm_sg_common_dialog_background" android:id="@+id/wm_sc_im_upload_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="图片上传中"/>
+</com.sankuai.waimai.store.newwidgets.RoundedLinearLayout>

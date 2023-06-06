@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="horizontal" android:background="#08000000" android:paddingTop="1dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/title_first" android:text="分期期数" style="@style/installment_desc_tab_item"/>
+    <TextView android:id="@+id/title_second" android:text="月分期费率" style="@style/installment_desc_tab_item"/>
+    <TextView android:id="@+id/title_third" android:text="近似拟合年化费率费率" style="@style/installment_desc_tab_item"/>
+</LinearLayout>

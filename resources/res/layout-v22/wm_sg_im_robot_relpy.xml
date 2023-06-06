@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_common_im_good_list" android:background="@drawable/wm_sc_im_doctor_session_prescription_img_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/wm_sg_color_222222" android:id="@+id/sg_im_robot_reply_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/wm_sc_common_dimen_12" android:layout_marginBottom="@dimen/wm_sc_common_dimen_11" android:layout_marginHorizontal="@dimen/wm_sc_common_dimen_12"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginRight="@dimen/wm_sc_common_dimen_12" layout="@layout/wm_sg_im_robot_praise"/>
+</LinearLayout>

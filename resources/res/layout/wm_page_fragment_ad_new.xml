@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/ad_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@+id/img_ad_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:cornerRadius="12dp"/>
+        <com.sankuai.waimai.platform.widget.RoundedFrameLayout android:orientation="horizontal" android:id="@+id/mach_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layerType="hardware" app:cornerRadius="12dp"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/ad_icon_top_banner" android:focusable="false" android:clickable="false" android:layout_width="10dp" android:layout_height="7dp" android:layout_marginLeft="18dp" android:layout_marginBottom="1dp" android:scaleType="fitXY" android:layout_alignBottom="@+id/ad_container" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

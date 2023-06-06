@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#d8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/map_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:src="@drawable/wm_order_self_delivery_logo_gaode"/>
+        <TextView android:textSize="18sp" android:textColor="@color/wm_common_text_main" android:id="@+id/map_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_self_delivery_a_map"/>
+    </LinearLayout>
+</LinearLayout>

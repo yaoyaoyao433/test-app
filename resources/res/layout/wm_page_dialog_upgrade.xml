@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="320dp" android:layout_height="wrap_content" android:layout_centerInParent="true" android:showDividers="none">
+        <ImageView android:id="@+id/wm_upgrade_icon" android:layout_width="320dp" android:layout_height="175dp" android:src="@drawable/wm_page_upgrade_head" android:scaleType="fitXY"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/wm_common_bg_upgrade_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:showDividers="none">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/wm_page_upgrade_find_new_version"/>
+            <ScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="112dp">
+                <TextView android:scrollbarAlwaysDrawVerticalTrack="false" android:textSize="14dp" android:textColor="#333333" android:gravity="left" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/wm_page_upgrade_prompt" android:lineSpacingExtra="4dp"/>
+            </ScrollView>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+                <Button android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/wm_upgrade_force_install" android:background="@drawable/wm_common_bg_upgrade_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:layout_marginRight="20dp" android:text="@string/wm_page_upgrade_update" android:singleLine="true" android:layout_weight="1"/>
+                <Button android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/wm_upgrade_force_cancel" android:background="@drawable/wm_common_bg_upgrade_exit_app" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="30dp" android:text="@string/wm_page_upgrade_exit" android:singleLine="true" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

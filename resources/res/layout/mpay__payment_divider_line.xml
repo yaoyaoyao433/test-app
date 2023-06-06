@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/mpay__payment_divider_container" android:background="@color/transparent" android:paddingLeft="@dimen/mpay__common_payment_padding_left" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/mpay__payment_divider" android:background="@color/mpay__mtwallet_divider" style="@style/paybase__horizonal_divider"/>
+</LinearLayout>

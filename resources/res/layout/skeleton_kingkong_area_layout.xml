@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.skeleton.widget.SkeletonContainer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#f5f5f5" android:padding="8.5dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/skeleton_kingkong_mig" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        <com.sankuai.waimai.skeleton.WMSkeleton android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:wm_shimmer_base_alpha="0" app:wm_shimmer_highlight_alpha="0.35" app:wm_shimmer_duration="1000" app:wm_shimmer_angle="0" app:skeleton="@drawable/skeleton_kingkong_poi"/>
+        <com.sankuai.waimai.skeleton.WMSkeleton android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:wm_shimmer_base_alpha="0" app:wm_shimmer_highlight_alpha="0.35" app:wm_shimmer_duration="1000" app:wm_shimmer_angle="0" app:skeleton="@drawable/skeleton_kingkong_poi"/>
+        <com.sankuai.waimai.skeleton.WMSkeleton android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:wm_shimmer_base_alpha="0" app:wm_shimmer_highlight_alpha="0.35" app:wm_shimmer_duration="1000" app:wm_shimmer_angle="0" app:skeleton="@drawable/skeleton_kingkong_poi"/>
+        <com.sankuai.waimai.skeleton.WMSkeleton android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:wm_shimmer_base_alpha="0" app:wm_shimmer_highlight_alpha="0.35" app:wm_shimmer_duration="1000" app:wm_shimmer_angle="0" app:skeleton="@drawable/skeleton_kingkong_poi"/>
+    </LinearLayout>
+</com.sankuai.waimai.skeleton.widget.SkeletonContainer>

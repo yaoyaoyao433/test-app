@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_back" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/mmp_back" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/img_menu" android:layout_toRightOf="@+id/img_back" android:layout_centerVertical="true">
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="100"/>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress_bar" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp" android:indeterminateDrawable="@drawable/hera_anim_navigation_loading"/>
+        <TextView android:textSize="17dp" android:textColor="#222222" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <View android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="100"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_menu" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/mmp_share" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</merge>

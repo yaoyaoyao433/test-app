@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/wm_sc_view_product_detail_atmosphere_image_gradient_bg" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="83">
+        <ImageView android:id="@+id/img_product" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:scaleType="fitCenter"/>
+        <ImageView android:layout_gravity="top|right" android:id="@+id/picture_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/activity_ll" android:paddingTop="8dp" android:paddingBottom="8dp" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="27">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/activity_name_tv" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="0dp" android:maxLength="4" android:drawableLeft="@drawable/wm_sg_good_detail_atmosphere_act_left" android:drawableRight="@drawable/wm_sg_good_detail_atmosphere_act_right" android:drawablePadding="4dp" android:layout_weight="55"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/activity_content_ll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="-7dp" android:layout_weight="100">
+            <com.sankuai.waimai.store.widgets.SGAutoSizeTextView android:id="@+id/content1" android:layout_width="match_parent" android:layout_height="30dp" app:ASTV_textColor="@color/wm_sg_color_FF000000" app:ASTV_textSize="25dp" app:ASTV_isBold="true"/>
+            <com.sankuai.waimai.store.widgets.SGAutoSizeTextView android:id="@+id/content2" android:layout_width="match_parent" android:layout_height="30dp" app:ASTV_textColor="@color/wm_sg_color_FF000000" app:ASTV_textSize="25dp" app:ASTV_isBold="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="125">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/real_activity_price_ll" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@+id/price_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="4" android:drawableLeft="@drawable/wm_sg_good_detail_atmosphere_act_left" android:drawableRight="@drawable/wm_sg_good_detail_atmosphere_act_right" android:drawablePadding="4dp"/>
+                <com.sankuai.waimai.store.widgets.SGAutoSizeTextView android:id="@+id/sg_fixed_tv" android:layout_width="match_parent" android:layout_height="45dp" app:ASTV_textColor="@color/white" app:ASTV_pointTextSize="14dp" app:ASTV_textSize="36dp" app:ASTV_isBold="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/real_activity_default_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.sankuai.waimai.store.widgets.SGAutoSizeTextView android:id="@+id/price_defalut_line1" android:layout_width="match_parent" android:layout_height="20dp" app:ASTV_textColor="@color/wm_sg_color_FFF8EA" app:ASTV_textSize="18dp"/>
+                <View android:background="@drawable/wm_sc_view_product_detail_atmosphere_price_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:layout_marginRight="8dp" android:layout_marginBottom="5dp"/>
+                <com.sankuai.waimai.store.widgets.SGAutoSizeTextView android:id="@+id/price_defalut_line2" android:layout_width="match_parent" android:layout_height="20dp" app:ASTV_textColor="@color/wm_sg_color_FFF8EA" app:ASTV_textSize="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

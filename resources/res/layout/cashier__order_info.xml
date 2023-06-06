@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#b0000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/popup_window" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/popup_window_solid" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="132dp" android:layout_marginRight="32dp" android:layout_marginBottom="132dp" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/cashier__order_info_window_title" android:textColor="@color/cashier__black1" android:gravity="center" android:id="@+id/title_text_view" android:background="@drawable/cashier__order_detail_up" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/cashier__order_detail" style="@style/cashier__order_info_single_line"/>
+            <ImageView android:id="@+id/divider_image_view" android:background="@drawable/cashier__order_detail_mid" android:layout_width="match_parent" android:layout_height="9dp"/>
+            <ScrollView android:background="@drawable/cashier__order_detail_down" android:paddingTop="5dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/cashier__order_info_scroll_view_min_height">
+                <LinearLayout android:orientation="vertical" android:id="@+id/order_info_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </ScrollView>
+        </LinearLayout>
+        <ImageView android:focusable="true" android:focusableInTouchMode="true" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginBottom="72dp" android:src="@drawable/cashier__order_detail_close" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="关闭"/>
+    </RelativeLayout>
+</RelativeLayout>

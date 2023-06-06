@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/wm_order_status_map_infowindow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_desc" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="4dp" android:layout_marginTop="5dp">
+        <ImageView android:id="@+id/img_poi_avator" android:layout_width="40dp" android:layout_height="40dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+            <TextView android:textSize="16dp" android:textColor="@color/wm_common_text_main" android:ellipsize="end" android:id="@+id/main_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/wm_order_detail_map_arrow" android:drawablePadding="4dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="12dp" android:textColor="@color/wm_common_text_hint" android:ellipsize="end" android:id="@+id/sub_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:text="@string/wm_order_status_distance_from_you" android:maxLines="1" android:layout_toRightOf="@+id/layout_distance" android:layout_below="@+id/main_desc"/>
+            <TextView android:textSize="12dp" android:textColor="@color/wm_common_text_time" android:ellipsize="end" android:id="@+id/sub_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/sub_desc" android:layout_below="@+id/main_desc"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="#f1f1f2" android:layout_width="0.5dp" android:layout_height="36dp" android:layout_marginLeft="10dp"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_navigate" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_order_icon_status_map_self_delivery_navigate"/>
+        <TextView android:textSize="12dp" android:textColor="@color/wm_common_text_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/wm_order_status_navigation"/>
+    </LinearLayout>
+</LinearLayout>

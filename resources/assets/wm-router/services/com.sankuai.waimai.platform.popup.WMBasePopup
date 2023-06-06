@@ -1,0 +1,8 @@
+version_update:com.sankuai.waimai.popup.WMUpdatePopup
+guide_pop_high:com.sankuai.waimai.guidepop.hign.WMGuidePopHighPopup
+ugc_feed_guide:com.sankuai.waimai.popup.ugc.WMUGCFeedGuidePopup
+privacy_alert:com.sankuai.waimai.popup.WMPrivacyPopup
+share_password:com.sankuai.waimai.popup.WMSharePasswordPopup
+launch_screen:com.sankuai.waimai.popup.WMStartUpPopup
+zim_intelligent_gpt_guide:com.sankuai.waimai.popup.intelligent.IntelligentGuidePopup
+heaven_fall:com.sankuai.waimai.popup.WMSkyFallPopup

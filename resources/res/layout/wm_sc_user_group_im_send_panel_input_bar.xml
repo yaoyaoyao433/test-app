@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fl_button_list_container" android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:id="@+id/v_im_debug_panel" android:layout="@layout/wm_sc_common_im_send_debug_panel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wm_sc_im_send_panel_input_bar"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/shop_logo_layout" android:layout_width="@dimen/wm_sc_common_dimen_58" android:layout_height="@dimen/wm_sc_common_dimen_43" android:layout_marginRight="16dp" android:layout_marginBottom="12dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/wm_st_goods_list_layout_super_drug_shop_header_logo"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginBottom="8dp" android:layout_above="@+id/poi_page_header_poi_impression_text">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_18" android:textStyle="bold" android:textColor="#222426" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/poi_page_header_poi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        <ImageView android:id="@+id/icon" android:layout_width="32dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <TextView android:textSize="11sp" android:textColor="#ff222426" android:id="@+id/poi_page_header_poi_impression_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="10dp" android:layout_marginBottom="12dp" android:layout_toLeftOf="@+id/shop_logo_layout" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

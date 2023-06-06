@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/wm_restaurant_food_detail_recommend_package_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="169dp" android:src="@drawable/wm_restaurant_food_detail_recommend_package_flow_bg"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="66dp">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/tv_recommend_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="11sp" android:textColor="#ffffff" android:id="@+id/tv_recommend_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="17dp" android:textColor="@color/white" android:layout_gravity="right" android:id="@+id/recommend_close" android:paddingLeft="5dp" android:paddingTop="17dp" android:paddingRight="13dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_c_iconfont_76guanbi"/>
+    <com.sankuai.waimai.log.judas.StatisticsRecyclerView android:id="@+id/recommend_package_list" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="66dp"/>
+</FrameLayout>

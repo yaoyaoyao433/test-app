@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mrn_popup_block_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.platform.widget.RoundedFrameLayout android:layout_gravity="bottom" android:id="@+id/mrn_popup_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_actionbar_icon" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="9sp" android:textColor="@color/wm_st_common_white" android:gravity="center" android:layout_gravity="right" android:id="@+id/tv_actionbar_unread_message_count" android:background="@drawable/wm_st_poi_order_prompt_count" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12dp" android:minWidth="12dp"/>
+    <ImageView android:layout_gravity="right" android:visibility="gone" android:layout_width="5dp" android:layout_height="5dp" android:src="@drawable/wm_sc_common_red_circle"/>
+</merge>

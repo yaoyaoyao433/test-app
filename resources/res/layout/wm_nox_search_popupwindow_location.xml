@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/wm_nox_search_white" android:gravity="center" android:background="@drawable/wm_nox_search_bg_popupwindow_location" android:paddingLeft="12dp" android:paddingTop="10.5dp" android:paddingRight="12dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/wm_nox_search_click_to_change_delivery_address" android:drawablePadding="12dp" android:drawableEnd="@drawable/wm_nox_search_ic_popupwindow_location_close"/>
+</FrameLayout>

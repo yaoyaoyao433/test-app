@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/layout_additional_bargain" android:background="@drawable/wm_order_confirm_base_shape_bg" android:layout_width="match_parent" android:layout_height="137dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/additional_title_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="17.5dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/additional_icon" android:layout_marginRight="5dp" android:scaleType="fitXY" style="@style/WmIcon"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/wm_order_confirm_title_text_color" android:id="@+id/additional_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/wm_order_confirm_gray" android:ellipsize="end" android:id="@+id/additional_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="73dp" android:layout_marginLeft="12dp" android:layout_marginTop="9.5dp" android:layout_marginRight="12dp" android:layout_marginBottom="17dp">
+        <com.sankuai.waimai.log.judas.StatisticsRecyclerView android:id="@+id/additional_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center" android:id="@+id/additional_bargain_item_cover" android:layout_width="15dp" android:layout_height="73dp" app:project="waimai_c" app:srcName="waimai_c_order_bg_confirm_bargain_item_cover"/>
+    </FrameLayout>
+    <View android:id="@+id/divider_view" android:background="@drawable/wm_common_divider_horizontal2" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+</LinearLayout>

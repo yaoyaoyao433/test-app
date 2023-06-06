@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/sc_scan_common_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.meituan.android.edfu.mbar.view.QRScanView android:id="@+id/view_sc_qr_bar" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.sankuai.waimai.store.goods.list.viewblocks.mbar.SGScanAnimationView android:id="@+id/sc_mbar_anim_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.sankuai.waimai.store.view.RoundedCornerLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_scan_hint" android:background="@color/wm_sc_half_transparent" android:paddingLeft="@dimen/wm_sc_common_dimen_20" android:paddingTop="@dimen/wm_sc_common_dimen_13" android:paddingRight="@dimen/wm_sc_common_dimen_20" android:paddingBottom="@dimen/wm_sc_common_dimen_13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_46" android:minHeight="@dimen/wm_sc_common_dimen_41" android:layout_centerHorizontal="true" app:cornerRadius="@dimen/wm_sc_common_dimen_22">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sg_icon_scan_hint"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textColor="@color/wm_st_common_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_1_half" android:text="@string/wm_sg_scan_hint"/>
+    </com.sankuai.waimai.store.view.RoundedCornerLinearLayout>
+    <ImageView android:id="@+id/iv_turn_on_flash" android:layout_width="@dimen/wm_sc_common_dimen_42" android:layout_height="@dimen/wm_sc_common_dimen_42" android:layout_marginLeft="@dimen/wm_sc_common_dimen_15" android:layout_marginBottom="@dimen/wm_sc_common_dimen_102" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/view_product" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_no_product" android:background="@color/wm_sc_half_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_18" android:textColor="@color/wm_st_common_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sg_scan_no_product"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_20">
+            <com.sankuai.waimai.store.view.standard.FlashButton android:icon="@drawable/wm_sg_icon_scan_search" android:id="@+id/btn_sc_scan_search" android:layout_width="@dimen/wm_sc_common_dimen_91" android:layout_height="@dimen/wm_sc_common_dimen_31" android:layout_marginRight="@dimen/wm_sc_common_dimen_4" android:text="@string/wm_sg_scan_search" app:flashType="weak" app:flashSize="h64"/>
+            <com.sankuai.waimai.store.view.standard.FlashButton android:icon="@drawable/wm_sg_icon_scan_rescan" android:id="@+id/btn_sc_scan_rescan" android:layout_width="@dimen/wm_sc_common_dimen_91" android:layout_height="@dimen/wm_sc_common_dimen_31" android:layout_marginLeft="@dimen/wm_sc_common_dimen_4" android:text="@string/wm_sg_scan_rescan" app:flashSize="h64"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_sg_scan_back" android:padding="@dimen/wm_sc_common_dimen_14" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <include android:visibility="gone" layout="@layout/wm_st_shopcart_whole"/>
+    <include android:visibility="gone" layout="@layout/wm_st_mrn_shopcart_whole"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_drug_shop_native_tab_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.store.view.standard.FlashTab android:gravity="center" android:id="@+id/wm_sc_standard_shop_content_tab" android:saveEnabled="false" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_45" android:layout_marginLeft="@dimen/wm_sc_common_dimen_2" app:tabType="scroll" app:textSelectSize="h32"/>
+        <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/poi_member_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="-13dp" android:layout_marginRight="@dimen/wm_sc_common_dimen_8" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.sankuai.waimai.store.view.banner.SCBaseViewPager android:id="@+id/wm_sc_standard_shop_content_pager" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

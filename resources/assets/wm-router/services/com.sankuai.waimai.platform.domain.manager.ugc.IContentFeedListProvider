@@ -1,0 +1,2 @@
+wm_content_pick_me:com.sankuai.waimai.business.ugc.pickme.ContentPageProviderImpl:singleton
+wm_content:com.sankuai.waimai.business.page.home.list.feed.ContentFeedListProviderImpl:singleton

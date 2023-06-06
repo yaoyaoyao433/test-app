@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="12dp" android:textColor="@color/wm_restaurant_secondfilter_text_color" android:id="@+id/tv_goods_second_filter" android:background="@drawable/wm_restaurant_second_filter_item_bg" android:paddingLeft="11dp" android:paddingTop="6dp" android:paddingRight="11dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>

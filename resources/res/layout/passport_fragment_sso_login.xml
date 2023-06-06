@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/passport_sso_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="28sp" android:textColor="#414244" android:id="@+id/passport_index_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="43dp" android:layout_marginTop="43dp" android:layout_marginRight="43dp" android:text="@string/passport_welcome_login" android:maxLines="2"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:id="@+id/passport_sso_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="43dp" android:layout_marginTop="8dp" android:text="@string/passport_sso_other_login" android:layout_below="@+id/passport_index_title"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/passport_account_center_tips" android:background="@drawable/passport_stroke_corner_20_bg" android:layout_width="match_parent" android:layout_height="68dp" android:layout_marginLeft="39.5dp" android:layout_marginTop="45dp" android:layout_marginRight="39.5dp" android:layout_below="@+id/passport_sso_tips">
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@+id/passport_sso_icon" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="10dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp">
+            <TextView android:textSize="12dp" android:textColor="@color/passport_black1" android:id="@+id/passsport_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="38.5dp" android:includeFontPadding="false" android:layout_alignParentBottom="true"/>
+            <TextView android:textSize="18dp" android:textColor="@color/passport_black1" android:id="@+id/papssport_user_munber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34dp" android:includeFontPadding="false"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/passport_sso_center_tips" android:paddingLeft="39.5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/passport_account_center_tips" android:layout_alignRight="@+id/passport_account_center_tips">
+        <View android:id="@+id/passport_sso_privacy_tips" android:layout_width="match_parent" android:layout_height="27.8dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.4dp">
+            <android.support.v7.widget.AppCompatCheckBox android:id="@+id/passport_sso_checkbox" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="-3dp" style="@style/passportCheckboxStyle"/>
+            <TextView android:textSize="12dp" android:textColor="#999999" android:textColorLink="?attr/passportPrivacyTextColor" android:layout_gravity="center_vertical" android:id="@+id/passport_index_sso_tip_term_agree" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/passport_login_term_agreed" android:maxLines="3"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.meituan.passport.view.PassportButton android:theme="@style/PassportButtonStyleNew" android:id="@+id/login_button" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="39.5dp" android:layout_marginTop="15dp" android:layout_marginRight="39.5dp" android:text="@string/passport_login_now" android:layout_below="@+id/passport_sso_center_tips"/>
+    <FrameLayout android:gravity="center" android:id="@+id/passport_index_other" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="47dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

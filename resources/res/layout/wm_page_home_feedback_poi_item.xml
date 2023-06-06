@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/wm_page_home_feedback_title"/>
+    <TextView android:textSize="14dp" android:textColor="#999999" android:id="@+id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="评价越多越便于我们为您推荐更精准的商家" android:includeFontPadding="false"/>
+    <android.support.constraint.ConstraintLayout android:background="@drawable/wm_page_home_kingkong_bg" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_like" android:background="@drawable/wm_page_feedback_selector" android:padding="6dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/ll_dislike" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/wm_page_feedback_text_selector" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="4dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_dislike" android:background="@drawable/wm_page_feedback_selector" android:padding="6dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" app:layout_constraintLeft_toRightOf="@+id/ll_like" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/wm_page_feedback_text_selector" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_dislike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:drawablePadding="4dp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/ll_dislike">
+            <com.sankuai.waimai.business.page.home.list.future.feedbackdialog.item.poi.InterceptLinearLayout android:orientation="horizontal" android:id="@+id/layout_mach_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layerType="hardware"/>
+            <com.sankuai.waimai.business.page.home.list.future.feedbackdialog.item.poi.ChildRecylcerView android:id="@+id/rv_poi_question" android:background="@drawable/wm_page_home_feedback_poi_bg" android:paddingLeft="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_stick_title_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view_empty" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_10"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_title_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/v_title_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_40" android:layout_marginTop="@dimen/wm_sc_common_dimen_1"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_title_container" android:paddingLeft="@dimen/wm_sc_common_dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/iv_new_user_icon" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_18" android:layout_marginRight="@dimen/wm_sc_common_dimen_6"/>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_16" android:textStyle="bold" android:textColor="@color/wm_sc_color_222426" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/wm_sc_common_dimen_12" android:maxLines="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation_00"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation01"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation02"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation03"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation04"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation05"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation06"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation07"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation08"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation09"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation10"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation11"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation12"/>
+    <item android:duration="470" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation_00"/>
+    <item android:duration="44" android:drawable="@drawable/wm_drug_shopcart_img_drug_animation_00"/>
+</animation-list>

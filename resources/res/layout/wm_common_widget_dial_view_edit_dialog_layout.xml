@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/dialog_root_panel" android:background="@drawable/wm_common_dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_height_min">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/dialog_main_panel" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/wm_common_padding_divider_horizontal" android:layout_weight="1" android:showDividers="middle">
+        <TextView android:textSize="16dp" android:id="@+id/text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wm_widget_dail_view_title" style="@style/WmDialog.Title"/>
+        <EditText android:textSize="16dp" android:textColorHint="#cccccc" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/edit_number" android:background="@null" android:padding="0dp" android:layout_width="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="10dp" android:hint="@string/wm_widget_dail_view_edit_number_hint" android:maxLength="13" android:inputType="phone" style="@style/WmDialog.EditText"/>
+        <View android:background="@color/wm_common_border_edit_text" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="50dp" android:layout_marginRight="50dp"/>
+    </LinearLayout>
+</LinearLayout>

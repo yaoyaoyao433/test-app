@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="16dp">
+    <ImageView android:id="@+id/shop_impress_icon" android:paddingTop="2dp" android:visibility="gone" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginRight="3dp"/>
+    <TextView android:textSize="11sp" android:textColor="#333333" android:ellipsize="middle" android:id="@+id/shop_impress_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_shop_impress_desc" android:singleLine="true"/>
+    <ImageView android:id="@+id/shop_impress_explain" android:paddingTop="2dp" android:visibility="gone" android:layout_width="12.5dp" android:layout_height="12.5dp" android:layout_marginLeft="3dp" android:src="@drawable/wm_sc_goods_list_market_shop_impress_explain"/>
+</LinearLayout>

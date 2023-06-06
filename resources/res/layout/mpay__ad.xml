@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/mpay__ad_icon" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginRight="4dp"/>
+    <TextView android:textSize="12dp" android:textColor="@color/mpay__black0" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/mpay__ad_text" android:paddingBottom="1dp" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+    <TextView android:textSize="12dp" android:textColor="@color/mpay__black0" android:id="@+id/mpay__ad_more_payment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="20dp" android:text="更多" android:drawableRight="@drawable/mpay__payment_right_arrow" android:drawablePadding="6dp"/>
+</LinearLayout>

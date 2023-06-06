@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/paybase__white" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <FrameLayout android:id="@+id/surface_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/navigate_container" android:layout_width="match_parent" android:layout_height="50dp">
+            <Button android:id="@+id/btn_back" android:background="@drawable/cardocr_scan_bankcard_back" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <Button android:id="@+id/btn_flicker" android:background="@drawable/cardocr_flicker_pressed" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="15dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

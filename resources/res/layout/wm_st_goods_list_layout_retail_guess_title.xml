@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/wm_sg_color_F5F5F6" android:paddingLeft="@dimen/wm_sc_common_dimen_7" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_45">
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_18" android:textStyle="bold" android:textColor="@color/wm_sg_color_222426" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/wm_sc_tv_floor_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_shop_guess_like" android:maxLines="1" android:maxEms="6" android:singleLine="true" android:includeFontPadding="false"/>
+</LinearLayout>

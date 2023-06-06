@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_coupon_background" android:background="@drawable/wm_restaurant_magic_coupon_received_bg" android:layout_width="wrap_content" android:layout_height="23dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="10sp" android:textColor="@color/ceres_all_f" android:id="@+id/txt_coupon_text_ahead" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp"/>
+        <TextView android:textSize="9sp" android:textColor="@color/wm_restaurant_ff4a26" android:id="@+id/txt_coupon_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33dp" android:layout_marginTop="2dp" android:text="@string/wm_restaurant_common_sign_yuan" android:includeFontPadding="false"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_restaurant_ff4a26" android:gravity="center" android:id="@+id/txt_coupon_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="20" android:includeFontPadding="false"/>
+        <TextView android:textSize="10sp" android:textColor="@color/wm_restaurant_ff4a26" android:id="@+id/txt_coupon_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="5dp"/>
+        <TextView android:textSize="11sp" android:textColor="@color/wm_restaurant_ff4a26" android:gravity="center" android:id="@+id/txt_coupon_status" android:layout_width="28dp" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/image_coupon_animation" android:layout_width="@dimen/wm_restaurant_coupon_magic_animation_width" android:layout_height="match_parent"/>
+</RelativeLayout>

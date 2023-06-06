@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/wm_page_kingkong_privacy_dialog_bg" android:layout_width="match_parent" android:layout_height="127dp">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="欢迎使用美团外卖，您同意《美团外卖隐私政策》后，可查看更多外卖信息"/>
+        <TextView android:textSize="14dp" android:textColor="#222426" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_privacy" android:background="@drawable/wm_page_second_filter_item_bg" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="33dp" android:layout_marginTop="10dp" android:layout_marginRight="33dp" android:text="查看全部美团外卖"/>
+    </LinearLayout>
+</FrameLayout>

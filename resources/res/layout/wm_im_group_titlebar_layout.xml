@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_view" android:background="@color/wm_im_title_bar_color" style="@style/xm_sdk_title_bar_container">
+    <ImageView android:id="@+id/wm_im_group_iv_chat_back" android:paddingLeft="7dp" android:paddingTop="4dp" android:paddingRight="7dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_im_back" android:layout_alignParentLeft="true" android:layout_centerInParent="true"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/wm_im_group_iv_chat_back" android:layout_centerVertical="true">
+        <com.sankuai.waimai.business.im.group.View.WmGroupChatMemberPoiView android:id="@+id/wm_im_group_chat_poi_member_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.sankuai.waimai.business.im.group.View.WmGroupChatMemberRiderView android:id="@+id/wm_im_group_chat_rider_member_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <include android:id="@+id/ic_im_view1" android:visibility="visible" layout="@layout/wm_im_common_title_right_item"/>
+        <include android:id="@+id/ic_im_view2" android:visibility="visible" layout="@layout/wm_im_common_title_right_item"/>
+    </LinearLayout>
+</RelativeLayout>

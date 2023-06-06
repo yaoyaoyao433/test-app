@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textStyle="bold" android:textColor="@color/wm_sc_nox_search_color_663D1D" android:id="@+id/to_be_member_price_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:singleLine="true" android:includeFontPadding="false"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textStyle="bold" android:textColor="@color/wm_sc_nox_search_color_663D1D" android:gravity="center" android:id="@+id/to_be_member_price_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="26" android:singleLine="true" android:includeFontPadding="false"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/to_be_member_price_icon" android:visibility="gone" android:layout_width="14dp" android:layout_height="12dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_2" android:scaleType="centerCrop"/>
+</LinearLayout>

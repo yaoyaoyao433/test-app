@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@+id/pager_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/wm_page_main_home_indicator_height" android:importantForAccessibility="no"/>
+    <com.sankuai.waimai.business.page.homepage.view.TitleIndicator android:gravity="center" android:layout_gravity="bottom" android:id="@+id/pagerindicator" android:background="@color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="69.8dp"/>
+    <LinearLayout android:layout_gravity="bottom|right" android:orientation="vertical" android:id="@+id/floating_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="60dp">
+        <ViewStub android:id="@+id/layout_order_status" android:layout="@layout/wm_page_main_bottom_status" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ViewStub android:id="@+id/layout_weather_status" android:visibility="gone" android:layout="@layout/wm_page_main_bottom_status" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

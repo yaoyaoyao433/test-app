@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#fff5f5f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/search_global_bg_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/search_global_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        <View android:id="@+id/search_global_bg_layer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/status_bar_bg_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/wm_search_global_action_bar" android:background="#fff5f5f6" android:layout_width="match_parent" android:layout_height="@dimen/wm_nox_search_action_bar_height">
+            <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20dp" android:textStyle="normal" android:textColor="@color/wm_nox_search_222426" android:id="@+id/search_back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/wm_c_iconfont_jiantou_zuo" android:contentDescription="返回"/>
+            <com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_action_bar_container" android:background="@drawable/wm_nox_search_action_bar_container_bg_blur" android:layout_width="0dp" android:layout_height="34dp" android:layout_marginLeft="5dp" android:layout_marginRight="14dp" android:layout_weight="1" app:cornerRadius="17dp">
+                <FrameLayout android:id="@+id/txt_search_keyword_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_weight="1">
+                    <EditText android:textSize="14dp" android:textColor="@color/wm_nox_search_222426" android:textColorHint="#858687" android:ellipsize="end" android:id="@+id/txt_search_keyword" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="28dp" android:maxLines="1" android:maxLength="200" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/wm_common_search_edt_cursor" android:paddingEnd="4dp"/>
+                </FrameLayout>
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="16dp" android:textColor="@color/wm_nox_search_d3d3d3" android:id="@+id/img_clear" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:text="@string/wm_c_iconfont_search_clear" android:includeFontPadding="false" android:contentDescription="清除" android:alpha="0.17"/>
+                <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="@color/wm_nox_search_black_text" android:gravity="center" android:id="@+id/elderly_search_tv" android:background="@drawable/wm_nox_search_shape_bg_search_button_elderly" android:visibility="gone" android:layout_width="55dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:text="@string/wm_nox_search_do_search_txt" android:layout_marginEnd="4dp"/>
+                <View android:id="@+id/search_tv_divider" android:background="@color/wm_nox_search_777778" android:layout_width="0.5dp" android:layout_height="13dp" android:layout_marginRight="14dp"/>
+                <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/wm_nox_search_222426" android:id="@+id/search_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/wm_nox_search_do_search_txt"/>
+            </com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/switch_mode_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11dp" android:textColor="@color/wm_nox_search_222426" android:id="@+id/switch_mode_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_nox_search_switch" android:includeFontPadding="false"/>
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/wm_nox_search_222426" android:id="@+id/switch_mode_poi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_nox_search_poi" android:includeFontPadding="false"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/wm_nox_search_222426" android:id="@+id/switch_mode_spu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_nox_search_spu" android:includeFontPadding="false"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <View android:id="@+id/switch_mode_divider" android:background="@color/wm_nox_search_222426" android:layout_width="0.5dp" android:layout_height="14dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/search_change_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp">
+                <TextView android:textSize="11dp" android:textColor="@color/wm_nox_search_222426" android:id="@+id/switch_address_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_nox_search_change" android:includeFontPadding="false"/>
+                <TextView android:textSize="11dp" android:textColor="@color/wm_nox_search_222426" android:id="@+id/switch_address_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_nox_search_address" android:includeFontPadding="false"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/result_total_page_layout" android:background="@color/transparent" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="1px"/>
+</FrameLayout>

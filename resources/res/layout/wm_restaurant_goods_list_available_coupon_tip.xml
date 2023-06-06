@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_available_coupon_tip_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="28dp">
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#ff4b27" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/tv_available_coupon_tip" android:background="@drawable/wm_restaurant_common_bg_6dp_fff3f2" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="28dp" android:maxLines="1" android:drawableLeft="@drawable/wm_restaurant_goods_list_available_coupon_icon" android:drawablePadding="6dp"/>
+</FrameLayout>

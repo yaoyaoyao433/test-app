@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/layout_info" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/progress_round_info" android:visibility="gone" layout="@layout/wm_common_view_progress_round"/>
+    <com.sankuai.waimai.platform.widget.dialog.view.AnimatableImageView android:id="@+id/progress_info" android:visibility="visible" android:layout_width="87dp" android:layout_height="63dp" app:drawableRes="@drawable/refreshing_center_animation"/>
+    <ImageView android:id="@+id/img_info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textColor="@color/wm_common_text_auxiliary" android:gravity="center" android:id="@+id/txt_info" android:layout_marginTop="14dp" style="@style/WmText"/>
+    <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_sub_info" android:layout_marginTop="14dp" style="@style/WmText.MultiLine"/>
+    <TextView android:id="@+id/btn_info" android:layout_marginTop="16dp" style="@style/WmButton.CenterFixedWidth.Solid"/>
+</LinearLayout>

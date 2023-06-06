@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.im.common.view.ContentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_common_im_good_list" android:paddingTop="@dimen/wm_sc_common_dimen_3" android:paddingBottom="@dimen/wm_sc_common_dimen_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/wm_sc_common_dimen_5" android:paddingEnd="@dimen/wm_sc_common_dimen_5" app:cornerRadius="6dp" app:WidthRatio="0.693" app:cropBackground="true">
+    <android.support.v7.widget.RecyclerView android:id="@+id/wm_sc_im_common_good_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_sc_im_good_see_all" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_40">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textStyle="bold" android:textColor="@color/wm_sg_color_FF8000" android:gravity="center" android:id="@+id/wm_sc_im_see_all_good" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_40" android:text="@string/wm_sg_im_open_down"/>
+        <ImageView android:id="@+id/iv_sc_im_see_all_good" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_4"/>
+    </LinearLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_7" android:layout_marginRight="@dimen/wm_sc_common_dimen_7" android:layout_marginBottom="-3dp" layout="@layout/wm_sg_im_robot_praise"/>
+</com.sankuai.waimai.business.im.common.view.ContentLinearLayout>

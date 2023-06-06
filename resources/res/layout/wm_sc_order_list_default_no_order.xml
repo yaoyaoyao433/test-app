@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/default_layout_info" android:background="#00000000" android:paddingBottom="@dimen/wm_sc_common_dimen_25" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/default_info_padding_1" android:layout_width="match_parent" android:layout_height="35dp"/>
+    <ImageView android:id="@+id/default_img_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sc_common_default_empty_icon"/>
+    <TextView android:textColor="@color/wm_sg_color_666666" android:gravity="center" android:id="@+id/default_txt_info" android:layout_marginTop="14dp" android:text="@string/wm_sc_order_list_refreshEmpty_noOrders_message" style="@style/WmText"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_666666" android:id="@+id/default_txt_sub_info" android:layout_marginTop="14dp" android:text="@string/wm_sc_order_list_refreshEmpty_noOrders_message_sub_title" style="@style/WmText.MultiLine"/>
+    <TextView android:id="@+id/default_btn_info" android:layout_height="30dp" android:layout_marginTop="16dp" android:text="@string/wm_sc_order_list_refreshEmpty_to_poiList" style="@style/WmButton.CenterFixedWidth.Solid"/>
+</LinearLayout>

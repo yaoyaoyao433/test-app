@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="37dp" android:layout_height="44dp">
+    <TextView android:textSize="25sp" android:textColor="#333333" android:gravity="center" android:id="@+id/num_a" android:clickable="false" android:layout_width="match_parent" android:layout_height="44dp" android:maxLength="1"/>
+    <View android:layout_gravity="bottom" android:id="@+id/num_bg" android:background="@drawable/passport_frame_no_soild" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <View android:layout_gravity="center" android:id="@+id/num_i" android:background="@drawable/passport_verification_edit_cursor" android:layout_width="2dp" android:layout_height="20dp"/>
+</FrameLayout>

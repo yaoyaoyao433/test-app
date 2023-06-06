@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/order_status_btn_inner" android:paddingLeft="2dp" android:paddingRight="2dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/order_status_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/order_status_btn_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="6dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="10dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_order_status_btn_im_msg_count" android:background="@drawable/wm_order_status_bg_unread_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="13dp" android:layout_marginLeft="-8dp" android:layout_marginTop="1dp" android:text="99+" android:layout_toRightOf="@+id/order_status_btn_icon" android:layout_alignParentTop="true"/>
+            <TextView android:textAppearance="?attr/rooTextAppearanceButton" android:textSize="10dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/order_status_bean_count_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginLeft="5dp" android:layout_marginTop="1dp" android:text="+99" android:layout_toRightOf="@+id/order_status_btn_icon" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <TextView android:textAppearance="?attr/rooTextAppearanceButton" android:textColor="?attr/rooGrayDim" android:ellipsize="end" android:id="@+id/order_status_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:singleLine="true"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="?attr/rooGrayLight" android:visibility="gone" android:layout_width="0.5dp" android:layout_height="40dp" android:layout_centerVertical="true"/>
+</RelativeLayout>

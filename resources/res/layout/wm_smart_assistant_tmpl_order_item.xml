@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/wm_smart_assistant_item_bg_shape" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="320dp" android:layout_height="313dp">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_poi_click_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <ImageView android:id="@+id/poi_pic" android:background="@drawable/wm_smart_assistant_img_border" android:padding="1dp" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/poi_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="1" android:layout_weight="1"/>
+        <ImageView android:layout_width="6.5dp" android:layout_height="11dp" android:layout_marginLeft="15dp" android:src="@drawable/wm_smart_assistant_arrow_right" android:scaleType="fitXY"/>
+    </LinearLayout>
+    <View android:id="@+id/v_divider_1" android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/ll_poi_click_area"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_order_click_area" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/v_divider_1"/>
+    <Button android:textSize="14dp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/btn_order_again" android:background="@drawable/wm_common_btn_solid_highlight_shape" android:layout_width="100dp" android:layout_height="34dp" android:layout_marginTop="11dp" android:text="@string/wm_sa_one_more_order" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/v_divider_2" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="20dp" android:layout_above="@+id/btn_order_again"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_above="@+id/v_divider_2">
+        <TextView android:textSize="14dp" android:textColor="#666666" android:gravity="center" android:id="@+id/txt_order_food_more" android:visibility="gone" android:layout_width="40dp" android:layout_height="wrap_content" android:text="..."/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <TextView android:textSize="11dp" android:textColor="#666666" android:id="@+id/txt_order_food_total_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="14dp" android:textColor="#fb4f44" android:id="@+id/txt_order_food_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

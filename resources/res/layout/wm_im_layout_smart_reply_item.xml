@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="16sp" android:textColor="#222426" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_im_smart_reply_content" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="52dp" android:maxLines="1"/>

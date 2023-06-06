@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/cashier_action_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/paybase__actionbar_back_icon" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+    <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/cashiercommon__actionbar_title" android:id="@+id/cashier_actionbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_marginBottom="11dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="bottom" android:src="@drawable/wm_sc_shop_content_first_category_bg"/>
+    </item>
+</layer-list>

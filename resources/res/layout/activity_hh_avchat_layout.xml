@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.hhmedic.android.sdk.module.video.widget.chat.ChatVideoView android:id="@+id/hh_sdk_chat" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.hhmedic.android.sdk.module.video.widget.calling.CallingView android:id="@+id/hh_sdk_call" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/local_preview" android:layout_width="@dimen/hh_video_small_width" android:layout_height="@dimen/hh_video_small_height" android:layout_marginTop="@dimen/hh_chat_small_layout_top" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true">
+        <FrameLayout android:id="@+id/hh_sdk_preview_layout" android:background="@color/hh_sdk_close_camera" android:layout_width="@dimen/hh_video_small_width" android:layout_height="@dimen/hh_video_small_height"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/hh_open_camera_textview" android:background="#7f7f7f" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="-30dp" android:text="@string/hh_close_camera" android:drawableStart="@drawable/hh_camera_close" android:paddingStart="8dp"/>
+    </LinearLayout>
+    <com.hhmedic.android.sdk.module.video.customCamera.HHCustomCameraView android:id="@+id/hh_sdk_big_preview_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/hh_sdk_invited_preview_layout" android:visibility="invisible" android:layout_width="@dimen/hh_video_small_width" android:layout_height="@dimen/hh_video_small_height" android:layout_marginTop="190dp" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    <TextView android:textColor="@android:color/holo_red_dark" android:id="@+id/dev_tips_incoming" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:text="@string/hh_dev_tips" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

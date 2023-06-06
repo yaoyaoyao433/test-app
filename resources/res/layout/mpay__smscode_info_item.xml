@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider_up" android:visibility="gone" style="@style/paybase__horizonal_divider"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/mpay__sms_container_height">
+        <include layout="@layout/mpay__simple_type_textview"/>
+        <com.meituan.android.pay.widget.EditTextWithClearAndHelpButton android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/bankinfo_edittext" android:paddingRight="@dimen/mpay__bankinfo_edittext_padding_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:hint="@string/mpay__sms_code_hint" android:layout_toLeftOf="@+id/divider" android:layout_alignParentLeft="true" android:inputType="number" style="@style/mpay__BankInfoEditText"/>
+        <View android:id="@+id/divider" android:background="@color/mpay__gray_separator" android:layout_width="0.5dp" android:layout_height="24dp" android:layout_marginLeft="14dp" android:layout_marginTop="13dp" android:layout_toLeftOf="@+id/resend_code_btn"/>
+        <Button android:enabled="false" android:textSize="15sp" android:textColor="@color/mpay__sms_text_color_selector" android:gravity="center" android:id="@+id/resend_code_btn" android:background="@null" android:layout_width="115dp" android:layout_height="match_parent" android:text="@string/mpay__resend_sms_code" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/error_tip" style="@style/mpay__BankInfoEditTextErrorTip"/>
+    <View android:id="@+id/divider_down" android:layout_marginTop="@dimen/mpay__bankinfo_item_divider_down_margin_top" style="@style/paybase__horizonal_divider"/>
+    <TextView android:id="@+id/bottom_tip" android:paddingTop="@dimen/mpay__bottom_tip_down_padding_top_sms" android:paddingBottom="0dp" style="@style/mpay__BottomTip"/>
+</LinearLayout>

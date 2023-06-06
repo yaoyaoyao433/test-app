@@ -1,0 +1,16 @@
+WMMMPInit:com.sankuai.waimai.mmp.WMMMPInit
+NetMonitorInit:com.sankuai.waimai.platform.net.NetMonitorInit:singleton
+BootAPICatMonitor:com.sankuai.meituan.takeoutnew.util.aop.BootAPICatMonitor
+OrderInit:com.sankuai.waimai.bussiness.order.init.OrderInit
+WmImInit:com.sankuai.waimai.business.im.prepare.init.WmImInit
+AIInit:com.sankuai.waimai.launcher.init.secondary.AIInit:singleton
+SearchInit:com.sankuai.waimai.business.search.common.SearchInit
+PersonalRecommendInit:com.sankuai.waimai.platform.settings.init.PersonalRecommendInit
+RestaurantInit:com.sankuai.waimai.business.restaurant.base.RestaurantInit
+PageInit:com.sankuai.waimai.business.page.home.init.PageInit
+ScreenShotInit:com.sankuai.meituan.takeoutnew.app.init.ScreenShotInit
+BubbleInit:com.sankuai.waimai.business.page.home.init.BubbleInit
+StoreInit:com.sankuai.waimai.store.StoreInit
+LoadAddressInit:com.sankuai.waimai.launcher.init.secondary.business.address.LoadAddressInit
+DrugInit:com.sankuai.waimai.store.drug.init.DrugInit
+KNBInit:com.sankuai.waimai.business.knb.KNBInit

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="14sp" android:textColor="#ff222426" android:gravity="center" android:layout_gravity="center" android:background="@drawable/wm_order_score_selector_shape" android:layout_width="28dp" android:layout_height="40dp" style="?android:attr/borderlessButtonStyle"/>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/layout_insurance" android:paddingLeft="12dp" android:paddingTop="16dp" android:paddingRight="12dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" style="@style/WmCard.TransParent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_insurance_icon" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="6dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/wm_order_confirm_title_text_color" android:id="@+id/txt_insurance_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center_vertical" android:id="@+id/img_insurance_explain" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="5dp" app:project="waimai_c" app:srcName="waimai_c_order_icon_normal_question_gray"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/wm_order_confirm_title_text_color" android:id="@+id/txt_insurance_money" android:paddingLeft="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14dp" android:textColor="@color/wm_order_confirm_title_text_color" android:id="@+id/txt_insurance_label" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/wm_order_confirm_poi_present"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/ckb_insurance_main" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="6dp" app:project="waimai_c" app:srcName="waimai_c_wm_order_selected"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/wm_order_confirm_title_text_color_hint" android:ellipsize="end" android:id="@+id/txt_insurance_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="6dp" android:maxLines="2" android:lineSpacingExtra="3dp" android:layout_marginEnd="45dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_insurance_contract" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <TextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/txt_insurance_contract" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

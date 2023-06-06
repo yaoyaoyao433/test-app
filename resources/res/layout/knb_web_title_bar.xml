@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zu="http://schemas.android.com/apk/res-auto" android:id="@+id/lay_title_bar" android:background="@color/title_background" android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/web_title_bar" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ZeusTitleBar">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="left" android:id="@+id/title_bar_left_view_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.dianping.titans.ui.ComplexButton android:id="@+id/button_ll" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/knb_accessibility_content_back" zu:textColor="@color/knb_titlebar_action_hint_text_color" zu:textSize="@dimen/text_size_15"/>
+            <com.dianping.titans.ui.ComplexButton android:id="@+id/button_lr" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/knb_accessibility_content_close" zu:textColor="@color/knb_titlebar_action_hint_text_color" zu:textSize="@dimen/text_size_15"/>
+        </LinearLayout>
+        <FrameLayout android:gravity="center" android:id="@+id/text_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:id="@+id/title_bar_right_view_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.dianping.titans.ui.ComplexButton android:id="@+id/button_rl" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" zu:textColor="@color/knb_titlebar_action_hint_text_color" zu:textSize="@dimen/text_size_15"/>
+            <com.dianping.titans.ui.ComplexButton android:id="@+id/button_rr" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" zu:textColor="@color/knb_titlebar_action_hint_text_color" zu:textSize="@dimen/text_size_15"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="bottom" android:id="@+id/pb_progress" android:layout_width="match_parent" android:layout_height="3dp" style="?android:attr/progressBarStyleHorizontal"/>
+</merge>

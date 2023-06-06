@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/tool_bar" android:layout_width="match_parent" android:layout_height="51dp" app:popupTheme="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <TextView android:textSize="16sp" android:textColor="#1d1c1e" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="5dp"/>
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_activity_cond" android:layout_width="match_parent" android:layout_height="28dp">
+    <View android:id="@+id/txt_bg_activity_cond" android:background="@drawable/wm_widget_filter_bar_fastfilter_dialog_card_item_background_home" android:layout_width="match_parent" android:layout_height="28dp"/>
+    <ImageView android:id="@+id/image_filter_item_background" android:layout_width="50dp" android:layout_height="15dp" android:layout_marginTop="7.5dp" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_activity_cond" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="5dp" android:scaleType="fitCenter"/>
+        <TextView android:textSize="12sp" android:textColor="@color/wm_widget_filter_bar_filter_dialog_card_item_text_home" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/txt_activity_cond" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:maxLength="6" android:importantForAccessibility="no"/>
+        <View android:layout_gravity="top" android:id="@+id/txt_bubble" android:background="@drawable/wm_widget_filter_bar_background_tab_bubble" android:layout_width="5dp" android:layout_height="5dp"/>
+    </LinearLayout>
+    <View android:id="@+id/txt_bubble_copy" android:background="@drawable/wm_widget_filter_bar_background_tab_bubble" android:visibility="gone" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="5dp" android:layout_alignParentRight="true"/>
+</RelativeLayout>

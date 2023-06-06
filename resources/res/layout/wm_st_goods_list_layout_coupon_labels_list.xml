@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.newwidgets.HorizontalFlowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/good_list_hf_coupon_label_list" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_14" android:maxLines="1" app:childHeight="14dp" app:childMarginHorizontal="5dp"/>

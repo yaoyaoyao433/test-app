@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abc_btn_colored_borderless_text_material">r/g/ay9.xml</color>
+    <color name="abc_btn_colored_text_material">r/g/ay_.xml</color>
+    <color name="abc_color_highlight_material">r/g/b0y.xml</color>
+    <color name="abc_tint_btn_checkable">r/g/ayj.xml</color>
+    <color name="abc_tint_default">r/g/ayk.xml</color>
+    <color name="abc_tint_edittext">r/g/ayl.xml</color>
+    <color name="abc_tint_seek_thumb">r/g/aym.xml</color>
+    <color name="abc_tint_spinner">r/g/ayl.xml</color>
+    <color name="abc_tint_switch_track">r/g/ayo.xml</color>
+    <color name="design_tint_password_toggle">r/g/az0.xml</color>
+</resources>

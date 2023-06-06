@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/order_live_label_layout" android:background="@drawable/wm_order_base_live_label_bg" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/order_live_label_img" android:visibility="gone" android:layout_width="9dp" android:layout_height="8dp" android:layout_marginRight="2dp" android:scaleType="fitCenter"/>
+    <TextView android:textSize="11sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/order_live_label_txt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+</LinearLayout>

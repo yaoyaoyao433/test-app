@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/paybase__white"/>
+    <corners android:radius="2dp"/>
+    <stroke android:width="0.5dp" android:color="@color/mpay__bankcard_list_button_stroke"/>
+</shape>

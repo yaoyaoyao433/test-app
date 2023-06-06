@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_spu_live_layout" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_16">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/live_left_content_layout" android:paddingLeft="@dimen/wm_sc_common_dimen_4" android:paddingRight="@dimen/wm_sc_common_dimen_4" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:id="@+id/search_spu_live_img" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_9" android:layout_height="@dimen/wm_sc_common_dimen_8" android:layout_marginRight="@dimen/wm_sc_common_dimen_2" android:scaleType="fitCenter"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/search_spu_live_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/live_right_content_layout" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/live_online_count_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+</LinearLayout>

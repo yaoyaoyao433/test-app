@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/framelayout" android:background="@color/wm_sg_color_F5F5F6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/new_user_header_layout" android:layout_width="match_parent" android:layout_height="88dp">
+            <ImageView android:id="@+id/new_user_header_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_50" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/new_user_header_back" android:background="@drawable/wm_sc_common_left_back_arrow" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="12dp"/>
+                <ImageView android:id="@+id/new_user_header_logo" android:layout_width="wrap_content" android:layout_height="23dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:maxWidth="183dp"/>
+                <ImageView android:id="@+id/new_user_header_top_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="23dp" android:scaleType="fitXY" android:adjustViewBounds="true" android:maxWidth="116dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/new_user_header_logo" app:layout_constraintTop_toTopOf="0"/>
+                <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textColor="@color/white" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/new_user_header_address" android:paddingTop="@dimen/wm_sc_common_dimen_5" android:paddingBottom="@dimen/wm_sc_common_dimen_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/new_user_right_arrow" android:drawablePadding="@dimen/wm_sc_common_dimen_2" android:layout_marginStart="@dimen/wm_sc_common_dimen_6" android:layout_marginEnd="@dimen/wm_sc_common_dimen_12"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@+id/sc_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/fr_header_view" android:layout_width="match_parent" android:layout_height="168dp"/>
+                <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/rc_container" android:paddingLeft="@dimen/wm_sc_common_dimen_12" android:paddingRight="@dimen/wm_sc_common_dimen_12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-36dp"/>
+            </LinearLayout>
+        </com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView>
+    </LinearLayout>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/wm_sc_new_user_net_info" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.sankuai.waimai.store.goods.list.viewblocks.newuser.SGNewUserStickLayout android:id="@+id/new_user_stick_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="88dp"/>
+    <include android:id="@+id/ll_skeleton" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_sc_new_user_land_skeleton"/>
+    <ImageView android:layout_gravity="bottom|right" android:id="@+id/iv_float_img" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="10dp" android:layout_marginBottom="100dp"/>
+</FrameLayout>

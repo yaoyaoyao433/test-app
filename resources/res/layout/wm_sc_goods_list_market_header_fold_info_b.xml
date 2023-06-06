@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/shop_header_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="top" android:id="@+id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="99dp" android:maxLines="1" android:includeFontPadding="false" android:lineSpacingMultiplier="1.2"/>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_6" android:layout_marginRight="2dp" android:layout_marginBottom="10dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/comment_layout" android:paddingLeft="@dimen/wm_sc_common_dimen_6" android:paddingRight="7.5dp" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginRight="11dp">
+                <TextView android:textSize="11sp" android:textColor="@color/white" android:id="@+id/txt_poi_rating_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/wm_sc_poi_star_new" android:drawablePadding="@dimen/wm_sc_common_dimen_1"/>
+                <TextView android:textSize="11sp" android:textColor="@color/white" android:id="@+id/txt_comment_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+            <com.sankuai.waimai.store.newwidgets.HorizontalFlowLayout android:id="@+id/shop_impression_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="90dp" android:maxLines="1" android:layout_toRightOf="@+id/comment_layout" app:childHeight="14dp" app:childMarginHorizontal="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

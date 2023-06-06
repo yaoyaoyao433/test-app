@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/wm_smart_assistant_multi_person_meal_item_product_item" android:background="@drawable/wm_smart_assistant_item_bg_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/wm_smart_assistant_multi_person_meal_item_product_item_1" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_smart_assistant_multi_person_meal_item_product_item"/>
+    <include android:layout_gravity="bottom|right" android:id="@+id/wm_smart_assistant_multi_person_meal_item_product_item_2" android:layout_width="97dp" android:layout_height="97dp" layout="@layout/wm_smart_assistant_multi_person_meal_item_product_item"/>
+</FrameLayout>

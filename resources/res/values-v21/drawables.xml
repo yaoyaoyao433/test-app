@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="__picker_bg_material_item">r/y/agl.xml</drawable>
+    <drawable name="abc_action_bar_item_background_material">r/y/agm.xml</drawable>
+    <drawable name="abc_btn_colored_material">r/y/agn.xml</drawable>
+    <drawable name="abc_edit_text_material">r/y/ago.xml</drawable>
+    <drawable name="avd_hide_password">r/y/agp.xml</drawable>
+    <drawable name="avd_show_password">r/y/agq.xml</drawable>
+    <drawable name="design_bottom_navigation_item_background">r/y/agr.xml</drawable>
+    <drawable name="design_password_eye">r/y/ags.xml</drawable>
+    <drawable name="notification_action_background">r/y/agt.xml</drawable>
+    <drawable name="avd_hide_password_1">r/y/agu.xml</drawable>
+    <drawable name="avd_hide_password_2">r/y/agv.xml</drawable>
+    <drawable name="avd_hide_password_3">r/y/agw.xml</drawable>
+    <drawable name="avd_show_password_1">r/y/agx.xml</drawable>
+    <drawable name="avd_show_password_2">r/y/agy.xml</drawable>
+    <drawable name="avd_show_password_3">r/y/agz.xml</drawable>
+</resources>

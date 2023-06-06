@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:id="@+id/photo_camera_control_btn" android:background="@drawable/wm_ugc_camera_photo_control_btn_bg" android:layout_width="90dp" android:layout_height="90dp"/>

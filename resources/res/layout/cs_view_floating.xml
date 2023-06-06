@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/view_root" android:paddingLeft="9dp" android:paddingTop="9dp" android:paddingRight="9dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.meituan.android.customerservice.widget.ShadowLayout android:id="@+id/fl_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:cs_shadowColor="#33000000" app:cs_shadowRadius="8dp" app:cs_shadowDx="0dp" app:cs_shadowDy="5dp" app:cs_shadowShape="oval" app:cs_shadowSide="all">
+        <FrameLayout android:background="@drawable/cs_floating_bg" android:layout_width="@dimen/cs_im_fl_fab_size" android:layout_height="@dimen/cs_im_fl_fab_size">
+            <ImageView android:layout_gravity="center" android:id="@+id/cs_id_floating_icon" android:background="@drawable/cs_floating_icon" android:layout_width="@dimen/cs_im_floating_icon_size" android:layout_height="@dimen/cs_im_floating_icon_size" android:scaleType="center"/>
+        </FrameLayout>
+    </com.meituan.android.customerservice.widget.ShadowLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_budget" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="0dp" android:layout_alignTop="@+id/fl_fab" android:layout_alignRight="@+id/fl_fab">
+        <TextView android:textSize="@dimen/cs_im_tv_budget_text_size" android:textColor="@color/cs_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_budget" android:background="@drawable/cs_floating_message_notify_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+    </LinearLayout>
+</RelativeLayout>

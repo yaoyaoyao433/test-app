@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_pay_type" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" style="@style/WmCell.Clickable">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/wm_order_confirm_title_text_color" android:layout_width="0dp" android:text="@string/wm_order_confirm_pay_type" android:layout_weight="1" style="@style/WmText"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/wm_order_confirm_title_text_color" android:id="@+id/txt_pay_type" style="@style/WmText"/>
+        <include android:id="@+id/img_arrow_pay_type" layout="@layout/wm_common_view_cell_arrow_right"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/wm_order_confirm_gray" android:id="@+id/txt_pay_type_sub_title" android:layout_marginTop="5dp" style="@style/WmText"/>
+</LinearLayout>

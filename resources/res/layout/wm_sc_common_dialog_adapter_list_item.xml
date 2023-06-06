@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="18sp" android:gravity="center" android:id="@+id/dialog_item_text" android:background="@drawable/wm_sc_common_bg_clickable_cell" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="45dp" style="@style/WmStStoreText"/>

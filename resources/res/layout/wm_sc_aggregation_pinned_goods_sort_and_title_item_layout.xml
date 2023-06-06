@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/root_spin_layout" android:background="@color/wm_sg_color_FFFFFF" android:paddingLeft="10dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <include android:orientation="vertical" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_150" android:layout_height="@dimen/wm_sc_common_dimen_36" layout="@layout/wm_st_goods_list_adapter_category_name"/>
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/fl_slogan_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="right" android:id="@+id/filter_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_36">
+        <FrameLayout android:id="@+id/fl_sort_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_3"/>
+        <FrameLayout android:id="@+id/fl_brand_filter_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

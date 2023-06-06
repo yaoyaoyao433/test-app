@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.drug.newwidgets.labelview.LabelView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="10dp" android:gravity="center" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="15dp" android:drawablePadding="2dp"/>

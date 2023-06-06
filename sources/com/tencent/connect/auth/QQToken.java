@@ -1,0 +1,266 @@
+package com.tencent.connect.auth;
+
+import android.annotation.TargetApi;
+import android.content.SharedPreferences;
+import android.text.TextUtils;
+import android.util.Base64;
+import com.tencent.connect.common.Constants;
+import com.tencent.open.log.SLog;
+import com.tencent.open.utils.f;
+import com.tencent.open.utils.i;
+import com.tencent.open.utils.k;
+import com.tencent.open.web.security.JniInterface;
+import org.json.JSONObject;
+/* compiled from: ProGuard */
+/* loaded from: classes6.dex */
+public class QQToken {
+    public static final int AUTH_QQ = 2;
+    public static final int AUTH_QZONE = 3;
+    public static final int AUTH_WEB = 1;
+    private static SharedPreferences g;
+    private String a;
+    private String b;
+    private String c;
+    private int d = 1;
+    private long e = -1;
+    private com.tencent.open.utils.a f;
+
+    public QQToken(String str) {
+        this.a = str;
+    }
+
+    public boolean isSessionValid() {
+        return this.b != null && System.currentTimeMillis() < this.e;
+    }
+
+    public String getAppId() {
+        return this.a;
+    }
+
+    public void setAppId(String str) {
+        this.a = str;
+    }
+
+    public String getAccessToken() {
+        return this.b;
+    }
+
+    public void setAccessToken(String str, String str2) throws NumberFormatException {
+        this.b = str;
+        this.e = 0L;
+        if (str2 != null) {
+            this.e = System.currentTimeMillis() + (Long.parseLong(str2) * 1000);
+        }
+    }
+
+    public String getOpenId() {
+        return this.c;
+    }
+
+    public void setOpenId(String str) {
+        this.c = str;
+        com.tencent.open.b.b.a().a(str);
+    }
+
+    public String getOpenIdWithCache() {
+        String openId = getOpenId();
+        try {
+            if (TextUtils.isEmpty(openId)) {
+                JSONObject loadSession = loadSession(this.a);
+                if (loadSession != null) {
+                    String string = loadSession.getString("openid");
+                    try {
+                        if (!TextUtils.isEmpty(string)) {
+                            setOpenId(string);
+                        }
+                        openId = string;
+                    } catch (Exception e) {
+                        e = e;
+                        openId = string;
+                        SLog.i("QQToken", "getLocalOpenIdByAppId " + e.toString());
+                        return openId;
+                    }
+                }
+                SLog.i("QQToken", "getOpenId from Session openId = " + openId + " appId = " + this.a);
+            } else {
+                SLog.i("QQToken", "getOpenId from field openId = " + openId + " appId = " + this.a);
+            }
+        } catch (Exception e2) {
+            e = e2;
+        }
+        return openId;
+    }
+
+    public int getAuthSource() {
+        return this.d;
+    }
+
+    public void setAuthSource(int i) {
+        this.d = i;
+    }
+
+    public long getExpireTimeInSecond() {
+        return this.e;
+    }
+
+    public boolean saveSession(JSONObject jSONObject) {
+        try {
+            if (this.f == null) {
+                this.f = new com.tencent.open.utils.a(f.a());
+            }
+            return a(this.a, jSONObject, this.f);
+        } catch (Exception e) {
+            SLog.i("QQToken", "login saveSession" + e.toString());
+            return false;
+        }
+    }
+
+    public JSONObject loadSession(String str) {
+        try {
+            if (this.f == null) {
+                this.f = new com.tencent.open.utils.a(f.a());
+            }
+            return a(str, this.f);
+        } catch (Exception e) {
+            SLog.i("QQToken", "login loadSession" + e.toString());
+            return null;
+        }
+    }
+
+    @TargetApi(11)
+    private static synchronized SharedPreferences a() {
+        SharedPreferences sharedPreferences;
+        synchronized (QQToken.class) {
+            if (g == null) {
+                g = f.a().getSharedPreferences("token_info_file", 0);
+            }
+            sharedPreferences = g;
+        }
+        return sharedPreferences;
+    }
+
+    private static synchronized JSONObject a(String str, com.tencent.open.utils.a aVar) {
+        String b;
+        synchronized (QQToken.class) {
+            if (f.a() == null) {
+                SLog.i("QQToken", "loadJsonPreference context null");
+                return null;
+            } else if (str == null) {
+                SLog.i("QQToken", "loadJsonPreference prefKey is null");
+                return null;
+            } else {
+                String string = a().getString(a(str), "");
+                if (TextUtils.isEmpty(string)) {
+                    if (!JniInterface.isJniOk) {
+                        i.a(AuthAgent.SECURE_LIB_FILE_NAME, AuthAgent.SECURE_LIB_NAME, 5);
+                        JniInterface.loadSo();
+                    }
+                    if (!JniInterface.isJniOk) {
+                        SLog.i("QQToken", "loadJsonPreference jni load fail SECURE_LIB_VERSION=5");
+                        return null;
+                    }
+                    String c = c(str);
+                    String string2 = a().getString(c, "");
+                    if (TextUtils.isEmpty(string2)) {
+                        String b2 = b(str);
+                        String string3 = a().getString(b2, "");
+                        if (TextUtils.isEmpty(string3)) {
+                            SLog.i("QQToken", "loadJsonPreference oldDesValue null");
+                            return null;
+                        }
+                        try {
+                            b = JniInterface.d1(string3);
+                            if (TextUtils.isEmpty(b)) {
+                                SLog.i("QQToken", "loadJsonPreference decodeResult d1 empty");
+                                a().edit().remove(b2).apply();
+                                return null;
+                            }
+                            a(str, new JSONObject(b), aVar);
+                            a().edit().remove(b2).apply();
+                        } catch (Exception e) {
+                            SLog.e("QQToken", "Catch Exception", e);
+                            a().edit().remove(b2).apply();
+                            return null;
+                        }
+                    } else {
+                        try {
+                            b = JniInterface.d2(string2);
+                            a(str, new JSONObject(b), aVar);
+                            a().edit().remove(c).apply();
+                        } catch (Exception e2) {
+                            SLog.e("QQToken", "Catch Exception", e2);
+                            a().edit().remove(c).apply();
+                            return null;
+                        }
+                    }
+                } else {
+                    b = aVar.b(string);
+                }
+                try {
+                    JSONObject jSONObject = new JSONObject(b);
+                    SLog.i("QQToken", "loadJsonPreference sucess");
+                    return jSONObject;
+                } catch (Exception e3) {
+                    SLog.i("QQToken", "loadJsonPreference decode " + e3.toString());
+                    return null;
+                }
+            }
+        }
+    }
+
+    private static synchronized boolean a(String str, JSONObject jSONObject, com.tencent.open.utils.a aVar) {
+        synchronized (QQToken.class) {
+            if (f.a() == null) {
+                SLog.i("QQToken", "saveJsonPreference context null");
+                return false;
+            } else if (str == null || jSONObject == null) {
+                SLog.i("QQToken", "saveJsonPreference prefKey or jsonObject null");
+                return false;
+            } else {
+                try {
+                    String string = jSONObject.getString(Constants.PARAM_EXPIRES_IN);
+                    if (!TextUtils.isEmpty(string)) {
+                        jSONObject.put(Constants.PARAM_EXPIRES_TIME, System.currentTimeMillis() + (Long.parseLong(string) * 1000));
+                        String a = a(str);
+                        String a2 = aVar.a(jSONObject.toString());
+                        if (a.length() > 6 && a2 != null) {
+                            a().edit().putString(a, a2).commit();
+                            SLog.i("QQToken", "saveJsonPreference sucess");
+                            return true;
+                        }
+                        SLog.i("QQToken", "saveJsonPreference keyEncode or josnEncode null");
+                        return false;
+                    }
+                    SLog.i("QQToken", "expires is null");
+                    return false;
+                } catch (Exception e) {
+                    SLog.e("QQToken", "saveJsonPreference exception:" + e.toString());
+                    return false;
+                }
+            }
+        }
+    }
+
+    private static String a(String str) {
+        return Base64.encodeToString(k.j(str), 2) + "_aes_google";
+    }
+
+    @Deprecated
+    private static String b(String str) {
+        return Base64.encodeToString(k.j(str), 2);
+    }
+
+    @Deprecated
+    private static String c(String str) {
+        return Base64.encodeToString(k.j(str), 2) + "_spkey";
+    }
+
+    public void removeSession(String str) {
+        SharedPreferences.Editor edit = a().edit();
+        edit.remove(c(str));
+        edit.remove(c(str));
+        edit.remove(a(str));
+        edit.apply();
+        SLog.i("QQToken", "removeSession sucess");
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_product" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <View android:background="@drawable/wm_sc_view_product_detail_image_gradient_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/img_product" android:layout_alignTop="@+id/img_product" android:layout_alignRight="@+id/img_product" android:layout_alignBottom="@+id/img_product"/>
+    <include android:id="@+id/v_drug_super_tag" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_sc_good_detail_drug_super_frame_tag"/>
+</RelativeLayout>

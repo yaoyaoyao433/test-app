@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/fingerprint_verify_layout" android:background="@drawable/paycommon__dialog_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="32dp">
+    <RelativeLayout android:id="@+id/title_holder" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <ImageView android:id="@+id/cancel" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/paybase__icon_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="17dp" android:textColor="@color/paybase__text_color_2" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/paycommon__fingerprint_pay_title"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/fingerprint_divider" android:background="@color/paybase__divider_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <include android:visibility="visible" layout="@layout/paycommon__verify_fingerprint_container"/>
+    <include layout="@layout/paycommon__guide_info_container"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/image_editor_display_board" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.ugc.creator.widgets.WatchedImageView android:id="@+id/image_editor_image_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.sankuai.waimai.ugc.creator.widgets.tag.TagBoard android:id="@+id/image_editor_tag_board" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

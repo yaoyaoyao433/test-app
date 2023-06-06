@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingRight="16dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.TextWithImageLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/wm_common_text_size_large" android:id="@+id/txt_adapter_comment_user_name" android:layout_marginRight="5dp" style="@style/WmText"/>
+            <include layout="@layout/wm_user_view_vip_icon"/>
+        </com.sankuai.waimai.platform.widget.TextWithImageLayout>
+        <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_adapter_comment_time" android:layout_marginLeft="5dp" style="@style/WmText"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/txt_adapter_comment_rating_all" android:layout_marginRight="@dimen/wm_common_margin_horizontal_element" android:text="@string/wm_comment_adapter_rating_all" style="@style/wm_comment_adapter_txt_ship"/>
+        <RatingBar android:id="@+id/rtb_adapter_comment_rating" android:paddingTop="2dp" android:layout_marginRight="@dimen/wm_common_margin_horizontal_element" style="@style/WmRatingBar.Small.Indicator"/>
+        <TextView android:id="@+id/txt_adapter_comment_ship_type" android:layout_marginRight="@dimen/wm_common_margin_horizontal_element" android:text="@string/wm_comment_meituan_send" style="@style/wm_comment_adapter_txt_ship"/>
+        <TextView android:id="@+id/txt_adapter_comment_ship_time" style="@style/wm_comment_adapter_txt_ship"/>
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:gravity="right" android:id="@+id/txt_source_tip" android:layout_width="50dp" android:layout_height="15dp" android:text="@string/wm_comment_me" style="@style/wm_comment_adapter_txt_ship"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/layout_adapter_comment_ratings" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/txt_adapter_comment_quality_label" android:text="@string/wm_comment_adapter_taste" style="@style/wm_comment_adapter_txt_rating"/>
+        <TextView android:id="@+id/txt_adapter_comment_quality_rating" android:layout_marginLeft="5dp" style="@style/wm_comment_adapter_txt_rating"/>
+        <TextView android:layout_marginLeft="10dp" android:text="@string/wm_comment_adapter_package" style="@style/wm_comment_adapter_txt_rating"/>
+        <TextView android:id="@+id/txt_adapter_comment_package_rating" android:layout_marginLeft="5dp" style="@style/wm_comment_adapter_txt_rating"/>
+        <TextView android:layout_marginLeft="10dp" android:text="@string/wm_comment_adapter_ship" style="@style/wm_comment_adapter_txt_rating"/>
+        <TextView android:id="@+id/txt_adapter_comment_ship_rating" android:layout_marginLeft="5dp" style="@style/wm_comment_adapter_txt_rating"/>
+    </LinearLayout>
+    <com.sankuai.waimai.platform.widget.CommentTextView android:id="@+id/txt_adapter_comment_content" android:layout_marginTop="10dp" android:lineSpacingExtra="6dp" style="@style/WmText.MultiLine"/>
+    <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_adapter_comment_fold" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_marginTop="5dp" android:layout_marginBottom="-5dp" android:text="@string/wm_comment_text_expand" style="@style/WmText"/>
+    <com.sankuai.waimai.platform.widget.NoScrollGridView android:id="@+id/grid_adapter_comment_images" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:horizontalSpacing="5dp" android:verticalSpacing="5dp"/>
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/layout_adapter_comment_praise" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dp" android:src="@drawable/wm_comment_list_ic_thumb_up"/>
+        <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/takeout_blue_5" android:id="@+id/txt_adapter_comment_praise" android:layout_marginLeft="@dimen/wm_common_padding_drawable_left" android:singleLine="false" style="@style/WmText"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/layout_adapter_comment_tags" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dp" android:src="@drawable/wm_comment_list_ic_tags"/>
+        <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_auxiliary" android:id="@+id/txt_adapter_comment_tags" android:layout_marginLeft="@dimen/wm_common_padding_drawable_left" android:singleLine="false" style="@style/WmText"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_adapter_add_comment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:divider="@drawable/wm_common_padding_divider_horizontal_5dp" android:showDividers="middle"/>
+</LinearLayout>

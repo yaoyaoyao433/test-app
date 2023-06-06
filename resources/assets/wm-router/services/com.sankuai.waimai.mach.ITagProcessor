@@ -1,0 +1,4 @@
+live-player:com.sankuai.waimai.business.ugc.mach.live.MachLivePlayerTagProcessor
+wm-search-slide-cover:com.sankuai.waimai.business.search.ui.result.mach.component.CommonSlideCoverProcessor
+nestscroller:com.sankuai.waimai.store.drug.search.mach.component.nestscroller.NestedScrollerTagProcessor
+wm-search-gallery-card:com.sankuai.waimai.business.search.ui.result.mach.component.gallery.GalleryCardTagProcessor

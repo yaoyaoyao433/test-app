@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_collect_food" android:background="#cc000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+    <include android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="7" layout="@layout/wm_order_confirm_collect_food_layout"/>
+</LinearLayout>

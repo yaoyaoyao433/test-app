@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/yoda_fragment_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetStart="0dp" app:contentInsetLeft="0dp" app:contentInsetStartWithNavigation="0dp" app:titleMargin="0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/yoda_fragment_toolbar_icon" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+            <TextView android:gravity="center_vertical" android:id="@+id/yoda_fragment_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/identify_verify_page_failed" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="142.5dp" android:text="@string/passport_request_failed"/>
+        <Button android:textColor="@android:color/white" android:id="@+id/identify_verify_reload" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="64dp" android:text="@string/passport_request_reload" style="?attr/buttonStyle"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/identify_verify_page_normal" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="#666666" android:id="@+id/identify_verify_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="39.5dp" android:text="@string/passport_identify_confirm_text_new"/>
+        <ImageView android:id="@+id/identify_verify_image" android:background="@drawable/passport_icon_bg" android:padding="3dp" android:layout_width="76dp" android:layout_height="76dp" android:layout_marginTop="80dp" android:src="@drawable/passport_account_avatar_default"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/identify_verify_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp"/>
+        <Button android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/identify_verify_confirm" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="32.5dp" android:text="@string/passport_identify_confirm_confirm_new" style="?attr/buttonStyle"/>
+        <Button android:textSize="18sp" android:textColor="#999999" android:gravity="center" android:id="@+id/identify_verify_not_confirm" android:background="@drawable/passport_identify_not_confirm_selecter" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="30dp" android:text="@string/passport_identify_confirm_not_confirm_new"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/identify_verify_confirm_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/passport_identify_confirm_hint_new"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_actionbar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/v_order_detail_actionbar" android:background="@color/wm_order_bg_gray" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" android:alpha="0"/>
+    <RelativeLayout android:id="@+id/rl_header" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+        <FrameLayout android:gravity="center" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="10dp" android:layout_centerVertical="true">
+            <View android:id="@+id/wm_order_detail_back_bg" android:background="@drawable/wm_order_detail_round_corner_btn_bg" android:layout_width="36dp" android:layout_height="36dp" android:alpha="0"/>
+            <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20dp" android:textColor="#222426" android:layout_gravity="center" android:id="@+id/img_order_detail_back" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_c_iconfont_jiantou_zuo" android:contentDescription="@string/wm_order_base_back_description"/>
+        </FrameLayout>
+        <TextView android:textSize="17sp" android:id="@+id/txt_order_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/WmText"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/order_detail_custom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <FrameLayout android:id="@+id/img_order_detail_refresh_layout" android:paddingTop="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/wm_order_detail_refresh_description">
+                <View android:id="@+id/img_order_detail_refresh_bg" android:background="@drawable/wm_order_detail_round_corner_btn_bg" android:layout_width="36dp" android:layout_height="36dp"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="36dp" android:layout_height="36dp">
+                    <ImageView android:id="@+id/img_order_detail_refresh" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/wm_order_detail_refresh_icon"/>
+                    <TextView android:textSize="9sp" android:textColor="#222426" android:id="@+id/text_order_detail_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="刷新"/>
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/img_order_detail_custom_layout" android:paddingTop="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:contentDescription="@string/wm_order_detail_customer_service_description">
+                <View android:id="@+id/img_order_detail_contact_bg" android:background="@drawable/wm_order_detail_round_corner_btn_bg" android:layout_width="36dp" android:layout_height="36dp"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="36dp" android:layout_height="36dp">
+                    <ImageView android:id="@+id/img_order_detail_custom" android:layout_width="20dp" android:layout_height="20dp"/>
+                    <TextView android:textSize="9sp" android:textColor="#222426" android:id="@+id/text_order_detail_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服"/>
+                </LinearLayout>
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/img_order_detail_custom_feedback_count" android:background="@drawable/wm_order_status_bg_unread_count" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginLeft="18dp" android:maxWidth="22dp" android:maxLines="1" android:maxEms="2"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/img_order_detail_msg_center_layout" android:paddingTop="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                <View android:id="@+id/img_order_detail_msg_bg" android:background="@drawable/wm_order_detail_round_corner_btn_bg" android:layout_width="36dp" android:layout_height="36dp"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="36dp" android:layout_height="36dp">
+                    <ImageView android:id="@+id/img_order_detail_msg_center" android:layout_width="20dp" android:layout_height="20dp"/>
+                    <TextView android:textSize="9sp" android:textColor="#222426" android:id="@+id/text_order_detail_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消息"/>
+                </LinearLayout>
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/img_order_detail_msg_center_count" android:background="@drawable/wm_order_status_bg_unread_count" android:paddingLeft="5dp" android:paddingRight="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginLeft="18dp" android:maxWidth="22dp" android:maxLines="1" android:maxEms="2"/>
+                <ImageView android:id="@+id/img_order_detail_msg_center_red_point" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginLeft="19dp" android:layout_marginTop="5dp" android:src="@drawable/wm_order_detail_red_point"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

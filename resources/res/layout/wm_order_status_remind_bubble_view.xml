@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/order_status_remind_bubble_layout" android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:id="@+id/tv_order_status_remind_bubble_content" android:background="@drawable/wm_order_status_remind_bubble_bg" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="10dp">
+        <ImageView android:layout_gravity="bottom" android:id="@+id/iv_kangaroo" android:visibility="gone" android:layout_width="60dp" android:layout_height="53dp" android:layout_marginLeft="-1.5dp"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/wm_common_white" android:ellipsize="end" android:id="@+id/tv_content_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" android:maxWidth="220dp" android:maxLines="2"/>
+        <View android:id="@+id/view_divider" android:background="#33ffffff" android:visibility="gone" android:layout_width="0.8dp" android:layout_height="18dp" android:layout_marginRight="10dp"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ff8000" android:id="@+id/tv_check_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_bubble_arrow" android:layout_width="9dp" android:layout_height="4.5dp" android:src="@drawable/wm_order_status_remind_bubble_arrow" android:scaleType="centerCrop" android:layout_below="@+id/tv_order_status_remind_bubble_content"/>
+</RelativeLayout>

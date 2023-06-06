@@ -1,0 +1,7 @@
+im:com.sankuai.waimai.business.im.config.ImRemoteConfig
+waimai_shell:com.sankuai.meituan.takeoutnew.app.config.WaimaiRemoteConfig
+restaurant:com.sankuai.waimai.business.restaurant.base.RestaurantRemoteConfig
+page:com.sankuai.waimai.business.page.common.config.PageRemoteConfig
+platform:com.sankuai.waimai.platform.config.horn.PlatformRemoteConfig
+launcher:com.sankuai.waimai.launcher.config.LauncherRemoteConfig
+mrn_net_preload:com.sankuai.waimai.reactnative.preload.MRNPreloadConfig:singleton

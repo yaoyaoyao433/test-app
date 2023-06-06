@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/wm_sc_nox_search_background" android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout_search_result" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.CoordinatorLayout android:id="@+id/outer_coordinator_layout" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.sankuai.waimai.store.search.ui.result.nestedheader.NestedCoordinatorLayout android:id="@+id/nested_coordinator_layout" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:preScrollUp="0" app:preScrollDown="0">
+                <com.sankuai.waimai.store.view.StickyContainerFrameLayout android:id="@+id/layout_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                    <com.sankuai.waimai.log.judas.StatisticsRecyclerView android:id="@+id/list_poiSearch_poiList" android:background="@null" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:dividerHeight="0dp" android:overScrollMode="never" app:exposeBlockId="poiSearch_poiList" style="@style/wm_sc_nox_search_style_poi_global_list"/>
+                </com.sankuai.waimai.store.view.StickyContainerFrameLayout>
+                <android.support.design.widget.AppBarLayout android:id="@+id/nested_header_container" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp"/>
+            </com.sankuai.waimai.store.search.ui.result.nestedheader.NestedCoordinatorLayout>
+            <android.support.design.widget.AppBarLayout android:id="@+id/outer_header_container" android:background="@color/transparent" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior="android.support.design.widget.AppBarLayout$Behavior"/>
+        </android.support.design.widget.CoordinatorLayout>
+        <com.sankuai.waimai.store.search.common.view.EasterEggLayout android:id="@+id/search_easter_egg_layout" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/takeout_refresh_empty_global" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_sc_nox_search_refresh_empty"/>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@+id/left_bottom_btn_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/iv_use_drug_im" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_85" android:layout_height="@dimen/wm_sc_common_dimen_59" android:layout_marginBottom="@dimen/wm_sc_common_dimen_20" android:scaleType="fitEnd"/>
+            <include android:id="@+id/layout_feedback_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" layout="@layout/wm_sc_global_search_feedback_layout"/>
+            <ImageView android:id="@+id/btn_global_cart" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" android:src="@drawable/wm_sc_nox_search_ic_shop_cart"/>
+            <ImageView android:layout_gravity="bottom|right" android:id="@+id/to_top_img_poiList" android:visibility="visible" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:src="@drawable/wm_sc_nox_search_ic_to_top" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/layout_float_filter_bar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <include android:id="@+id/takeout_list_dynamic_progress_bar_global" android:visibility="gone" layout="@layout/wm_sc_nox_search_dynamic_progress"/>
+    <FrameLayout android:id="@+id/takeout_list_dynamic_progress_bar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/white_bg_dynamic_progress_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

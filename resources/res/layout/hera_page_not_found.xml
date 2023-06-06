@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|left" android:orientation="vertical" android:id="@+id/page_not_found_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:id="@+id/page_not_found_img" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="64dp" android:scaleType="fitXY"/>
+    <TextView android:textSize="20sp" android:textColor="#000000" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/mmp_page_not_found_title"/>
+    <TextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/page_not_found_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="16dp" android:layout_marginRight="30dp" android:text="@string/mmp_page_not_found_message"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.ugc.creator.widgets.AnimationView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/wm_ugc_creator_img_rotate_progress_bg" android:layout_width="47dp" android:layout_height="47dp" android:src="@drawable/wm_ugc_creator_rotate_progress" android:scaleType="centerInside"/>

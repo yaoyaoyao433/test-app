@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.im.common.view.ContentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/wm_sg_related_coupon_root" android:layout_width="match_parent" android:layout_height="wrap_content" app:WidthRatio="0.693">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginTop="@dimen/wm_sc_common_dimen_12" android:layout_marginRight="@dimen/wm_sc_common_dimen_11" android:layout_marginBottom="@dimen/wm_sc_common_dimen_2">
+        <include layout="@layout/wm_sg_related_tips"/>
+    </LinearLayout>
+    <com.sankuai.waimai.store.widgets.SCMaxHeightRecyclerView android:id="@+id/wm_sc_im_coupon_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginTop="@dimen/wm_sc_common_dimen_6" android:layout_marginRight="@dimen/wm_sc_common_dimen_11" android:layout_marginBottom="@dimen/wm_sc_common_dimen_12"/>
+</com.sankuai.waimai.business.im.common.view.ContentLinearLayout>

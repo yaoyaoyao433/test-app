@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textStyle="bold" android:textColor="@color/wm_sg_color_33312D" android:id="@+id/tv_filter_dropdown_group_title" android:paddingLeft="@dimen/wm_sc_common_dimen_16" android:paddingTop="@dimen/wm_sc_common_dimen_15" android:paddingRight="@dimen/wm_sc_common_dimen_16" android:paddingBottom="@dimen/wm_sc_common_dimen_5" android:layout_width="match_parent" android:layout_height="wrap_content"/>

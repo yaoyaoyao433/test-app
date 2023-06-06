@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <stroke android:width="@dimen/wm_common_border_width" android:color="@color/wm_common_border_avatar"/>
+    <solid android:background="@android:color/transparent"/>
+</shape>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_spin_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/wm_common_divider" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:orientation="vertical" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_150" android:layout_height="@dimen/wm_sc_common_dimen_36" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" layout="@layout/wm_st_goods_list_adapter_category_name"/>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/filter_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_36" android:layout_marginRight="12dp" android:layout_alignParentRight="true">
+            <FrameLayout android:id="@+id/fl_sort_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <FrameLayout android:id="@+id/fl_brand_filter_container" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fl_slogan_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

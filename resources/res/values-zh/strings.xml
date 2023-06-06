@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__picker_all_image">所有图片</string>
+    <string name="__picker_all_image_and_video">所有图片和视频</string>
+    <string name="__picker_all_video">所有视频</string>
+    <string name="__picker_cancel">取消</string>
+    <string name="__picker_done">完成</string>
+    <string name="__picker_done_with_count">完成(%1$d/%2$d)</string>
+    <string name="__picker_full_size">原图</string>
+    <string name="__picker_image_count">%1$d张</string>
+    <string name="__picker_image_index">%1$d/%2$d</string>
+    <string name="__picker_need_camera_permission">缺少相机权限</string>
+    <string name="__picker_need_storage_permission">缺少存储权限</string>
+    <string name="__picker_over_max_count_tips">您可以选择至多%1$d张图片</string>
+    <string name="__picker_title">图片</string>
+    <string name="__picker_title_video">视频</string>
+    <string name="__picker_unknown_error">数据异常，请重试</string>
+    <string name="__picker_yes">确定</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">载入中…</string>
+    <string name="pull_to_refresh_release_label">松手刷新…</string>
+</resources>

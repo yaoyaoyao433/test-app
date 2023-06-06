@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingBottom="9.5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.dianping.imagemanager.DPImageView android:id="@+id/iv_file_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" app:cornerRadius="3dp" app:placeholderError="@drawable/cs_upload_img_placeholder_error" app:isSquare="true"/>
+    <ImageView android:id="@+id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cs_voip_ic_delete" android:layout_alignTop="@+id/iv_file_upload" android:layout_alignRight="@+id/iv_file_upload"/>
+    <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="left" android:id="@+id/tv_file_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:maxLines="2" android:layout_below="@+id/iv_file_upload"/>
+</RelativeLayout>

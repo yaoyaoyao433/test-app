@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="cs_floating_icon">r/a2/ah1.webp</drawable>
+    <drawable name="mrn_black_back_arrow">r/a2/ah2.png</drawable>
+    <drawable name="mrn_vector_back_arrow">r/a2/ah3.png</drawable>
+    <drawable name="mtmapsdk_ic_my_location">r/a2/ah4.webp</drawable>
+    <drawable name="mtmapsdk_marker_default">r/a2/ah5.webp</drawable>
+    <drawable name="mtmapsdk_zoom_in">r/a2/ah6.webp</drawable>
+    <drawable name="mtmapsdk_zoom_out">r/a2/ah7.webp</drawable>
+    <drawable name="ptim_close_btn">r/a2/ah8.png</drawable>
+    <drawable name="roo_check_box_icon_svg">r/a2/ah9.webp</drawable>
+    <drawable name="roo_check_box_white_icon_svg1">r/a2/ah_.webp</drawable>
+    <drawable name="skeleton_kingkong_mig">r/a2/aha.webp</drawable>
+    <drawable name="skeleton_kingkong_poi">r/a2/ahb.webp</drawable>
+    <drawable name="skeleton_kingkong_pt">r/a2/ahc.webp</drawable>
+    <drawable name="skeleton_kingkong_search">r/a2/ahd.webp</drawable>
+    <drawable name="xm_sdk_vd_del_btn_mask">r/a2/ahe.webp</drawable>
+    <drawable name="xm_sdk_vd_recording_press_btn_bg_for_record">r/a2/ahf.webp</drawable>
+</resources>

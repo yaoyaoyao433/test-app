@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout android:id="@+id/feedback_dialog_top_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Space android:id="@+id/feedback_dialog_space" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/feedback_dialog_content_wrapper" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_weight="1"/>
+        <FrameLayout android:id="@+id/feedback_dialog_content_wrapper" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/feedback_dialog_space" app:layout_constraintVertical_weight="9">
+            <ScrollView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/feedback_dialog_container" android:background="@drawable/ptim_bottom_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                        <TextView android:textSize="16sp" android:textColor="#000000" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/feedback_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请对本次服务进行评价"/>
+                        <FrameLayout android:layout_gravity="center" android:id="@+id/feedback_dialog_close_btn" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp">
+                            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ptim_close_btn" android:contentDescription="关闭按钮"/>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout android:gravity="bottom" android:id="@+id/feedback_dialog_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                        <com.meituan.android.ptcommonim.widget.PTFeedbackView android:id="@+id/dialog_feedback_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

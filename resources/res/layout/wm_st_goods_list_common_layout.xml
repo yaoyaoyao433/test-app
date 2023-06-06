@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.newwidgets.FloatingWindowLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/restaurant_common_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/preload_msc_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/layout_shop_root_scroll_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/wm_sc_goods_list_market_union_layout"/>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/market_net_info" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/market_back_item" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="48dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/img_back_gray" android:background="@drawable/wm_sc_goods_list_actionbar_back_gray" android:layout_width="30dp" android:layout_height="30dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fl_wm_sg_collage_tip_container" style="@style/WmSgCollageTipsLoopBlockStyle"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/layout_poi_tip_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="48dp" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/back_to_top" android:visibility="gone" android:layout_width="57dp" android:layout_height="57dp" android:layout_marginRight="5dp" android:layout_marginBottom="126dp" android:src="@drawable/wm_sc_back_to_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/poi_page_subscribe_container" android:layout_width="120dp" android:layout_height="42dp" android:layout_marginRight="10dp" android:layout_marginBottom="85dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <include android:id="@+id/drug_consultation_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="179dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/wm_st_drug_consultation_entry"/>
+    <RelativeLayout android:id="@+id/recipe_root_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:visibility="gone" layout="@layout/wm_st_shopcart_whole"/>
+    <include android:visibility="gone" layout="@layout/wm_st_mrn_shopcart_whole"/>
+    <RelativeLayout android:id="@+id/sold_out_root_view" android:background="@color/wm_sc_black_cc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.sankuai.waimai.store.newwidgets.FloatingWindowLayout>

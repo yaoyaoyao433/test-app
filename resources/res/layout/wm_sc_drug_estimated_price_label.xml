@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_drug_label_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/wm_sc_drug_estimated_price_divider" android:showDividers="middle">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_st_common_F4A26" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_estimated_price_of_text_hint" android:paddingLeft="@dimen/wm_sc_common_dimen_4" android:paddingBottom="1px" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_estimated_price_money_symbol" android:paddingRight="@dimen/wm_sc_common_dimen_3" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/tv_goods_estimated_price_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥"/>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/tv_goods_estimated_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.sankuai.waimai.store.platform.domain.core.goods.newStylePrice.HandPriceWithUnit android:id="@+id/multi_price_unit" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

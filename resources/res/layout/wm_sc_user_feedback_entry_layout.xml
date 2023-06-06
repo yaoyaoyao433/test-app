@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.feedback.view.UserFeedbackView android:layout_gravity="bottom|right" android:id="@+id/user_feedback_right_bottom_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_marginBottom="110dp"/>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/bubble_label" android:layout_width="wrap_content" android:layout_height="18dp">
+    <TextView android:textSize="10sp" android:textColor="@color/paybase__white" android:ellipsize="none" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/bubble_content" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+</LinearLayout>

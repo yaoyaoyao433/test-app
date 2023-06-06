@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="64.5dp" android:minWidth="60dp">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_golden_coin_progress_milestone_top" android:background="@drawable/wm_order_golden_coin_progress_score" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="17dp">
+            <ImageView android:id="@+id/iv_golden_coin_progress_milestone_top_icon" android:layout_width="12dp" android:layout_height="12dp" android:src="@drawable/wm_order_golden_coin"/>
+            <TextView android:textSize="12dp" android:textColor="@color/roo_default_color_brand_primary_dark" android:id="@+id/tv_golden_coin_progress_milestone_top_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="#222426" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_golden_coin_progress_milestone_top_tip" android:background="@drawable/wm_order_golden_coin_progress_score" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="17dp" android:maxLines="1"/>
+        <View android:id="@+id/iv_golden_coin_progress_milestone_top_triangle" android:background="@drawable/wm_order_golden_coin_progress_triangle" android:layout_width="6dp" android:layout_height="2.5dp"/>
+    </LinearLayout>
+    <View android:layout_gravity="center_horizontal" android:id="@+id/iv_golden_coin_progress_milestone_middle" android:background="@drawable/wm_order_golden_coin_progress_point" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginTop="24.5dp"/>
+    <FrameLayout android:layout_gravity="bottom|center_horizontal" android:id="@+id/fl_golden_coin_progress_milestone_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_golden_coin_progress_milestone_bottom_bg" android:layout_width="24dp" android:layout_height="28dp" android:src="@drawable/wm_order_red_pack_small"/>
+        <TextView android:textSize="11dp" android:textColor="@color/white" android:layout_gravity="bottom|center_horizontal" android:id="@+id/tv_golden_coin_progress_milestone_bottom_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp"/>
+        <View android:id="@+id/iv_golden_coin_progress_milestone_bottom_mask" android:background="@drawable/wm_order_golden_coin_progress_mask" android:visibility="visible" android:layout_width="24dp" android:layout_height="28dp"/>
+    </FrameLayout>
+</FrameLayout>

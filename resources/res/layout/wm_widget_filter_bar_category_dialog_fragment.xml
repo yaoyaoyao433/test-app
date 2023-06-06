@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/block_filter" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.RoundedLinearLayout android:orientation="horizontal" android:id="@+id/ll_cond_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottomLeftCornerRadius="12dp" app:bottomRightCornerRadius="12dp" app:cropBackground="true">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="140dp" android:layout_height="match_parent">
+                <com.sankuai.waimai.platform.widget.filterbar.view.view.DynamicHeightListView android:id="@+id/list_category" android:background="#f5f5f6" android:scrollbars="none" android:layout_width="140dp" android:layout_height="wrap_content" android:listSelector="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+                <RelativeLayout android:id="@+id/footer_view" android:background="@drawable/wm_widget_filter_bar_category_item_top_round_rect" android:clickable="true" android:layout_width="140dp" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <com.sankuai.waimai.platform.widget.filterbar.view.view.DynamicHeightListView android:id="@+id/list_sub_category" android:background="@color/takeout_widget_filter_bar_background" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+        </com.sankuai.waimai.platform.widget.RoundedLinearLayout>
+        <com.sankuai.waimai.platform.widget.RoundedFrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:bottomLeftCornerRadius="12dp" app:bottomRightCornerRadius="12dp" app:cropBackground="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_no_result" android:background="@color/takeout_widget_filter_bar_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13dp" android:textColor="@color/takeout_widget_filter_bar_filter_dialog_text_normal" android:gravity="center" android:id="@+id/txt_result" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/takeout_widget_filter_bar_filter_dialog_no_data" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/page_error" android:background="@color/takeout_widget_filter_bar_background" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/img_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_widget_filter_bar_error_icon"/>
+                <TextView android:textColor="@color/takeout_widget_filter_bar_filter_dialog_text_normal" android:gravity="center" android:id="@+id/txt_info" android:layout_marginTop="24dp" android:text="@string/takeout_widget_filter_bar_filter_dialog_error" style="@style/WmText"/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/page_load" android:background="@color/takeout_widget_filter_bar_background" android:paddingBottom="50dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/wm_widget_filter_bar_loading_layout"/>
+            </FrameLayout>
+        </com.sankuai.waimai.platform.widget.RoundedFrameLayout>
+    </FrameLayout>
+</RelativeLayout>

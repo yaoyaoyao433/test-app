@@ -1,0 +1,4 @@
+wm_chatinfo_group:com.sankuai.waimai.business.im.group.init.WmGroupSessionConfig:singleton
+wm_food_safety_group:com.sankuai.waimai.business.im.group.init.WmFoodSafetySessionConfig:singleton
+wm_user_group:com.sankuai.waimai.business.im.group.init.WMImUserGroupSessionConfig:singleton
+sg_chatinfo_group:com.sankuai.waimai.store.im.group.init.SGGroupSessionConfig:singleton

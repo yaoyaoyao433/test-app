@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/wm_restaurant_head_bg_goods_and_poi_coupon_bought" android:paddingLeft="8dp" android:paddingRight="3.5dp" android:layout_width="wrap_content" android:layout_height="23dp">
+    <TextView android:textSize="11sp" android:textColor="#fb4e44" android:id="@+id/txt_coupon_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_width="4dp" android:layout_height="4dp" android:layout_marginTop="-2dp" android:src="@drawable/wm_restaurant_head_goods_and_poi_coupon_bought_concave"/>
+        <ImageView android:layout_width="18dp" android:layout_height="0dp" android:src="@drawable/wm_restaurant_head_goods_and_poi_coupon_bought_divider" android:scaleType="fitCenter" android:layout_weight="1"/>
+        <ImageView android:layout_width="4dp" android:layout_height="4dp" android:layout_marginBottom="-2dp" android:src="@drawable/wm_restaurant_head_goods_and_poi_coupon_bought_concave"/>
+    </LinearLayout>
+    <TextView android:textSize="11sp" android:textColor="#fb4e44" android:id="@+id/txt_coupon_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-4dp" android:text="可用"/>
+</LinearLayout>

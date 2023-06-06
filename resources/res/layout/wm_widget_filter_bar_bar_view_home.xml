@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/filter_container" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/filter_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/fast_filter_bar" android:paddingTop="2dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/wm_widget_filter_bar_fast_filter_divider" android:showDividers="middle"/>
+    <include android:id="@+id/second_fast_filter_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" layout="@layout/wm_widget_filter_bar_second_fast_filter_layout"/>
+</LinearLayout>

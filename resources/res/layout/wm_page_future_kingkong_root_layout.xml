@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_view" android:background="@color/wm_common_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.business.page.kingkong.future.tabfeed.view.NestedPullToRefreshView android:id="@+id/kingkong_refreshview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@color/wm_page_kingkong_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/atmosphere_bg" android:background="@drawable/wm_page_kingkong_actionbar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+            <ImageView android:id="@+id/recycler_view_gradient_bg" android:background="@drawable/wm_page_kingkong_activity_list_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp"/>
+            <FrameLayout android:id="@+id/kingkong_nested_scroll_recycler_view" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48dp"/>
+            <ViewStub android:id="@+id/wm_kingkong_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ViewStub android:id="@+id/wm_kingkong_float_search_box_viewstub" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ViewStub android:layout_gravity="bottom" android:id="@+id/wm_privacy_botttom_dialog" android:layout_width="match_parent" android:layout_height="127dp"/>
+        </FrameLayout>
+    </com.sankuai.waimai.business.page.kingkong.future.tabfeed.view.NestedPullToRefreshView>
+    <ViewStub android:layout_gravity="bottom|right" android:id="@+id/layout_bottom_right" android:layout="@layout/wm_page_common_foot_layout_main_in" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp"/>
+    <FrameLayout android:id="@+id/layout_global_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp">
+        <include android:id="@+id/layout_refresh_global" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_skeleton_layout_refresh_info"/>
+    </FrameLayout>
+    <com.sankuai.waimai.business.page.home.factory.FuTiaoMatrixView android:layout_gravity="bottom" android:id="@+id/matrix_mach_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:id="@+id/header_location_permission_layer" layout="@layout/wm_page_home_location_permission_layer"/>
+</FrameLayout>

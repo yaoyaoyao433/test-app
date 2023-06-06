@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_modify_address_contact_poi" android:background="@color/wm_common_divider_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="78dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_common_text_main" android:id="@+id/txt_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_detail_suggest_contact_poi"/>
+            <TextView android:textSize="12sp" android:textColor="@color/wm_order_all_9" android:ellipsize="end" android:id="@+id/txt_dialog_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxLines="2"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_dialog_call_and_im_info" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp">
+            <FrameLayout android:id="@+id/fl_im" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/img_dialog_im" android:visibility="visible" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="8dp" android:src="@drawable/wm_order_confirm_im_selector"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/img_dialog_tel" android:visibility="visible" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="10dp" android:src="@drawable/wm_order_confirm_tel_selector" android:layout_toRightOf="@+id/fl_im" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="5dp"/>
+</LinearLayout>

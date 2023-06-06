@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fl_order_status_operation_area_group" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:cornerRadius="12dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_order_status_list_area" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/wm_order_status_bubble_view"/>
+    <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wm_order_status_remind_bubble_view"/>
+</com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>

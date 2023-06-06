@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:background="@drawable/hh_list_item_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/hh_bottom_sheet_list_item_height">
+    <TextView android:textSize="16sp" android:textColor="@color/hp_black_33" android:ellipsize="middle" android:id="@+id/hh_bottom_dialog_list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_sdk_image_name" android:singleLine="true"/>
+</LinearLayout>

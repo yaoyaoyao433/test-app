@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/wm_nox_search_list_selector_pressed" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+    <TextView android:textSize="12dp" android:textColor="#575859" android:gravity="left" android:id="@+id/txt_poi_list_correct_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

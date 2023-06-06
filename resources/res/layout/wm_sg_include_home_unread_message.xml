@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_check_message" android:padding="2dp" android:layout_width="@dimen/wm_sc_common_dimen_24" android:layout_height="@dimen/wm_sc_common_dimen_24" android:layout_marginTop="4dp" android:src="@drawable/wm_sc_home_message_center" android:scaleType="fitXY"/>
+    <TextView android:textSize="9sp" android:textColor="@color/wm_st_common_white" android:gravity="center" android:layout_gravity="right" android:id="@+id/txt_unread_message_num" android:background="@drawable/wm_st_poi_order_prompt_count" android:visibility="gone" android:minWidth="@dimen/wm_sc_common_dimen_13" android:minHeight="@dimen/wm_sc_common_dimen_13" style="@style/WmStStoreText"/>
+</FrameLayout>

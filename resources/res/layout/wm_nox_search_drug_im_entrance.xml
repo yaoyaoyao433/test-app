@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/drug_im_entrance_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/im_entrance_bg_img" android:layout_width="91dp" android:layout_height="43dp" android:layout_marginTop="3dp"/>
+    <LinearLayout android:gravity="center" android:id="@+id/im_entrance_right_top_container" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="14dp" android:layout_marginLeft="27dp" android:maxWidth="26dp" android:minWidth="14dp">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/im_entrance_right_top_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginBottom="0.5dp" android:singleLine="true" android:includeFontPadding="false"/>
+    </LinearLayout>
+</RelativeLayout>

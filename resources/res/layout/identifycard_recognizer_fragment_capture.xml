@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/camera_preview_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.meituan.android.identifycardrecognizer.widgets.IdCardOcrCaptureClipView android:id="@+id/ocr_clipview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:idcard_clip_width="314dp" app:idcard_clip_heigh="200dp"/>
+    <RelativeLayout android:id="@+id/lay_mask" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@+id/img_mask" android:visibility="gone" android:layout_width="314dp" android:layout_height="200dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/bottom_layout" android:background="#77000000" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@+id/photo_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/identifycard_recognizer_icon_photo_album" android:layout_centerVertical="true" android:scaleX="0.7" android:scaleY="0.7"/>
+        <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@+id/img_take_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/identifycard_recognizer_icon_capture" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@+id/img_cancel" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/identifycard_recognizer_icon_circle_back"/>
+    <com.meituan.android.identifycardrecognizer.widgets.rotate.RotateImageView android:id="@+id/img_flash" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/identifycard_recognizer_icon_flash_on" android:layout_alignParentRight="true"/>
+</RelativeLayout>

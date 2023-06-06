@@ -1,0 +1,14 @@
+/takeout/content:com.sankuai.waimai.business.page.home.list.feed.ContentFeedPreLoader
+/content:com.sankuai.waimai.business.page.home.list.feed.ContentFeedPreLoader
+/takeout/mrn:com.sankuai.waimai.reactnative.preload.MRNNetPreLoader:singleton
+/menu:com.sankuai.waimai.business.restaurant.base.repository.preload.RestMenuNetWorkPreLoader
+/goodsdetail:com.sankuai.waimai.business.restaurant.base.repository.preload.FoodDetailNetWorkPreLoader
+/restrictrestaurant:com.sankuai.waimai.business.restaurant.base.repository.preload.RestMenuNetWorkPreLoader
+/mrn:com.sankuai.waimai.reactnative.preload.MRNNetPreLoader:singleton
+/pickme:com.sankuai.waimai.business.ugc.pickme.PickMePreloadRunnable
+/searchglobal:com.sankuai.waimai.business.search.preload.GlobalSearchNetworkPreLoader
+/poifilter:com.sankuai.waimai.business.page.kingkong.future.network.preload.KingKongNetworkPreLoader
+/takeout/pickme:com.sankuai.waimai.business.ugc.pickme.PickMePreloadRunnable
+/takeout/secondpage:com.sankuai.waimai.business.page.kingkong.future.network.preload.KingKongNetworkPreLoader
+/order:com.sankuai.waimai.bussiness.order.detailnew.preload.OrderDetailNetworkPreLoader
+/restaurant:com.sankuai.waimai.business.restaurant.base.repository.preload.RestMenuNetWorkPreLoader

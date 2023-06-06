@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+    <FrameLayout android:id="@+id/tab_layout_container" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.business.page.common.widget.tablayout.CustomTabLayout android:id="@+id/home_tab_layout" android:layout_width="match_parent" android:layout_height="@dimen/wm_page_home_tab_layout_height" app:customIndicatorColor="#ffffa200" app:customIndicatorHeight="10dp" app:customIndicatorWidth="37dp" app:customTabViewLayoutResId="@layout/wm_page_home_poilist_tab_layout_item" app:customTabMode="scrollable" app:customTabTextColor="#ff33312d" app:customTabSelectedTextColor="#ffffa200" app:customTabPaddingBottom="13dp" app:customTabSpacing="40dp" app:customIndicatorTopMargin="5dp" app:autoHideIndicator="true" app:specialStyleIndicatorBg="true"/>
+    </FrameLayout>
+    <com.sankuai.waimai.business.page.common.view.nested.NestedViewPager android:id="@+id/home_view_Pager" android:layout_width="match_parent" android:layout_height="600dp"/>
+</LinearLayout>

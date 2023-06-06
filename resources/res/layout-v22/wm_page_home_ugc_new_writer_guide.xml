@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="266dp" android:layout_height="wrap_content" android:layout_marginLeft="50dp">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/iv_guide_arrow" android:layout_width="18dp" android:layout_height="30dp" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:project="waimai_c" app:srcName="waimai_c_wm_ugc_guide_arrow"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_guide_content" android:background="@drawable/wm_page_home_ugc_new_writer_guide_bg" android:layout_width="255dp" android:layout_height="wrap_content" android:paddingHorizontal="10dp" android:paddingVertical="18dp" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/iv_guide_arrow">
+        <TextView android:textSize="12sp" android:textColor="#773d00" android:id="@+id/tv_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#934200" android:id="@+id/tv_guide_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+        <ImageView android:id="@+id/tv_guide_img" android:layout_width="match_parent" android:layout_height="105.5dp" android:layout_marginTop="10dp" android:scaleType="centerInside"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#222426" android:gravity="center" android:id="@+id/tv_guide_confirm_btn" android:background="@drawable/wm_page_home_ugc_btn_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="15dp" android:text="去发布首篇笔记"/>
+    </LinearLayout>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="68.65dp" android:layout_height="68.65dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" app:project="waimai_c" app:srcName="waimai_c_wm_ugc_new_writer_guide_camera"/>
+</android.support.constraint.ConstraintLayout>

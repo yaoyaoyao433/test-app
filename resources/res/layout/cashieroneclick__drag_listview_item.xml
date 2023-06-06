@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/cashieroneclick__drag_listview_item_layout" android:background="@drawable/cashieroneclick__drag_listview_background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="20dp" android:paddingEnd="18dp">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/cashieroneclick__drag_listview_item" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/cashieroneclick__drag_listview_item_text_color" android:id="@+id/cashieroneclick__drag_listview_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_marginEnd="5dp"/>
+        <com.meituan.android.paycommon.lib.widgets.PayLabelContainer android:id="@+id/cashieroneclick__drag_listview_item_label_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/cashieroneclick__drag_listview_item_icon" android:layout_width="15dp" android:layout_height="12dp" android:src="@drawable/cashieroneclick__drag_listview_item_icon"/>
+</LinearLayout>

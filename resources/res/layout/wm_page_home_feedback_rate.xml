@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/wm_page_home_feedback_title"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="79dp" android:layout_marginTop="6dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.meituan.roodesign.widgets.rate.RooRatingBar android:id="@+id/rb_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:stepSize="1" style="@style/Widget.RooDesign.RatingBar"/>
+            <TextView android:textSize="14dp" android:textColor="#222426" android:id="@+id/tv_rate_level" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

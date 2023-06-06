@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/wm_sc_goods_list_bg_pop_up_window" android:layout_width="130dp" android:layout_height="wrap_content"/>

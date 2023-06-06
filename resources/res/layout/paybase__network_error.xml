@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.paybase.screen.AutoFitLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/network_error_icon" android:layout_width="wrap_content" android:layout_height="160dp" android:layout_marginLeft="83dp" android:layout_marginTop="120dp" android:layout_marginRight="82dp" android:src="@drawable/paybase__network_error_icon"/>
+    <TextView android:textSize="14sp" android:textColor="#999999" android:gravity="center_horizontal" android:id="@+id/network_error_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/paybase__network_error_hint" android:includeFontPadding="false"/>
+    <Button android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/click_to_refresh" android:clickable="false" android:layout_width="120dp" android:layout_height="41dp" android:layout_marginTop="20dp" android:text="@string/paybase__net_error_refresh" android:includeFontPadding="false" style="@style/mtpaysdk_button_net_error"/>
+</com.meituan.android.paybase.screen.AutoFitLinearLayout>

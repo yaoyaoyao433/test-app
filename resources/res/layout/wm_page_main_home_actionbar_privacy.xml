@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/wm_page_all_f" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:orientation="vertical" android:id="@+id/action_bar_root_privacy" android:background="@drawable/wm_page_home_actionbar_bg" android:layout_width="match_parent" android:layout_height="@dimen/wm_privacy_action_bar_max_height">
+        <View android:layout_gravity="bottom" android:id="@+id/view_corner_bg" android:background="@drawable/wm_page_home_search_box_bg" android:layout_width="match_parent" android:layout_height="@dimen/wm_privacy_action_bar_height_gap"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_location_box_privacy" android:background="@drawable/wm_page_home_actionbar_bg" android:paddingLeft="@dimen/wm_page_home_padding" android:layout_width="match_parent" android:layout_height="@dimen/wm_privacy_action_bar_min_height">
+            <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20dp" android:id="@+id/img_location" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="2dp" android:text="@string/wm_c_iconfont_14dingwei"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#222426" android:ellipsize="end" android:id="@+id/txt_location" android:text="请输入收货地址" android:lines="1" style="@style/WmText"/>
+            <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8dp" android:id="@+id/img_location_arrow" android:layout_width="8dp" android:layout_height="8dp" android:text="@string/wm_c_iconfont_arrow_right_small"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

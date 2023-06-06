@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="20dp">
+    <ImageView android:id="@+id/recommendIcon" android:visibility="gone" android:layout_width="28dp" android:layout_height="17dp" android:scaleType="fitXY"/>
+    <com.sankuai.waimai.store.newwidgets.labelview.LabelView android:textSize="11sp" android:textStyle="bold" android:gravity="center" android:id="@+id/lableView" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="20dp" android:drawablePadding="2dp"/>
+    <ImageView android:id="@+id/iv_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitXY"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/gradient_background_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <FrameLayout android:id="@+id/action_bar_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/adapter_view">
+        <RelativeLayout android:id="@+id/action" android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:id="@+id/logo_view" android:layout_width="match_parent" android:layout_height="24dp" android:layout_marginRight="10dp" android:scaleType="fitStart" android:layout_toLeftOf="@+id/shop_cart" android:layout_toRightOf="@+id/back" android:layout_centerVertical="true"/>
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@+id/back" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="12dp" android:src="@drawable/wm_sc_super_drugstore_back" android:layout_centerVertical="true" app:riv_start_color="#222426" app:riv_end_color="#575859"/>
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@+id/more" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="12dp" android:src="@drawable/wm_sc_super_drugstore_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:riv_start_color="#222426" app:riv_end_color="#575859"/>
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@+id/collect" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="16dp" android:src="@drawable/wm_sc_super_drugstore_collect" android:layout_toLeftOf="@+id/more" android:layout_centerVertical="true" app:riv_start_color="#222426" app:riv_end_color="#575859"/>
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@+id/coupon_action_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/wm_sc_restaurant_head_coupon" android:layout_toLeftOf="@+id/collect" android:layout_centerVertical="true" android:alpha="0" app:riv_start_color="#222426" app:riv_end_color="#575859"/>
+            <TextView android:textSize="9sp" android:textColor="@color/wm_st_common_white" android:id="@+id/unread_message_count" android:background="@drawable/wm_st_poi_order_prompt_count" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:minWidth="12dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="13sp" android:textColor="#ff858687" android:gravity="center_vertical" android:id="@+id/search_view" android:background="@drawable/wm_drug_poi_market_action_bar_bg_search" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="0dp" android:layout_height="32dp" android:layout_marginLeft="8dp" android:layout_marginTop="48dp" android:layout_marginRight="8dp" android:singleLine="true" android:drawableLeft="@drawable/sc_wm_super_drugstore_cart" android:drawablePadding="4dp" android:layout_weight="1"/>
+            <View android:id="@+id/v_space_search" android:layout_width="0dp" android:layout_height="10dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@+id/adapter_view" android:layout_width="match_parent" android:layout_height="50dp"/>
+</merge>

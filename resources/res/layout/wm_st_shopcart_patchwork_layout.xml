@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/black_gap_view" android:background="@color/wm_sc_black_cc" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <include layout="@layout/wm_st_shopcart_patchwork_layout_not_automatic"/>
+    <include layout="@layout/wm_st_shopcart_patchwork_layout_automatic"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/blank_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_57" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_16" android:textStyle="bold" android:textColor="@color/wm_sg_color_333333" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/b2c_patch_select_done_tv" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_40" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginRight="@dimen/wm_sc_common_dimen_12" android:text="选好了"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_try_lucky_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/blank_view" android:layout_below="@+id/black_gap_view">
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv_price_range" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_32" android:layout_marginLeft="@dimen/wm_sc_common_dimen_15"/>
+        <View android:background="@color/wm_st_common_e4e4e4" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_divider_height" android:layout_marginLeft="@dimen/wm_sc_common_dimen_15" android:layout_marginTop="@dimen/wm_sc_common_dimen_12" android:layout_marginRight="@dimen/wm_sc_common_dimen_15"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/rv_patchwork_list" android:paddingLeft="@dimen/wm_sc_common_dimen_15" android:paddingRight="@dimen/wm_sc_common_dimen_15" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" app:divider="@color/wm_st_common_e4e4e4" app:dividerHeight="@dimen/wm_sc_common_dimen_divider_height"/>
+    </LinearLayout>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/patchwork_list_layout_info" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/black_gap_view" app:centerVertical="true"/>
+</RelativeLayout>

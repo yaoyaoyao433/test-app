@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="@dimen/wm_sc_common_dimen_12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/promotion_deadline_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_12" android:textStyle="bold" android:textColor="@color/wm_sc_nox_search_color_858687" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/limited_time_spiked_stop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textColor="@color/white" android:gravity="end|center_vertical" android:layout_gravity="center_vertical" android:id="@+id/promotion_deadline_day" android:layout_width="wrap_content" android:layout_marginRight="@dimen/wm_sc_common_dimen_4" style="@style/WmScLabel"/>
+            <com.sankuai.waimai.store.widgets.SGDetailCountDownView android:layout_gravity="center_vertical" android:id="@+id/promotion_countdown_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="start|center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/promotion_deadline_layout">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_promotion_title" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginRight="6dp" style="@style/WmScLabel"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_FF5231" android:gravity="center" android:id="@+id/txt_promotion_info" android:paddingLeft="4dp" android:paddingTop="1.5dp" android:paddingRight="4dp" android:paddingBottom="1.5dp" android:layout_marginRight="3dp" android:includeFontPadding="false" style="@style/WmScLabel"/>
+    </LinearLayout>
+</RelativeLayout>

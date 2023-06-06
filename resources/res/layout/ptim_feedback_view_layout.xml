@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Space android:layout_width="match_parent" android:layout_height="14dp"/>
+    <FrameLayout android:id="@+id/feedback_score_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.meituan.android.ptcommonim.widget.PTFeedbackScoreLayout android:id="@+id/feedback_score_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/feedback_tag_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.meituan.android.ptcommonim.widget.PTFeedbackTagLayoutV2 android:id="@+id/feedback_tag_layout_v2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="16dp" android:layout_marginRight="15dp" app:maxRowCount="3"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/feedback_edittext_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.meituan.android.ptcommonim.widget.PTFeedbackEditView android:id="@+id/feedback_edittext_wrapper" android:background="@drawable/ptim_edittext_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="13dp" android:layout_marginRight="15dp" android:layout_marginBottom="13dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/feedback_question_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.meituan.android.ptcommonim.widget.PTFeedbackQuestionView android:id="@+id/feedback_solve_question_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/ptim_button_text_enabled" android:gravity="center" android:layout_gravity="center" android:id="@+id/feedback_submit_btn" android:background="@drawable/ptim_submit_btn_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="13dp" android:layout_marginRight="15dp" android:layout_marginBottom="16dp" android:text="提交"/>
+</LinearLayout>

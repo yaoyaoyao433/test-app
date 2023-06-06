@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#fff7f0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="#7b5700" android:gravity="center" android:id="@+id/txt_person" android:background="@drawable/wm_restaurant_feed_recommend_person_bg" android:paddingLeft="40dp" android:paddingRight="7.5dp" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_marginLeft="10dp" android:layout_marginTop="12dp"/>
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="43dp" android:layout_height="25dp" android:layout_marginLeft="7dp" android:layout_marginTop="12dp" app:project="waimai_c" app:srcName="waimai_c_restaurant_icon_productpackage_title"/>
+        <TextView android:textSize="12dp" android:textColor="@color/wm_common_text_auxiliary" android:ellipsize="end" android:id="@+id/txt_recommend_reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginRight="15dp" android:maxWidth="160dp" android:maxLines="1" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_goods_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp"/>
+    <View android:id="@+id/view_divider" android:background="#b3ffead9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54dp">
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/wm_common_text_money" android:id="@+id/txt_activity_tips" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/wm_common_text_money" android:id="@+id/txt_real_price_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dp" android:layout_marginRight="2dp" android:text="¥"/>
+            <TextView android:textSize="22dp" android:textStyle="bold" android:textColor="@color/wm_common_text_money" android:id="@+id/txt_real_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:text="23.21"/>
+            <com.sankuai.waimai.restaurant.shopcart.widget.text.StrikeTextView android:textSize="11dp" android:textColor="@color/wm_common_text_hint" android:layout_gravity="bottom" android:id="@+id/txt_origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_marginBottom="2dp"/>
+            <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/wm_common_text_main" android:id="@+id/btn_add" android:background="@drawable/wm_restaurant_feed_add_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="一键加购"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

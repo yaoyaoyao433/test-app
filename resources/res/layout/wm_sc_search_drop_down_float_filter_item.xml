@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wm_sc_common_dimen_9" android:layout_marginStart="@dimen/wm_sc_common_dimen_12">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/drop_down_float_filter_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:ellipsize="end" android:id="@+id/drop_down_float_filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/wm_sc_common_dimen_119" android:maxLines="1" android:includeFontPadding="false"/>
+        <ImageView android:id="@+id/drop_down_float_filter_icon" android:layout_width="@dimen/wm_sc_common_dimen_9" android:layout_height="@dimen/wm_sc_common_dimen_7" android:src="@drawable/wm_sc_search_drop_down_filter_item_selected" android:layout_marginStart="@dimen/wm_sc_common_dimen_8"/>
+    </LinearLayout>
+</FrameLayout>

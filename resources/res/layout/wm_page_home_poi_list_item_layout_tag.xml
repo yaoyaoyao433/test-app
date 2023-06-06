@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_activities_container" android:paddingLeft="8dp" android:paddingTop="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:id="@+id/tag_activities_line" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/tag_activities_expand" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/classify_activity_tag_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11dp" android:textColor="#858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="活动" android:layout_marginEnd="6dp"/>
+                <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:id="@+id/tag_classify_activity" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/classify_rp_tag_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                <TextView android:textSize="11dp" android:textColor="#858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="红包" android:layout_marginEnd="6dp"/>
+                <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:id="@+id/tag_classify_rp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/classify_serve_tag_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                <TextView android:textSize="11dp" android:textColor="#858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务" android:layout_marginEnd="6dp"/>
+                <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:id="@+id/tag_classify_serve" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_expand_activities" android:layout_width="11dp" android:layout_height="11dp" android:layout_marginTop="2dp" android:src="@drawable/wm_page_home_poi_list_item_ic_arrow_down" android:scaleType="centerCrop"/>
+    </LinearLayout>
+</merge>

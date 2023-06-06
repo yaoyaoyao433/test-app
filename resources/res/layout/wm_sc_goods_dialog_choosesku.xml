@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/goods_dialog_choosesku" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/show_choose_sku" android:layout_width="320dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/title_root_view" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_14" android:layout_marginTop="@dimen/wm_sc_common_dimen_4" android:layout_marginRight="@dimen/wm_sc_common_dimen_13">
+            <TextView android:textSize="16sp" android:textColor="#2f2f2f" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/title_name" android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+            <TextView android:layout_gravity="center_vertical" android:id="@+id/btn_dialog_close" android:background="@drawable/wm_sc_goods_list_goods_ic_choosesku_close" android:layout_width="14.5dp" android:layout_height="14.5dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_2" android:contentDescription="关闭"/>
+        </LinearLayout>
+        <com.sankuai.waimai.store.newwidgets.SCSkuDialogScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_sku_and_attr_holder" android:paddingLeft="@dimen/wm_sc_common_dimen_14" android:paddingTop="@dimen/wm_sc_common_dimen_10" android:paddingRight="@dimen/wm_sc_common_dimen_14" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.sankuai.waimai.store.newwidgets.SCSkuDialogScrollView>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/sku_dialog_specifi_info" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/sku_dialog_root_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/wm_st_shopcart_whole"/>
+</RelativeLayout>

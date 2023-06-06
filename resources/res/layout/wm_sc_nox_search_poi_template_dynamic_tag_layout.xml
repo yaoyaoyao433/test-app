@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/search_common_dynamic_tag_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_7">
+    <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:id="@+id/search_common_dynamic_tag_view" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <ImageView android:id="@+id/search_common_dynamic_tag_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/wm_sc_common_dimen_8"/>
+</LinearLayout>

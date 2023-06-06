@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/goods_dialog_choosesku" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.platform.widget.SkuDialogLinearLayout android:orientation="vertical" android:id="@+id/show_choose_sku" android:layout_width="330dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" layout="@layout/takeout_view_goods_detail_sku_attr"/>
+        <include android:layout_gravity="center_vertical" android:id="@+id/layout_scroll_price_info" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wm_restaurant_price_layout_for_choose_sku"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/btn_dialog_close" android:padding="20dp" android:layout_width="match_parent" android:layout_height="80dp" android:src="@drawable/wm_restaurant_dialog_close" android:contentDescription="@string/wm_restaurant_view_btn_dialog_close_desc"/>
+    </com.sankuai.waimai.platform.widget.SkuDialogLinearLayout>
+</RelativeLayout>

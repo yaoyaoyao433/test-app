@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="14dp" android:textColor="@color/wm_order_confirm_title_text_color" android:gravity="center" android:id="@+id/txt_delivery_time_item" android:layout_width="match_parent" android:layout_height="50dp"/>

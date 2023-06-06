@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12dp" android:textColor="#ff6000" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/cashier_discount_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:maxLines="1"/>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/WmCell.Clickable">
+    <TextView android:id="@+id/env_txt_title" style="@style/WmText"/>
+    <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_auxiliary" android:gravity="center" android:id="@+id/env_txt_info" android:visibility="invisible" android:layout_marginLeft="10dp" style="@style/WmText.Weighted"/>
+    <Switch android:id="@+id/env_switch" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:checked="false"/>
+    <include android:id="@+id/env_arrow" android:visibility="gone" layout="@layout/wm_common_view_cell_arrow_right"/>
+</LinearLayout>

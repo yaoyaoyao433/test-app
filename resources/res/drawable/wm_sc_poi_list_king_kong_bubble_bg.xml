@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="@dimen/wm_sc_common_dimen_8" android:topRightRadius="@dimen/wm_sc_common_dimen_8" android:bottomLeftRadius="@dimen/wm_sc_common_dimen_2" android:bottomRightRadius="@dimen/wm_sc_common_dimen_8"/>
+    <padding android:left="@dimen/wm_sc_common_dimen_5" android:top="0.5dp" android:right="@dimen/wm_sc_common_dimen_5" android:bottom="0.5dp"/>
+    <solid android:color="#fb4f44"/>
+    <stroke android:width="@dimen/wm_sc_common_dimen_half" android:color="@color/white"/>
+</shape>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/wm_sc_common_dimen_95" android:layout_height="@dimen/wm_sc_common_dimen_40">
+    <FrameLayout android:id="@+id/flash_stepper_dec_delegate" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/flash_stepper_dec" android:layout_width="@dimen/wm_sc_common_dimen_20" android:layout_height="@dimen/wm_sc_common_dimen_20" android:layout_margin="@dimen/wm_sc_common_dimen_10" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textColor="@color/wm_sg_color_222426" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/flash_stepper_number" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_negative_10" android:layout_marginRight="@dimen/wm_sc_common_dimen_negative_10" android:maxLines="1" android:layout_weight="1"/>
+    <RelativeLayout android:layout_gravity="end" android:id="@+id/flash_stepper_add_delegate" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/flash_stepper_add" android:layout_width="@dimen/wm_sc_common_dimen_20" android:layout_height="@dimen/wm_sc_common_dimen_20" android:layout_margin="@dimen/wm_sc_common_dimen_10" android:scaleType="fitCenter"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_10" android:textColor="@color/wm_sg_color_FFFFFF" android:gravity="center" android:id="@+id/flash_stepper_bubble_text" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_14" android:layout_height="@dimen/wm_sc_common_dimen_14" android:layout_marginTop="@dimen/wm_sc_common_dimen_negative_7" android:layout_marginRight="@dimen/wm_sc_common_dimen_negative_7" android:maxLines="1" android:layout_alignTop="@+id/flash_stepper_add" android:layout_alignRight="@+id/flash_stepper_add"/>
+    </RelativeLayout>
+</LinearLayout>

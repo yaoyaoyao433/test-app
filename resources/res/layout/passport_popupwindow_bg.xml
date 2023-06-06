@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/passport_index_tip_background" android:layout_width="104dp" android:layout_height="27.8dp">
+    <TextView android:textSize="10dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/passport_account_privacy_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginTop="5dp" android:text="@string/passport_index_tips"/>
+</LinearLayout>

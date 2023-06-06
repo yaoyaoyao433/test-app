@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@string/hh_sdk_image_name"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/hp_sdk_alpha_black" android:paddingTop="@dimen/hh_dp_10" android:paddingBottom="@dimen/hh_dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom_layout">
+        <TextView android:textSize="22sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_sdk_image_name"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hh_dp_6">
+            <TextView android:textSize="13sp" android:textColor="@android:color/white" android:id="@+id/des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_av_accept_show_hint" android:layout_centerHorizontal="true"/>
+            <com.hhmedic.android.sdk.uikit.widget.WaitView android:textColor="@android:color/white" android:id="@+id/wait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/hh_dp_6" android:layout_toEndOf="@+id/des"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/bottom_layout" android:background="@color/hp_sdk_alpha_black" android:paddingLeft="@dimen/hh_horizontal_margin" android:paddingRight="@dimen/hh_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/calling_bottom" android:paddingLeft="@dimen/hh_callback_padding" android:paddingRight="@dimen/hh_callback_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/refuse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_av_refuse_btn" android:drawableTop="@drawable/hh_av_chat_refuse_bg_normal" style="@style/hh_av_btn"/>
+            <Button android:id="@+id/accept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_av_accept_btn" android:drawableTop="@drawable/hh_av_chat_accept_bg_normal" android:layout_alignParentEnd="true" style="@style/hh_av_btn">
+                <requestFocus/>
+            </Button>
+        </RelativeLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_cancel" android:drawableTop="@drawable/hh_av_chat_refuse_bg_normal" style="@style/hh_av_btn"/>
+    </FrameLayout>
+</RelativeLayout>

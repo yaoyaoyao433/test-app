@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.filterbar.view.view.FilterBarAnimatableImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/wm_core_bg_progress_round" android:layout_width="@dimen/takeout_widget_filter_bar_filter_loading_round_width" android:layout_height="@dimen/takeout_widget_filter_bar_filter_loading_round_height" android:scaleType="centerInside" app:drawableResList="@drawable/wm_widget_filter_bar_loading_animation"/>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="80dp">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="16dp">
+        <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="center" android:id="@+id/collect_food_item_icon" android:layout_width="59.5dp" android:layout_height="59.5dp" android:scaleType="centerCrop" app:cornerRadius="6dp"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginLeft="86dp">
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/collect_food_item_name" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:id="@+id/fl_collect_food_activity_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15dp" android:layout_marginRight="15dp" app:cornerRadius="2dp">
+                <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/collect_food_activity_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:text="减5元配送费" android:singleLine="true"/>
+            </com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>
+            <TextView android:textSize="11sp" android:textColor="@color/wm_order_confirm_title_text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/collect_food_item_month_sales" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.sankuai.waimai.bussiness.order.confirm.widget.NoBottomPaddingTextView android:textSize="10sp" android:textColor="#fb4e44" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_self_select_time_yuan"/>
+            <com.sankuai.waimai.bussiness.order.confirm.widget.NoBottomPaddingTextView android:textSize="16sp" android:textColor="@color/wm_order_confirm_text_money_color" android:gravity="bottom" android:id="@+id/collect_food_item_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.5dp"/>
+            <com.sankuai.waimai.bussiness.order.confirm.widget.NoBottomPaddingTextView android:textSize="11sp" android:textColor="#fb4e44" android:gravity="bottom" android:id="@+id/collect_food_item_purchase_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:gravity="center_vertical" android:layout_gravity="bottom|right" android:visibility="visible" android:layout_width="104dp" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/collect_food_item_sub_icon" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="6.5dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_order_confirm_collect_food_sub_icon" android:contentDescription="减少"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/collect_food_item_add_icon" android:paddingLeft="6.5dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_order_confirm_collect_food_add_icon" android:contentDescription="增加"/>
+        <TextView android:textSize="14sp" android:textColor="#2f2f2f" android:layout_gravity="center" android:id="@+id/collect_food_item_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

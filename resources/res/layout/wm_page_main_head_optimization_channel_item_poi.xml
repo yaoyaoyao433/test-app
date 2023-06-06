@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+    <com.sankuai.waimai.business.page.home.widget.RatioFrameLayout android:id="@+id/layout_product_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:widthRatio="4" app:heightRatio="3">
+        <ImageView android:id="@+id/imageview_product_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </com.sankuai.waimai.business.page.home.widget.RatioFrameLayout>
+    <FrameLayout android:id="@+id/layout_poi_image" android:background="@drawable/wm_page_main_head_opti_icon_bg" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginRight="6dp" android:layout_marginBottom="-4dp" android:layout_alignBottom="@+id/layout_product_image" android:layout_alignParentRight="true">
+        <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="center" android:id="@+id/imageview_poi_image" android:layout_width="25dp" android:layout_height="25dp" android:scaleType="centerCrop" app:cornerRadius="6dp"/>
+    </FrameLayout>
+    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/wm_page_home_optimization_title_bg" android:id="@+id/txt_title" android:paddingTop="8dp" android:paddingBottom="3dp" android:layout_below="@+id/layout_product_image" android:layout_alignParentLeft="true" style="@style/WmText"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/txt_title">
+        <TextView android:textSize="11dp" android:textColor="@color/wm_page_home_optimization_sub_title_bg" android:id="@+id/txt_sub_title" android:layout_weight="1" android:layout_alignParentLeft="true" style="@style/WmText"/>
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center_vertical" android:id="@+id/poi_del" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_page_icon_main_optimization_poi_del"/>
+    </LinearLayout>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/poi_del_v2" android:padding="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:project="waimai_c" app:srcName="waimai_c_page_icon_main_optimization_poi_del_v2"/>
+</RelativeLayout>

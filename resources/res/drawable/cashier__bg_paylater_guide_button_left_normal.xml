@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/cashier__bg_paylater_guide_button_left_radius"/>
+    <solid android:color="@color/paybase__weak_confirm_btn_disabled_color"/>
+</shape>

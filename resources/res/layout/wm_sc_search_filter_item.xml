@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.view.RoundedCornerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fl_search_filter_item_container" android:paddingTop="@dimen/wm_sc_common_dimen_8" android:paddingBottom="@dimen/wm_sc_common_dimen_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/wm_sc_common_dimen_6" android:paddingEnd="@dimen/wm_sc_common_dimen_6" app:cornerRadius="@dimen/wm_sc_common_dimen_6">
+    <ImageView android:layout_gravity="center" android:id="@+id/search_filter_item_image" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_16" android:scaleType="fitCenter"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/search_filter_item_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/search_filter_item_icon" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_12" android:layout_height="@dimen/wm_sc_common_dimen_12" android:scaleType="fitCenter" android:layout_marginEnd="@dimen/wm_sc_common_dimen_2"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:gravity="center" android:id="@+id/search_filter_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:gravity="center" android:id="@+id/search_filter_item_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_2" android:maxLines="1" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.sankuai.waimai.store.view.RoundedCornerFrameLayout>

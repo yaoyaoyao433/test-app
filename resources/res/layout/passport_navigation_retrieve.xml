@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.meituan.navigation.NavViewGroup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" app:startDestination="@+id/input_account">
+    <fragment android:label="@string/passport_page_retrieve_label_check_security" android:name="com.meituan.passport.retrieve.fragment.CheckSecurityFragment" android:id="@+id/check_security" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <fragment android:label="@string/passport_page_retrieve_label_input_account" android:name="com.meituan.passport.retrieve.fragment.InputAccountFragment" android:id="@+id/input_account" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <fragment android:label="@string/passport_page_retrieve_label_input_new_password" android:name="com.meituan.passport.retrieve.fragment.InputNewPassportFragment" android:id="@+id/input_new_password" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</com.sankuai.meituan.navigation.NavViewGroup>

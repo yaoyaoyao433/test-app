@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19dp">
+        <TextView android:textSize="16dp" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_status_follow_order" android:layout_centerInParent="true" style="@style/WmText"/>
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/btn_close" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="关闭" app:project="waimai_c" app:srcName="waimai_c_order_icon_detail_feedback_dialog_close"/>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/timeline_layout" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="25dp" android:layout_marginBottom="50dp" android:fillViewport="true" android:layout_below="@+id/dialog_title" android:layout_centerHorizontal="true" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_history_status_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

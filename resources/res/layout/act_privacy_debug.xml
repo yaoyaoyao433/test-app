@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@android:color/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="隐私合规debug页面" android:layout_centerHorizontal="true"/>
+    <CheckBox android:id="@+id/enable_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="过渡期开关" android:layout_below="@+id/title"/>
+    <CheckBox android:id="@+id/enable_mock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="appmock开关" android:layout_below="@+id/enable_cb"/>
+    <CheckBox android:id="@+id/cb_enable_floating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="调试悬浮窗" android:layout_below="@+id/enable_mock"/>
+    <Button android:id="@+id/info_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看当前云控数据" android:layout_below="@+id/title" android:layout_centerHorizontal="true" android:layout_alignParentEnd="true"/>
+    <Button android:id="@+id/refresh_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="刷新云控数据" android:layout_below="@+id/info_btn" android:layout_centerHorizontal="true" android:layout_alignParentEnd="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/enable_mock">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前使用token:"/>
+            <EditText android:id="@+id/bu_et" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="输入token"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="枚举token:"/>
+            <Spinner android:id="@+id/bu_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择申请权限"/>
+            <Spinner android:id="@+id/spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <Button android:id="@+id/btn_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="权限检查"/>
+            <Button android:id="@+id/btn_check_async" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="权限检查异步" android:layout_toRightOf="@+id/btn_check"/>
+            <Button android:id="@+id/btn_request" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="权限获取" android:layout_toEndOf="@+id/btn_check_async"/>
+            <Button android:id="@+id/btn_open_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="打开系统设置" android:layout_below="@+id/btn_check"/>
+            <Button android:id="@+id/btn_check_ignore_monitor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="权限检查(忽略监控)" android:layout_toRightOf="@+id/btn_open_setting" android:layout_alignTop="@+id/btn_open_setting"/>
+        </RelativeLayout>
+        <Button android:id="@+id/btn_goto_netfilter" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="跳转网络参数过滤开发者工具"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+            <TextView android:layout_gravity="center_horizontal" android:id="@+id/result" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

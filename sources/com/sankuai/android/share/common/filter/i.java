@@ -1,0 +1,49 @@
+package com.sankuai.android.share.common.filter;
+
+import android.text.TextUtils;
+import com.meituan.robust.ChangeQuickRedirect;
+import com.meituan.robust.PatchProxy;
+import com.meituan.robust.utils.RobustBitConfig;
+import com.sankuai.android.share.bean.AppBean;
+import com.sankuai.android.share.bean.ShareBaseBean;
+import com.sankuai.android.share.interfaces.b;
+/* compiled from: ProGuard */
+/* loaded from: classes3.dex */
+public final class i implements b {
+    public static ChangeQuickRedirect a;
+    public ShareBaseBean b;
+
+    public i(ShareBaseBean shareBaseBean) {
+        Object[] objArr = {shareBaseBean};
+        ChangeQuickRedirect changeQuickRedirect = a;
+        if (PatchProxy.isSupport(objArr, this, changeQuickRedirect, false, "5c4500c6b509439a785dd7bd3c7b090c", 6917529027641081856L)) {
+            PatchProxy.accessDispatch(objArr, this, changeQuickRedirect, false, "5c4500c6b509439a785dd7bd3c7b090c");
+        } else {
+            this.b = shareBaseBean;
+        }
+    }
+
+    @Override // com.sankuai.android.share.common.filter.b
+    public final boolean a(AppBean appBean) {
+        Object[] objArr = {appBean};
+        ChangeQuickRedirect changeQuickRedirect = a;
+        if (PatchProxy.isSupport(objArr, this, changeQuickRedirect, false, "32f957b6103af1424f02146c83ce7bc0", RobustBitConfig.DEFAULT_VALUE)) {
+            return ((Boolean) PatchProxy.accessDispatch(objArr, this, changeQuickRedirect, false, "32f957b6103af1424f02146c83ce7bc0")).booleanValue();
+        }
+        if (appBean != null && appBean.getId() == 256) {
+            if (this.b == null) {
+                return true;
+            }
+            if (TextUtils.isEmpty(this.b.getUrl()) && TextUtils.isEmpty(this.b.getImgUrl()) && TextUtils.isEmpty(this.b.getContent())) {
+                return true;
+            }
+            if (!TextUtils.isEmpty(this.b.getUrl()) && TextUtils.isEmpty(this.b.getContent()) && TextUtils.isEmpty(this.b.getTitle(b.a.WEIXIN_CIRCLE)) && !this.b.isLocalImage()) {
+                return true;
+            }
+            if (this.b.isLocalImage() && TextUtils.isEmpty(this.b.getImgUrl())) {
+                return true;
+            }
+        }
+        return false;
+    }
+}

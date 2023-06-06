@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"> android:shape=&quot;rectangle&quot;&gt;\10
+    <solid android:color="@color/wm_im_send_btn_background"/>
+    <corners android:radius="14dp"/>
+</shape>

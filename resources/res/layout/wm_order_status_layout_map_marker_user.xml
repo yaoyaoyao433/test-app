@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_user_marker_root_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:id="@+id/view_oval_point" android:background="@drawable/wm_order_detail_oval_bg" android:layout_width="14dp" android:layout_height="5.5dp" android:layout_marginBottom="7dp" android:layout_alignBottom="@+id/fl_user_avator_container" android:layout_centerHorizontal="true"/>
+    <FrameLayout android:id="@+id/fl_user_avator_container" android:background="@drawable/wm_order_status_map_user_infowindow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="center_horizontal" android:id="@+id/img_map_avator" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="3dp" android:scaleType="centerCrop" app:cornerRadius="6dp"/>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/passport_warning_bg" android:background="#b2000000" android:paddingLeft="35dp" android:paddingRight="35dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/passport_am_window" android:background="@drawable/passport_policy_dialog_bg" android:paddingLeft="12dp" android:paddingTop="20dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/passport_warning_image" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="22dp" android:layout_marginBottom="36dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#de000000" android:id="@+id/passport_warning_title" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passport_tip"/>
+        <TextView android:textSize="16dp" android:textColor="#ff333333" android:id="@+id/passport_warning_message" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp"/>
+        <LinearLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <TextView android:textSize="14dp" android:textColor="?attr/passportDialogNotRecommendedTextColor" android:id="@+id/passport_warning_cancel" android:paddingLeft="14dp" android:paddingTop="10dp" android:paddingRight="14dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passport_cancel"/>
+            <TextView android:textSize="14dp" android:textColor="?attr/passportDialogRecommendedTextColor" android:id="@+id/passport_warning_agree" android:paddingLeft="14dp" android:paddingTop="10dp" android:paddingRight="14dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passport_confirm"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

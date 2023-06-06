@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@color/wm_sg_color_F5F5F6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.newwidgets.AnimatableImageView android:id="@+id/prescription_progress_info" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:drawableRes="@drawable/wm_drug_common_loading_animation"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textColor="@color/wm_sg_color_858687" android:gravity="center" android:id="@+id/prescription_tips_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_8"/>
+</LinearLayout>

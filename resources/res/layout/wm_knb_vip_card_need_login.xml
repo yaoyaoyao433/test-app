@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:background="@color/wm_common_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_restaurant_redpacket_float_error"/>
+    <TextView android:textSize="14sp" android:textColor="@color/wm_common_text_hint" android:gravity="center" android:layout_marginTop="14dp" android:text="@string/wm_knb_need_login_message" style="@style/WmText"/>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/wm_common_text_main" android:id="@+id/btn_login" android:background="@drawable/wm_common_btn_solid_new" android:layout_width="87dp" android:layout_height="36dp" android:layout_marginTop="16dp" android:text="@string/wm_knb_login_register" style="@style/WmButton.CenterFixedWidth.Solid"/>
+</LinearLayout>

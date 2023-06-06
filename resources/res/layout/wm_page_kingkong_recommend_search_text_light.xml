@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="12sp" android:id="@+id/txt_recommend" android:background="@drawable/wm_page_kingkong_hotkey_light_shape" style="@style/WmTag.Recommend.Light"/>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/section_up_divider" android:visibility="gone" style="@style/paybase__horizonal_divider"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/mpay__horizontal_seperator"/>
+    <View android:id="@+id/section_down_divider" android:layout_marginLeft="@dimen/paycommon__global_padding" style="@style/paybase__horizonal_divider"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_61">
+    <TextView android:textSize="14sp" android:textColor="@color/wm_sg_color_333333" android:ellipsize="end" android:id="@+id/product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_16" android:layout_marginTop="@dimen/wm_sc_common_dimen_10" android:layout_marginRight="50dp" android:singleLine="true"/>
+    <TextView android:textSize="12sp" android:textColor="@color/wm_sg_color_999794" android:ellipsize="end" android:id="@+id/box_fee_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_16" android:layout_marginRight="50dp" android:layout_marginBottom="@dimen/wm_sc_common_dimen_10" android:singleLine="true" android:layout_below="@+id/product_name"/>
+    <LinearLayout android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="15sp" android:textColor="@color/wm_st_common_text_money" android:ellipsize="end" android:id="@+id/box_fee_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:singleLine="true"/>
+    </LinearLayout>
+    <View android:background="@color/wm_common_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_15" android:layout_marginRight="@dimen/wm_sc_common_dimen_15" android:layout_below="@+id/box_fee_desc"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:id="@+id/dy_food_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@+id/dy_food_image_main" android:layout_width="@dimen/wm_restaurant_market_pic" android:layout_height="@dimen/wm_restaurant_market_pic" android:scaleType="centerCrop" android:importantForAccessibility="no"/>
+        <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="center" android:id="@+id/dy_food_image_video_icon" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/wm_restaurant_video_mark" android:importantForAccessibility="no"/>
+        <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@+id/dy_food_image_shadow" android:background="@color/wm_restaurant_white_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no"/>
+        <TextView android:textSize="13dp" android:textColor="@color/takeout_white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/dy_food_image_label" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp"/>
+    </com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>
+    <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="right" android:id="@+id/dy_food_image_tag_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+</FrameLayout>

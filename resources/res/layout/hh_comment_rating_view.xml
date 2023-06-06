@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="40dp" android:paddingEnd="40dp">
+    <android.support.v7.widget.AppCompatRatingBar android:id="@+id/hh_rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:progressDrawable="@drawable/hh_rating_bar_image" android:numStars="5" android:rating="0" android:stepSize="1" style="@android:style/Widget.Material.RatingBar"/>
+    <TextView android:textSize="12sp" android:textColor="@color/hh_hint_color" android:id="@+id/hh_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_cmt"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/hh_recycler" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="20dp" android:layout_weight="1"/>
+    <Button android:id="@+id/hh_commit_btn" android:visibility="gone" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:text="@string/hh_cas" style="@style/hh_comment_submit_btn"/>
+</LinearLayout>

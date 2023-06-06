@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.filterbar.view.view.FloatFilterRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/filter_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.filterbar.view.view.FilterBarViewHome android:id="@+id/filter_bar_tab" android:background="@color/takeout_widget_filter_bar_background" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/filter_bar_dialog_background" android:background="@drawable/wm_common_bg_guide_poi_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/filter_bar_container"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/filter_bar_dialog" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/filter_bar_container"/>
+</com.sankuai.waimai.platform.widget.filterbar.view.view.FloatFilterRelativeLayout>

@@ -1,0 +1,12 @@
+com.sankuai.waimai.store.im.SGIMBadCommentInitService:com.sankuai.waimai.store.im.SGIMBadCommentInitService
+com.sankuai.waimai.business.im.group.init.WmImGroupInitService:com.sankuai.waimai.business.im.group.init.WmImGroupInitService
+com.sankuai.waimai.store.im.SGIMInquirySDKInitService:com.sankuai.waimai.store.im.SGIMInquirySDKInitService
+com.meituan.android.ptcommonim.wminit.PTIMInitWM:com.meituan.android.ptcommonim.wminit.PTIMInitWM
+com.meituan.android.legwork.LegworkIMSdkInitImple:com.meituan.android.legwork.LegworkIMSdkInitImple
+med_b2c_im:com.sankuai.waimai.drug.im.b2c.MedB2CImSdkinitImpl
+com.sankuai.waimai.business.im.prepare.WMImSdkInitService:com.sankuai.waimai.business.im.prepare.WMImSdkInitService
+com.sankuai.waimai.business.im.group.init.WmImUserGroupInitService:com.sankuai.waimai.business.im.group.init.WmImUserGroupInitService
+com.sankuai.waimai.store.im.SGIMUserGroupSDKInitService:com.sankuai.waimai.store.im.SGIMUserGroupSDKInitService
+com.sankuai.waimai.store.im.SGIMSdkInitImpl:com.sankuai.waimai.store.im.SGIMSdkInitImpl
+com.sankuai.waimai.drug.im.imlight.MedicineIMLightSDKInitImpl:com.sankuai.waimai.drug.im.imlight.MedicineIMLightSDKInitImpl
+com.sankuai.waimai.business.im.group.init.WmImFoodSafetyInitService:com.sankuai.waimai.business.im.group.init.WmImFoodSafetyInitService

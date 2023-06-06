@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_share_good_detail_picture" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <ImageView android:layout_gravity="top|left" android:id="@+id/iv_share_label_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_5" android:layout_marginTop="@dimen/wm_sc_common_dimen_5" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/rl_share_good_detail_price_layout" android:background="#d8f8f8f8" android:paddingLeft="@dimen/wm_sc_common_dimen_5" android:paddingRight="@dimen/wm_sc_common_dimen_5" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_25">
+        <TextView android:textSize="16sp" android:textColor="#fb4e44" android:id="@+id/tv_share_good_detail_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="@dimen/wm_sc_common_dimen_textsize_10" android:textColor="@color/wm_sg_color_999999" android:id="@+id/tv_share_good_detail_origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_3" android:layout_toRightOf="@+id/tv_share_good_detail_price" android:layout_alignBaseline="@+id/tv_share_good_detail_price" android:translationY="-1dp"/>
+    </RelativeLayout>
+</FrameLayout>

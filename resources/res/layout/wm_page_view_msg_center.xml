@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/message_center_home_layout" android:visibility="gone" android:layout_width="25dp" android:layout_height="wrap_content" android:contentDescription="消息">
+    <ImageView android:id="@+id/message_center_home_icon" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="fitCenter"/>
+    <TextView android:textSize="8sp" android:textColor="@color/takeout_white" android:gravity="center" android:id="@+id/message_center_home_bubble_count" android:background="@drawable/wm_common_count_bg" android:paddingLeft="3dp" android:paddingRight="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/message_center_home_bubble" android:visibility="gone" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginRight="2dp" android:src="@drawable/wm_common_dot_red" android:layout_alignParentRight="true"/>
+</RelativeLayout>

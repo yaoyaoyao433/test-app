@@ -1,0 +1,4 @@
+legwork:com.meituan.android.legwork.LegworkAccountEventProvider
+wm_search_account_provider:com.sankuai.waimai.business.search.routerservice.SearchAccountEventProvider
+wm_ugc_account_event_provider:com.sankuai.waimai.business.ugc.routerservice.WMUGCAccountEventProvider
+wm_im_account_provider:com.sankuai.waimai.business.im.IMAccountEventProvider

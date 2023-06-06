@@ -1,0 +1,9 @@
+SystemCallCache:com.sankuai.meituan.takeoutnew.util.aop.SystemCallCache
+GlobalCartLifecycle:com.sankuai.waimai.globalcart.GlobalCartLifecycle
+NetMonitoredLifeCycle:com.sankuai.waimai.platform.net.NetMonitoredLifeCycle
+MainActivityLifeCycle:com.sankuai.meituan.takeoutnew.ui.page.boot.MainActivityLifecycle
+WeatherLifecycle:com.sankuai.waimai.business.page.home.init.WeatherLifecycle
+WelcomeSplashLifecycle:com.sankuai.waimai.launcher.init.lifecycle.business.page.WelcomeSplashLifecycle
+ExternalJumpLifeCycle:com.sankuai.meituan.takeoutnew.provider.scheme.interceptor.ExternalJumpLifeCycle
+AILifecycle:com.sankuai.waimai.ai.AILifecycle
+AlitaLifeCycle:com.sankuai.waimai.alita.AlitaLifeCycle

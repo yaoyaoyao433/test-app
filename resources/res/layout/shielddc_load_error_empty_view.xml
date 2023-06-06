@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/voyager_empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/pic_empty_state_currency"/>
+        <TextView android:textColor="@color/shielddc_gray_999" android:id="@+id/voyager_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/voyager_error_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shielddc_bg_info_empty"/>
+        <TextView android:textSize="16sp" android:textColor="#111111" android:layout_gravity="center_horizontal" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="无法连接到网络"/>
+        <TextView android:textSize="@dimen/shielddc_text_size_12" android:textColor="#9a9a9a" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/voyager_error_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <TextView android:textSize="@dimen/shielddc_text_size_12" android:textColor="#111111" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/voyager_retry_view" android:background="@drawable/shielddc_yellow_corners_gradient_bg" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="重试"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/voyager_loading_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/voyager_anim_icon" android:layout_width="26dp" android:layout_height="26dp" android:indeterminateDrawable="@drawable/shielddc_default_loading_animation"/>
+        <TextView android:textSize="@dimen/shielddc_text_size_12" android:textColor="#999999" android:id="@+id/voyager_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</merge>

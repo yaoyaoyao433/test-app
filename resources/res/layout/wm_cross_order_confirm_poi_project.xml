@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_wm_order_poi_project_root" android:background="@drawable/wm_order_confirm_base_shape_bg" android:paddingLeft="12dp" android:paddingTop="0dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/WmCell">
+    <View android:id="@+id/divider_view" android:background="@drawable/wm_common_divider_horizontal2" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginBottom="15dp"/>
+    <include layout="@layout/wm_order_base_poi_project_layout"/>
+</LinearLayout>

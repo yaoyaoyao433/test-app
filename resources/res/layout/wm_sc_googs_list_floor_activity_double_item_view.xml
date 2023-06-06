@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="169dp" android:layout_height="74dp" android:layout_marginRight="5dp">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" android:scaleType="center" android:layout_alignParentBottom="true" android:alpha="0.1"/>
+    <View android:id="@+id/ll_activity_layout" android:layout_width="169dp" android:layout_height="74dp"/>
+    <com.sankuai.waimai.store.goods.list.viewblocks.experimental.views.ActivityRoundImageView android:layout_gravity="center" android:id="@+id/iv_left_picture" android:layout_width="65dp" android:layout_height="55dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <View android:id="@+id/middle_line" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="1dp" android:layout_marginBottom="1dp" android:layout_toRightOf="@+id/iv_left_picture" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tv_main_title" android:layout_marginTop="12dp" android:maxEms="6" android:includeFontPadding="false" android:layout_toRightOf="@+id/iv_left_picture" android:layout_above="@+id/middle_line" style="@style/WmScLabel"/>
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/tv_sub_title" android:paddingRight="5dp" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toRightOf="@+id/iv_left_picture" android:layout_below="@+id/middle_line" style="@style/WmScLabel"/>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+mtguard_lazy_init:com.sankuai.meituan.takeoutnew.util.aop.MTGuardLazyInit
+clear_main_splash_cover:com.sankuai.waimai.business.page.homepage.CurrentHomepageHolder:singleton

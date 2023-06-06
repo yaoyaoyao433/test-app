@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/minutes_animate_action_search_outer" android:paddingLeft="@dimen/wm_sc_common_dimen_12" android:paddingRight="@dimen/wm_sc_common_dimen_12" android:paddingBottom="2dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/minutes_search_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/minutes_animte_action_search" android:background="@drawable/wm_st_minutes_action_bar_bg" android:paddingLeft="10.5dp" android:layout_width="313dp" android:layout_height="33dp">
+            <ImageView android:id="@+id/minutes_iv_header_search_icon_left" android:background="@drawable/wm_st_actionbar_search" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp"/>
+            <LinearLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="10dp" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:textColor="@color/wm_sg_color_999999" android:gravity="center" android:layout_gravity="center" android:id="@+id/minutes_tv_header_search_view" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_common_search_shop_or_good_hint" android:singleLine="true" android:layout_centerVertical="true"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/minutes_buy_layout" android:background="@drawable/wm_st_search_minutes_bg" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginLeft="0dp" android:layout_marginTop="0.5dp" android:layout_centerVertical="true">
+                    <TextView android:textSize="10sp" android:textColor="#61c454" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分钟购"/>
+                </LinearLayout>
+                <ViewFlipper android:id="@+id/minutes_vf_search_carousel_text" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/minutes_ocr_camera" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="10dp" android:src="@drawable/wm_sc_ocr_camera"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_minutes_search_divider" android:background="#d3d3d3" android:visibility="visible" android:layout_width="@dimen/wm_sc_common_dimen_1" android:layout_height="@dimen/wm_sc_common_dimen_18"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_000000" android:gravity="center" android:layout_gravity="center" android:id="@+id/minutes_tv_header_search_button" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="46dp" android:layout_height="match_parent" android:layout_margin="2.5dp" android:text="@string/wm_st_search_search_txt" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/minutes_search_shop_cart_img" android:background="@drawable/wm_sc_search_shopcart_dark" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="13dp"/>
+        <ImageView android:id="@+id/minutes_search_more_information_img" android:background="@drawable/wm_sc_search_more_information_dark" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/new_with_flowers_empty_layout" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp" android:layout_marginTop="10dp"/>
+</FrameLayout>

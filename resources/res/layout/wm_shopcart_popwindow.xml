@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/wm_shopcart_popwindow_list_goods"/>
+    <FrameLayout android:id="@+id/layout_goods_list_rn" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/wm_shopcart_popwindow_list_money_off_assistant"/>
+    <include layout="@layout/wm_shopcart_popwindow_discount_detail"/>
+    <include layout="@layout/wm_shopcart_popwindow_list_try_lucky"/>
+    <include layout="@layout/wm_shopcart_popwindow_member_tie"/>
+</merge>

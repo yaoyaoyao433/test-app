@@ -1,0 +1,1 @@
+IUserManagerService:com.sankuai.waimai.platform.domain.manager.user.UserManagerServiceImpl:singleton

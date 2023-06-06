@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.customerservice.kit.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.meituan.android.customerservice.kit.widget.PercentLinearLayout android:id="@+id/layout_keyboard" android:layout_centerHorizontal="true" app:cs_layout_widthPercent="17.9%" style="@style/cs_voip_call_operation_layout">
+        <ImageView android:id="@+id/iv_keyboard" android:src="@drawable/cs_voip_keyboard" android:layout_centerHorizontal="true" style="@style/cs_voip_call_operation_iv"/>
+        <TextView android:id="@+id/tv_keyboard" android:text="@string/cs_voip_keyboard" app:cs_layout_marginTopPercent="3.4%" style="@style/cs_voip_call_operation_tv"/>
+    </com.meituan.android.customerservice.kit.widget.PercentLinearLayout>
+    <com.meituan.android.customerservice.kit.widget.PercentLinearLayout android:id="@+id/layout_mute" android:layout_alignTop="@+id/layout_keyboard" app:cs_layout_widthPercent="17.9%" app:cs_layout_marginLeftPercent="12.8%" style="@style/cs_voip_call_operation_layout">
+        <ImageView android:id="@+id/iv_mute" android:src="@drawable/cs_voip_mute" android:layout_centerHorizontal="true" style="@style/cs_voip_call_operation_iv"/>
+        <TextView android:id="@+id/tv_mute" android:text="@string/cs_voip_mute" app:cs_layout_marginTopPercent="3.4%" style="@style/cs_voip_call_operation_tv"/>
+    </com.meituan.android.customerservice.kit.widget.PercentLinearLayout>
+    <com.meituan.android.customerservice.kit.widget.PercentLinearLayout android:id="@+id/layout_hands_free" android:layout_alignTop="@+id/layout_keyboard" android:layout_alignParentRight="true" app:cs_layout_widthPercent="17.9%" app:cs_layout_marginRightPercent="12.8%" style="@style/cs_voip_call_operation_layout">
+        <ImageView android:id="@+id/iv_hands_free" android:src="@drawable/cs_voip_hands_free" style="@style/cs_voip_call_operation_iv"/>
+        <TextView android:id="@+id/tv_hands_free" android:text="@string/cs_voip_hands_free" app:cs_layout_marginTopPercent="3.4%" style="@style/cs_voip_call_operation_tv"/>
+    </com.meituan.android.customerservice.kit.widget.PercentLinearLayout>
+    <com.meituan.android.customerservice.kit.widget.PercentLinearLayout android:layout_below="@+id/layout_keyboard" android:layout_centerHorizontal="true" app:cs_layout_widthPercent="17.9%" app:cs_layout_marginTopPercent="9.8%" style="@style/cs_voip_call_operation_layout">
+        <ImageView android:id="@+id/iv_hang_up" android:src="@drawable/cs_voip_btn_hangup_normal" style="@style/cs_voip_call_operation_iv"/>
+        <TextView android:id="@+id/tv_hang_up" android:text="@string/cs_voip_hang_up" app:cs_layout_marginTopPercent="3.4%" style="@style/cs_voip_call_operation_tv"/>
+    </com.meituan.android.customerservice.kit.widget.PercentLinearLayout>
+</com.meituan.android.customerservice.kit.widget.PercentRelativeLayout>

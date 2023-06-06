@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/takeout_knb_root" android:background="#9a000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/takeout_knb_container" android:background="@color/white" android:layout_width="280dp" android:layout_height="223dp"/>
+    <ImageView android:id="@+id/image_close" android:padding="5dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:src="@drawable/wm_knb_ic_close" android:scaleType="fitXY" android:layout_alignTop="@+id/takeout_knb_container" android:layout_alignRight="@+id/takeout_knb_container" android:layout_marginEnd="10dp"/>
+    <ViewStub android:id="@+id/layout_channel_label" android:layout="@layout/wm_restaurant_channel_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="200dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

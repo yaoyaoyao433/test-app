@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/choose_pay_type_container" android:background="@color/paybase__white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/banklist_debit_container" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="15sp" android:textColor="@color/mpay__black1" android:id="@+id/banklist_debit_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <CheckBox android:id="@+id/banklist_debit_checkbox" android:background="@drawable/mpay__banklist_checkbox_enable" android:clickable="false" android:duplicateParentState="true" android:layout_width="24dp" android:layout_height="24dp" android:checked="true" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/banklist_mid_divider" android:layout_width="match_parent" android:layout_marginLeft="18dp" style="@style/paybase__horizonal_divider"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/banklist_credit_container" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="15sp" android:textColor="@color/mpay__black1" android:id="@+id/banklist_credit_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/paybase__text_color_4" android:id="@+id/credit_disable_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/banklist_credit_desc" android:layout_alignBaseline="@+id/banklist_credit_desc"/>
+        <CheckBox android:id="@+id/banklist_credit_checkbox" android:background="@drawable/mpay__banklist_checkbox" android:clickable="false" android:duplicateParentState="true" android:layout_width="24dp" android:layout_height="24dp" android:checked="true" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

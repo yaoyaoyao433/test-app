@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/poi_dish_goods" android:paddingLeft="@dimen/wm_sc_common_dimen_12" android:paddingRight="@dimen/wm_sc_common_dimen_12" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/category_recycler_view" android:background="#ffffff" android:paddingLeft="3dp" android:paddingTop="6dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/market_net_info" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_allowance_container" android:background="@drawable/wm_order_confirm_pay_dialog_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp">
+            <TextView android:textSize="14sp" android:textColor="#575859" android:layout_gravity="center" android:id="@+id/txt_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_allowance_dialog_cancel"/>
+            <TextView android:textSize="16sp" android:textColor="#222426" android:layout_gravity="center" android:id="@+id/txt_tltle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_allowance_dialog_title"/>
+            <TextView android:textSize="14sp" android:textColor="#ff8000" android:layout_gravity="center" android:id="@+id/txt_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_allowance_dialog_rule"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_allowance_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <FrameLayout android:id="@+id/fl_allowance_content_head" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="#1e1e1e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_allowance_dialog_total" android:layout_weight="1"/>
+                    <TextView android:textColor="#ff4a26" android:layout_gravity="right" android:id="@+id/txt_tip_reduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_allowance_dialog_reduce"/>
+                </LinearLayout>
+                <TextView android:textSize="12dp" android:id="@+id/txt_tip_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_reduction" android:background="@drawable/wm_order_list_head_recently_poi_item_head_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/wm_order_confirm_allowance_dialog_reduction" android:layout_weight="1"/>
+                <TextView android:id="@+id/txt_reduction_tip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textColor="#ff4a26" android:id="@+id/txt_reduction_reduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="12dp" android:text="@string/wm_order_confirm_allowance_dialog_reduce"/>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@+id/rv_allowance_foodlist" android:background="@drawable/wm_order_list_head_recently_poi_item_head_bg" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/btn_confirm" android:background="@drawable/wm_order_confirm_collect_food_confirm_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="21dp" android:text="@string/wm_order_confirm_allowance_dialog_confirm"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_rule_container" android:background="@drawable/wm_order_confirm_pay_dialog_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fl_rule_title" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_rule_back" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/wm_order_confirm_allowance_rule_back_ic"/>
+            <TextView android:textSize="16sp" android:textColor="#222426" android:layout_gravity="center" android:id="@+id/txt_rule_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_allowance_dialog_rule_title"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_web_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <FrameLayout android:id="@+id/fl_wv_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_common_layout_refresh_info"/>
+        </FrameLayout>
+        <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:id="@+id/btn_confirm2" android:background="@drawable/wm_order_confirm_collect_food_confirm_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="21dp" android:layout_marginBottom="10dp" android:text="@string/wm_order_confirm_allowance_dialog_confirm"/>
+    </LinearLayout>
+</FrameLayout>

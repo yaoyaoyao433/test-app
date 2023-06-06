@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/layout_remind" android:background="@color/wm_sc_good_list_black9" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_13" android:textColor="@color/wm_st_common_white" android:id="@+id/txt_remind" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_marginLeft="16dp" android:layout_marginRight="10dp" android:layout_weight="1" style="@style/WmScText.MultiLine"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_close" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/wm_sc_common_ic_layer_close"/>
+</LinearLayout>

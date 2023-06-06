@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/guide_query_container" android:background="#cc222426" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/wm_nox_search_575859" android:ellipsize="end" android:id="@+id/guide_query_title" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:singleLine="true"/>
+        <android.support.v7.widget.RecyclerView android:orientation="vertical" android:id="@+id/item_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+    <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:id="@+id/guide_query_reset" android:background="@drawable/wm_nox_search_shape_query_type_left_corner" android:layout_width="0dp" android:layout_height="50dp" android:text="重置" android:layout_weight="1"/>
+        <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:id="@+id/guide_query_complete" android:background="@drawable/wm_nox_search_bg_gradient_query_guide" android:layout_width="0dp" android:layout_height="50dp" android:text="已完成" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:id="@+id/recommend_background" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

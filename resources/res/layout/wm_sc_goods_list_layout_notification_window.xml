@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/wm_sc_goods_list_notification_window_bg" android:paddingLeft="15dp" android:paddingTop="7.5dp" android:paddingRight="15dp" android:paddingBottom="7.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_notification" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="fitXY"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp">
+            <TextView android:id="@+id/txt_notification_main" style="@style/WmScText"/>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_666666" android:id="@+id/txt_notification_sub" android:visibility="gone" android:layout_marginTop="5dp" style="@style/WmScText"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

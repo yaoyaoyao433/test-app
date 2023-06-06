@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:background="@drawable/wm_sc_12_white_shape" android:layout_width="match_parent" android:layout_height="261dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginRight="@dimen/wm_sc_common_dimen_12">
+    <View android:id="@+id/top_text_1" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="148dp" android:layout_height="30dp" android:layout_marginLeft="11dp" android:layout_marginTop="15.5dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:id="@+id/top_list_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginTop="@dimen/wm_sc_common_dimen_17" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/top_text_1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="146.5dp" android:layout_height="55.5dp">
+            <ImageView android:visibility="visible" android:layout_width="22dp" android:layout_height="27.5dp" android:src="@drawable/sg_img_def_icon"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="146.5dp" android:layout_height="55.5dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12">
+            <ImageView android:visibility="visible" android:layout_width="22dp" android:layout_height="27.5dp" android:src="@drawable/sg_img_def_icon"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="146.5dp" android:layout_height="55.5dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12">
+            <ImageView android:visibility="visible" android:layout_width="22dp" android:layout_height="27.5dp" android:src="@drawable/sg_img_def_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/top_text_2" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="146.5dp" android:layout_height="20.5dp" android:layout_marginTop="10.5dp" app:layout_constraintLeft_toLeftOf="@+id/top_list_layout" app:layout_constraintTop_toBottomOf="@+id/top_list_layout"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginTop="@dimen/wm_sc_common_dimen_10" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/top_text_2">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="99.5dp" android:layout_height="70dp">
+            <ImageView android:visibility="visible" android:layout_width="22dp" android:layout_height="27.5dp" android:src="@drawable/sg_img_def_icon"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="99.5dp" android:layout_height="70dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_8">
+            <ImageView android:visibility="visible" android:layout_width="22dp" android:layout_height="27.5dp" android:src="@drawable/sg_img_def_icon"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="99.5dp" android:layout_height="70dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_8">
+            <ImageView android:visibility="visible" android:layout_width="22dp" android:layout_height="27.5dp" android:src="@drawable/sg_img_def_icon"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wm_sg_common_shape_f5f5f6" android:layout_width="99.5dp" android:layout_height="70dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_8">
+            <ImageView android:visibility="visible" android:layout_width="22dp" android:layout_height="27.5dp" android:src="@drawable/sg_img_def_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

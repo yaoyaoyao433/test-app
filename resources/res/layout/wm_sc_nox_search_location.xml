@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/wm_sc_common_dimen_8" android:paddingBottom="@dimen/wm_sc_common_dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/wm_sc_common_dimen_12" android:paddingEnd="@dimen/wm_sc_common_dimen_12">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/search_location_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sc_global_search_locate_black" android:layout_marginEnd="@dimen/wm_sc_common_dimen_5"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textStyle="bold" android:textColor="@color/wm_sc_nox_search_color_222426" android:ellipsize="end" android:id="@+id/search_location_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/wm_sc_common_dimen_2" android:drawableEnd="@drawable/wm_sc_global_search_locate_arrow_right"/>
+    </LinearLayout>
+</RelativeLayout>

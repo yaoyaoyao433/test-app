@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/ll_container" android:background="@color/wm_st_common_white" android:paddingTop="3dp" android:paddingRight="6dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="135dp" android:paddingStart="6dp">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="2dp" android:paddingRight="6dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="6dp">
+        <RelativeLayout android:layout_width="125dp" android:layout_height="125dp">
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@+id/iv_sg_new_user_picture" android:layout_width="125dp" android:layout_height="125dp" app:cornerRadius="6dp" app:riv_corner_radius="6dp"/>
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@+id/img_stickydish_pic_shadow" android:padding="1dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="#05000000" app:riv_corner_radius="6dp" app:riv_oval="false"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textStyle="bold" android:textColor="@color/wm_sc_color_222426" android:ellipsize="end" android:id="@+id/tv_sg_new_user_name" android:layout_width="match_parent" android:layout_height="40dp" android:text="啊啥发大水发的撒发撒发骚if姐撒撒发生的多" android:maxLines="2"/>
+                <com.sankuai.waimai.store.view.SCSingleLineFlowLayout android:id="@+id/label_flow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:horizontalSpacing="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_36" android:layout_centerVertical="true">
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textStyle="bold" android:textColor="@color/wm_sg_color_FF4A26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" android:includeFontPadding="false"/>
+                            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_18" android:textStyle="bold" android:textColor="@color/wm_sg_color_FF4A26" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1212" android:includeFontPadding="false"/>
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_BCBCBD" android:id="@+id/tv_origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:text="￥12" android:includeFontPadding="false"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textStyle="bold" android:textColor="@color/wm_sc_color_222426" android:gravity="center" android:id="@+id/tv_sg_new_user_submit" android:layout_width="@dimen/wm_sc_common_dimen_72" android:layout_height="@dimen/wm_sc_common_dimen_32" android:text="@string/wm_sg_new_user_land_submit" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/delivery_view_bg" android:background="@color/wm_sg_color_FAFAFA" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_20" android:layout_marginTop="@dimen/wm_sc_common_dimen_6">
+                    <com.sankuai.waimai.store.view.RoundedCornerImageView android:id="@+id/iv_sg_new_user_poi_icon" android:layout_width="@dimen/wm_sc_common_dimen_12" android:layout_height="@dimen/wm_sc_common_dimen_12" android:scaleType="centerCrop" android:layout_marginStart="@dimen/wm_sc_common_dimen_4" app:cornerRadius="2dp"/>
+                    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_858687" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_sg_new_user_poi_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/wm_sc_common_dimen_24" android:text="sadfasfjsalfjsafljsafljaslfsajfasfasfasfsdsd" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="@dimen/wm_sc_common_dimen_4" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toLeftOf="@+id/tv_sg_new_user_poi_time" app:layout_constraintStart_toEndOf="@+id/iv_sg_new_user_poi_icon" app:layout_constraintTop_toTopOf="0"/>
+                    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_858687" android:gravity="center" android:id="@+id/tv_sg_new_user_poi_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/wm_sc_common_dimen_4" android:text="asfsdaf" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintBottom_toTopOf="0" app:layout_constraintRight_toRightOf="0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/item_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

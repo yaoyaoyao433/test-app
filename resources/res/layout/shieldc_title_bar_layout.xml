@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/shieldc_title_bar" android:background="#ffffff" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="@dimen/shieldc_title_bar_height">
+    <FrameLayout android:gravity="center" android:id="@+id/shieldc_title_bar_content_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:ellipsize="end" android:layout_gravity="center" android:id="@+id/shieldc_title_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230dp" android:singleLine="true" style="@style/ShieldTitleBarTitleView"/>
+        <TextView android:ellipsize="end" android:layout_gravity="bottom|center_horizontal" android:id="@+id/shieldc_title_bar_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/ShieldTitleBarSubTitleView"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/shieldc_title_bar_custom_title_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left" android:id="@+id/shieldc_title_bar_left_view_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp">
+        <ImageButton android:id="@+id/shieldc_left_title_button" android:background="@null" android:layout_width="@dimen/shieldc_title_bar_button_size" android:layout_height="match_parent" android:src="@drawable/shieldc_title_bar_back_dark"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/shieldc_title_bar_right_view_container" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/ShieldTitleBarRightContainer"/>
+</FrameLayout>

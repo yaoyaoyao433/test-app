@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_customer_service_avatar" android:layout_width="125dp" android:layout_height="125dp" android:src="@drawable/cs_voip_customer_service_avatar"/>
+    </LinearLayout>
+    <TextView android:textSize="21sp" android:textColor="@color/cs_voip_grey_333333" android:id="@+id/tv_customer_service_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/cs_voip_name" android:singleLine="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/cs_voip_grey_666666" android:id="@+id/tv_call_kf_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/cs_voip_grey_666666" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+</LinearLayout>

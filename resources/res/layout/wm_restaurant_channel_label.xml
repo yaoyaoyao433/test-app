@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:background="@drawable/wm_restaurant_channel_label_yellow_bg" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="35dp">
+    <ImageView android:id="@+id/iv_channel_back_icon" android:padding="7dp" android:layout_width="20dp" android:layout_height="35dp" android:src="@drawable/wm_restaurant_channel_label_arrow" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/iv_channel_app_icon" android:visibility="gone" android:layout_width="20dp" android:layout_height="35dp" app:project="waimai_c" app:srcName="waimai_c_icon_third_ad_channel_baidu"/>
+    <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="6"/>
+    <FrameLayout android:id="@+id/channel_close_btn" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center_vertical" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="5dp" android:layout_marginTop="1dp" app:project="waimai_c" app:srcName="waimai_c_restaurant_shop_header_collection_coupon_popup_close_brand"/>
+    </FrameLayout>
+</LinearLayout>

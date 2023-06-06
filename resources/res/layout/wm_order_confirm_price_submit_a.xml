@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/wm_order_confirm_submit_layout_bg_new" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/price_view_submit" android:background="@color/transparent" android:paddingTop="0dp" android:paddingBottom="0dp" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/WmCell">
+            <FrameLayout android:gravity="center_vertical" android:id="@+id/txt_total_price_discounts_fl" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="@color/takeout_white" android:id="@+id/txt_total_price_discounts" style="@style/WmText"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/txt_total_price_discounts_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/wm_common_orange_5" android:id="@+id/txt_total_price_discounts_first" android:layout_height="20dp" style="@style/WmText"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/takeout_white" android:id="@+id/txt_total_price_discounts_second" android:layout_height="15dp" style="@style/WmText"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/takeout_white" android:id="@+id/txt_price_total" android:layout_marginTop="5.5dp" android:text="@string/wm_order_confirm_to_pay_4" style="@style/WmText"/>
+                    <TextView android:textSize="20sp" android:textColor="@color/takeout_white" android:id="@+id/txt_total_price_discounted" android:layout_marginLeft="@dimen/wm_common_margin_horizontal_element" android:layout_toRightOf="@+id/txt_price_total" style="@style/WmText"/>
+                </RelativeLayout>
+                <TextView android:textSize="11sp" android:textColor="@color/wm_common_transparent_half" android:layout_gravity="end" android:id="@+id/text_vip_price_tips" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:enabled="false" android:gravity="center" android:orientation="horizontal" android:id="@+id/txt_order_submit" android:background="@drawable/wm_order_comfirm_submit_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_order_confirm_title_text_color" android:id="@+id/txt_order_submit_content" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_submit"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

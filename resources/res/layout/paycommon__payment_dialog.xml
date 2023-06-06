@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:id="@+id/coupon_promotion_root" android:background="@color/paybase__half_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.meituan.android.paycommon.lib.widgets.CornersLinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/corners_linear_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:paycommon_corner_left_top="6dp" app:paycommon_corner_left_bottom="6dp" app:paycommon_corner_right_top="6dp" app:paycommon_corner_right_bottom="6dp">
+        <RelativeLayout android:id="@+id/dynamic_coupon_content" android:background="@color/paycommon__keyboard_button_digit" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.meituan.android.paycommon.lib.widgets.CornersLinearLayout>
+</RelativeLayout>

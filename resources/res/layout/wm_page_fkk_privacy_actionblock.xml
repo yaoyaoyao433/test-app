@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fl_privacy_content" android:background="@drawable/wm_page_home_actionbar_bg" android:layout_width="match_parent" android:layout_height="64dp">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginBottom="20dp">
+            <ImageView android:id="@+id/iv_home" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_marginLeft="16dp" android:src="@drawable/wm_home_actionbar_ic_back" android:layout_centerVertical="true" android:contentDescription="返回"/>
+            <ImageView android:gravity="center" android:id="@+id/kangaroo_icon" android:layout_width="65dp" android:layout_height="25dp" android:layout_marginLeft="40dp" android:src="@drawable/wm_page_home_icon_black" android:layout_centerVertical="true" android:contentDescription="外卖"/>
+            <ImageView android:id="@+id/iv_wm_logo" android:layout_width="101dp" android:layout_height="24dp" android:layout_marginTop="10dp" android:src="@drawable/wm_page_privacy_title_icon" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:layout_gravity="bottom" android:id="@+id/view_bottom" android:background="@drawable/wm_page_kingkong_privacy_title_bottom_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp"/>
+    </FrameLayout>
+</FrameLayout>

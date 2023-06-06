@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="64.5dp">
+    <View android:id="@+id/iv_golden_coin_progress_main" android:background="@drawable/wm_order_golden_coin_progress_main" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginLeft="12dp" android:layout_marginTop="24.5dp" android:layout_marginRight="12dp"/>
+    <View android:id="@+id/iv_golden_coin_progress_second" android:background="@drawable/wm_order_golden_coin_progress_second" android:layout_width="100dp" android:layout_height="6dp" android:layout_marginLeft="12dp" android:layout_marginTop="24.5dp" android:layout_marginRight="12dp"/>
+    <FrameLayout android:id="@+id/fl_golden_coin_progress_packets" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp"/>
+</FrameLayout>

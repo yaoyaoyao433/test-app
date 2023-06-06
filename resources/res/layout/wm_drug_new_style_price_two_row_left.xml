@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_FF4A26" android:id="@+id/current_price_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textStyle="bold" android:textColor="@color/wm_sg_color_FF4A26" android:id="@+id/current_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="10dp" android:textColor="@color/wm_sg_color_999999" android:layout_gravity="center_vertical" android:id="@+id/current_price_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_1" android:includeFontPadding="false"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/member_price_icon" android:layout_width="@dimen/wm_sc_common_dimen_15" android:layout_height="@dimen/wm_sc_common_dimen_12" android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.sankuai.waimai.store.platform.domain.core.goods.newStylePrice.HandPriceWithUnit android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textColor="@color/wm_sg_color_FF4A26" android:layout_gravity="center_vertical" android:id="@+id/hand_price_with_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.sankuai.waimai.platform.widget.text.StrikeTextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_BCBCBD" android:id="@+id/origin_price" android:visibility="visible" android:layout_marginLeft="@dimen/wm_sc_common_dimen_4" android:includeFontPadding="false" style="@style/WmScText"/>
+    </LinearLayout>
+</LinearLayout>

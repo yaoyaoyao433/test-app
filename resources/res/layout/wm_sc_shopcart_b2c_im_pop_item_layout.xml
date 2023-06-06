@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_im_item_icon" android:layout_width="@dimen/wm_sc_common_dimen_20" android:layout_height="@dimen/wm_sc_common_dimen_20" android:scaleType="fitCenter"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_14" android:textColor="@color/wm_sg_color_333333" android:id="@+id/tv_im_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_10"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_8" android:textColor="@color/wm_sg_color_FFFFFF" android:gravity="center" android:id="@+id/tv_im_item_red_dot" android:background="@drawable/wm_sc_common_food_list_count" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_12" android:layout_height="@dimen/wm_sc_common_dimen_12" android:layout_marginLeft="@dimen/wm_sc_common_dimen_10" android:maxLength="2"/>
+</LinearLayout>

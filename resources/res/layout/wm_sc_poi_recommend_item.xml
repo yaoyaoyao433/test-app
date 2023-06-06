@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="180dp" android:layout_height="123dp">
+    <View android:background="@drawable/wm_sc_last_bought_poi_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/poi_info_layout" android:background="@drawable/wm_sg_corner_white_six" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="6dp" android:layout_width="170dp" android:layout_height="114dp">
+        <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="center" android:id="@+id/iv_poi" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="centerInside" android:adjustViewBounds="true" app:riv_corner_radius="2dp" app:riv_border_width="1px" app:riv_border_color="#f2f1f0"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tv_poi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_toRightOf="@+id/iv_poi" android:layout_alignTop="@+id/iv_poi">
+            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_33312d" android:ellipsize="end" android:id="@+id/tv_poi" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/wm_sg_color_33312D" android:id="@+id/tv_category_tag" android:background="@drawable/wm_sc_category_bg" android:paddingLeft="@dimen/wm_sc_common_dimen_6" android:paddingTop="@dimen/wm_sc_common_dimen_1" android:paddingRight="@dimen/wm_sc_common_dimen_6" android:paddingBottom="@dimen/wm_sc_common_dimen_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_4"/>
+        </LinearLayout>
+        <TextView android:textSize="11sp" android:textColor="#666460" android:id="@+id/tv_delivery_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="7" android:singleLine="true" android:layout_below="@+id/ll_tv_poi" android:layout_alignLeft="@+id/ll_tv_poi"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_shipping_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_6" android:layout_toRightOf="@+id/tv_delivery_time" android:layout_alignTop="@+id/tv_delivery_time">
+            <TextView android:textSize="11sp" android:textColor="#666460" android:id="@+id/tv_shipping_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:singleLine="true"/>
+            <com.sankuai.waimai.store.widgets.StrikeTextView android:textSize="11sp" android:textColor="#666460" android:id="@+id/tv_shipping_fee_origin" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_6" android:maxLines="1" android:maxEms="10" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_below="@+id/iv_poi">
+            <include android:id="@+id/inc_left" android:layout_width="66dp" android:layout_height="49dp" layout="@layout/wm_sc_poi_recommend_spu_item"/>
+            <Space android:layout_width="8dp" android:layout_height="@dimen/wm_common_padding_horizontal2"/>
+            <include android:id="@+id/inc_right" android:layout_width="66dp" android:layout_height="49dp" layout="@layout/wm_sc_poi_recommend_spu_item"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

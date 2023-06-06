@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/hellopay_verify_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/paycommon__bg_dialog" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.meituan.android.paybase.screen.AutoFitRelativeLayout android:layout_gravity="center" android:id="@+id/hellopay_verify_container" android:background="@drawable/paybase__bg_pay_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="32dp">
+        <com.meituan.android.paybase.screen.AutoFitRelativeLayout android:id="@+id/title_container" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:id="@+id/dialog_title" style="@style/mpay__hello_pay_dialog_title"/>
+            <ImageView android:id="@+id/dialog_close" android:padding="15dp" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/paycommon__icon_dialog_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <View android:background="@color/paybase__divider_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        </com.meituan.android.paybase.screen.AutoFitRelativeLayout>
+        <com.meituan.android.paybase.screen.AutoFitLinearLayout android:orientation="vertical" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_container">
+            <com.meituan.android.paybase.screen.AutoFitLinearLayout android:orientation="vertical" android:id="@+id/desk_core_view" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <Button android:textSize="16sp" android:gravity="center" android:id="@+id/submit_button" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="15dp" android:layout_marginTop="16dp" android:layout_marginRight="15dp" android:layout_marginBottom="0dp" style="@style/mtpaysdk_button"/>
+            <TextView android:textSize="12sp" android:textColor="@color/paycommon__hint_with_link" android:layout_gravity="end" android:id="@+id/use_psw" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="15dp" android:layout_marginBottom="5dp" android:text="@string/mpay__use_psw"/>
+        </com.meituan.android.paybase.screen.AutoFitLinearLayout>
+    </com.meituan.android.paybase.screen.AutoFitRelativeLayout>
+</FrameLayout>

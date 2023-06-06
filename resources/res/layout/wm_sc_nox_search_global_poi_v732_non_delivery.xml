@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.view.RoundedCornerRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:padding="@dimen/wm_sc_common_dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wm_sc_common_dimen_6" android:layout_marginStart="@dimen/wm_sc_common_dimen_12" android:layout_marginEnd="@dimen/wm_sc_common_dimen_12" app:cornerRadius="@dimen/wm_sc_common_dimen_12">
+    <TextView android:textSize="12sp" android:textColor="#575859" android:ellipsize="end" android:id="@+id/location_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wm_sc_common_dimen_4" android:singleLine="true" android:layout_marginStart="15dp"/>
+    <FrameLayout android:id="@+id/non_delivery_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/location_text" android:layout_alignBottom="@+id/location_text">
+        <ImageView android:layout_gravity="center" android:layout_width="11dp" android:layout_height="11dp" android:src="@drawable/wm_sc_nox_search_non_delivery_location_icon"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/location_text" android:layout_alignStart="@+id/location_text">
+        <TextView android:textSize="12sp" android:textColor="#575859" android:id="@+id/non_delivery_text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/wm_sc_common_dimen_12"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/lookup_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="#575859" android:id="@+id/lookup_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_search_view"/>
+            <ImageView android:id="@+id/arrow_icon" android:layout_width="11dp" android:layout_height="11dp" android:src="@drawable/wm_sc_nox_search_poi_activity_arrow_down"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.sankuai.waimai.store.view.RoundedCornerRelativeLayout>

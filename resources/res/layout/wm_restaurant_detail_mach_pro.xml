@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/WmPage.Secondary">
+    <com.sankuai.waimai.platform.widget.smoothnestedscroll.ObservableSmoothScrollView android:id="@+id/layout_content" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_poi_detail_container_mach_pro" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.sankuai.waimai.platform.widget.smoothnestedscroll.ObservableSmoothScrollView>
+</FrameLayout>

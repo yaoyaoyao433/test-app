@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12dp" android:textColor="#ff6000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/cashier_discount_text" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginLeft="15dp" android:layout_marginRight="20dp" android:maxLines="1" android:layout_toLeftOf="@+id/cashier_discount_text_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12dp" android:textColor="#ff6000" android:gravity="center" android:id="@+id/cashier_discount_text_btn" android:background="@drawable/cashier__bg_guide_float_layer_btn" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

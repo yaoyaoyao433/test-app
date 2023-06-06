@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="65dp">
+    <TextView android:textSize="12dp" android:textColor="@color/paybase__black3" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/mpay__change_select_more_content" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="43dp" android:text="@string/mpay__select_bank_dialog_more_payment" android:singleLine="true" android:drawableRight="@drawable/mpay__more_view_arrow" android:drawablePadding="12dp" android:layout_centerVertical="true"/>
+</RelativeLayout>

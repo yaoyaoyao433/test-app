@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/wm_page_kingkong_search_bg_selector" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+    <ImageView android:id="@+id/search_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:src="@drawable/wm_page_kingkong_searchbox_icon"/>
+    <com.sankuai.waimai.business.page.home.view.TextSwitchView android:textSize="14sp" android:textColor="@color/wm_page_kingkong_search_txt_color_selector" android:id="@+id/search_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/wm_page_kingkong_input_poi_name" android:drawablePadding="5dp"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/ll_indicator_group" android:paddingLeft="@dimen/wm_sc_common_dimen_12" android:paddingTop="@dimen/wm_sc_common_dimen_6" android:paddingRight="@dimen/wm_sc_common_dimen_12" android:paddingBottom="@dimen/wm_sc_common_dimen_10" android:layout_width="match_parent" android:layout_height="wrap_content"/>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/visualizer_wave" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.sankuai.waimai.sa.ui.assistant.view.RecordWaveView android:id="@+id/record_wave" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="60dp" android:layout_centerInParent="true" app:paddingMiddle="68dp" app:pointSpacing="8dp" app:pointWidth="3dp" app:defaultWaveHeight="1dp"/>
+    <ImageView android:gravity="center" android:id="@+id/mid_view" android:background="@drawable/wm_smart_assistant_voice_background" android:visibility="visible" android:layout_width="81dp" android:layout_height="81dp" android:src="@drawable/wm_smart_assistant_voice_defalut_icon" android:scaleType="center" android:layout_centerInParent="true"/>
+    <ImageView android:gravity="center" android:id="@+id/mid_flow_view" android:background="@drawable/wm_smart_assistant_voice_default_white_backgroud" android:visibility="gone" android:layout_width="69dp" android:layout_height="69dp" android:src="@drawable/wm_smart_assistant_progress_rotate" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+</RelativeLayout>

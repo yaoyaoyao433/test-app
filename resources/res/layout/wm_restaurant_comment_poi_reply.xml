@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#fafafa" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cornerRadius="6dp">
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#575859" android:ellipsize="end" android:id="@+id/sub_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <TextView android:textSize="12sp" android:textColor="#575859" android:id="@+id/sub_item_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:lineSpacingExtra="3dp"/>
+</com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>

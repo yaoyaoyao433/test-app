@@ -1,0 +1,13 @@
+package com.meituan.msi.api.systeminfo;
+
+import com.meituan.msi.annotations.MsiSupport;
+import com.meituan.robust.ChangeQuickRedirect;
+/* compiled from: ProGuard */
+@MsiSupport
+/* loaded from: classes3.dex */
+public class AppBaseInfoResponse {
+    public static ChangeQuickRedirect changeQuickRedirect;
+    public String SDKVersion;
+    public String language;
+    public String version;
+}

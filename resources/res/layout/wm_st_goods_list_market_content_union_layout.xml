@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@+id/root_smooth_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/poi_dish_goods" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:id="@+id/poi_guess_u_like_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/poi_dish_goods"/>
+        </RelativeLayout>
+    </com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView>
+    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/category_recycler_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/main_back_to_top" android:visibility="visible" android:layout_width="57dp" android:layout_height="57dp" android:layout_marginRight="5dp" android:layout_marginBottom="126dp" android:src="@drawable/wm_sc_back_to_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/wm_st_main_load_view" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

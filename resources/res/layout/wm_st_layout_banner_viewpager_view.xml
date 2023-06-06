@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.banner.SCBaseViewPager android:id="@+id/vp_poiList_ad_container" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30"/>
+    <ImageView android:id="@+id/img_ad_circle" android:background="@drawable/wm_st_banner_circle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/vp_poiList_ad_container"/>
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="10dp" android:layout_alignParentBottom="true"/>
+    <com.sankuai.waimai.store.view.banner.ScSimplePageIndicator android:gravity="center_vertical" android:layout_gravity="bottom|center_horizontal" android:id="@+id/indicator_banner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="10dp" android:layout_marginRight="7dp" android:layout_marginBottom="6dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:childLayout="@layout/wm_st_view_indicator_dot_padding_horizontal" app:childDrawable="@drawable/wm_st_dot_square_yellow" app:checkedSize="6dp" app:normalSize="3dp"/>
+</merge>

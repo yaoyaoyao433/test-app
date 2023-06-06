@@ -1,0 +1,3 @@
+v9/poi/food:com.sankuai.waimai.store.goods.list.sniffer.SGRestaurantV9FoodLogMonitor:singleton
+v8/poi/food:com.sankuai.waimai.store.goods.list.sniffer.SGGoodListSnifferV8FoodLogMonitor:singleton
+v7/poi/sputag/products:com.sankuai.waimai.store.goods.list.sniffer.SGGoodListSnifferProductsLogMonitor:singleton

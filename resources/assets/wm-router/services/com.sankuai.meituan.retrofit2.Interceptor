@@ -1,0 +1,2 @@
+interceptor_business:com.sankuai.waimai.platform.capacity.network.interceptor.BusinessInterceptor
+interceptor_crawler:com.sankuai.waimai.platform.capacity.network.interceptor.CrawlerInterceptor

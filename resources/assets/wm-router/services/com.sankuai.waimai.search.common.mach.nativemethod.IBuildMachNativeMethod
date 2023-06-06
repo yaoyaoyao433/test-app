@@ -1,0 +1,3 @@
+wm_mach_http:com.sankuai.waimai.search.common.mach.nativemethod.WMMachNativeMethod
+sg_mach_http:com.sankuai.waimai.store.search.ui.result.mach.nativemethod.SGSearchMachHttpNativeMethod
+search_mach_utils:com.sankuai.waimai.business.search.ui.result.mach.bridge.SearchMachUtils:singleton

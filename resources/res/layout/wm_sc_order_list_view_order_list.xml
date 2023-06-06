@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sankuai.waimai.store.newwidgets.pullrefresh.SCNestedPullRefreshView android:orientation="vertical" android:id="@+id/pullList_orderList_orderList" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView android:id="@+id/list_orderList_orderList" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000"/>
+    </com.sankuai.waimai.store.newwidgets.pullrefresh.SCNestedPullRefreshView>
+    <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@+id/scroll_view" android:background="@color/wm_sg_color_F2F2F2" android:paddingTop="45dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/wm_common_layout_refresh_info"/>
+</merge>

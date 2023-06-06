@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/container_poi_info" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_poi_area_center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_35">
+        <com.sankuai.waimai.store.view.LiveView android:id="@+id/live_label_entry_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="left" android:id="@+id/txt_poi_name_center" android:includeFontPadding="false" android:drawablePadding="8dp" style="@style/WmText"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_poi_area_top" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.sankuai.waimai.store.view.LiveView android:id="@+id/live_label_entry_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="left" android:id="@+id/txt_poi_name_top" android:includeFontPadding="false" android:drawableRight="@drawable/wm_sc_order_status_ic_arrow_right" android:drawablePadding="8dp" style="@style/WmText"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_poi_book_staus" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+            <TextView android:textSize="10dp" android:textColor="@color/takeout_white" android:id="@+id/txt_poi_reservation_status" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_height="17dp" style="@style/WmText"/>
+            <com.sankuai.waimai.store.newwidgets.labelview.LabelView android:textSize="10dp" android:textColor="#37a2ee" android:ellipsize="end" android:gravity="center" android:id="@+id/txt_poi_reservation_time_des" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="17dp" android:singleLine="true" android:drawablePadding="2dp" app:borderWidth="0.5dp" app:borderColorNormal="#37a2ee" app:radiusTopRight="2dp" app:radiusBottomRight="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_poi_activity" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+            <FrameLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/fl_tagview_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="17dp">
+                <ImageView android:textColor="@color/red" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_more_tag" android:visibility="invisible" android:layout_width="14dp" android:layout_height="15dp" android:src="@drawable/wm_sc_widget_icon_omit"/>
+                <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:layout_gravity="center_vertical" android:id="@+id/tc_tagview_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="14dp"/>
+            </FrameLayout>
+            <com.sankuai.waimai.store.orderlist.view.base.SingleLineWithOmitHorizontalFlowLayout android:layout_gravity="center_vertical" android:id="@+id/flowlayout_activities_single_line" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:childHeight="17dp" app:childMarginHorizontal="4dp" app:childMarginVertical="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

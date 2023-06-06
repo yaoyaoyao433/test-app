@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:bottomLeftRadius="@dimen/wm_common_margin_horizontal_element" android:bottomRightRadius="@dimen/wm_common_margin_horizontal_element"/>
+    <solid android:color="@color/wm_common_dialog_background"/>
+</shape>

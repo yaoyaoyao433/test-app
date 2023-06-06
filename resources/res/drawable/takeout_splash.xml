@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/takeout_white"/>
+    <item android:top="174dp">
+        <bitmap android:gravity="top|center_horizontal" android:src="@drawable/takeout_img_splash"/>
+    </item>
+    <item android:bottom="55dp">
+        <bitmap android:gravity="bottom" android:src="@drawable/takeout_img_mtcloud"/>
+    </item>
+</layer-list>

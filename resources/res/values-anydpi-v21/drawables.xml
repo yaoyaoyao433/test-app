@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="design_ic_visibility">r/w/aiw.xml</drawable>
+    <drawable name="design_ic_visibility_off">r/w/aix.xml</drawable>
+    <drawable name="mrn_black_back_arrow">r/w/ah2.xml</drawable>
+    <drawable name="mrn_vector_back_arrow">r/w/ah3.xml</drawable>
+    <drawable name="mtmapsdk_ic_my_location">r/w/ah4.xml</drawable>
+    <drawable name="mtmapsdk_marker_default">r/w/ah5.xml</drawable>
+    <drawable name="mtmapsdk_zoom_in">r/w/ah6.xml</drawable>
+    <drawable name="mtmapsdk_zoom_out">r/w/ah7.xml</drawable>
+</resources>

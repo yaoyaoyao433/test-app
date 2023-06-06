@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/poi_pic" android:layout_width="75dp" android:layout_height="56dp" android:scaleType="centerCrop"/>
+    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/poi_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:maxLines="1" android:layout_toRightOf="@+id/poi_pic"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_tip_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:divider="@drawable/wm_common_horizontal_linear_layout_divider_6dp" android:layout_below="@+id/poi_name" android:layout_alignLeft="@+id/poi_name" android:showDividers="middle" android:dividerPadding="4dp">
+        <TextView android:textSize="11dp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/min_price_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:maxLines="1"/>
+        <TextView android:textSize="11dp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/shipping_fee_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:maxLines="1"/>
+        <TextView android:textSize="11dp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/shipping_distance_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/poi_discount_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/poi_name" android:layout_alignBottom="@+id/poi_pic">
+        <ImageView android:id="@+id/poi_discount_label" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="5dp" android:scaleType="fitXY"/>
+        <TextView android:textSize="11dp" android:textColor="#999999" android:ellipsize="end" android:id="@+id/poi_discount_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <View android:id="@+id/poi_item_divider" android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp" android:layout_below="@+id/poi_pic"/>
+</RelativeLayout>

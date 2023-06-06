@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/xm_sdk_img_chat_msg_voice" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <com.sankuai.xm.imui.common.view.LinkTextView android:id="@+id/xm_sdk_tv_chat_voice_dur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/xm_sdk_chat_voice_dur_margin_content" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@+id/xm_sdk_img_chat_msg_voice" android:layout_centerVertical="true"/>
+</RelativeLayout>

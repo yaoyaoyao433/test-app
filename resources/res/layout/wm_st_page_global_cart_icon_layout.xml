@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_global_cart" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/btn_global_cart" android:background="@drawable/wm_sc_common_global_cart" android:layout_width="54dp" android:layout_height="54dp" android:layout_alignParentRight="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_tip" android:background="@drawable/wm_sc_common_global_cart_bubble" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34.2dp" android:layout_marginTop="1dp" android:layout_marginRight="2dp" android:layout_marginBottom="8.8dp" android:layout_alignParentRight="true" app:layout_constraintBottom_toTopOf="@+id/btn_global_cart" app:layout_constraintRight_toRightOf="0">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_tip" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

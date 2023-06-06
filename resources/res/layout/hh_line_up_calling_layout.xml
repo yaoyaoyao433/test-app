@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/lineup_ad" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@string/hh_sdk_image_name"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/hp_sdk_alpha_black" android:paddingTop="@dimen/hh_dp_10" android:paddingBottom="@dimen/hh_dp_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/lineup_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hh_dp_10" android:text="@string/hh_call_wait_str"/>
+        <com.hhmedic.android.sdk.uikit.widget.WaitView android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/wait" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hh_dp_6" android:layout_marginStart="@dimen/hh_dp_6"/>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_cancel" android:drawableTop="@drawable/hh_av_chat_refuse_bg_normal" style="@style/hh_av_btn"/>
+    </LinearLayout>
+</RelativeLayout>

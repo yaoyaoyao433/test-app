@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ptim_sendpanel_item_background" android:paddingLeft="9dp" android:paddingTop="5dp" android:paddingRight="9dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="27dp">
+    <ImageView android:id="@+id/sendpanel_tool_icon" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginRight="3dp"/>
+    <TextView android:textSize="12sp" android:textColor="#b2000000" android:ellipsize="end" android:id="@+id/sendpanel_tool_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="48dp">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+        <LinearLayout android:gravity="center" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <FrameLayout android:paddingLeft="35dp" android:paddingRight="35dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:id="@+id/txt_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/img_title" android:layout_width="wrap_content" android:layout_height="22dp" android:scaleType="fitCenter"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_location_box" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:id="@+id/position_icon" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="1dp" android:text="@string/wm_c_iconfont_14dingwei"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/wm_page_home_action_bar_title_color" android:ellipsize="end" android:gravity="center" android:id="@+id/actionbar_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_page_poiList_progressbar_locating" android:maxEms="9" android:singleLine="true" style="@style/TextAppearance.ActionBar.Title"/>
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8dp" android:id="@+id/actionbar_location_arrow" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="2dp" android:text="@string/wm_c_iconfont_arrow_right_small"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@+id/action_bar_title_search_box" android:visibility="gone" layout="@layout/wm_page_kingkong_search_box"/>
+        <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20dp" android:textColor="@color/roo_default_color_gray_darker" android:id="@+id/back" android:paddingRight="10dp" android:layout_width="30dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:text="@string/wm_c_iconfont_jiantou_zuo" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

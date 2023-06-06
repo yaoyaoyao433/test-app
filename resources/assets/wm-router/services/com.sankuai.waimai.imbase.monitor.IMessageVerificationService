@@ -1,0 +1,5 @@
+1029:com.sankuai.waimai.store.im.monitor.SGIMUserGroupMessageVerificationImpl:singleton
+1025:com.sankuai.waimai.business.im.group.WmGroupMessageVerificationImpl:singleton
+1024:com.sankuai.waimai.store.im.monitor.SGIMMedicalMessageVerificationImpl:singleton
+1001:com.sankuai.waimai.business.im.prepare.WmImMessageVerifiactionImpl:singleton
+1031:com.sankuai.waimai.store.im.monitor.SGIMInquiryMessageVerificationImpl:singleton

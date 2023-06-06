@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.poi.list.newp.home.view.RefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rec" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:orientation="vertical" android:id="@+id/convenient_content_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.design.widget.CoordinatorLayout android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior="com.sankuai.waimai.store.poi.list.newp.home.view.AppBarLayoutBehavior">
+                    <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:contentScrim="@android:color/transparent">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/head" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="70dp">
+                            <LinearLayout android:orientation="vertical" android:id="@+id/head_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <android.support.v7.widget.Toolbar android:id="@+id/wm_sc_action_bar" android:background="@color/transparent" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="0dp" app:contentInsetStart="0dp" app:layout_collapseMode="pin"/>
+                    </android.support.design.widget.CollapsingToolbarLayout>
+                </android.support.design.widget.AppBarLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                    <FrameLayout android:id="@+id/tab_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.sankuai.waimai.store.newwidgets.SCViewPagerCompat android:id="@+id/vp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        <android.support.v7.widget.RecyclerView android:id="@+id/rv_wm_sc_skeleton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginTop="14dp" android:layout_marginRight="12dp"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </android.support.design.widget.CoordinatorLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80dp"/>
+        <include android:visibility="gone" layout="@layout/wm_st_shopcart_whole"/>
+        <include android:visibility="gone" layout="@layout/wm_st_mrn_shopcart_whole"/>
+        <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/wm_sc_mach_tile_net_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</com.sankuai.waimai.store.poi.list.newp.home.view.RefreshLayout>

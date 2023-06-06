@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_global_cart" android:paddingRight="12dp" android:layout_width="66dp" android:layout_height="54dp" android:layout_marginBottom="13dp">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/btn_global_cart" android:layout_width="54dp" android:layout_height="54dp" android:contentDescription="购物车" app:project="waimai_c" app:srcName="waimai_c_page_icon_global_cart_btn"/>
+</RelativeLayout>

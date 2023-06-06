@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/cs_voip_white_ffffff" android:padding="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textColor="@color/cs_voip_grey_333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cs_voip_floating_dialog_title"/>
+    <TextView android:textSize="18sp" android:textColor="@color/cs_voip_grey_999999" android:id="@+id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/cs_floating_dialog_message_default"/>
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/cs_voip_grey_999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="@string/cs_voip_cancel_btn_text" android:onClick="cancel"/>
+        <TextView android:textSize="18sp" android:textColor="@color/cs_voip_floating_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/cs_voip_open_btn_text" android:onClick="openFloatingPermission"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_union_layout" android:background="@color/wm_sg_color_F2F2F2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/shop_background_image" android:layout_width="match_parent" android:layout_height="145dp" android:scaleType="centerCrop"/>
+    <ImageView android:id="@+id/img_poi_blurred_bg" android:layout_width="match_parent" android:layout_height="145dp" android:scaleType="fitXY"/>
+    <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@+id/union_scrollview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/actionbar_location_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <include android:id="@+id/shop_header_info" android:paddingLeft="@dimen/wm_sc_common_dimen_10" android:paddingRight="@dimen/wm_sc_common_dimen_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/actionbar_location_view" layout="@layout/wm_sc_goods_list_market_header_fold_info_union"/>
+            <include android:id="@+id/shop_logo_layout" android:layout_width="@dimen/wm_sc_common_dimen_58" android:layout_height="@dimen/wm_sc_common_dimen_43" android:layout_marginTop="7dp" android:layout_marginRight="21dp" android:layout_below="@+id/actionbar_location_view" android:layout_alignParentRight="true" layout="@layout/wm_st_goods_list_layout_header_logo_b"/>
+            <RelativeLayout android:id="@+id/rl_tab_layout_root" android:background="@drawable/wm_sc_goods_list_header_bg_white" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/shop_header_info">
+                <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/rv_page_tab" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:nestedScrollingEnabled="false"/>
+                <LinearLayout android:gravity="center" android:id="@+id/ll_coupon_info" android:background="@drawable/wm_sc_goods_list_coupon_bg" android:layout_width="54dp" android:layout_height="23dp" android:layout_marginRight="16dp" android:layout_marginBottom="6dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="12sp" android:textColor="@color/wm_st_common_text_money" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_polymerize_activity_title"/>
+                    <ImageView android:id="@+id/iv_coupon_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <FrameLayout android:id="@+id/viewpager_content" android:background="@color/wm_sg_color_F2F2F2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_tab_layout_root"/>
+        </RelativeLayout>
+    </com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_actionbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/gradient_helper_layout" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_25" android:alpha="0"/>
+        <FrameLayout android:id="@+id/shop_action_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

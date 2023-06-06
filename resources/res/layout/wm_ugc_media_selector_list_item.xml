@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.ugc.creator.widgets.round.RoundCornerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginEnd="8dp" app:cornerRadius="3dp">
+    <ImageView android:id="@+id/iv_media_selector_item_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <View android:id="@+id/v_media_selector_item_selected_mask_view" android:background="@drawable/wm_ugc_media_selector_item_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.sankuai.waimai.ugc.creator.widgets.round.RoundCornerFrameLayout>

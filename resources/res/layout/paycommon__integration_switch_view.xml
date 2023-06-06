@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/integration_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/paycommon__agreement_click_area" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <android.support.v7.widget.AppCompatCheckBox android:id="@+id/paycommon__integration_checkbox" android:background="@drawable/paycommon__agreement_checkbox" android:layout_width="10dp" android:layout_height="10dp" android:checked="false" android:button="@null"/>
+            <TextView android:textSize="12dp" android:textColor="@color/paycommon__hint_with_link" android:ellipsize="end" android:id="@+id/paycommon__integration_tips" android:paddingBottom="@dimen/paycommon__bonus_points_switch_text_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/paycommon__agreement_icon" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/paycommon__ic_question"/>
+    </LinearLayout>
+</merge>

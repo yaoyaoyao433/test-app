@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/wm_order_confirm_title_text_color_hint" android:id="@+id/txt_cart_title" android:paddingLeft="@dimen/wm_common_padding_horizontal" android:paddingTop="7dp" android:paddingRight="@dimen/wm_common_padding_horizontal" android:layout_height="wrap_content" android:layout_marginBottom="-4dp" android:drawableLeft="@drawable/wm_order_confirm_good_list_cart_ic" android:drawablePadding="2dp" style="@style/WmText"/>

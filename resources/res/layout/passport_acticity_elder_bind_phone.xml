@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.meituan.passport.view.PassportToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="45dp"/>
+        <TextView android:textSize="25dp" android:textStyle="bold" android:textColor="@color/passport_black5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/passport_login_left_margin" android:layout_marginTop="19dp" android:text="@string/passport_bind_phone"/>
+        <TextView android:textSize="17dp" android:textColor="#ff767676" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/passport_login_left_margin" android:layout_marginTop="7dp" android:layout_marginBottom="60dp" android:text="@string/passport_elder_bind_phone_tip"/>
+        <include android:id="@+id/bind_area" layout="@layout/passport_fragment_elder_login_bindmobile"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragment_container_identify" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

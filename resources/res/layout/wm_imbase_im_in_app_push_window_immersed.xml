@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/wm_imbase_im_push_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/wm_imbase_bg_r6_top" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="46dp">
+        <com.sankuai.waimai.imbase.view.WmImStrokeRadiusImageView android:id="@+id/txt_im_in_app_icon" android:layout_width="22dp" android:layout_height="22dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerInParent="true" app:strokeWidth="1dp" app:radius="11dp"/>
+        <TextView android:textSize="14sp" android:textColor="#666666" android:ellipsize="end" android:id="@+id/txt_im_in_app_push_title" android:layout_marginLeft="6dp" android:maxLines="1" android:layout_toLeftOf="@+id/txt_im_in_app_push_time" android:layout_toRightOf="@+id/txt_im_in_app_icon" android:layout_centerInParent="true" style="@style/Wm_IMbase_Text"/>
+        <TextView android:textSize="14sp" android:textColor="#999999" android:id="@+id/txt_im_in_app_push_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.sankuai.waimai.imbase.view.IMArrowTextView android:orientation="horizontal" android:id="@+id/txt_im_in_app_push_content" android:background="@color/transparent" android:paddingLeft="9dp" android:paddingRight="7dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

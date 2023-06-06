@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/wm_page_permission_window_bg" android:paddingTop="16dp" android:paddingBottom="12dp" android:layout_width="310dp" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#222426" android:gravity="center" android:paddingLeft="22dp" android:paddingRight="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wm_privacy_agreement_title"/>
+        <com.sankuai.waimai.platform.privacy.dialog.MaxHeightScrollView android:id="@+id/dialog_content_layout" android:paddingLeft="22dp" android:paddingRight="22dp" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="15dp" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="#575859" android:textColorLink="#ff8000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_privacy_agreement_description_title"/>
+                <TextView android:textSize="14sp" android:textColor="#575859" android:textColorLink="#ff8000" android:id="@+id/agreement_description_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/wm_privacy_agreement_description_subTitle"/>
+                <TextView android:textSize="14sp" android:textColor="#575859" android:textColorLink="#ff8000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/wm_privacy_agreement_description"/>
+                <TextView android:textSize="14sp" android:textColor="#575859" android:textColorLink="#ff8000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/wm_privacy_agreement_description_end"/>
+            </LinearLayout>
+        </com.sankuai.waimai.platform.privacy.dialog.MaxHeightScrollView>
+        <FrameLayout android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+            <TextView android:textSize="14sp" android:textColor="#222426" android:gravity="center" android:id="@+id/negative_button" android:background="@drawable/wm_page_permission_negative_btn_default_bg" android:layout_width="137dp" android:layout_height="44dp" android:text="@string/wm_privacy_agreement_negative_btn"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#222426" android:gravity="center" android:layout_gravity="right" android:id="@+id/positive_button" android:background="@drawable/wm_page_permission_btn_bg" android:layout_width="137dp" android:layout_height="44dp" android:text="@string/wm_privacy_agreement_positive_btn"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

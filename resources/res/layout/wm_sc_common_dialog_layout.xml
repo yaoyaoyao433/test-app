@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/dialog_root_panel" android:background="@drawable/wm_sc_common_dialog_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="125dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/dialog_main_panel" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/wm_sc_common_padding_divider_horizontal" android:layout_weight="1" android:showDividers="middle">
+        <ImageView android:id="@+id/dialog_image" android:scaleType="fitCenter" style="@style/WmSgDialog.Image"/>
+        <TextView android:id="@+id/dialog_title" style="@style/WmSgDialog.Title"/>
+        <TextView android:id="@+id/dialog_message" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/WmSgDialog.Message"/>
+        <EditText android:id="@+id/dialog_edit_text" android:hint="@null" style="@style/WmSgDialog.EditText"/>
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/dialog_content_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="100"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_button_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/wm_st_common_dialog_divider_component" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/dialog_button_holder" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/wm_st_common_dialog_divider_button" android:showDividers="middle">
+            <Button android:id="@+id/dialog_button_negative" android:background="@drawable/wm_st_common_dialog_background_button_corner_left" style="@style/WmSgDialog.Button"/>
+            <Button android:id="@+id/dialog_button_positive" android:background="@drawable/wm_st_common_dialog_background_button_corner_right" style="@style/WmSgDialog.Button"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

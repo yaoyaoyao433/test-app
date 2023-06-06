@@ -1,0 +1,7 @@
+wm_main_project:com.sankuai.meituan.takeoutnew.net.WmGsonBuilder
+wm_user:com.sankuai.waimai.business.user.UserGsonBuilder
+wm_order:com.sankuai.waimai.bussiness.order.base.net.OrderGsonBuilder
+wm_rest:com.sankuai.waimai.business.restaurant.base.net.RestGsonBuilder
+wm_home:com.sankuai.waimai.business.page.home.utils.HomeGsonBuilder
+wm_platform:com.sankuai.waimai.platform.capacity.network.gsonbuilder.PlatformGsonBuilder
+wm_page:com.sankuai.waimai.business.page.homepage.PageGsonBuilder

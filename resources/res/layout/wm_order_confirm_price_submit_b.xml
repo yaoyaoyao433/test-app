@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_order_coupon_tip_popup" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34.7dp" android:layout_marginLeft="16dp" android:layout_marginBottom="-6.5dp">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/txt_order_coupon_tip" android:background="@drawable/wm_order_price_tip_bg" android:paddingLeft="12dp" android:paddingRight="30dp" android:paddingBottom="0dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="31.2dp" android:minWidth="178.5dp" android:maxLines="1"/>
+        <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="16.5dp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/iv_order_coupon_tip_close" android:paddingLeft="0dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="31.2dp" android:text="@string/wm_c_iconfont_76guanbi" android:layout_alignRight="@+id/txt_order_coupon_tip" android:contentDescription="@string/wm_order_confirm_dialog_close"/>
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="6dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:scaleType="fitXY" android:layout_below="@+id/txt_order_coupon_tip" app:project="waimai_c" app:srcName="waimai_c_restaurant_food_detail_arrow_down"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_use_mt_pay" android:background="@drawable/wm_order_confirm_mt_pay_background" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="59dp" android:layout_marginLeft="12dp" android:layout_marginRight="11dp" android:layout_marginBottom="-40dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="30dp" android:layout_alignParentTop="true">
+            <ImageView android:gravity="center_vertical" android:id="@+id/im_wm_order_confirm_save_money" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="14dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:importantForAccessibility="no"/>
+            <TextView android:textSize="12sp" android:textColor="#222426" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/txt_use_mt_pay" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:maxLines="1" android:layout_toRightOf="@+id/im_wm_order_confirm_save_money" android:layout_centerVertical="true"/>
+            <com.meituan.roodesign.widgets.checkbox.RooCheckBox android:enabled="true" android:layout_gravity="center" android:id="@+id/im_wm_order_confirm_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:checked="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:backgroundColor="@color/roo_dark_default_color_primary"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_rect_bg" android:background="@drawable/wm_order_confirm_submit_layout_bg_new" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/price_view_submit" android:background="@color/transparent" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/WmCell">
+            <FrameLayout android:gravity="center_vertical" android:id="@+id/txt_total_price_discounts_fl" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_weight="1">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/takeout_white" android:id="@+id/txt_total_price_discounts" style="@style/WmText"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/wm_common_text_hint" android:layout_gravity="center_vertical" android:id="@+id/txt_discount_payment_guarantee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/txt_total_price_discounts_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/wm_common_orange_5" android:id="@+id/txt_total_price_discounts_first" style="@style/WmText"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/takeout_white" android:id="@+id/txt_total_price_discounts_second" style="@style/WmText"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="right" android:id="@+id/rl_total_price_discounted" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/takeout_white" android:id="@+id/txt_price_total" android:text="@string/wm_order_confirm_to_pay_4" android:layout_centerVertical="true" style="@style/WmText"/>
+                    <TextView android:textSize="20sp" android:textColor="@color/takeout_white" android:id="@+id/txt_total_price_discounted" android:layout_marginLeft="@dimen/wm_common_margin_horizontal_element" android:layout_toRightOf="@+id/txt_price_total" style="@style/WmText"/>
+                </RelativeLayout>
+                <TextView android:textSize="11sp" android:textColor="@color/wm_common_transparent_half" android:layout_gravity="end" android:id="@+id/text_vip_price_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/price_view_submit_enhance_pay_by_friend" android:background="@color/transparent" android:paddingRight="0dp" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1" style="@style/WmCell">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/price_view_submit_enhance_pay_by_friend_line1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="24sp" android:textColor="@color/takeout_white" android:gravity="center_vertical" android:id="@+id/txt_total_price_discounted_enhance_pay_by_friend" android:padding="0dp" android:layout_height="26dp" android:includeFontPadding="false" android:lineSpacingMultiplier="0" style="@style/WmText"/>
+                <TextView android:textSize="10sp" android:textColor="@color/wm_common_text_hint" android:id="@+id/text_vip_price_tips_enhance_pay_by_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:maxLines="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-1dp">
+                <TextView android:textSize="11sp" android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_total_price_discounts_enhance_pay_by_friend" android:includeFontPadding="false" style="@style/WmText"/>
+                <TextView android:textSize="11sp" android:textColor="@color/wm_common_text_hint" android:ellipsize="end" android:id="@+id/txt_pay_second_title_tip" android:visibility="gone" android:layout_marginLeft="6dp" android:lines="1" android:includeFontPadding="false" style="@style/WmText"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/btn_pay_by_friend" android:background="#474747" android:layout_width="wrap_content" android:layout_height="50dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ffcc33" android:layout_gravity="center_vertical" android:id="@+id/txt_pay_by_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:text="@string/wm_order_confirm_friend_pay"/>
+        </LinearLayout>
+        <LinearLayout android:enabled="false" android:gravity="center" android:orientation="horizontal" android:id="@+id/txt_order_submit" android:background="@drawable/wm_order_comfirm_submit_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11dp">
+            <TextView android:textSize="@dimen/wm_common_text_size_large" android:textStyle="bold" android:textColor="@color/wm_order_confirm_title_text_color" android:id="@+id/txt_order_submit_content" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_submit"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

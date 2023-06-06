@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.RoundedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cornerRadius="6dp" app:cropBackground="true">
+    <LinearLayout android:orientation="vertical" android:background="@color/wm_st_common_white" android:paddingLeft="@dimen/wm_sc_common_dimen_10" android:paddingTop="@dimen/wm_sc_common_dimen_8" android:paddingRight="@dimen/wm_sc_common_dimen_10" android:paddingBottom="@dimen/wm_sc_common_dimen_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_858687" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wm_sc_common_dimen_4" android:text="@string/wm_sc_common_im_order_info"/>
+        <include layout="@layout/wm_sc_common_im_send_order_info"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_common_im_send_order_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_24">
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textColor="@color/wm_sg_color_im_575859" android:gravity="center" android:id="@+id/tv_common_im_modify_address_button" android:layout_width="@dimen/wm_sc_common_dimen_95" android:layout_height="@dimen/wm_sc_common_dimen_26" android:text="@string/wm_sc_common_im_modify_address" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.sankuai.waimai.platform.widget.RoundedLinearLayout>

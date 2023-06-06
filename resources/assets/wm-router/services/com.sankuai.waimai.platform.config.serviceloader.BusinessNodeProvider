@@ -1,0 +1,3 @@
+wm_restaurant:com.sankuai.waimai.business.restaurant.ShopDevelopEnvironment
+sc_store:com.sankuai.waimai.store.config.dev.StoreNodeManager
+wm_page:com.sankuai.waimai.business.page.common.config.NodeManagerImpl

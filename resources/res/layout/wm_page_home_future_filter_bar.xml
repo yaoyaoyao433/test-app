@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/future_filterBar_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/fast_filter_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.business.page.common.view.nested.NestedHorizontalRecyclerView android:id="@+id/future_filterBar" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="50dp" android:paddingBottom="6dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/wm_page_home_future_filter_bar_layout_height"/>
+        <FrameLayout android:layout_gravity="bottom|right" android:id="@+id/all_category_bg" android:background="@drawable/wm_page_home_future_tab_all_category_bg_gray" android:layout_width="70dp" android:layout_height="30dp" android:layout_marginBottom="6dp">
+            <ImageView android:layout_gravity="right" android:id="@+id/btn_all_category" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:layout_width="44dp" android:layout_height="30dp" android:src="@drawable/wm_page_home_future_tab_all_category" android:contentDescription="展开更多条件筛选"/>
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/future_filter_bar_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+</RelativeLayout>

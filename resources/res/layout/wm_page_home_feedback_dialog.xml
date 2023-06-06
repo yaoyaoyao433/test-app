@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f5f5f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="11dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20dp" android:textColor="#222426" android:id="@+id/action_bar_roo_back" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="7dp" android:text="@string/wm_c_iconfont_jiantou_zuo"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#222426" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="体验满意度调研" android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ViewStub android:id="@+id/fb_listview" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_gravity="bottom" android:background="@drawable/wm_page_home_feedback_button_content_bg" android:layout_width="match_parent" android:layout_height="100dp">
+            <TextView android:textSize="16dp" android:textColor="@color/wm_page_secondfilter_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_question_submit" android:background="@drawable/wm_page_second_filter_item_bg" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="42dp" android:layout_marginRight="42dp" android:text="提交"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/layout_global_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/layout_refresh_global" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_common_layout_refresh_info"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/fl_area_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.sankuai.waimai.platform.widget.dialog.view.AnimatableImageView android:layout_gravity="center" android:background="@drawable/wm_core_bg_progress_round" android:layout_width="@dimen/wm_common_progress_round_width" android:layout_height="@dimen/wm_common_progress_round_height" android:scaleType="centerInside" app:drawableRes="@drawable/wm_common_progress_rotate"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.restaurant.poicontainer.views.UgcTipView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <View android:id="@+id/top_divider" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="12sp" android:textColor="#575859" android:layout_gravity="center" android:id="@+id/tip" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp"/>
+    <View android:id="@+id/bottom_divider" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+</com.sankuai.waimai.business.restaurant.poicontainer.views.UgcTipView>

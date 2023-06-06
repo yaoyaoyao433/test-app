@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/wm_sc_common_dimen_textsize_13" android:textColor="@color/wm_sg_color_666666" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/cat_title" android:paddingLeft="@dimen/wm_sc_common_dimen_8" android:paddingRight="@dimen/wm_sc_common_dimen_8" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_34" android:layout_marginTop="2dp" android:maxLines="1"/>

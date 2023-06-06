@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/footer_load_progress" layout="@layout/wm_common_view_footer_anim"/>
+    <TextView android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_poiList_footer_info" android:text="@string/wm_poi_poiList_footer_more" style="@style/WmText"/>
+</LinearLayout>

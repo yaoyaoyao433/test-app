@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/wm_sc_common_dimen_128" android:layout_height="@dimen/wm_sc_common_dimen_128">
+        <ImageView android:id="@+id/wm_sc_common_toast_msg" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/wm_sc_duihao_icon"/>
+        <TextView android:textSize="14sp" android:textColor="#ffffffff" android:id="@+id/wm_sc_common_toast_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_12" android:text="已加入购物车"/>
+    </LinearLayout>
+</FrameLayout>

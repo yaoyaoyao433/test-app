@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="vertical" android:id="@+id/layout_try_lucky_list" android:background="@drawable/wm_shopcart_bg_guide_poi_list" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Space android:layout_width="match_parent" android:layout_height="300dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tips_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_shop_cart_try_lucky_bar" android:background="@drawable/wm_shopcart_try_lucky_bar_background" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10sp" android:textColor="#222426" android:id="@+id/text_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/wm_shopcart_try_lucky_tag" android:maxLines="1" android:layout_alignParentRight="true" android:layout_marginStart="8dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:layout_gravity="bottom" android:id="@+id/list_recommend_food" android:background="@color/takeout_white" android:paddingBottom="70dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/wm_shopcart_list_selector" android:cacheColorHint="@color/wm_shopcart_transparent" android:divider="@drawable/wm_shopcart_divider_horizontal"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp">
+        <ImageView android:id="@+id/iv_ehc_tab_item_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <TextView android:id="@+id/tv_ehc_tab_item_bubble" android:visibility="gone" android:clickable="false" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:layout_width="24dp" android:layout_height="3dp"/>
+    <TextView android:textSize="10sp" android:textColor="#222222" android:layout_gravity="bottom|center_horizontal" android:id="@+id/tv_ehc_tab_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

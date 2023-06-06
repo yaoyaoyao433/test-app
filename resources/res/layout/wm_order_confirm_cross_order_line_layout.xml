@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/line_view" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.25dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+</LinearLayout>

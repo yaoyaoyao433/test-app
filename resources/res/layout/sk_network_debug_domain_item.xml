@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="16sp" android:gravity="center" android:id="@+id/domain_selector" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <EditText android:textSize="16sp" android:gravity="center" android:id="@+id/debug_domain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_toRightOf="@+id/domain_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="textUri"/>
+</RelativeLayout>

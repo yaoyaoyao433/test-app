@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:alpha="0.6">
+    <View android:id="@+id/view_food_divider" android:background="@color/wm_st_common_e4e4e4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+    <RelativeLayout android:id="@+id/layout_food_item" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="77dp">
+        <com.sankuai.waimai.store.newwidgets.RoundedFrameLayout android:id="@+id/roundfl_food_pic" android:layout_width="57dp" android:layout_height="57dp" android:layout_margin="10dp" app:cornerRadius="2dp">
+            <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:id="@+id/img_food_pic" android:layout_width="57dp" android:layout_height="57dp" android:src="@drawable/wm_sc_common_poi_error" android:scaleType="center" app:riv_corner_radius="2dp" app:riv_border_width="0.5dp" app:riv_border_color="#f4f4f4" app:riv_oval="false"/>
+            <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/wm_st_common_white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/txt_stickyfood_status_out" android:background="@color/wm_sc_good_list_black9" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wm_sc_shop_cart_invaild_good_tag" android:layout_alignBottom="@+id/img_stickydish_pic" style="@style/WmScText"/>
+        </com.sankuai.waimai.store.newwidgets.RoundedFrameLayout>
+        <TextView android:textSize="15sp" android:textColor="@color/wm_st_shopcart_txt_box_name_color" android:ellipsize="end" android:id="@+id/txt_food_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:singleLine="true" android:layout_toRightOf="@+id/roundfl_food_pic" android:layout_alignParentTop="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_toRightOf="@+id/roundfl_food_pic" android:layout_below="@+id/txt_food_name">
+            <TextView android:textSize="11sp" android:textColor="@color/wm_sg_color_999999" android:ellipsize="end" android:id="@+id/txt_food_spec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp">
+                <TextView android:textSize="10sp" android:textColor="#fb4e44" android:layout_gravity="bottom" android:id="@+id/txt_food_price_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:text="@string/wm_sc_commen_currecy_unit"/>
+                <TextView android:textSize="15sp" android:textColor="#fb4e44" android:id="@+id/txt_food_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@+id/view_food_divider_bottom" android:background="@color/wm_st_common_e4e4e4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+</LinearLayout>

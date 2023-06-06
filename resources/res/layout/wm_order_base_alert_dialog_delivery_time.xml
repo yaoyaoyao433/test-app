@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:extendListView="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:gravity="center" android:id="@+id/choose_time_title" android:background="@drawable/wm_order_base_dialog_title_bg" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/wm_order_confirm_please_choose_ordered_delivery_time"/>
+        <ImageView android:gravity="center" android:id="@+id/choose_time_close" android:layout_width="40dp" android:layout_height="wrap_content" android:src="@drawable/wm_order_base_alert_dialog_icon_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/wm_order_confirm_dialog_close"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="#222426" android:ellipsize="end" android:id="@+id/tv_delivery_hint" android:background="#fff9ea" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="最早明天商家10:00营业后开始配送" android:maxLines="2"/>
+    <com.sankuai.waimai.bussiness.order.base.widget.extendlist.ExtendListView android:id="@+id/lv_delivery_time" android:background="@color/takeout_white" android:layout_width="match_parent" android:layout_height="match_parent" extendListView:firstWidthPercent="0.33"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/wm_st_common_fff4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.newwidgets.pullrefresh.SCNestedPullRefreshView android:id="@+id/pull_to_refresh_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/rc_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.sankuai.waimai.store.newwidgets.pullrefresh.SCNestedPullRefreshView>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/wm_sc_mach_net_info" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

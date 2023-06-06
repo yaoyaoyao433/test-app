@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/sg_order_recommend_header_root" android:paddingTop="@dimen/wm_sc_common_dimen_16" android:paddingBottom="@dimen/wm_sc_common_dimen_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sg_order_detail_recommend_head_left"/>
+    <ImageView android:id="@+id/sg_order_detail_recommend_title_iv" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_8"/>
+    <TextView android:textSize="14sp" android:textColor="#fffe7537" android:id="@+id/sg_order_detail_recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_6" android:text="为你推荐"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_8" android:src="@drawable/wm_sg_order_detail_recommend_head_right"/>
+</LinearLayout>

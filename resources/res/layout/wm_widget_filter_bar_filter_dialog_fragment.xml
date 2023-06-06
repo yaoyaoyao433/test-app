@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/block_filter" android:background="@drawable/wm_common_bg_guide_poi_list" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="关闭按钮"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_container" android:background="@color/takeout_widget_filter_bar_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.filterbar.view.view.DynamicHeightSrollView android:id="@+id/sroll_container" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_cond_container" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.sankuai.waimai.platform.widget.filterbar.view.view.DynamicHeightSrollView>
+        <RelativeLayout android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:background="@color/takeout_widget_filter_bar_filter_dialog_fragment_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/takeout_widget_filter_bar_text_size_large" android:textColor="@color/takeout_widget_filter_bar_filter_dialog_text_normal" android:gravity="center" android:id="@+id/txt_clear_choose" android:background="@drawable/wm_widget_filter_bar_filter_dialog_clear_text_background" android:paddingLeft="15dp" android:paddingRight="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="1dp" android:text="@string/takeout_widget_filter_bar_filter_dialog_clear_filter" android:layout_weight="1"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_submit_choose" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" style="@style/WmButton.FixedWidth.SolidSquare">
+                    <TextView android:textSize="@dimen/takeout_widget_filter_bar_text_size_large" android:textColor="@color/takeout_widget_filter_bar_filter_dialog_text_dark" android:id="@+id/txt_poi_activity_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:text="@string/takeout_widget_filter_bar_btn_finish"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/takeout_widget_filter_bar_text_num" android:ellipsize="end" android:gravity="center" android:id="@+id/txt_poi_activity_filter_num" android:background="@drawable/wm_widget_filter_bar_tab_background_filter_num" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_no_result" android:background="@color/takeout_widget_filter_bar_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13dp" android:textColor="@color/takeout_widget_filter_bar_filter_dialog_text_normal" android:gravity="center" android:id="@+id/txt_result" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/takeout_widget_filter_bar_filter_dialog_no_data" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/takeout_widget_filter_bar_text_size_large" android:layout_width="match_parent" android:text="@string/takeout_widget_filter_bar_btn_finish" style="@style/WmButton.FixedWidth.SolidSquare"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/page_error" android:background="@color/takeout_widget_filter_bar_background" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_widget_filter_bar_error_icon"/>
+        <TextView android:textColor="@color/takeout_widget_filter_bar_filter_dialog_text_normal" android:gravity="center" android:id="@+id/txt_info" android:layout_marginTop="24dp" android:text="@string/takeout_widget_filter_bar_filter_dialog_error" style="@style/WmText"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/page_load" android:background="@color/takeout_widget_filter_bar_background" android:paddingBottom="50dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/wm_widget_filter_bar_loading_layout"/>
+    </FrameLayout>
+</RelativeLayout>

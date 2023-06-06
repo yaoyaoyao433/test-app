@@ -1,0 +1,26 @@
+package com.sankuai.waimai.business.page.home.list.future.mach;
+
+import com.meituan.robust.ChangeQuickRedirect;
+import com.meituan.robust.PatchProxy;
+import com.meituan.robust.utils.RobustBitConfig;
+import com.sankuai.waimai.mach.ITagProcessor;
+import javax.annotation.Nonnull;
+/* compiled from: ProGuard */
+/* loaded from: classes4.dex */
+public class RateCrownTagProcessor implements ITagProcessor {
+    public static ChangeQuickRedirect a;
+
+    @Override // com.sankuai.waimai.mach.ITagProcessor
+    @Nonnull
+    public String getTagName() {
+        return "wm-rating-crown";
+    }
+
+    @Override // com.sankuai.waimai.mach.ITagProcessor
+    @Nonnull
+    public com.sankuai.waimai.mach.component.base.a createComponent() {
+        Object[] objArr = new Object[0];
+        ChangeQuickRedirect changeQuickRedirect = a;
+        return PatchProxy.isSupport(objArr, this, changeQuickRedirect, false, "3f62e5c6743670e4c38e195f372e679c", RobustBitConfig.DEFAULT_VALUE) ? (com.sankuai.waimai.mach.component.base.a) PatchProxy.accessDispatch(objArr, this, changeQuickRedirect, false, "3f62e5c6743670e4c38e195f372e679c") : new e();
+    }
+}

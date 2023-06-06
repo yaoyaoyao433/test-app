@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/recStateBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_medicine_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@drawable/bg_tips_center" android:layout_width="280dp" android:layout_height="294.5dp">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff222426" android:gravity="center_horizontal" android:id="@+id/medicine_tips_title" android:layout_width="133.5dp" android:layout_height="20dp" android:layout_marginTop="16dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="#ff858687" android:gravity="center_horizontal" android:id="@+id/medicine_search_tips" android:layout_width="248dp" android:layout_height="36dp" android:layout_marginTop="6dp" android:layout_below="@+id/medicine_tips_title" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/img_result_tipimage" android:background="@drawable/bg_tips_imageholder" android:layout_width="248dp" android:layout_height="187dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_tips_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:src="@drawable/ic_medicine_close"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/container_error_tips" android:background="@drawable/bg_tips_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="302dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="#ff222426" android:layout_gravity="center_horizontal" android:id="@+id/text_nomedicine_title" android:layout_width="wrap_content" android:layout_height="21dp" android:layout_marginTop="24dp" android:text="@string/mvex_title_nomedicine"/>
+            <TextView android:textSize="14sp" android:textColor="#ff858687" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginTop="6dp" android:text="@string/mvex_nomedicine_tips"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_error_tipimage" android:layout_width="167dp" android:layout_height="126dp" android:layout_marginTop="24dp"/>
+            <Button android:textSize="16sp" android:textColor="#ff333333" android:layout_gravity="center_horizontal" android:id="@+id/btn_tryagain" android:background="@drawable/bg_takepicture_btn" android:layout_width="343dp" android:layout_height="40dp" android:layout_marginTop="28dp" android:text="@string/mvex_takepicture_again" android:stateListAnimator="@null"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/img_medicine_errorclose" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:src="@drawable/ic_mvex_errorclose" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

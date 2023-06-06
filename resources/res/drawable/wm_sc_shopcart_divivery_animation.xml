@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_00"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_01"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_02"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_03"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_04"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_05"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_06"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_07"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_08"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_09"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_10"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_11"/>
+    <item android:duration="470" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_00"/>
+    <item android:duration="44" android:drawable="@drawable/wm_sc_shopcart_img_shopcart_animation_00"/>
+</animation-list>

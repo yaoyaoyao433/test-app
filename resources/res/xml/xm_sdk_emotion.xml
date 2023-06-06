@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <emotion keyWidth="@drawable/xm_sdk_ic_emoji" keyHeight="1">
+        <item keyWidth="@drawable/xmui_smiley_0">[微笑]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_1">[撇嘴]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_2">[色]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_3">[发呆]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_4">[得意]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_5">[流泪]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_6">[害羞]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_7">[闭嘴]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_8">[睡]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_9">[大哭]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_10">[尴尬]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_11">[发怒]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_12">[调皮]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_13">[呲牙]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_14">[惊讶]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_15">[难过]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_16">[酷]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_17">[冷汗]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_18">[吐]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_19">[抓狂]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_20">[偷笑]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_21">[愉快]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_22">[白眼]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_23">[傲慢]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_24">[饥饿]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_25">[困]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_26">[惊恐]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_27">[流汗]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_28">[憨笑]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_29">[悠闲]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_30">[奋斗]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_31">[咒骂]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_32">[疑问]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_33">[嘘]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_34">[晕]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_35">[疯了]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_36">[衰]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_37">[骷髅]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_38">[敲打]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_39">[再见]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_40">[擦汗]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_41">[抠鼻]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_42">[鼓掌]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_43">[糗大了]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_44">[坏笑]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_45">[左哼哼]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_46">[右哼哼]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_47">[哈欠]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_48">[鄙视]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_49">[委屈]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_50">[快哭了]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_51">[阴险]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_52">[亲亲]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_53">[吓]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_54">[可怜]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_55">[菜刀]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_56">[西瓜]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_57">[啤酒]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_58">[篮球]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_59">[乒乓]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_60">[咖啡]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_61">[饭]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_62">[猪头]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_63">[玫瑰]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_64">[凋谢]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_65">[嘴唇]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_66">[爱心]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_67">[心碎]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_68">[蛋糕]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_69">[闪电]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_70">[炸弹]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_71">[刀]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_72">[足球]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_73">[瓢虫]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_74">[便便]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_75">[月亮]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_76">[太阳]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_77">[礼物]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_78">[拥抱]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_79">[强]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_80">[弱]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_81">[握手]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_82">[胜利]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_83">[抱拳]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_84">[勾引]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_85">[拳头]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_86">[差劲]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_87">[爱你]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_88">[NO]
+        </item>
+        <item keyWidth="@drawable/xmui_smiley_89">[OK]
+        </item>
+    </emotion>
+</list>

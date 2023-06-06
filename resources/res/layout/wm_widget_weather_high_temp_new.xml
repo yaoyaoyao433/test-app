@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fl_high_temp_new_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="-145dp" android:layout_marginTop="-235dp">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/weather_high_temperature_sun_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_ultra_high_temp_light"/>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/weather_high_temperature_scaled_halo_new" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_ultra_high_temp_halo"/>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/weather_high_temperature_rotate_sun" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_ultra_high_temp_sun"/>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/weather_high_temperature_rotate_facula" android:layout_width="wrap_content" android:layout_height="wrap_content" app:project="waimai_c" app:srcName="waimai_c_weather_ultra_high_temp_block"/>
+</FrameLayout>

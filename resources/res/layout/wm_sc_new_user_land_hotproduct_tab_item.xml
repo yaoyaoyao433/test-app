@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rv_tab" android:paddingBottom="@dimen/wm_sc_common_dimen_16" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_tab_icon" android:layout_width="@dimen/wm_sc_common_dimen_50" android:layout_height="@dimen/wm_sc_common_dimen_50" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/rl_tab_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_8" android:layout_below="@+id/iv_tab_icon" android:layout_centerHorizontal="true">
+        <View android:id="@+id/tv_tab_selectcolor" android:background="#ffeb6e" android:layout_width="wrap_content" android:layout_height="5dp" android:layout_alignBottom="@+id/tv_tab_name"/>
+        <TextView android:textSize="13sp" android:id="@+id/tv_tab_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="5"/>
+    </RelativeLayout>
+</RelativeLayout>

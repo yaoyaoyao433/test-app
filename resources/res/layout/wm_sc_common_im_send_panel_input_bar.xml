@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/order_container" android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="36dp">
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/guess_what_you_like_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_11" android:layout_marginRight="@dimen/wm_sc_common_dimen_11"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@+id/wm_sc_im_recommend_script" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <ViewStub android:id="@+id/v_im_debug_panel" android:layout="@layout/wm_sc_common_im_send_debug_panel" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/white" layout="@layout/wm_im_send_panel_input_bar"/>
+</LinearLayout>

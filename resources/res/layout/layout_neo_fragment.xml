@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lay_web_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.dianping.titans.widget.ZIndexFrameLayout android:id="@+id/mil_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/webview_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="top" android:orientation="vertical" android:id="@+id/iv_titleshadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/knb_title_shadow" android:scaleType="fitXY" app:zIndex="1"/>
+        </com.dianping.titans.widget.ZIndexFrameLayout>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="#fff" android:id="@+id/url" android:background="#888" android:padding="2dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ViewStub android:layout_gravity="bottom|center_horizontal" android:id="@+id/web_navi_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/we_chat_friends_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_we_chat_friends_logo" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/wm_restaurant_common_icon_weixin_friends_logo" android:scaleType="fitCenter"/>
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/wm_restaurant_we_chat_friends"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/we_chat_moments_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_we_chat_moments_logo" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/wm_restaurant_common_icon_weixin_circle_logo" android:scaleType="fitCenter"/>
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/wm_restaurant_we_chat_moments"/>
+    </LinearLayout>
+</LinearLayout>

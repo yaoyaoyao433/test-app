@@ -1,0 +1,2 @@
+WMScheme:com.sankuai.meituan.takeoutnew.scan.common.WMSchemeHandler
+http:com.sankuai.meituan.takeoutnew.scan.common.HttpSchemeHandler

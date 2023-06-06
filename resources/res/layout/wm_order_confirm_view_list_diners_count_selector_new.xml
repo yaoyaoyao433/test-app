@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/Theme.RooDesign" android:id="@+id/order_confirm_tableware_selector" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Theme.RooDesign">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="24dp">
+        <android.support.v7.widget.AppCompatTextView android:textSize="16dp" android:textStyle="bold" android:textColor="#222426" android:layout_width="match_parent" android:layout_height="21dp" android:text="选择餐具数量"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/order_confirm_tableware_new_layout_container1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <com.meituan.roodesign.widgets.label.RooLabel android:textSize="14dp" android:textColor="#ff8000" android:gravity="center" android:id="@+id/order_confirm_tableware_new_label_auto" android:layout_width="0dp" android:layout_height="32dp" android:text="@string/wm_order_confirm_tableware_label_auto" android:layout_weight="2" android:contentDescription="@string/wm_order_confirm_tableware_label_auto_desc" android:strokeColor="?attr/rooBrandWarning" app:backgroundColor="#fff8e1" app:cornerRadius="6dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:strokeWidth="0.5dp"/>
+            <include android:layout_width="0dp" android:layout_height="32dp" android:layout_weight="2" android:layout_marginStart="12dp" layout="@layout/wm_order_confirm_view_list_diners_count_stepper"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

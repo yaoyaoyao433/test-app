@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/msc_dialog_auth_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="210dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="24dp" android:paddingTop="22dp" android:paddingRight="24dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/msc_auth_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/msc_app_icon_default"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/msc_auth_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp"/>
+        <TextView android:textSize="16sp" android:textColor="#646464" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:text="申请"/>
+        <LinearLayout android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/msc_auth_about" android:layout_width="19dp" android:layout_height="19dp" android:src="@drawable/msc_about"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/msc_auth_scope" android:background="@android:color/white" android:paddingLeft="24dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    <TextView android:textSize="16sp" android:textColor="#646464" android:id="@+id/msc_auth_scope_reason" android:background="@android:color/white" android:paddingLeft="24dp" android:paddingTop="3dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#222222" android:id="@+id/msc_auth_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+        <TextView android:textSize="16sp" android:textColor="#646464" android:id="@+id/msc_auth_phone_from" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="15dp" android:paddingTop="32dp" android:paddingRight="15dp" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="#000000" android:gravity="center" android:id="@+id/msc_auth_refuse" android:background="@drawable/msc_dialog_auth_bottom_refuse" android:layout_width="168dp" android:layout_height="45dp" android:layout_marginRight="9dp" android:text="拒绝" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/msc_auth_agree" android:background="@drawable/msc_dialog_auth_bottom_agree" android:layout_width="168dp" android:layout_height="45dp" android:text="同意" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

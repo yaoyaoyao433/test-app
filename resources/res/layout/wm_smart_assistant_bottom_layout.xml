@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/sa_bottom_container" android:layout_width="match_parent" android:layout_height="70dp">
+        <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/sa_voice_container" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="28dp" android:layout_weight="49.5">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/sa_input_icon" android:layout_width="wrap_content" android:layout_height="28dp" android:src="@drawable/wm_smart_assistant_input_voice_icon" android:scaleType="centerInside"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/sa_input_bottom_bar" android:background="@drawable/wm_smart_assistant_text_input_white_background" android:visibility="visible" android:layout_width="0dp" android:layout_height="62dp" android:layout_weight="276">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/sa_input_bottom_bar_ll" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="201">
+                <EditText android:textSize="16sp" android:textColor="#ff333333" android:textColorHint="#4d999999" android:id="@+id/sa_input_edit" android:background="@null" android:paddingLeft="31dp" android:paddingTop="20dp" android:paddingRight="7dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/wm_sa_input_tips" android:maxLines="1" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" android:imeOptions="actionSend" android:imeActionLabel="@string/wm_sa_input_send" android:imeActionId="4" android:textCursorDrawable="@drawable/wm_smart_assistant_common_edit_text_cursor_gray"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/sa_input_ok" android:background="@drawable/wm_smart_assistant_send_button_hightlight_background" android:layout_width="58dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginTop="11dp" android:layout_marginRight="11dp" android:layout_marginBottom="11dp" android:text="@string/wm_sa_input_send"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:layout_gravity="end|center_vertical" android:id="@+id/sa_close_container" android:layout_width="0dp" android:layout_height="28dp" android:layout_weight="49.5">
+            <ImageView android:layout_gravity="end|center_vertical" android:id="@+id/sa_close" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="28dp" android:src="@drawable/wm_smart_assistant_close" android:scaleType="centerInside"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/sa_voice_bottom_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="91dp">
+        <ImageView android:layout_gravity="bottom" android:id="@+id/sa_keyboard_btn" android:padding="5dp" android:layout_width="31dp" android:layout_height="25dp" android:layout_marginLeft="25dp" android:layout_marginBottom="29dp" android:src="@drawable/wm_smart_assistant_keyboard_icon" android:scaleType="centerInside"/>
+        <include android:layout_width="match_parent" android:layout_height="91dp" layout="@layout/wm_smart_assistant_bottom_visualizer_layout"/>
+        <ImageView android:layout_gravity="end|bottom" android:id="@+id/sa_voice_close" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="25dp" android:layout_marginBottom="29dp" android:src="@drawable/wm_smart_assistant_close" android:scaleType="centerInside"/>
+    </FrameLayout>
+</FrameLayout>

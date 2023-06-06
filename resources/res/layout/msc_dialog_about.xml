@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f2f4f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageView android:id="@+id/msc_about_back" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="39dp" android:layout_height="44dp" android:src="@drawable/msc_op_back" android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/msc_about_icon" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/msc_app_icon_default"/>
+    </LinearLayout>
+    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#222222" android:gravity="center_horizontal" android:id="@+id/msc_about_name" android:background="@android:color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="14dp" android:textColor="#646464" android:gravity="center" android:id="@+id/msc_about_desc" android:background="@android:color/white" android:paddingLeft="44dp" android:paddingRight="44dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="2dp"/>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/msc_about_more_data" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="#222222" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="更多资料" android:layout_weight="100"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="7dp" android:layout_height="13dp" android:layout_marginRight="20dp" android:src="@drawable/msc_next"/>
+    </LinearLayout>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="20dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/msc_about_setting" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16dp" android:textColor="#222222" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="授权设置" android:layout_weight="100"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="7dp" android:layout_height="13dp" android:layout_marginRight="20dp" android:src="@drawable/msc_next"/>
+    </LinearLayout>
+    <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/msc_about_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16dp" android:textColor="#222222" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="客服电话" android:layout_weight="100"/>
+            <TextView android:textSize="14dp" android:textColor="#007aff" android:layout_gravity="center_vertical" android:id="@+id/msc_about_phone_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp"/>
+        </LinearLayout>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+</LinearLayout>

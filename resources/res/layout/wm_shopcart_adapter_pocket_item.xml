@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_pocket" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="42dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <LinearLayout android:id="@+id/ll_checkbox_pocket" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/fl_checkbox_container" android:paddingLeft="16.5dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <CheckBox android:layout_gravity="center" android:id="@+id/checkbox_pocket" android:background="@drawable/wm_shopcart_list_pocket_selector" android:layout_width="18dp" android:layout_height="18dp" android:button="@null" android:importantForAccessibility="no"/>
+                </FrameLayout>
+                <TextView android:textSize="12sp" android:textColor="#33312e" android:gravity="center" android:id="@+id/txt_cart_name" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="#333333" android:gravity="center" android:id="@+id/txt_cart_fee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5.5dp" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/wm_shopcart_gray_light" android:id="@+id/txt_cart_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:importantForAccessibility="no"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#666666" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/btn_clear" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="16dp" android:text="@string/wm_shopcart_clear_shopping_cart"/>
+        <TextView android:textSize="16sp" android:textColor="@color/wm_shopcart_text_main" android:gravity="center" android:id="@+id/txt_foodCount_number" android:background="@color/wm_shopcart_transparent" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="25dp" android:text="0" android:maxEms="3" android:layout_centerInParent="true"/>
+        <View android:layout_gravity="bottom" android:id="@+id/layout_pocket_divider_line" android:background="#4cd8d8d8" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </FrameLayout>
+    <TextView android:textSize="11dp" android:textColor="#999999" android:ellipsize="end" android:gravity="center" android:id="@+id/txt_pocket_empty_tip_bottom" android:background="@drawable/wm_shopcart_pocket_empty_tip_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="16.5dp" android:layout_marginRight="16.5dp" android:layout_marginBottom="20dp" android:text="@string/wm_shopcart_pocket_empty_tip_bottom" android:maxLines="1"/>
+</LinearLayout>

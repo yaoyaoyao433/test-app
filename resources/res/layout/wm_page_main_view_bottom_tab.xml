@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="-3dp" android:layout_marginRight="-3dp" android:layout_weight="1">
+    <View android:id="@+id/tab_divider" android:background="#f1f1f2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_above="@+id/tab_bar"/>
+    <RelativeLayout android:id="@+id/tab_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/wm_page_main_home_indicator_height" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <com.sankuai.waimai.lottie.SafeLottieAnimationView android:layout_gravity="bottom|center_horizontal" android:id="@+id/icon_lottie_selected" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="6dp" app:lottie_autoPlay="false" app:lottie_loop="false"/>
+        <TextView android:textSize="10sp" android:textColor="@color/takeout_main_menu_text_bg" android:ellipsize="marquee" android:layout_gravity="center_horizontal" android:id="@+id/tab_title" android:layout_marginTop="47dp" android:layout_centerHorizontal="true" style="@style/WmText"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/icon_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+        <include android:layout_gravity="center_horizontal" android:id="@+id/tab_title_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="-18dp" layout="@layout/wm_common_view_red_dot"/>
+    </FrameLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.HorizontalFlowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/recommend_words_dark" android:paddingLeft="12dp" android:paddingTop="2dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" app:childHeight="20dp" app:childMarginHorizontal="8dp"/>

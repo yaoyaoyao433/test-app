@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/mach_weather_title_bar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="42dp">
+        <TextView android:textSize="13dp" android:textColor="#2c2c2c" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/wm_main_weather_tip"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/back" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/wm_common_actionbar_back_arrow"/>
+    </FrameLayout>
+    <FrameLayout android:paddingTop="42dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/mach_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/layout_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_common_layout_refresh_info"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/titans_title_shadow" android:scaleType="fitXY"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/layout_root_view" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="42.5dp">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textColor="#282a2c" android:gravity="center" android:paddingLeft="12dp" android:layout_width="72.5dp" android:layout_height="match_parent" android:text="评价菜品"/>
+            <HorizontalScrollView android:paddingRight="12dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="75dp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_good_list" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            </HorizontalScrollView>
+            <View android:layout_gravity="right" android:background="@drawable/wm_order_comment_input_board_line" android:layout_width="10dp" android:layout_height="match_parent" android:layout_marginRight="1dp"/>
+            <View android:layout_gravity="right" android:background="#f2f2f2" android:layout_width="1dp" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/open_board_button" android:layout_width="42.5dp" android:layout_height="match_parent" android:src="@drawable/wm_order_comment_input_board_open" android:scaleType="center"/>
+    </LinearLayout>
+    <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <ScrollView android:id="@+id/scrollview_input_board_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.sankuai.waimai.platform.widget.HorizontalFlowLayout android:id="@+id/fl_input_board_layout" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="6dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:childHeight="28dp" app:childMarginHorizontal="9dp" app:childMarginVertical="10dp"/>
+    </ScrollView>
+</LinearLayout>

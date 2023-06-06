@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/wm_page_main_home" android:background="@color/wm_page_home_bg" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.business.page.home.widget.HomePullToRefreshView android:id="@+id/pull_to_refresh_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fl_actionbar_bg_foreground" android:background="@color/wm_page_home_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/actionbar_bg_container" android:background="@drawable/wm_page_home_actionbar_radius_bg" android:layout_width="match_parent" android:layout_height="200dp"/>
+            <ImageView android:id="@+id/home_blocks_white_bg" android:background="@drawable/wm_page_home_actionbar_radius_bg" android:layout_width="match_parent" android:layout_height="200dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/promotion_background_layout" android:background="@color/wm_common_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/promotion_bg_part1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/promotion_part1_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+                <com.meituan.android.mtplayer.video.MTVideoPlayerView android:id="@+id/promotion_part1_video" android:background="@android:color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+                <View android:layout_gravity="bottom" android:id="@+id/promotion_gray_layer" android:background="#f5f5f5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/promotion_bg_part2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <com.sankuai.waimai.business.page.home.basal.HomePageNestedScrollRecyclerView android:id="@+id/nested_scroll_recycler_view" android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.sankuai.waimai.business.page.home.widget.HomePullToRefreshView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/floating_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/page_common_foot_layout_main" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/wm_page_common_foot_layout_main_in"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom|right" android:id="@+id/layout_smart_assistant_poiList" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/remind_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@+id/fault_tip_view_stub" android:visibility="gone" android:layout="@layout/wm_page_home_view_fault_tip" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wm_page_home_remind_layer"/>
+        <com.sankuai.waimai.business.page.home.factory.FuTiaoMatrixView android:id="@+id/matrix_mach_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/> 　\10
+    </LinearLayout>
+    <include style="@style/takeout_main_base_img" layout="@layout/wm_page_home_layout_refresh_info"/>
+    <ViewStub android:id="@+id/vs_empty_view" android:visibility="gone" android:layout="@layout/wm_page_home_poi_list_empty_view" android:inflatedId="@+id/vs_empty_view" android:layout_marginTop="110dp" style="@style/takeout_main_base_img"/>
+    <ViewStub android:layout_gravity="bottom|left" android:id="@+id/layout_channel_label" android:layout="@layout/wm_restaurant_channel_label" android:inflatedId="@+id/layout_channel_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="200dp"/>
+    <include android:id="@+id/fl_pull_refresh" layout="@layout/wm_page_home_second_floor_layout"/>
+    <include android:id="@+id/action_bar_background" layout="@layout/wm_page_main_home_actionbar"/>
+    <include android:id="@+id/action_bar_background_elderly" android:visibility="gone" layout="@layout/wm_page_main_home_actionbar_elderly"/>
+    <include android:id="@+id/antion_bar_background_privicy" android:visibility="gone" layout="@layout/wm_page_main_home_actionbar_privacy"/>
+    <include android:id="@+id/header_location_permission_layer" layout="@layout/wm_page_home_location_permission_layer"/>
+    <include android:layout_gravity="bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wm_page_home_personized_bottom_layout"/>
+</FrameLayout>

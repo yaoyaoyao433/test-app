@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/ll_title_container" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_28" android:layout_margin="@dimen/wm_sc_common_dimen_4">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.store.drug.goods.list.templet.market.view.custom.BorderTextView android:textSize="@dimen/text_size_12" android:id="@+id/tv_aggregation_select" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/iv_aggregation_select" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="62dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_9" android:textColor="@color/wm_sg_color_858687" android:ellipsize="end" android:id="@+id/tv_sub_title" android:paddingLeft="@dimen/wm_sc_common_dimen_9" android:paddingRight="@dimen/wm_sc_common_dimen_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/takeout_txt_tab" android:layout_centerHorizontal="true"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#efefef" android:paddingTop="8dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="12dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/banner_layout" android:background="@drawable/wm_im_banner_bg" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/tip_icon" android:layout_width="14dp" android:layout_height="15dp" android:layout_marginTop="1.5dp" android:src="@drawable/wm_im_ic_group_chat_banner_tip" android:scaleType="fitXY"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#5fb84f" android:id="@+id/tip_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="@dimen/wm_sc_common_dimen_3" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/inc_left" android:layout_width="0dp" android:layout_height="@dimen/wm_sc_common_dimen_72" android:layout_weight="1" layout="@layout/wm_sg_on_sale_two_item_view"/>
+    <Space android:layout_width="6dp" android:layout_height="1dp"/>
+    <include android:id="@+id/inc_right" android:layout_width="0dp" android:layout_height="@dimen/wm_sc_common_dimen_72" android:layout_weight="1" layout="@layout/wm_sg_on_sale_two_item_view"/>
+</LinearLayout>

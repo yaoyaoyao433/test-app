@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/user_feedback_main" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_56">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_user_feedback_bubble_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/im_user_feedback_close" android:paddingLeft="@dimen/wm_sc_common_dimen_13" android:paddingTop="@dimen/wm_sc_common_dimen_15" android:paddingRight="@dimen/wm_sc_common_dimen_13" android:paddingBottom="@dimen/wm_sc_common_dimen_15" android:layout_width="@dimen/wm_sc_common_dimen_40" android:layout_height="@dimen/wm_sc_common_dimen_40" android:src="@drawable/wm_sc_user_feecback_close"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/wm_sc_common_dimen_51" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="#ff222426" android:ellipsize="end" android:id="@+id/user_feedback_bubble_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_10" android:textColor="#ff575859" android:ellipsize="end" android:id="@+id/user_feedback_bubble_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_1" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/wm_sc_common_dimen_56" android:layout_height="@dimen/wm_sc_common_dimen_56">
+        <ImageView android:layout_gravity="center" android:id="@+id/user_feedback_bubble_icon" android:padding="@dimen/wm_sc_common_dimen_12" android:layout_width="@dimen/wm_sc_common_dimen_40" android:layout_height="@dimen/wm_sc_common_dimen_40" android:scaleType="fitXY"/>
+    </FrameLayout>
+</FrameLayout>

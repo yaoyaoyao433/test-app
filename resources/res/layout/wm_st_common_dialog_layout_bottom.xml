@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/dialog_root_panel" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:showDividers="middle">
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_main_panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/wm_sc_common_padding_divider_horizontal" android:showDividers="middle">
+            <TextView android:textStyle="normal" android:textColor="@color/wm_sg_color_666666" android:id="@+id/dialog_title" android:layout_height="45dp" style="@style/WmSgDialog.Title"/>
+            <TextView android:textColor="@color/wm_sg_color_666666" android:id="@+id/dialog_message" android:visibility="gone" style="@style/WmSgDialog.Message"/>
+        </LinearLayout>
+        <View android:id="@+id/dialog_top_divider" android:background="@color/wm_sc_common_dialog_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@+id/dialog_content_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_button_panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/dialog_bottom_padding" android:background="@color/wm_sc_common_background_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <View android:id="@+id/dialog_bottom_divider" android:background="@color/wm_sc_common_dialog_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/dialog_button_holder" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/wm_st_common_dialog_divider_component" android:showDividers="middle">
+            <Button android:id="@+id/dialog_button_positive" style="@style/WmSgDialog.Button.FullWidth"/>
+            <Button android:id="@+id/dialog_button_negative" style="@style/WmSgDialog.Button.FullWidth"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

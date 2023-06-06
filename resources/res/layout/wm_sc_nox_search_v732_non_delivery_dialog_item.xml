@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:borderColor="#f2f1f0" app:borderWidth="1px" app:cornerRadius="4dp">
+            <ImageView android:id="@+id/poi_logo" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="centerCrop"/>
+        </com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#222426" android:ellipsize="end" android:id="@+id/poi_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+        <TextView android:textSize="11sp" android:textColor="#575859" android:ellipsize="end" android:id="@+id/poi_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <TextView android:textSize="11sp" android:textColor="#575859" android:ellipsize="end" android:id="@+id/poi_reason" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1" android:layout_marginStart="28dp"/>
+</LinearLayout>

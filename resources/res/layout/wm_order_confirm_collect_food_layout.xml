@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/collect_food_layout" android:background="@drawable/wm_order_base_dialog_title_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/collect_food_title_layout" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_order_confirm_title_text_color" android:layout_gravity="center" android:id="@+id/collect_food_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/collect_food_layout_close_img" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_order_confirm_icon_close" android:contentDescription="@string/wm_order_confirm_dialog_close"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="22dp" android:layout_below="@+id/collect_food_title_layout">
+        <android.support.v7.widget.RecyclerView android:id="@+id/collect_food_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/collect_food_coupon_layout" android:background="@drawable/wm_order_confirm_collect_food_discount_bg" android:layout_width="match_parent" android:layout_height="33dp" android:layout_below="@+id/collect_food_title_layout">
+        <TextView android:textSize="11sp" android:textColor="@color/wm_order_confirm_title_text_color" android:layout_gravity="center" android:id="@+id/collect_food_coupon_txt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="match_parent" android:layout_height="42dp" android:layout_alignParentBottom="true" app:project="waimai_c" app:srcName="waimai_c_order_bg_confirm_submit_mask"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@+id/collect_food_footer_pocket_fee_layout" android:background="@drawable/wm_order_confirm_collect_food_pocket_fee_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="20dp">
+            <TextView android:textSize="11sp" android:textColor="#666666" android:layout_gravity="center_horizontal" android:id="@+id/collect_food_footer_pocket_fee_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+        </FrameLayout>
+        <Button android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_order_confirm_title_text_color" android:layout_gravity="bottom" android:id="@+id/collect_food_footer_confirm_btn" android:background="@drawable/wm_order_confirm_collect_food_confirm_bg" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/confirm"/>
+    </FrameLayout>
+</RelativeLayout>

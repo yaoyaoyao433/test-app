@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_home_marketing_float_entrance" android:layout_width="@dimen/wm_sc_common_dimen_54" android:layout_height="@dimen/wm_sc_common_dimen_54"/>
+</FrameLayout>

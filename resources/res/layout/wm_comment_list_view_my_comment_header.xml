@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_my_comment_header" android:layout_width="match_parent" android:layout_height="@dimen/wm_comment_user_header_height">
+    <com.sankuai.waimai.business.user.comment.view.CropTopImageView android:layout_width="match_parent" android:layout_height="@dimen/wm_comment_user_header_height" android:src="@drawable/wm_comment_bg_user_comment_header"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="@dimen/wm_comment_user_header_avatar_size" android:layout_height="@dimen/wm_comment_user_header_avatar_size">
+            <View android:background="@drawable/takeout_ic_avatar_mask" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/img_avatar" android:padding="6dp" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_user_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/wm_common_text_size_large" android:textColor="@color/wm_common_theme_dark" android:id="@+id/txt_my_comment_username" android:layout_marginRight="5dp" style="@style/WmText"/>
+            <include layout="@layout/wm_user_view_vip_icon"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_theme_dark" android:id="@+id/txt_my_comment_count" android:layout_marginTop="6dp" style="@style/WmText"/>
+    </LinearLayout>
+</FrameLayout>

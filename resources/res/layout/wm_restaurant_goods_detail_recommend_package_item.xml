@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/wm_restaurant_goods_detail_white_round_corner_bg" android:paddingLeft="14dp" android:paddingTop="14dp" android:paddingRight="14dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+    <com.sankuai.waimai.business.restaurant.goodsdetail.widget.AutoGridView android:id="@+id/product_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="8dp" android:verticalSpacing="11dp"/>
+    <include layout="@layout/wm_restaurant_goods_detail_one_click"/>
+</LinearLayout>

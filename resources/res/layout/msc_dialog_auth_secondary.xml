@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/msc_dialog_auth_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/msc_dialog_auth_bg" android:paddingLeft="15dp" android:paddingTop="21dp" android:paddingBottom="21dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/msc_back" android:layout_width="19dp" android:layout_height="19dp" android:src="@drawable/msc_auth_back" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="24dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小程序名称"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/msc_mini_app_name" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@android:color/black" android:id="@+id/msc_auth_details" android:background="@android:color/white" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="23dp" android:lineSpacingMultiplier="0"/>
+</LinearLayout>

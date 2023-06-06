@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/header_layout" android:layout_width="match_parent" android:layout_height="168dp">
+    <ImageView android:id="@+id/header_background" android:layout_width="match_parent" android:layout_height="168dp" android:scaleType="fitXY"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_st_common_white" android:id="@+id/header_rule" android:padding="@dimen/wm_sc_common_dimen_3" android:layout_width="18dp" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/wm_sg_new_user_land_rule" android:layout_alignParentRight="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/header_cross_line_layout" android:layout_width="327dp" android:layout_height="30dp" android:layout_marginTop="85dp" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/header_cross_line_left_icon" android:layout_width="32dp" android:layout_height="32dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/wm_sg_color_222426" android:ellipsize="end" android:id="@+id/header_cross_line_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:maxLines="1" android:layout_weight="1"/>
+        <RelativeLayout android:id="@+id/rl_header_cross_btn_right" android:paddingLeft="@dimen/wm_sc_common_dimen_half" android:paddingTop="@dimen/wm_sc_common_dimen_half" android:layout_width="wrap_content" android:layout_height="@dimen/wm_sc_common_dimen_24" android:layout_marginRight="3dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_header_cross_btn_right" android:paddingLeft="@dimen/wm_sc_common_dimen_8" android:paddingRight="@dimen/wm_sc_common_dimen_8" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="12sp" android:textColor="@color/wm_sg_color_222426" android:id="@+id/header_cross_line_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/iv_header_cross_btn_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_4"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/stick_shadow" android:background="@color/wm_sg_color_F5F5F6" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

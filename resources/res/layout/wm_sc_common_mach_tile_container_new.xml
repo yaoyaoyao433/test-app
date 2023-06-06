@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/wm_sc_mach_bg_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/wm_sc_mach_bg_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/wm_sc_mach_tile_content_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/wm_sc_common_dimen_78">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.sankuai.waimai.store.mach.page.widget.NestedScrollLayout android:id="@+id/smooth" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.sankuai.waimai.store.mach.page.widget.MyRecyclerView android:orientation="vertical" android:id="@+id/head" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.sankuai.waimai.store.mach.page.widget.SlidingTabLayout android:id="@+id/tablayout2" android:layout_width="match_parent" android:layout_height="45dp" app:tl_indicator_color="@color/wm_st_common_FFCC33" app:tl_indicator_height="2dp" app:tl_indicator_width="20dp" app:tl_tab_padding="10dp" app:tl_textBold="SELECT" app:tl_textSelectColor="@color/wm_sg_color_333333" app:tl_textUnselectColor="@color/wm_sc_color_222426" app:tl_textsize="14sp" app:tl_underline_color="@color/wm_sc_nox_search_color_EEEEEE" app:tl_underline_height="0.5dp"/>
+                        <android.support.v4.view.ViewPager android:id="@+id/vp" android:layout_width="match_parent" android:layout_height="0dp"/>
+                        <com.sankuai.waimai.store.newwidgets.pullrefresh.SCNestedPullRefreshView android:orientation="vertical" android:id="@+id/wm_sc_mach_tile_pulltorefresh" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <FrameLayout android:background="@color/wm_sc_nox_search_color_F5F5F6" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_data" android:layout_width="match_parent" android:layout_height="400dp">
+                                    <ImageView android:id="@+id/img_info" android:layout_width="match_parent" android:layout_height="200dp" android:src="@drawable/wm_common_default_data_error_icon" android:scaleType="centerInside"/>
+                                    <TextView android:textColor="@color/wm_common_text_auxiliary" android:gravity="center" android:id="@+id/txt_info" android:layout_marginTop="14dp" android:text="暂无数据" style="@style/WmText"/>
+                                </LinearLayout>
+                                <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/rec" android:background="@color/wm_sc_nox_search_color_F5F5F6" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                            </FrameLayout>
+                        </com.sankuai.waimai.store.newwidgets.pullrefresh.SCNestedPullRefreshView>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.sankuai.waimai.store.mach.page.widget.NestedScrollLayout>
+            <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/wm_sc_mach_tile_net_info" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/wm_sc_mach_tile_action_bar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_78">
+        <View android:id="@+id/wm_sc_mach_tile_action_bar_bg" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/wm_sc_mach_tile_sysbar" android:layout_width="match_parent" android:layout_height="25dp"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/wm_sc_mach_tile_sysbar2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/wm_sc_mach_tile_sysbar">
+            <ImageView android:id="@+id/wm_sc_mach_tile_back_button" android:layout_width="@dimen/wm_sc_common_dimen_30" android:layout_height="@dimen/wm_sc_common_dimen_30" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:src="@drawable/wm_sc_goods_list_actionbar_back_gray" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="@color/wm_sc_43" android:id="@+id/wm_sc_mach_tile_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/wm_sc_mach_tile_action_bar2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_78"/>
+</RelativeLayout>

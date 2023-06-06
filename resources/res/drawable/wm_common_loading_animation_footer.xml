@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim00"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim01"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim02"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim03"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim04"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim05"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim06"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim07"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim08"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim09"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim10"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim11"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim12"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim13"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim14"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim15"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim16"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim17"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim18"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim19"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim20"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim21"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim22"/>
+    <item android:duration="41" android:drawable="@drawable/wm_common_8th_anim23"/>
+</animation-list>

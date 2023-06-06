@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="@dimen/wm_sc_common_dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.sankuai.waimai.store.drug.search.ui.block.sortfilter.BrandQuickFilterListView android:id="@+id/brand_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/brand_tips_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginTop="@dimen/wm_sc_common_dimen_6">
+        <ImageView android:layout_width="@dimen/wm_sc_common_dimen_12" android:layout_height="@dimen/wm_sc_common_dimen_12" android:src="@drawable/wm_drug_brand_tips_icon"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_10" android:textColor="@color/wm_sg_color_BCBCBC" android:id="@+id/brand_tips" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

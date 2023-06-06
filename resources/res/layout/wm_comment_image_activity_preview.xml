@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root_view" android:background="#222426" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.ugc.image.PhotoViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/wm_action_bar" android:background="#80000000" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <ImageView android:layout_gravity="center" android:id="@+id/view_back_image_preview" android:layout_width="wrap_content" android:layout_height="?android:attr/actionBarSize" android:src="@drawable/wm_actionbar_ic_back_white" android:scaleType="centerInside" android:minWidth="45dp"/>
+        <TextView android:textColor="@android:color/white" android:id="@+id/txt_image_preview" android:height="?android:attr/actionBarSize" style="@style/WmTitle.ActionBar.Center"/>
+        <CheckBox android:layout_gravity="center" android:id="@+id/checkbox_image_preview" style="@style/WmCheckBox.Single.Orange"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/view_delete_image_preview" android:layout_width="?android:attr/actionBarSize" android:layout_height="?android:attr/actionBarSize" android:src="@drawable/takeout_ic_delete_white" android:scaleType="centerInside"/>
+    </FrameLayout>
+    <com.sankuai.waimai.platform.widget.pager.SimplePageIndicator android:layout_gravity="bottom|center_horizontal" android:id="@+id/indicator_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" app:childLayout="@layout/wm_comment_pager_indicator_child_layout" app:childDrawable="@drawable/wm_common_dot_square_yellow" app:checkedSize="6dp" app:normalSize="3dp"/>
+</FrameLayout>

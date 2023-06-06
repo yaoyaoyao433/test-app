@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/bg_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <Button android:textSize="14sp" android:textColor="@color/mvexcolorWhite" android:gravity="center" android:id="@+id/text_cancel" android:background="@drawable/bg_loading_cancel" android:layout_width="68dp" android:layout_height="36dp" android:layout_marginBottom="48dp" android:text="@string/text_cancel" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_above="@+id/text_cancel" android:layout_centerHorizontal="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="20dp" android:layout_height="20dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/search_loading_img" android:indeterminateDuration="3000"/>
+        <TextView android:textSize="16sp" android:textColor="@color/mvexcolorWhite" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="4dp" android:text="正在识别…" android:shadowColor="@color/mvextextShadow" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="2"/>
+    </LinearLayout>
+</RelativeLayout>

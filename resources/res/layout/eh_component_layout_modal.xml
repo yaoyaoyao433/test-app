@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/eh_component_modal_fill" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:textSize="15sp" android:textStyle="bold" android:textColor="#aaffffff" android:id="@+id/btn_eh_component_modal_close" android:background="@drawable/bg_modal_buttom_close" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="18dp" android:layout_marginTop="30dp" android:text="✕"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/eh_component_modal_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

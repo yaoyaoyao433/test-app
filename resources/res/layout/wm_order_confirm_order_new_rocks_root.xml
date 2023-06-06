@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/order_content_root" android:focusable="true" style="@style/WmPage.Secondary.NoBackground">
+    <View android:id="@+id/bg_view" android:background="#222426" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/content_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/close_btn" android:visibility="invisible" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginTop="57dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/wm_order_confirm_icon_close" android:layout_alignParentRight="true"/>
+        <FrameLayout android:id="@+id/scroll_viewstub" android:background="@color/gray_light" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30dp" android:layout_below="@+id/close_btn">
+            <View android:id="@+id/bg_head_title" android:background="@drawable/wm_order_confirm_new_head_bg" android:layout_width="match_parent" android:layout_height="@dimen/wm_order_confirm_new_header_bg_height"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/scroll_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-5dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/actionbar_viewstub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/close_btn"/>
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:project="waimai_c" app:srcName="waimai_c_order_bg_confirm_submit_mask"/>
+        <ViewStub android:id="@+id/submit_viewstub" android:background="#333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        <include android:id="@+id/submit_view_place_holder" android:background="@color/transparent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/wm_order_confirm_price_submit_a"/>
+        <include android:layout_width="wrap_content" android:layout_height="39dp" android:layout_marginLeft="52dp" android:layout_marginRight="52dp" android:layout_marginBottom="8dp" android:layout_above="@+id/submit_view_place_holder" android:layout_centerHorizontal="true" layout="@layout/wm_order_confirm_plus_remind_layout"/>
+        <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="39dp" android:layout_marginLeft="52dp" android:layout_marginRight="52dp" android:layout_marginBottom="8dp" android:layout_above="@+id/submit_view_place_holder" android:layout_centerHorizontal="true" layout="@layout/wm_order_confirm_remark_remind_layout"/>
+        <include android:layout_width="wrap_content" android:layout_height="39dp" android:layout_marginLeft="52dp" android:layout_marginRight="52dp" android:layout_marginBottom="8dp" android:layout_above="@+id/submit_view_place_holder" android:layout_centerHorizontal="true" layout="@layout/wm_order_confirm_vip_remind_layout"/>
+        <ViewStub android:id="@+id/layout_collect_food_viewstub" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

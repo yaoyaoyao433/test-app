@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/flash_price_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_603f23" android:id="@+id/flash_price_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:includeFontPadding="false"/>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_603f23" android:ellipsize="end" android:id="@+id/flash_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:maxLines="1" android:includeFontPadding="false"/>
+    <ImageView android:id="@+id/flash_price_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp"/>
+</LinearLayout>

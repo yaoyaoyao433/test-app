@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.sankuai.waimai.sa.ui.assistant.view.multiperson.MultiPersonStatisticsItemView android:id="@+id/multi_person_horizontal_item_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="115dp" android:layout_height="55dp">
+        <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/multi_person_slide_prompt" android:background="@drawable/wm_smart_assistant_multi_prompt_bg" android:layout_width="115dp" android:layout_height="55dp">
+            <TextView android:textSize="12sp" android:textColor="#ffd161" android:gravity="center_vertical" android:id="@+id/multi_person_slide_prompt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/wm_sa_multi_person_slide_prompt" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="10dp" android:layout_height="9dp" android:layout_marginRight="5dp" android:src="@drawable/wm_smart_assistant_ic_arrow_left_yellow" android:scaleType="centerCrop" android:layout_toLeftOf="@+id/multi_person_slide_prompt_text" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

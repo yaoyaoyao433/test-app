@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/union_brand_card" android:paddingLeft="@dimen/paycommon__global_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/section_up_divider" style="@style/paybase__horizonal_divider"/>
+    <TextView android:textSize="13sp" android:textColor="@color/mpay__black2" android:id="@+id/union_brand_card_name" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+    <com.meituan.android.paycommon.lib.widgets.PayLabelContainer android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/union_brand_card_label_container" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+</LinearLayout>

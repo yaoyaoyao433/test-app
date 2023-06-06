@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/meituanpay__contract" android:paddingLeft="42dp" android:paddingRight="@dimen/paybase__global_padding" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12dp" android:textColor="@color/paybase__black3" android:id="@+id/meituanpay__protocol_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="12dp" android:textColor="@color/paybase__agreement_color" android:ellipsize="end" android:id="@+id/meituanpay__protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/meituanpay__protocol_prefix"/>
+    <TextView android:textSize="12dp" android:textColor="@color/paybase__agreement_color" android:id="@+id/meituanpay__prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/mvexcolorblack" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.meituan.android.edfu.mvex.ui.widget.CameraTextureView android:id="@+id/cameraView" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" app:cameraFacing="front" app:cameraRatio="16:9" app:flashMode="off"/>
+    <TextView android:textSize="16sp" android:textColor="@color/mvexcolorWhite" android:id="@+id/text_tips" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginBottom="231dp" android:text="@string/mvex_takepicture_tips" android:shadowColor="@color/mvextextShadow" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/mvexcolorWhite" android:id="@+id/text_networktips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginBottom="231dp" android:text="@string/mvex_nonetwork_tips" android:shadowColor="@color/mvextextShadow" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_control" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.meituan.android.edfu.mvex.ui.widget.LightButton android:layout_gravity="center_horizontal" android:id="@+id/btn_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onLightClick"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="44dp" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/img_medicine_shutter" android:layout_width="66dp" android:layout_height="66dp" android:src="@drawable/bg_btn_shutter" android:tint="@drawable/color_mask_tint" android:layout_centerHorizontal="true" android:onClick="onShutterClick" android:tintMode="src_in"/>
+            <com.meituan.android.edfu.mvex.ui.widget.AlbumButtonView android:id="@+id/search_album" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginRight="28dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/container_loading" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.meituan.android.edfu.mvex.ui.widget.ImageLoadingView android:id="@+id/loadingview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.meituan.android.edfu.mvex.ui.widget.TitleView android:id="@+id/titleview" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="20dp"/>
+    <FrameLayout android:id="@+id/container_state" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

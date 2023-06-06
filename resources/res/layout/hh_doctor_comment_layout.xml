@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/hh_sdk_top_layout" layout="@layout/hh_comment_header_view"/>
+    <com.hhmedic.android.sdk.module.video.comment.QuestionView android:id="@+id/hh_sdk_question" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.hhmedic.android.sdk.module.video.comment.RatingView android:id="@+id/hh_sdk_rating" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.hhmedic.android.sdk.module.video.comment.ResultView android:id="@+id/hh_sdk_result" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.hhmedic.android.sdk.module.video.comment.FeedbackView android:id="@+id/hh_sdk_feedback" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/hh_sdk_complain" android:layout_marginTop="50dp" android:layout_marginBottom="40dp" android:text="@string/hh_cc" android:drawablePadding="4dp" android:drawableEnd="@drawable/hh_comment_button_right_arrow" style="@style/hh_comment_complain_btn"/>
+</LinearLayout>

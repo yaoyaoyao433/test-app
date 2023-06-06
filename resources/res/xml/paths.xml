@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-cache-path keyHeight="wm_share_external_cache" keyWidth="/"/>
+    <external-files-path keyHeight="wm_share_external_files" keyWidth="/"/>
+    <cache-path keyHeight="wm_share_cache" keyWidth="/"/>
+    <files-path keyHeight="wm_share_files" keyWidth="/"/>
+    <root-path keyHeight="wm_share_root" keyWidth=""/>
+</paths>

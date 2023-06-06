@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/transparent" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.sankuai.waimai.platform.widget.roundview.RoundedImageView android:id="@+id/wm_sg_im_layout_drug_list_item_pic" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/wm_sc_common_good_img_default" app:riv_corner_radius="2dp" app:riv_border_width="0.5dp" app:riv_border_color="#f4f4f4"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textColor="@color/wm_sg_color_333333" android:ellipsize="end" android:id="@+id/wm_sg_im_layout_drug_list_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textColor="#8033312d" android:ellipsize="end" android:id="@+id/wm_sg_im_layout_drug_list_item_sku" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textColor="@color/wm_sg_color_33312d" android:ellipsize="end" android:id="@+id/wm_sg_im_layout_drug_list_item_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

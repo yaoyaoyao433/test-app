@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="55dp">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/share_common_loading_bg" android:layout_width="55dp" android:layout_height="55dp">
+        <ProgressBar android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="5dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/share_loading_img" android:indeterminateDuration="3000"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/passport_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="加载中" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

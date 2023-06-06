@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/wm_restaurant_coupon_package" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="@dimen/wm_restaurant_coupon_exchange_height_min_new">
+    <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/coupon_discount" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="22dp"/>
+    <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/coupon_desc" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    <TextView android:textSize="10sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center" android:id="@+id/coupon_button_text" android:layout_width="28dp" android:layout_height="match_parent" android:maxLines="1" android:singleLine="true"/>
+</LinearLayout>

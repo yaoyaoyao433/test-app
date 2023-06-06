@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/wm_page_all_f" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/action_bar_root" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/layout_location_box_container" android:layout_width="match_parent" android:layout_height="@dimen/wm_page_home_location_container_height">
+            <include android:id="@+id/weather_container" layout="@layout/wm_page_main_weather_status"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_location_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_page_home_padding" android:layout_centerVertical="true">
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="20dp" android:id="@+id/img_location" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="2dp" android:text="@string/wm_c_iconfont_14dingwei"/>
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#222426" android:id="@+id/txt_location" android:text="@string/wm_page_poiList_progressbar_locating" android:maxEms="10" style="@style/WmText"/>
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8dp" android:id="@+id/img_location_arrow" android:layout_width="8dp" android:layout_height="8dp" android:layout_marginLeft="2dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="bottom" android:id="@+id/layout_search_box_container" android:background="@drawable/wm_page_home_search_box_bg" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/wm_page_home_search_box_height" android:layout_below="@+id/layout_location_box_container">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/layout_search_box_normal" android:background="@drawable/wm_page_main_search_bg_new_actionbar" android:layout_width="match_parent" android:layout_height="33dp" android:layout_marginLeft="@dimen/wm_page_home_padding" android:layout_marginTop="-20dp" android:layout_marginRight="@dimen/wm_page_home_padding">
+                <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="16dp" android:textColor="@color/roo_default_color_gray_darker" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:text="@string/wm_c_iconfont_27fangdajing" android:contentDescription="搜索框"/>
+                <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <com.sankuai.waimai.business.page.home.view.TextSwitchView android:id="@+id/txt_search_normal" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingEnd="3dp" style="@style/WmText"/>
+                    <FrameLayout android:layout_gravity="center" android:id="@+id/ray_animation_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp">
+                        <com.sankuai.waimai.irmo.widget.RayView android:layout_gravity="center" android:id="@+id/ray_animation_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <Button android:textSize="14sp" android:textColor="#222426" android:layout_gravity="right" android:id="@+id/button_search" android:background="@null" android:layout_width="58dp" android:layout_height="match_parent" android:layout_marginRight="0dp" android:text="搜索" style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_sc_two_level_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/sc_second_floor_bg_img" android:background="@color/wm_sc_common_f9f9f9" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageView android:id="@+id/sg_second_floor_guide_img" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="bottom|center_horizontal" android:id="@+id/stop_auto_open_second_floor_btn" android:visibility="invisible" android:layout_width="50.5dp" android:layout_height="22dp"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="top|right" android:orientation="horizontal" android:id="@+id/sc_second_floor_skip_rl" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginTop="@dimen/wm_sc_common_dimen_60" android:layout_marginRight="@dimen/wm_sc_common_dimen_15">
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/sc_second_floor_skip_count_down_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="24dp" android:text="跳过" android:textAlignment="center"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|center_horizontal" android:id="@+id/ll_sc_two_bottom_hint" android:layout_width="match_parent" android:layout_height="75dp"/>
+    <com.sankuai.waimai.store.widgets.twolevel.SGTwoLevelPullRefreshHeader android:layout_gravity="bottom|center_horizontal" android:id="@+id/sg_two_level_pull_fresh_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wm_sc_common_dimen_22"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_10" android:textColor="#ffffff" android:layout_gravity="bottom|center_horizontal" android:id="@+id/tv_sc_refresh_des" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp"/>
+</FrameLayout>

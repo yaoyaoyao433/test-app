@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_poi_activity_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.sankuai.waimai.store.newwidgets.flowlayout.FlowLayout android:id="@+id/layout_activities_recommend" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    <RelativeLayout android:id="@+id/layout_bottom_activities_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wm_sc_common_dimen_3" android:layout_marginRight="@dimen/wm_sc_common_dimen_12">
+        <RelativeLayout android:id="@+id/tag_more_container" android:layout_width="16dp" android:layout_height="22dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/img_activity_num" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginTop="8dp" android:layout_marginStart="@dimen/wm_sc_common_dimen_6"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tag_more_container">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/poi_activity_title_layout" android:paddingTop="@dimen/wm_sc_common_dimen_5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/poi_activity_title_icon" android:layout_width="@dimen/wm_sc_common_dimen_13" android:layout_height="@dimen/wm_sc_common_dimen_13" android:layout_marginTop="@dimen/wm_sc_common_dimen_1" android:scaleType="centerCrop"/>
+                <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textStyle="bold" android:textColor="#ff4a26" android:id="@+id/poi_activity_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_3"/>
+            </LinearLayout>
+            <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:id="@+id/tcv_new_tag_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            <com.sankuai.waimai.store.newwidgets.labelview.LabelView android:textSize="10sp" android:id="@+id/more_lable_view" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="4dp" android:drawablePadding="2dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

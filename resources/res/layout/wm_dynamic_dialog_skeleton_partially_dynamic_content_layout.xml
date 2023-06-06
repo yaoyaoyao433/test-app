@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/top_right_close_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/top_right_close_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_common_dialog_close_ic"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.platform.mach.dialog.DialogHeaderView android:id="@+id/header_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.sankuai.waimai.platform.widget.ShadowLayout android:id="@+id/shadow_background" android:layout_width="match_parent" android:layout_height="match_parent" app:sl_cornerRadius="12dp" app:sl_shadowRadius="5dp" app:sl_shadowColor="#2e000000" app:sl_dy="5dp"/>
+            <ImageView android:layout_gravity="top" android:id="@+id/background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/module_footer_container" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.sankuai.waimai.platform.mach.dialog.MultiModuleItemView android:id="@+id/module_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <com.sankuai.waimai.platform.mach.dialog.DialogFooterView android:id="@+id/footer_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                <TextView android:textSize="11sp" android:textColor="#858687" android:gravity="center_horizontal" android:id="@+id/warrning_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.5dp" android:text="@string/wm_coupon_hint"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/bottom_center_close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@drawable/wm_common_dialog_close_ic" android:contentDescription="关闭"/>
+</LinearLayout>

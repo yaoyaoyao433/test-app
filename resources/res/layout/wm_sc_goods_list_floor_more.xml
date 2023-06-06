@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/txt_floor_more_of_image" android:layout_width="@dimen/wm_sc_common_dimen_15" android:layout_height="@dimen/wm_sc_common_dimen_15" android:layout_marginLeft="@dimen/wm_sc_common_dimen_10" android:src="@drawable/wm_sc_goods_list_floor_more_of_floor" android:scaleType="fitCenter"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_12" android:textColor="@color/wm_sg_color_6E7278" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_floor_more" android:layout_width="wrap_content" android:layout_height="165dp" android:layout_marginLeft="@dimen/wm_sc_common_dimen_5" android:layout_marginRight="@dimen/wm_sc_common_dimen_12" android:text="左滑查看更多" android:ems="1" android:drawablePadding="@dimen/wm_sc_common_dimen_5"/>
+</LinearLayout>

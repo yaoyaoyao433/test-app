@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sankuai.waimai.store.view.banner.SCBaseViewPager android:id="@+id/vp_poiList_ad_container" android:persistentDrawingCache="animation" android:layout_width="match_parent" android:layout_height="match_parent" android:flipInterval="30"/>
+    <com.sankuai.waimai.store.view.RoundedCornerFrameLayout android:layout_width="match_parent" android:layout_height="36dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:cornerRadius="4dp">
+        <com.sankuai.waimai.store.search.template.carouselcard.ScSearchPageIndicator android:gravity="center_vertical" android:layout_gravity="bottom|center_horizontal" android:id="@+id/indicator_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="26dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:childLayout="@layout/wm_sc_search_widget_indicator_dot" app:childDrawable="@drawable/wm_sc_common_dot_orange"/>
+    </com.sankuai.waimai.store.view.RoundedCornerFrameLayout>
+</merge>

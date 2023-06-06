@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f8f8f8" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_add_comment_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_add_comment_title" style="@style/WmText"/>
+        <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_add_comment_time" style="@style/WmText.Weighted.Right"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_auxiliary" android:id="@+id/txt_add_comment_content" style="@style/WmText.MultiLine"/>
+</LinearLayout>

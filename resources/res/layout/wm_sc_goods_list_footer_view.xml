@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/loadingView" layout="@layout/wm_st_view_poi_shop_footer"/>
+    <include android:id="@+id/noMoreView" layout="@layout/wm_st_poi_market_layout_footer_no_more"/>
+</merge>

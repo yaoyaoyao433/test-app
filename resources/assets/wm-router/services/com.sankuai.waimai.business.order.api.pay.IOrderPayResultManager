@@ -1,0 +1,1 @@
+IOrderPayResultService:com.sankuai.waimai.bussiness.order.base.pay.OrderPayResultManager:singleton

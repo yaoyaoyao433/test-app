@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@color/wm_common_white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/info_padding_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+    <ImageView android:id="@+id/img_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_common_default_data_error_icon"/>
+    <TextView android:textColor="@color/wm_common_text_auxiliary" android:gravity="center" android:id="@+id/txt_info" android:layout_marginTop="14dp" android:text="@string/wm_sc_product_set_has_no_data" style="@style/WmText"/>
+    <TextView android:id="@+id/btn_info" android:layout_height="30dp" android:layout_marginTop="16dp" android:text="@string/wm_sc_close" style="@style/WmButton.CenterFixedWidth.Solid"/>
+    <View android:id="@+id/info_padding_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+</LinearLayout>

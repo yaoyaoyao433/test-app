@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/WmPage.Secondary.NoBackground">
+    <LinearLayout android:orientation="vertical" android:id="@+id/recyclerView_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/wm_common_layout_refresh_info"/>
+    <FrameLayout android:id="@+id/ceiling_view_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

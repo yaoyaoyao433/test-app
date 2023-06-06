@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/view_root" android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingRight="10dp" android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.meituan.android.customerservice.widget.ShadowLayout android:id="@+id/view_upload_floating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/btn_close" app:cs_shadowColor="#ffc300" app:cs_shadowRadius="5dp" app:cs_shadowDx="0dp" app:cs_shadowDy="0.5dp" app:cs_shadowRx="34.5dp" app:cs_shadowRy="34.5dp" app:cs_shadowShape="rectangle" app:cs_shadowSide="all">
+        <RelativeLayout android:background="@drawable/cs_upload_floating_bg" android:paddingLeft="2.5dp" android:paddingTop="2.5dp" android:paddingBottom="2.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_upload" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/cs_upload_floating_ic"/>
+            <TextView android:textSize="13sp" android:textColor="@color/cs_upload_floating_text_color" android:id="@+id/tv_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="上传凭证" android:layout_toRightOf="@+id/iv_upload" android:layout_centerInParent="true"/>
+            <ImageView android:layout_gravity="center" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:src="@drawable/cs_upload_floating_ic_arrow" android:layout_toRightOf="@+id/tv_upload" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </com.meituan.android.customerservice.widget.ShadowLayout>
+    <ImageView android:id="@+id/btn_close" android:paddingLeft="5dp" android:paddingBottom="1.5dp" android:layout_width="25dp" android:layout_height="15dp" android:src="@drawable/cs_upload_floating_btn_close" android:layout_alignRight="@+id/view_upload_floating"/>
+</RelativeLayout>

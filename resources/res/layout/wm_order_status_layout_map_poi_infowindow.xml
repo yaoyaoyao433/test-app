@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="bottom" android:id="@+id/img_map_box_poi_left" android:layout_width="100dp" android:layout_height="40dp"/>
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/infoWindowContainerWrapper" android:paddingTop="6dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <View android:id="@+id/view_oval_point" android:background="@drawable/wm_order_detail_oval_bg" android:layout_width="14dp" android:layout_height="5.5dp" android:layout_marginBottom="7dp" android:layout_alignBottom="@+id/infoWindowContainer" android:layout_centerHorizontal="true"/>
+            <FrameLayout android:id="@+id/infoWindowContainer" android:background="@drawable/wm_order_status_map_infowindow" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/safe_deliver_container_bg" android:layout_width="match_parent" android:layout_height="26dp" android:layout_marginBottom="-26dp"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/safe_deliver_container" android:paddingLeft="11dp" android:paddingRight="11dp" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="26dp">
+                        <TextView android:textSize="12dp" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/safe_deliver_desc" android:layout_width="match_parent" android:layout_height="26dp" android:maxLines="1"/>
+                        <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="bottom" android:id="@+id/marker_map_avator" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="2dp" android:layout_marginBottom="2dp" android:scaleType="fitXY" app:cornerRadius="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_marginBottom="6dp">
+                        <com.sankuai.waimai.platform.widget.RoundRectImageView android:id="@+id/img_map_avator" android:layout_width="41dp" android:layout_height="41dp" android:scaleType="centerCrop" app:cornerRadius="7dp"/>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/wm_common_text_main" android:ellipsize="end" android:id="@+id/main_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableRight="@drawable/wm_order_detail_map_arrow" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/wm_common_text_hint" android:ellipsize="end" android:id="@+id/sub_time_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@+id/main_desc"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/wm_common_text_time" android:ellipsize="end" android:id="@+id/sub_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:maxLines="1" android:layout_toRightOf="@+id/sub_time_desc" android:layout_below="@+id/main_desc"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/wm_common_text_hint" android:ellipsize="end" android:id="@+id/sub_time_desc_suffix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:maxLines="1" android:layout_toRightOf="@+id/sub_time" android:layout_below="@+id/main_desc"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/img_map_box" android:visibility="gone" android:layout_width="100dp" android:layout_height="40dp" android:layout_marginRight="60dp" android:layout_below="@+id/infoWindowContainerWrapper"/>
+        <RelativeLayout android:id="@+id/rider_arrive_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:layout_toRightOf="@+id/img_map_box" android:layout_below="@+id/infoWindowContainerWrapper" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@+id/poi_img_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <View android:id="@+id/view_oval_point_rider_arrive" android:background="@drawable/wm_order_detail_oval_bg" android:layout_width="14dp" android:layout_height="5.5dp" android:layout_marginBottom="7dp" android:layout_alignBottom="@+id/fl_poi_avator_container" android:layout_centerHorizontal="true"/>
+                <FrameLayout android:id="@+id/fl_poi_avator_container" android:background="@drawable/wm_order_detail_map_poi_marker" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.sankuai.waimai.platform.widget.RoundRectImageView android:layout_gravity="center_horizontal" android:id="@+id/img_poi_avatar" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="3dp" android:scaleType="centerCrop" app:cornerRadius="7dp"/>
+                </FrameLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_order_detail_map_poi_marker_header" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/rider_arrive_poi_img" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/img_poi_pot" android:visibility="gone" android:layout_width="71dp" android:layout_height="71dp" android:layout_marginTop="-15dp" android:scaleType="centerCrop" android:layout_below="@+id/infoWindowContainerWrapper" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

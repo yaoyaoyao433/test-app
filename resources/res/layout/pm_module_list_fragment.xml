@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/pm_search_bg" android:clickable="true" android:addStatesFromChildren="true" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="8dp" android:layout_marginRight="15dp" android:layout_marginBottom="8dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/icon_search" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:src="@drawable/pm_search_icon" android:scaleType="center"/>
+        <EditText android:textSize="14sp" android:textColor="@android:color/black" android:textColorHint="#999999" android:gravity="center" android:layout_gravity="center" android:id="@+id/module_search" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:hint="搜索模块" android:maxLines="1" android:singleLine="true" android:maxLength="100" android:layout_weight="1" android:imeOptions="actionSearch"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/search_clear" android:background="@null" android:paddingLeft="8dp" android:paddingRight="11dp" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/pm_search_close" android:scaleType="center"/>
+    </LinearLayout>
+    <ListView android:id="@+id/module_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

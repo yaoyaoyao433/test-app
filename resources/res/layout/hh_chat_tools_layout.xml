@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/hh_av_tools_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="8dp">
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@+id/job_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/hp_video_menu_layout">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hp_doctor_job_icon" android:contentDescription="@string/hh_sdk_image_name"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hp_doctor_job_title" style="@style/hp_video_menu_text"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@+id/flash_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/hp_video_menu_layout">
+        <ImageView android:id="@+id/open_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hp_flash_close" android:contentDescription="@string/hh_sdk_image_name"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hh_flash_title" style="@style/hp_video_menu_text"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/hh_sdk_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/hp_avchat_tools_more_open" android:contentDescription="@string/hh_sdk_image_name"/>
+</LinearLayout>

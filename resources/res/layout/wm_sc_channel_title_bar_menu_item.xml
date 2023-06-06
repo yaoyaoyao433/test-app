@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="7dp" android:layout_marginBottom="7dp">
+    <ImageView android:id="@+id/menu_icon" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="5dp"/>
+    <TextView android:textSize="14sp" android:textColor="#ff222426" android:layout_gravity="center_vertical" android:id="@+id/menu_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp"/>
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/red_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sc_common_red_circle_new"/>
+        <TextView android:textSize="9sp" android:textColor="@color/wm_st_common_white" android:gravity="center" android:layout_gravity="top|right" android:id="@+id/unread_message_count" android:background="@drawable/wm_st_poi_order_prompt_count_new" android:paddingLeft="4dp" android:paddingRight="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12dp" android:minWidth="12dp"/>
+    </FrameLayout>
+</LinearLayout>

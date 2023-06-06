@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.customerservice.kit.widget.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.meituan.android.customerservice.kit.widget.AutoFitTextView android:textSize="35sp" android:textColor="@color/cs_voip_black" android:ellipsize="none" android:gravity="center" android:id="@+id/tv_number_input" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="48.5dp" android:layout_marginTop="15dp" android:layout_marginRight="48.5dp" android:singleLine="true" app:cs_min_textSize="17.5" app:cs_right_padding="2" app:cs_layout_heightPercent="11.4%"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:cs_layout_marginLeftPercent="6.4%" app:cs_layout_marginTopPercent="4.3%" app:cs_layout_marginRightPercent="6.4%">
+        <LinearLayout style="@style/cs_voip_call_keyboard_layout">
+            <TextView android:id="@+id/tv_number_one" android:text="1" style="@style/cs_voip_call_keyboard_tv"/>
+            <TextView android:id="@+id/tv_number_two" android:text="2" style="@style/cs_voip_call_keyboard_tv"/>
+            <TextView android:id="@+id/tv_number_three" android:text="3" style="@style/cs_voip_call_keyboard_tv"/>
+        </LinearLayout>
+        <LinearLayout style="@style/cs_voip_call_keyboard_layout">
+            <TextView android:id="@+id/tv_number_four" android:text="4" style="@style/cs_voip_call_keyboard_tv"/>
+            <TextView android:id="@+id/tv_number_five" android:text="5" style="@style/cs_voip_call_keyboard_tv"/>
+            <TextView android:id="@+id/number_six" android:text="6" style="@style/cs_voip_call_keyboard_tv"/>
+        </LinearLayout>
+        <LinearLayout style="@style/cs_voip_call_keyboard_layout">
+            <TextView android:id="@+id/tv_number_seven" android:text="7" style="@style/cs_voip_call_keyboard_tv"/>
+            <TextView android:id="@+id/tv_number_eight" android:text="8" style="@style/cs_voip_call_keyboard_tv"/>
+            <TextView android:id="@+id/tv_number_nine" android:text="9" style="@style/cs_voip_call_keyboard_tv"/>
+        </LinearLayout>
+        <LinearLayout style="@style/cs_voip_call_keyboard_layout">
+            <TextView android:id="@+id/tv_number_asterisk" android:text="*" style="@style/cs_voip_call_keyboard_tv"/>
+            <TextView android:id="@+id/tv_number_zero" android:text="0" style="@style/cs_voip_call_keyboard_tv"/>
+            <TextView android:id="@+id/tv_number_sign" android:text="#" style="@style/cs_voip_call_keyboard_tv"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.meituan.android.customerservice.kit.widget.PercentLinearLayout>

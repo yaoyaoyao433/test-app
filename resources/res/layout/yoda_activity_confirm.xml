@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@null" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View style="@style/YodaBase.CuttingLine"/>
+    <com.meituan.android.yoda.widget.view.YodaToolbar android:id="@+id/yoda_statusBar_toolbar" android:background="?attr/yodaToolbarBackgroundDrawable" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:navigationIcon="?attr/navigationIcon" app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <android.support.v7.widget.AppCompatTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/yoda_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?attr/yodaToolbarTitleStyle"/>
+        <com.meituan.android.yoda.widget.view.OtherConfirmButton android:layout_gravity="right" android:id="@+id/btn_more" android:background="@drawable/yoda_confirm_menu" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="13dp"/>
+        <TextView android:textSize="16sp" android:textColor="#99000000" android:layout_gravity="right" android:id="@+id/yoda_btn_change_verify" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:text="@string/yoda_pop_menu_change_verify_list"/>
+    </com.meituan.android.yoda.widget.view.YodaToolbar>
+    <FrameLayout android:id="@+id/yoda_activity_rootView" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_webview_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_toolbar" android:background="@drawable/takeout_bg_bottom_bar_2ndlevel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp">
+            <ImageView android:id="@+id/img_back" android:background="@drawable/takeout_btn_webview_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+            <ImageView android:id="@+id/img_forward" android:background="@drawable/takeout_btn_webview_forward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42dp" android:layout_marginTop="5dp" android:layout_marginRight="42dp" android:layout_marginBottom="5dp"/>
+            <ImageView android:id="@+id/img_refresh" android:background="@drawable/takeout_btn_webview_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/top_progress" android:layout_width="match_parent" android:layout_height="3dp" android:max="100" android:indeterminate="false" style="@style/WmProgressBar.Horizontal"/>
+    <include layout="@layout/takeout_center_progress"/>
+</FrameLayout>

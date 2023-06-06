@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/address_selected_status" android:background="@drawable/wm_page_home_location_recommend_dialog_unselected" android:layout_width="18dp" android:layout_height="18dp"/>
+    <TextView android:textSize="14sp" android:textColor="#222426" android:id="@+id/address_brief" android:layout_marginLeft="4dp" android:layout_marginRight="12dp" style="@style/WmText"/>
+</LinearLayout>

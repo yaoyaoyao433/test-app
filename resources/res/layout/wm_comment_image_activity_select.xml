@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" style="@style/WmPage.Secondary">
+    <FrameLayout android:background="@drawable/takeout_bg_actionbar" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+        <TextView android:textSize="17sp" android:gravity="center" android:layout_gravity="left" android:id="@+id/cancel" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/layout_select_album" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="150dp">
+            <TextView android:id="@+id/select_album" style="@style/WmTitle.ActionBar.Center"/>
+            <ImageView android:id="@+id/img_album_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/takeout_ic_image_album_select"/>
+        </LinearLayout>
+        <TextView android:textSize="14sp" android:layout_gravity="center" android:id="@+id/finish" android:layout_width="55dp" android:layout_height="30dp" android:layout_marginRight="12dp" android:text="@string/confirm" style="@style/WmButton.AutoWidth.Solid"/>
+        <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_highlight" android:gravity="center" android:layout_gravity="top|right" android:id="@+id/text_selected_image_count" android:background="@drawable/takeout_ic_image_count_bubble" android:layout_width="19dp" android:layout_height="19dp" android:layout_marginTop="5dp" android:layout_marginRight="4dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <GridView android:id="@+id/grid_image_select" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:horizontalSpacing="3.5dp" android:verticalSpacing="4dp" android:numColumns="3"/>
+        <View android:id="@+id/mask_image_album_select" android:background="#b3000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.sankuai.waimai.platform.widget.MaxHeightListView android:id="@+id/list_image_album" android:background="@color/wm_common_background_page" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="gone" android:maxHeight="370dp" android:divider="@android:color/transparent" android:dividerHeight="10dp" style="@style/WmListView"/>
+    </FrameLayout>
+</LinearLayout>

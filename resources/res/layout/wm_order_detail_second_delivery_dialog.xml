@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/second_delivery_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/second_delivery_content" android:background="@drawable/wm_order_detail_second_delivery_bg" android:layout_width="310dp" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/second_delivery_pic" android:layout_width="286dp" android:layout_height="226.5dp" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:scaleType="centerCrop"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff222426" android:ellipsize="end" android:id="@+id/second_delivery_title" android:layout_width="wrap_content" android:layout_height="22.5dp" android:layout_marginTop="18dp" android:maxLines="1"/>
+            <TextView android:textSize="14sp" android:textColor="#666460" android:ellipsize="end" android:id="@+id/second_delivery_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:lineSpacingMultiplier="1.2"/>
+            <com.meituan.roodesign.widgets.button.RooButton android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/second_delivery_button_new" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="12dp" android:layout_marginTop="18dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:maxLines="1" android:textAlignment="center" style="@style/Widget.RooDesign.Button"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/second_delivery_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/wm_common_dialog_close_ic"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/recommend_with_package_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/wm_restaurant_recommend_package_title_bg" android:layout_width="match_parent" android:layout_height="50dp">
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/wm_restaurant_222426" android:layout_gravity="center_vertical" android:id="@+id/name" android:paddingLeft="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="123121212121211231212121212121212312121212121212212" android:singleLine="true" android:layout_weight="1"/>
+            <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="17dp" android:textColor="@color/roo_color_black_858687" android:layout_gravity="right" android:id="@+id/recommend_close" android:paddingLeft="5dp" android:paddingTop="17dp" android:paddingRight="13dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_c_iconfont_76guanbi"/>
+        </LinearLayout>
+        <com.sankuai.waimai.business.restaurant.poicontainer.comment.widget.MaxHeightStatisticRecyclerView android:id="@+id/recommend_package_list" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

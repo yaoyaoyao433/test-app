@@ -1,0 +1,2 @@
+wm_startup_from_welcome:com.sankuai.waimai.launcher.model.AppInfo
+/page/resource_controller_get_show_drawable:com.sankuai.waimai.business.page.home.helper.ResourceHelper

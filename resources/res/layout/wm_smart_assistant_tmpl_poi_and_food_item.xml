@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/wm_smart_assistant_item_bg_shape" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="5.5dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+    <include android:id="@+id/poi_header" layout="@layout/wm_smart_assistant_tmpl_poi_header"/>
+    <com.sankuai.waimai.platform.widget.NoScrollGridView android:id="@+id/poi_and_food_grid_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:listSelector="@android:color/transparent" android:horizontalSpacing="8.5dp" android:numColumns="4"/>
+    <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+    <Button android:textSize="14sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/btn_enter_poi" android:background="@drawable/wm_common_btn_solid_highlight_shape" android:layout_width="100dp" android:layout_height="34dp" android:layout_marginTop="11dp" android:text="@string/wm_sa_button_enter_poi"/>
+</LinearLayout>

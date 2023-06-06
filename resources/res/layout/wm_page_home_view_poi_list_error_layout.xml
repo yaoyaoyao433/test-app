@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/wm_page_home_view_poi_list_error_layout" android:background="#f6f6f6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/wm_page_no_filtered_poi_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp"/>
+    <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_hint" android:id="@+id/wm_page_no_filtered_poi_msg" android:layout_marginTop="14dp" android:text="@string/wm_page_poiList_no_filtered_poi" style="@style/WmText.MultiLine"/>
+    <TextView android:textSize="@dimen/wm_common_text_size_small" android:textColor="@color/wm_common_text_hint" android:id="@+id/wm_page_no_filtered_poi_sub_msg" android:visibility="gone" android:layout_marginTop="14dp" style="@style/WmText.MultiLine"/>
+    <TextView android:id="@+id/wm_page_no_filtered_poi_retry" android:layout_height="30dp" android:layout_marginTop="16dp" android:text="@string/takeout_widget_filter_bar_reset_filter_condition" style="@style/WmButton.CenterFixedWidth.Solid"/>
+</LinearLayout>

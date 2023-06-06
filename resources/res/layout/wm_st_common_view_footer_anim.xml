@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.newwidgets.AnimatableImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="41dp" android:layout_height="50dp" android:layout_marginRight="5dp" android:scaleType="fitCenter" app:drawableRes="@drawable/wm_sg_common_ptr_end_anim_copy"/>

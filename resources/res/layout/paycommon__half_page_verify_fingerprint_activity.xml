@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/fingerprint_verify_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/fingerprint_verify_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/fingerprint_pay_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="@color/paybase__text_color_3" android:gravity="center" android:id="@+id/fingerprint_pay_tip" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/fingerprint_pay_icon" android:layout_width="68dp" android:layout_height="68dp" android:layout_marginTop="12dp" android:src="@drawable/paybase__half_page_fingerprint_pay_icon" android:scaleType="fitXY"/>
+            <com.meituan.android.paycommon.lib.widgets.LoadingCircleWithCenterImageView android:id="@+id/loading_view" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="12dp"/>
+            <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/paybase__half_page_content_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/fingerprint_pay_desc" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15sp" android:textColor="@color/paycommon__fingerprint_to_password_text" android:id="@+id/fingerprint_pay_go_to_psw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:layout_marginRight="15dp" android:text="@string/paycommon__half_page_use_psw" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <include android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="45dp" android:layout_below="@+id/fingerprint_pay_container" layout="@layout/paycommon__guide_info_container"/>
+    </RelativeLayout>
+</LinearLayout>

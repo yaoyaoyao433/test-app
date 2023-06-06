@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/video_filter_selector_block_layout" android:layout_width="match_parent" android:layout_height="152dp">
+    <FrameLayout android:id="@+id/fl_bubble_seek_bar_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11dp" android:textColor="#222426" android:gravity="center" android:id="@+id/ugc_edit_video_bar_indicator" android:background="@drawable/wm_ugc_seekbar_indicator" android:visibility="invisible" android:layout_width="23dp" android:layout_height="16dp" android:layout_marginTop="2dp" android:alpha="0.5"/>
+        <SeekBar android:id="@+id/ugc_edit_video_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="20dp" android:layout_marginRight="2dp" android:layout_marginBottom="20dp" android:maxHeight="2dp" android:max="100" android:progress="80" android:progressDrawable="@drawable/wm_ugc_seekbar_bg" android:minHeight="2dp" android:thumb="@drawable/wm_ugc_seekbar_thumb"/>
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_video_filters_list" android:paddingLeft="16dp" android:paddingRight="16dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+</LinearLayout>

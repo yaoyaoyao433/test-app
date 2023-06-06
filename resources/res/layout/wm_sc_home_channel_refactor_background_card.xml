@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fl_background_root" android:background="@color/wm_sg_color_F5F5F6" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/img_background_root" android:layout_width="match_parent" android:layout_height="265dp"/>
+    <RelativeLayout android:id="@+id/sg_minute_layout" android:layout_width="match_parent" android:layout_height="120dp">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/sg_minute_img_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/sg_minute_view_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/sg_minute_bottom_corners" android:layout_width="match_parent" android:layout_height="9dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <com.sankuai.waimai.store.poi.list.refactor.card.background.GradientImageLayout android:id="@+id/gradient_img_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="556dp"/>
+    <android.support.constraint.ConstraintLayout android:id="@+id/cl_head_across_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_head_across_banner" android:layout_width="match_parent" android:layout_height="562dp" android:scaleType="fitXY" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <ImageView android:id="@+id/iv_head_across_banner_mask" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="@+id/iv_head_across_banner" app:layout_constraintLeft_toLeftOf="0"/>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout android:id="@+id/rv_normal_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_top_area" android:layout_width="match_parent" android:layout_height="133dp" android:scaleType="fitXY" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <ImageView android:id="@+id/iv_bottom_area" android:layout_width="match_parent" android:layout_height="150dp" android:scaleType="fitXY" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/iv_top_area"/>
+    </android.support.constraint.ConstraintLayout>
+    <ImageView android:id="@+id/iv_head_new_user_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="133dp" android:scaleType="fitXY" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+</FrameLayout>

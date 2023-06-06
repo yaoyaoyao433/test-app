@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/layout_parent_comment_tab" android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingBottom="0dp" style="@style/WmScCell">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_comment_tab" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginRight="@dimen/wm_sc_common_dimen_12">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/comment_tab_name" android:layout_marginRight="5dp" android:drawablePadding="10dp" style="@style/WmScText"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_16" android:textStyle="bold" android:textColor="@color/wm_sg_color_33312E" android:id="@+id/comment_tab_good_praise" style="@style/WmScText"/>
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_14" android:textColor="@color/wm_sg_color_666460" android:gravity="right" android:id="@+id/comment_tab_num" style="@style/WmScText.Weighted"/>
+        <include android:id="@+id/comment_tab_arrow" layout="@layout/wm_sc_common_view_cell_arrow_right"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_friend_comments" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginRight="@dimen/wm_sc_common_dimen_12">
+        <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_666666" android:ellipsize="middle" android:id="@+id/txt_friend_praise" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:singleLine="true" android:drawableLeft="@drawable/wm_sc_ic_friend" android:drawablePadding="4dp"/>
+        <TextView android:id="@+id/txt_friend_praise_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_15"/>
+    </LinearLayout>
+    <com.sankuai.waimai.store.newwidgets.HorizontalFlowLayout android:id="@+id/goods_detail_praise_tag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_12" android:layout_marginTop="15dp" android:layout_marginBottom="8dp" android:maxLines="1" app:childHeight="28dp" app:childMarginHorizontal="5dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/wm_sg_color_999794" android:gravity="center" android:id="@+id/goods_detail_no_current_good_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp" android:text="@string/wm_sc_detail_goods_no_comment" android:singleLine="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/wm_sc_comment_list_horizontal_padding_divider" android:showDividers="middle"/>
+</LinearLayout>

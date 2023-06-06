@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/item_view" android:background="@color/gray_divider" android:paddingLeft="5dp" android:paddingRight="5dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:paddingBottom="48dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TableLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择ShileDisplayNode:"/>
+                <Spinner android:theme="@style/spinnerHead" android:id="@+id/node_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+            </TableRow>
+            <View android:background="@color/gray_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+            <TextView android:textStyle="bold" android:textColor="@android:color/holo_red_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="staggeredGrid"/>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="staggeredGridXGap:" android:layout_weight="1"/>
+                <EditText android:textSize="10sp" android:id="@+id/staggeredGridXGap" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="0" android:layout_weight="0.4" android:inputType="number"/>
+                <TextView android:textSize="10sp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="staggeredGridYGap:" android:layout_weight="1"/>
+                <EditText android:textSize="10sp" android:id="@+id/staggeredGridYGap" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="0" android:layout_weight="0.4" android:inputType="number"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="staggeredGridLeftMargin:"/>
+                <EditText android:textSize="10sp" android:id="@+id/staggeredGridLeftMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="0" android:inputType="number"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="staggeredGridRightMargin:"/>
+                <EditText android:textSize="10sp" android:id="@+id/staggeredGridRightMargin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="0" android:inputType="number"/>
+            </TableRow>
+            <TextView android:textStyle="bold" android:textColor="@android:color/holo_red_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="DividerConfigInfo"/>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="headerGapHeight:"/>
+                <EditText android:textSize="10sp" android:id="@+id/headerGapHeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="0" android:inputType="number"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="footerGapHeight:"/>
+                <EditText android:textSize="10sp" android:id="@+id/footerGapHeight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="0" android:inputType="number"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="10sp" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cellTopLineOffset:"/>
+                <EditText android:textSize="10sp" android:id="@+id/cellTopLineOffset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="输入Rect,用逗号分隔4位数字"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="cellBottomLineOffset:"/>
+                <EditText android:textSize="10sp" android:id="@+id/cellBottomLineOffset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="输入Rect,用逗号分隔4位数字"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textStyle="bold" android:textColor="@android:color/holo_red_dark" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="TopInfo"/>
+                <Switch android:gravity="right" android:id="@+id/topInfo_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Row级别开关"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="10sp" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="topInfo_startType:"/>
+                <Spinner android:theme="@style/spinnerHead" android:textSize="10sp" android:entries="@array/node_topinfo_starttype" android:id="@+id/topInfo_startType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="topInfo_endType:"/>
+                <Spinner android:theme="@style/spinnerHead" android:textSize="10sp" android:entries="@array/node_topinfo_endType" android:id="@+id/topInfo_endType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="10sp" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="topInfo_needAutoOffset:"/>
+                <Spinner android:theme="@style/spinnerHead" android:textSize="10sp" android:entries="@array/boolean_array" android:id="@+id/topInfo_needAutoOffset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="topInfo_offset:"/>
+                <EditText android:textSize="10sp" android:id="@+id/topInfo_offset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textStyle="bold" android:textColor="@android:color/holo_red_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="InnerBottomInfo"/>
+                <Switch android:gravity="right" android:id="@+id/bottomInfo_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Row级别开关"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="bottomInfo_startType:"/>
+                <Spinner android:theme="@style/spinnerHead" android:entries="@array/node_topinfo_starttype" android:id="@+id/bottomInfo_startType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bottomInfo_endType:"/>
+                <Spinner android:theme="@style/spinnerHead" android:entries="@array/node_topinfo_endType" android:id="@+id/bottomInfo_endType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bottomInfo_needAutoOffset"/>
+                <Spinner android:theme="@style/spinnerHead" android:entries="@array/boolean_array" android:id="@+id/bottomInfo_needAutoOffset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+            </TableRow>
+            <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bottomInfo_offset:"/>
+                <EditText android:textSize="10sp" android:id="@+id/bottomInfo_offset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="number"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    <Button android:layout_gravity="bottom" android:id="@+id/finish_btn" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="5dp" android:minWidth="480dp" android:text="回到调试页面"/>
+</FrameLayout>

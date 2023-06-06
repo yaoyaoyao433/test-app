@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/shop_background_image" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_123" android:scaleType="centerCrop"/>
+    <ImageView android:id="@+id/img_poi_blurred_bg" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_123" android:scaleType="fitXY"/>
+    <View android:layout_gravity="bottom" android:id="@+id/shop_header_gray" android:background="#000000" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.5"/>
+    <FrameLayout android:id="@+id/basic_poi_info_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_header_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/basic_poi_info_layout"/>
+    <View android:id="@+id/layout_divider_line" android:background="@color/wm_sc_common_dialog_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/layout_header_view"/>
+    <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_10" android:layout_below="@+id/layout_divider_line"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/combine_bank" android:paddingRight="@dimen/mpay__common_payment_arrow_padding_right" android:paddingBottom="18dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12dp" android:textColor="@color/mpay__black1" android:ellipsize="end" android:id="@+id/combine_bank_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mpay__common_payment_padding_left" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="12dp" android:textColor="@color/mpay__black1" android:id="@+id/combine_bank_name_ext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:singleLine="true"/>
+        <ImageView android:layout_width="6dp" android:layout_height="10dp" android:src="@drawable/mpay__payment_right_arrow"/>
+    </LinearLayout>
+</LinearLayout>

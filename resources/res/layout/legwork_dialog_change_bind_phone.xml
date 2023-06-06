@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/legwork_dialog_bg" android:layout_width="280dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="280dp" android:layout_height="125.5dp">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/legwork_common_text_color_FF333333" android:layout_gravity="center_horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/legwork_privacy_change_bind_phone_dialog_title"/>
+        <EditText android:textSize="16sp" android:textColor="@color/legwork_common_text_color_FF333333" android:gravity="center" android:id="@+id/legwork_change_bind_phone_et" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="45dp" android:layout_marginTop="30dp" android:layout_marginRight="45dp" android:hint="@string/legwork_privacy_change_bind_phone_dialog_hint" android:includeFontPadding="false" android:maxLength="13" android:inputType="phone"/>
+        <View android:background="@color/legwork_common_text_color_FF666666" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="50dp" android:layout_marginTop="10dp" android:layout_marginRight="50dp" android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+    <View android:background="@color/legwork_divider_line_bg" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/legwork_common_text_color_FF333333" android:gravity="center" android:id="@+id/legwork_privacy_negative_btn" android:layout_width="0dp" android:layout_height="45dp" android:text="@string/legwork_coupon_dialog_negative" android:layout_weight="1"/>
+        <View android:background="@color/legwork_divider_line_bg" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:enabled="false" android:textSize="16sp" android:textColor="@color/legwork_preview_to_pay_btn_disable" android:gravity="center" android:id="@+id/legwork_privacy_positive_btn" android:layout_width="0dp" android:layout_height="45dp" android:text="@string/legwork_privacy_phone_call_now" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

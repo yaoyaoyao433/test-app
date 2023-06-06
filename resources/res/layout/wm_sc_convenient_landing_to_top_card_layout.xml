@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_to_top_img_poiList" android:visibility="gone" android:layout_width="@dimen/wm_sc_common_dimen_54" android:layout_height="@dimen/wm_sc_common_dimen_54">
+    <ImageView android:layout_width="@dimen/wm_sc_common_dimen_54" android:layout_height="@dimen/wm_sc_common_dimen_54" android:src="@drawable/wm_st_bg_btn_poi_list_totop" android:scaleType="centerCrop"/>
+</RelativeLayout>

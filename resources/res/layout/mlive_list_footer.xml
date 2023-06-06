@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/mlive_list_bottom_tips" android:background="@color/black" android:paddingTop="24dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#7f979797" android:layout_width="9dp" android:layout_height="1dp"/>
+    <TextView android:textSize="12dp" android:textColor="#b2ffffff" android:gravity="center" android:layout_gravity="bottom" android:background="@color/black" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="已经到底了"/>
+    <View android:background="#7f979797" android:layout_width="9dp" android:layout_height="1dp"/>
+</LinearLayout>

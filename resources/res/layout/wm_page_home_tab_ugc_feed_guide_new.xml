@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="301dp" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_guide_pic" android:layout_width="match_parent" android:layout_height="257.5dp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+    <ImageView android:id="@+id/iv_guide_triangle" android:visibility="invisible" android:layout_width="12dp" android:layout_height="32dp" android:layout_marginTop="8dp" android:src="@drawable/wm_page_home_tab_ugc_feed_guide_arrow" android:scaleType="centerCrop"/>
+</LinearLayout>

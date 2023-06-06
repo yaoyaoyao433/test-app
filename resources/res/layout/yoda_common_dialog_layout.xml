@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/yoda_slider_window" android:layout_width="284dp" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:layout_gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="18dp" android:layout_marginRight="35dp" android:layout_marginBottom="8dp" style="@style/YodaBase.CommonTextView"/>
+        <TextView android:textSize="14sp" android:textColor="#d7000000" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" style="@style/YodaBase.CommonTextView"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/tips_icons_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/icon_line_1" android:paddingLeft="32dp" android:paddingRight="32dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/icon_top_left" android:visibility="gone" android:layout_width="93dp" android:layout_height="62dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                <ImageView android:id="@+id/icon_top_right" android:visibility="gone" android:layout_width="93dp" android:layout_height="62dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/icon_line_2" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/icon_bottom_left" android:visibility="gone" android:layout_width="93dp" android:layout_height="62dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                <ImageView android:id="@+id/icon_bottom_right" android:visibility="gone" android:layout_width="93dp" android:layout_height="62dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_gravity="center_horizontal" android:background="#ebebeb" android:layout_width="300dp" android:layout_height="1dp" style="@style/YodaBase.CommonTextView"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="300dp" android:layout_height="50dp">
+            <TextView android:textColor="#000000" android:gravity="center" android:id="@+id/cancel" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/yoda_common_dialog_negative_button" android:maxLength="6" android:layout_weight="1"/>
+            <TextView android:layout_gravity="center_vertical" android:id="@+id/divider" android:background="#ebebeb" android:layout_width="1dp" android:layout_height="match_parent" style="?attr/yodaButtonLinkStyle"/>
+            <TextView android:textColor="#000000" android:gravity="center" android:id="@+id/confirm" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/yoda_common_dialog_confirm_button" android:maxLength="6" android:layout_weight="1" style="?attr/yodaButtonLinkStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

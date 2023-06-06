@@ -1,0 +1,4 @@
+PageLoadConfig:com.sankuai.waimai.business.page.common.config.PageLoadConfig
+OrderLoadConfig:com.sankuai.waimai.bussiness.order.base.config.OrderLoadConfig
+SearchLoadConfig:com.sankuai.waimai.business.search.global.filterbar.SearchLoadConfig
+RestaurantLoadConfig:com.sankuai.waimai.business.restaurant.base.config.RestaurantLoadConfig

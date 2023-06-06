@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom" android:orientation="horizontal" android:id="@+id/layout_comment_score" android:background="#ffffff" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="80dp">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/poi_layout_score" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp" android:layout_marginBottom="10dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/store_score_layout" android:layout_width="wrap_content" android:layout_height="50dp">
+            <LinearLayout android:layout_width="51dp" android:layout_height="50dp">
+                <TextView android:textSize="32dp" android:textStyle="bold" android:textColor="#ff8000" android:gravity="center" android:id="@+id/txt_poi_comment_total_score" android:layout_width="match_parent" android:layout_height="match_parent" android:text="0.0" style="@style/WmText"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="6dp">
+                <TextView android:textSize="@dimen/wm_common_text_size_small_new" android:textColor="#858687" android:gravity="center_vertical" android:id="@+id/rating_poi_comment_quality_score_text" android:layout_width="match_parent" android:layout_height="25dp" android:text="@string/wm_comment_poi_rating" android:includeFontPadding="false"/>
+                <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="25dp">
+                    <com.meituan.roodesign.widgets.rate.RooRatingBar android:id="@+id/rating_poi_comment_quality_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="14dp" android:indeterminateDrawable="@drawable/wm_restaurant_comment_rating_poi_header_new" android:progressDrawable="@drawable/wm_restaurant_comment_rating_poi_header_new" android:minHeight="14dp" android:stepSize="0.1" android:isIndicator="true" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/wm_comment_poi_view_weighted_padding"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/wm_common_text_size_small_new" android:textColor="#858687" android:gravity="center" android:id="@+id/txt_poi_comment_quality_label" android:layout_width="wrap_content" android:layout_height="25dp" android:text="@string/wm_comment_quality" android:includeFontPadding="false"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_restaurant_222426" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_poi_comment_quality_score" android:layout_width="wrap_content" android:layout_height="25dp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <include layout="@layout/wm_comment_poi_view_weighted_padding"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/wm_common_text_size_small_new" android:textColor="#858687" android:gravity="center" android:id="@+id/txt_poi_comment_package_label" android:layout_width="wrap_content" android:layout_height="25dp" android:text="@string/wm_comment_package" android:includeFontPadding="false"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_restaurant_222426" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_poi_comment_package_score" android:layout_width="wrap_content" android:layout_height="25dp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <include layout="@layout/wm_comment_poi_view_weighted_padding"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/driver_line" android:layout_width="@dimen/wm_restaurant_common_divider_width" android:layout_height="40dp" android:src="@drawable/wm_common_divider_vertical"/>
+        <include android:id="@+id/hidden_line01" layout="@layout/wm_comment_poi_view_weighted_padding"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/delivery_score" android:layout_width="wrap_content" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/wm_common_text_size_small_new" android:textColor="#858687" android:gravity="center" android:id="@+id/delivery_satisfaction" android:layout_width="wrap_content" android:layout_height="25dp" android:text="@string/wm_comment_ship_rating" android:includeFontPadding="false"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/wm_restaurant_222426" android:gravity="center" android:id="@+id/txt_poi_comment_ship_score" android:layout_width="wrap_content" android:layout_height="25dp" android:text="@string/wm_delivery_satisfaction_default" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/wm_comment_poi_view_weighted_padding"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16dp" android:layout_gravity="center_horizontal" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网络传参开发者工具"/>
+    <EditText android:id="@+id/et_netfilter_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="入参Url"/>
+    <CheckBox android:id="@+id/cb_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="显示过滤悬浮窗"/>
+    <CheckBox android:id="@+id/cb_pass_host" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="测试域名放行"/>
+    <CheckBox android:id="@+id/cb_no_double_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直接删除未注册API的敏感参数"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_debug_sign" android:layout_width="0dp" android:layout_height="wrap_content" android:text="手动注册" android:layout_weight="1"/>
+        <Button android:id="@+id/btn_show_debug_sign" android:layout_width="0dp" android:layout_height="wrap_content" android:text="显示手动注册值" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_check_netfilter" android:layout_width="0dp" android:layout_height="wrap_content" android:text="校验注册权限" android:layout_weight="1"/>
+        <Button android:id="@+id/btn_netfilter_show" android:layout_width="0dp" android:layout_height="wrap_content" android:text="显示当前配置" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tv_status" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:textIsSelectable="true"/>
+</LinearLayout>

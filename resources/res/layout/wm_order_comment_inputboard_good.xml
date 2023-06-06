@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/txt_tag" android:focusable="false" android:layout_marginLeft="10dp" android:maxEms="50" style="@style/WmTag.Comment.Positive"/>

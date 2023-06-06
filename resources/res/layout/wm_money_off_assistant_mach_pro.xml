@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/wm_money_off_assistant_mach_pro_id" android:background="#77000000" android:paddingTop="80dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/wm_money_off_assistant_mach_pro_container" android:background="@drawable/wm_money_off_assistant_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</FrameLayout>

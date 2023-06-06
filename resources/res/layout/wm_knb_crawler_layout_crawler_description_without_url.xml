@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="#c0000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/wm_knb_crawler_bg_crawler_description_without_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="38dp" android:layout_marginRight="38dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:src="@drawable/wm_knb_crawler_description_without_url_img"/>
+        <TextView android:textSize="14sp" android:textColor="@color/wm_common_text_auxiliary" android:gravity="center" android:id="@+id/text_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="10dp" android:layout_marginRight="25dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/wm_common_text_auxiliary" android:gravity="center" android:id="@+id/text_custom_ip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/image_close" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="20dp" android:src="@drawable/wm_common_dialog_close_ic"/>
+</LinearLayout>

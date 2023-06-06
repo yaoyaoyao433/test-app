@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_template_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.store.newwidgets.twolevel.SGTwoLevelPullToRefreshView android:id="@+id/pull_to_refresh_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.sankuai.waimai.store.assembler.component.AssemblerView android:id="@+id/assembler_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/fl_sg_top_float_block" android:visibility="gone" layout="@layout/wm_sc_top_float_container"/>
+        </com.sankuai.waimai.store.assembler.component.AssemblerView>
+    </com.sankuai.waimai.store.newwidgets.twolevel.SGTwoLevelPullToRefreshView>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/net_layout_info_poi_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:id="@+id/fl_sg_two_level" layout="@layout/wm_sc_two_level_container"/>
+</FrameLayout>

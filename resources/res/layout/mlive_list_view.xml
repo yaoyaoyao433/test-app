@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.dianping.live.live.mrn.list.MLiveListRecyclerView android:id="@+id/recyclerview_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fadeScrollbars="true" android:overScrollMode="never"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/out_live_list_tip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/inner_live_list_tip" android:layout_width="match_parent" android:layout_height="560dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/first_tip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="20dp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="220dp" android:text="上滑查看更多直播"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/mlive_list_error_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/mlive_list_err_pic" android:layout_width="150dp" android:layout_height="169dp"/>
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15dp" android:text="暂无直播"/>
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/mlive_list_retry" android:background="@drawable/mlive_retry_bg" android:layout_width="91dp" android:layout_height="34dp" android:layout_marginTop="30dp">
+                <TextView android:textSize="14sp" android:textColor="#342b00" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重试"/>
+            </FrameLayout>
+        </LinearLayout>
+        <include android:id="@+id/mlive_list_progress_view" android:visibility="gone" layout="@layout/mrn_common_loading_layout"/>
+    </FrameLayout>
+</LinearLayout>

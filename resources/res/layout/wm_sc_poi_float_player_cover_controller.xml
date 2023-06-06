@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_cover_view" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerRadius="@dimen/wm_sc_common_dimen_6">
+    <ImageView android:id="@+id/iv_video_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    <ProgressBar android:id="@+id/pb_circle_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small"/>
+    <ImageView android:id="@+id/player_play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sc_img_video_pause_b_strategy" android:layout_centerInParent="true"/>
+</RelativeLayout>

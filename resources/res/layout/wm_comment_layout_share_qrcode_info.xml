@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/wm_comment_bg_share_bottom_corner" android:layout_width="match_parent" android:layout_height="98dp">
+    <ImageView android:id="@+id/img_share_comment_qrcode" android:layout_width="@dimen/wm_comment_qrcode_width_and_height" android:layout_height="@dimen/wm_comment_qrcode_width_and_height" android:layout_marginLeft="27.5dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:scaleType="fitXY" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/img_share_comment_qrcode" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/img_share_comment_slogan" android:layout_width="89dp" android:layout_height="21dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="12sp" android:textColor="#666666" android:id="@+id/txt_share_comment_qrcode_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <View android:background="@color/wm_common_divider_1" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="27.5dp" android:layout_marginRight="12.5dp" android:layout_above="@+id/img_share_comment_qrcode"/>
+</RelativeLayout>

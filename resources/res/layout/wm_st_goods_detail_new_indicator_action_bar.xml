@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view_actionbar_background" android:background="@color/wm_st_common_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/fl_actionbar_layout" android:alpha="0"/>
+    <include android:id="@+id/status_bar_place_holder" android:visibility="gone" layout="@layout/wm_st_immersed_place_holder_view"/>
+    <LinearLayout android:id="@+id/fl_actionbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/status_bar_place_holder">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_48" android:layout_below="@+id/status_bar_place_holder">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_back" android:layout_width="@dimen/wm_sc_common_dimen_30" android:layout_height="@dimen/wm_sc_common_dimen_30" android:layout_marginLeft="12dp" android:src="@drawable/wm_st_goods_actionbar_ic_back_dark" android:scaleType="centerInside" android:contentDescription="@string/wm_sg_back"/>
+            <include android:layout_gravity="center" android:id="@+id/fl_detail_indicator" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/wm_sc_goods_detail_action_bar_indicator"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_im_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sc_goods_detail_actionbar_im"/>
+                <ImageView android:id="@+id/iv_global_cart_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:src="@drawable/wm_sc_goods_detail_actionbar_global_cart_light"/>
+                <com.sankuai.waimai.store.newwidgets.SCActionbarItemView android:id="@+id/actionbar_message_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" app:src="@drawable/wm_st_goods_actionbar_ic_message_center_dark"/>
+                <com.sankuai.waimai.store.newwidgets.SCActionbarItemView android:id="@+id/actionbar_more_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" app:src="@drawable/wm_sc_goods_detail_actionbar_more"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

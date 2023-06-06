@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/wm_sc_openmember_dialog_oval_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/wm_sg_color_603f23" android:id="@+id/tv_member_coupon_entry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp"/>
+    <TextView android:textSize="18sp" android:textColor="@color/wm_sg_color_603f23" android:gravity="center" android:id="@+id/tv_member_coupon_entry_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:layout_marginRight="20dp" android:maxLines="2"/>
+    <RelativeLayout android:background="@drawable/wm_sc_openmember_half_oval_gradient_bg" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_marginRight="20dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sc_openmember_card_hint_img" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <com.sankuai.waimai.store.newwidgets.RoundedFrameLayout android:id="@+id/fl_member_coupon_entry_poi_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_centerVertical="true" app:cornerRadius="6dp">
+            <ImageView android:id="@+id/iv_member_coupon_entry_poi_icon" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerCrop"/>
+        </com.sankuai.waimai.store.newwidgets.RoundedFrameLayout>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/wm_st_common_white" android:id="@+id/tv_member_coupon_entry_poi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/fl_member_coupon_entry_poi_icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="90dp">
+        <TextView android:textSize="16sp" android:textColor="@color/wm_sg_member_btn_gradinet_end_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_member_coupon_entry_cancel" android:background="@drawable/wm_sc_member_coupon_btn_oval_white_bg" android:layout_width="114dp" android:layout_height="44dp" android:text="@string/wm_sc_member_coupon_entry_cancel"/>
+        <TextView android:textSize="16sp" android:textColor="@color/wm_st_common_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_member_coupon_entry_to_bind" android:background="@drawable/wm_sc_member_coupon_btn_oval_gradient_bg" android:layout_width="114dp" android:layout_height="44dp" android:text="@string/wm_sc_member_coupon_entry_to_bind"/>
+    </FrameLayout>
+</LinearLayout>

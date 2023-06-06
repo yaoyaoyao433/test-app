@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:id="@+id/image_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:src="@drawable/icon_page_return" android:layout_centerVertical="true"/>
+        <TextView android:textSize="17sp" android:textColor="@color/mvexcolorWhite" android:id="@+id/text_pagetitle" android:layout_width="wrap_content" android:layout_height="21dp" android:text="@string/mvex_title_medicine" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/image_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_page_help" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</merge>

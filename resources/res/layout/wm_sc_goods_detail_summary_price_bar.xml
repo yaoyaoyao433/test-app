@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/wm_sc_detail_header_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/ll_hand_price_bar" android:visibility="gone" layout="@layout/wm_sc_goods_detail_hand_price_bar"/>
+    <include android:id="@+id/ll_price_discount" android:visibility="gone" layout="@layout/wm_sc_goods_detail_discount_bar"/>
+    <include android:id="@+id/ll_price_discount_of_limited_time_spiked" android:visibility="gone" layout="@layout/wm_sc_goods_details_limited_time_spiked_discount_bar"/>
+    <include android:id="@+id/ll_b2c_header_content" android:visibility="gone" layout="@layout/wm_sc_goods_detail_summary_price_bar_b2c"/>
+    <include android:id="@+id/ll_detail_price_info" layout="@layout/wm_sc_goods_detail_price"/>
+</LinearLayout>

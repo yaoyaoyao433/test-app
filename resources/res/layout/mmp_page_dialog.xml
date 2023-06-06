@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="45dp">
+        <ImageView android:id="@+id/mmp_setting_back" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="39dp" android:layout_height="44dp" android:src="@drawable/mmp_op_back" android:scaleType="centerInside"/>
+        <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="#030303" android:gravity="center" android:id="@+id/mmp_title" android:layout_width="match_parent" android:layout_height="match_parent" android:text="授权设置"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mmp_page_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

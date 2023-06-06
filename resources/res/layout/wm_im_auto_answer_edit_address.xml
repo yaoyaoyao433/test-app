@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/wm_im_auto_answer_edit_address_container" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="46dp">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/wm_im_auto_answer_edit_address_bg" android:layout_width="match_parent" android:layout_height="46dp">
+        <android.support.v4.widget.Space android:id="@+id/auto_answer_edit_address_icon_space" android:layout_width="62dp" android:layout_height="62dp"/>
+        <TextView android:textSize="13.5sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/auto_answer_edit_address_content" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/auto_answer_edit_address_edit_button" android:background="@drawable/wm_im_auto_answer_edit_address_button_bg" android:paddingLeft="13dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#ff8000" android:layout_gravity="center_vertical" android:id="@+id/auto_answer_edit_address_edit_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center_vertical" android:id="@+id/auto_answer_edit_address_edit_arrow" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="5dp" app:project="waimai_c" app:srcName="waimai_c_im_change_address_arrow"/>
+        </LinearLayout>
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center_vertical" android:id="@+id/auto_answer_edit_address_exit" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:project="waimai_c" app:srcName="waimai_c_im_change_address_close_view"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@+id/auto_answer_edit_address_icon" android:layout_width="62dp" android:layout_height="62dp"/>
+</FrameLayout>

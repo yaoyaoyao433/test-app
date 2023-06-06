@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/yoda_activity_popup_window_bg" android:layout_width="150dp" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/yoda_pop_window_help" android:background="@drawable/yoda_activity_popup_window_item_bg_selector" android:paddingLeft="15dp" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/yoda_confirm_help"/>
+        <TextView android:textSize="16sp" android:textColor="#99000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:text="@string/yoda_pop_menu_faq"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/yoda_pop_window_change_verify" android:background="@drawable/yoda_activity_popup_window_item_bg_selector" android:paddingLeft="15dp" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/yoda_confirm_change_verify"/>
+        <TextView android:textSize="16sp" android:textColor="#99000000" android:id="@+id/yoda_pop_window_change_verify_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:text="@string/yoda_pop_menu_change_verify_list"/>
+    </LinearLayout>
+</LinearLayout>

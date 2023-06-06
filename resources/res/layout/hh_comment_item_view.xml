@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:textSize="13sp" android:textColor="@drawable/hh_comment_question_font" android:id="@+id/hh_comment_content_item" android:background="@drawable/hh_comment_item_bg" android:paddingTop="@dimen/hh_normal_margin" android:paddingBottom="@dimen/hh_normal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="0dp"/>
+</LinearLayout>

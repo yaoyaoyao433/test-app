@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.roodesign.resfetcher.widgets.RooLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="27dp" android:layout_width="wrap_content" android:layout_height="@dimen/wm_restaurant_coupon_exchange_height_min_new" app:backgroundName="waimai_c_wm_restaurant_bg_coupon_exchange_fold_not_exchanged_template_a" app:project="waimai_c">
+    <LinearLayout android:gravity="center" android:id="@+id/ll_coupon_txt_container" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="11sp" android:textColor="#222426" android:ellipsize="end" android:id="@+id/txt_coupon_short_text_prefix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:maxLines="1"/>
+        <TextView android:textSize="9sp" android:textColor="#ff4a26" android:id="@+id/txt_coupon_money_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:text="@string/wm_restaurant_common_sign_yuan"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff4a26" android:id="@+id/txt_coupon_value" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2dp"/>
+        <TextView android:textSize="11sp" android:textColor="#222426" android:ellipsize="end" android:id="@+id/txt_coupon_short_condition" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:maxLines="1"/>
+    </LinearLayout>
+    <TextView android:textSize="11sp" android:textColor="#222426" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_coupon_short_status" android:layout_width="30dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+</com.meituan.roodesign.resfetcher.widgets.RooLinearLayout>

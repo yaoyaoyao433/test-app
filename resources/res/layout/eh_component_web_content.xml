@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.eh.component.web.view.EHRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/eh_component_web_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/eh_component_web_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.sankuai.eh.component.web.view.EHRelativeLayout>

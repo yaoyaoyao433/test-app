@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_fragment_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@color/wm_sg_color_F2F2F2" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/rv_tab_ll" android:background="@color/wm_sg_color_FFFFFF" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:alwaysDrawnWithCache="false" android:layout_width="match_parent" android:layout_height="55dp"/>
+</LinearLayout>

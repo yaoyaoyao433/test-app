@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.ptcommonim.pageadapter.widget.PTCommonTopSideView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:imui="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" imui:align_msg_content="top_side">
+    <TextView android:textSize="12sp" android:textColor="#5a000000" android:ellipsize="end" android:id="@+id/ptim_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:layout_marginBottom="3dp" android:lines="1" android:includeFontPadding="false"/>
+</com.meituan.android.ptcommonim.pageadapter.widget.PTCommonTopSideView>

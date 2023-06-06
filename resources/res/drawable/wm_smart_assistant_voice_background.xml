@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/wm_smart_assistant_voice_background_shadow" android:top="6dp"/>
+    <item android:left="6dp" android:top="6dp" android:right="6dp" android:bottom="6dp">
+        <shape android:shape="oval">
+            <solid android:color="#ff181717"/>
+            <gradient android:startColor="#ffe838" android:endColor="#ffd038" android:angle="270" android:type="linear"/>
+        </shape>
+    </item>
+</layer-list>

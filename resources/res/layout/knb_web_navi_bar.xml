@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.titans.widget.NavigateBar xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/lay_navigator" android:background="@drawable/knb_appbar_detailpage_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageButton android:layout_gravity="center" android:id="@+id/refresh" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/knb_refresh"/>
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/backward" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:src="@drawable/icon_backward"/>
+        <ImageButton android:id="@+id/forward" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_forward"/>
+    </LinearLayout>
+</com.dianping.titans.widget.NavigateBar>

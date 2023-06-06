@@ -1,0 +1,2 @@
+wm-search-slide-cover:com.sankuai.waimai.business.search.ui.result.mach.component.SlideCoverComponentService
+wm-search-gallery-card:com.sankuai.waimai.business.search.ui.result.mach.component.gallery.GalleryCardComponentService

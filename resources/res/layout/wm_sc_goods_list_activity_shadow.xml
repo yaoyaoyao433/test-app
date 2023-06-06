@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:layout_gravity="bottom|center_horizontal" android:id="@+id/less_half_transparent_view" android:background="@drawable/wm_sc_goods_list_activity_bottom_bg" android:layout_width="wrap_content" android:layout_height="24dp"/>
+    <View android:layout_gravity="bottom|center_horizontal" android:id="@+id/half_transparent_view" android:layout_width="wrap_content" android:layout_height="24dp"/>
+    <com.sankuai.waimai.store.view.banner.roundview.UniversalImageView android:layout_gravity="bottom" android:id="@+id/activity_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:scaleType="centerCrop"/>
+</FrameLayout>

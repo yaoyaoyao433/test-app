@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout_remind" android:paddingTop="8dp" android:paddingBottom="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/wm_order_confirm_add_staple_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/txt_remind" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="满减优惠与折扣商品不能共享" android:maxLines="2" android:drawableLeft="@drawable/wm_cross_order_confirm_icon_remind" android:drawablePadding="5dp" android:lineSpacingExtra="5dp"/>
+</LinearLayout>

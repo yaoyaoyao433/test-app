@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.sa.ui.assistant.view.SAChatBlockRecyclerView android:id="@+id/sa_chat_recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/vertical_multiperson_fastview_container"/>
+    <FrameLayout android:id="@+id/vertical_multiperson_fastview_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/shadow_line_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/vertical_multiperson_fastview_container">
+        <View android:id="@+id/shadow_line" android:background="@drawable/wm_smart_assistant_shadow_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="15dp"/>
+    </FrameLayout>
+</RelativeLayout>

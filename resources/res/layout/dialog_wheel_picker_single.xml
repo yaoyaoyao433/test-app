@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/wm_order_picker_title_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="18sp" android:textColor="#222426" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="取消"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#222426" android:gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="区号选择" android:layout_centerInParent="true"/>
+        <TextView android:textSize="18sp" android:textColor="#222426" android:gravity="center" android:id="@+id/tv_ok" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="确定" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@color/wm_comment_delivery_selected_bg_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.sankuai.waimai.bussiness.order.base.widget.picker.base.RecyclerWheelPicker android:id="@+id/rv_picker1" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="230dp" android:layout_weight="1"/>
+</LinearLayout>

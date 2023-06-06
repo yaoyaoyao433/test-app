@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="bottom" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/order_container" android:background="@color/wm_im_bottom_bar_color" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.sankuai.waimai.business.im.group.View.WmGroupChatAtView android:layout_gravity="center_vertical" android:id="@+id/wm_group_im_chat_at_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@+id/guess_what_you_encounter_list" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <include android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wm_im_auto_answer_edit_address"/>
+    </FrameLayout>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wm_im_send_panel_input_bar"/>
+</LinearLayout>

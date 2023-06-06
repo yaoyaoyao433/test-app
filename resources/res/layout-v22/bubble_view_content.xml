@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.page.homepage.bubble.ContentBubbleView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="125dp">
+    <View android:id="@+id/v_indicator" android:layout_width="0dp" android:layout_height="120dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/big_bubble_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.5dp" android:minWidth="125dp" android:layout_alignBottom="@+id/v_indicator" android:layout_centerHorizontal="true">
+        <FrameLayout android:id="@+id/message_layout" android:background="#ff4a26" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_marginHorizontal="2.5dp" android:paddingHorizontal="10dp" android:paddingVertical="6dp">
+            <com.sankuai.waimai.platform.widget.tag.virtualtag.TagCanvasView android:textSize="11sp" android:textColor="#ffffff" android:ellipsize="end" android:id="@+id/big_bubble_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/arrow_view" android:layout_width="10.4dp" android:layout_height="6.5dp" android:src="@drawable/bubble_view_arrow_red" android:scaleType="fitXY" android:layout_below="@+id/message_layout" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/icon_layout" android:layout_width="40dp" android:layout_height="50dp" android:layout_alignBottom="@+id/v_indicator" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/icon_dynamic" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="3dp" android:scaleType="centerCrop"/>
+        <include android:layout_gravity="end" android:id="@+id/view_red_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="1dp" layout="@layout/wm_common_view_red_dot"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/small_bubble_layout" android:visibility="gone" android:layout_width="125dp" android:layout_height="wrap_content" android:layout_marginBottom="22.5dp" android:layout_alignBottom="@+id/v_indicator">
+        <ImageView android:layout_gravity="end" android:id="@+id/small_bubble_view" android:layout_width="60dp" android:layout_height="35dp"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/small_bubble_text_layout" android:visibility="gone" android:layout_width="125dp" android:layout_height="15dp" android:layout_marginBottom="38dp" android:layout_alignBottom="@+id/v_indicator">
+        <TextView android:textSize="10sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/small_bubble_text_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="60dp" android:minWidth="15dp" android:maxLines="1" android:layout_marginStart="65dp" android:paddingHorizontal="4dp"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/fill_bubble_layout" android:visibility="gone" android:layout_width="125dp" android:layout_height="125dp" android:layout_alignBottom="@+id/v_indicator">
+        <ImageView android:id="@+id/fill_bubble_img_view" android:layout_width="125dp" android:layout_height="55dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.sankuai.waimai.business.page.homepage.bubble.ContentBubbleView>

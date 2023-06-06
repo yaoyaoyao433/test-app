@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.store.newwidgets.RoundedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_marginLeft="8dp" app:cornerRadius="4dp">
+    <ImageView android:id="@+id/wm_sc_order_list_item_report_many_products_item_img" android:layout_width="70dp" android:layout_height="52dp" android:src="@drawable/wm_sc_common_poi_error" android:scaleType="fitXY" android:adjustViewBounds="true" android:maxWidth="70dp" android:minWidth="70dp"/>
+    <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/wm_sc_order_list_item_report_many_products_item_state" android:background="@drawable/wm_sc_order_list_item_sale_out_bg" android:visibility="gone" android:layout_width="70dp" android:layout_height="16dp" android:text="@string/wm_sc_shop_cart_invaild_good_tag"/>
+</com.sankuai.waimai.store.newwidgets.RoundedFrameLayout>

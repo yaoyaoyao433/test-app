@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/background_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@+id/relative_layout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="132dp">
+        <View android:background="#e1e1e1" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <ImageView android:id="@+id/screen_share_app_icon" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="20dp" android:layout_marginTop="28dp" android:layout_marginBottom="29dp" android:src="@drawable/screenshot_meituan_logo" android:layout_marginEnd="2dp"/>
+        <ImageView android:id="@+id/screen_share_qr_code" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginTop="28.5dp" android:layout_marginRight="20dp" android:scaleType="fitXY" android:layout_alignParentRight="true"/>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="132dp" android:layout_marginLeft="17dp" android:layout_marginRight="13dp" android:layout_toLeftOf="@+id/screen_share_qr_code" android:layout_toRightOf="@+id/screen_share_app_icon">
+            <TextView android:textSize="15sp" android:textColor="#333333" android:id="@+id/screen_share_recognize_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="@string/screenshot_share_text" android:layout_alignParentRight="true" android:lineSpacingExtra="2dp"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:id="@+id/screen_share_open_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/screenshot_share_check" android:layout_below="@+id/screen_share_recognize_qrcode" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

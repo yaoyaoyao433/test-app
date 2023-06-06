@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#11ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/wm_common_bg_upgrade_dialog" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginTop="25dp" android:layout_marginBottom="10dp" app:project="waimai_c" app:srcName="waimai_c_page_icon_upgrade_wifi"/>
+        <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/wm_page_upgrade_upgrade_no_wifi"/>
+        <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <Button android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/wm_upgrade_force_cancel" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/wm_page_upgrade_later" android:singleLine="true" android:layout_weight="1"/>
+            <View android:background="#e4e4e4" android:layout_width="1px" android:layout_height="match_parent"/>
+            <Button android:textSize="16sp" android:textColor="#ffb000" android:gravity="center" android:id="@+id/wm_upgrade_force_install" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/wm_page_upgrade_update_immediately" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

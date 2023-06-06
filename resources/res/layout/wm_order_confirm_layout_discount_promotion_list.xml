@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.listforscrollview.LinearLayoutForList xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/lv_discount_list" android:paddingLeft="12dp" android:paddingRight="12dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>

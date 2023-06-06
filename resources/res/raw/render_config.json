@@ -1,0 +1,42 @@
+[
+  {
+    "page": "MainActivity",
+    "api": [
+      "/poi/homepage",
+      "/home/head",
+      "/home/rcmdboard"
+    ],
+    "is_main_page": true
+  },
+  {
+    "page": "RestaurantActivity",
+    "api": [
+      "/poi/food"
+    ]
+  },
+  {
+    "page": "OrderConfirmActivity",
+    "api": []
+  },
+  {
+    "page": "OrderDetailActivity",
+    "api": [
+      "/order/status",
+      "/order/detail"
+    ]
+  },
+  {
+    "page": "GoodDetailActivity",
+    "api": [
+      "/poi/product/info"
+    ]
+  },
+  {
+    "page": "PoiListFilterActivity",
+    "api": [
+      "/poi/channelpage",
+      "/get2ndbanner",
+      "/poi/category_groups"
+    ]
+  }
+]

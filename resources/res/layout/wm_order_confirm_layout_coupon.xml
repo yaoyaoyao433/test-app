@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout_mt_coupon" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/coupon_icon" android:layout_marginRight="6dp" android:scaleType="fitXY" style="@style/WmIcon"/>
+        <TextView android:textSize="14sp" android:textColor="#222426" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/txt_coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_base_title_activity_coupon_wm" android:singleLine="true" android:includeFontPadding="false"/>
+        <LinearLayout style="@style/WmText.Weighted.Right">
+            <TextView android:textSize="14sp" android:textColor="#858687" android:id="@+id/txt_mt_coupon_tip" android:visibility="gone" android:layout_marginRight="@dimen/wm_common_margin_horizontal_element" style="@style/WmText"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_coupon_package" android:layout_width="wrap_content" android:layout_height="18dp" android:layout_marginLeft="1dp" android:layout_marginTop="1dp" android:layout_marginRight="5dp" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+            <TextView android:textSize="14sp" android:textColor="#ff4a26" android:id="@+id/txt_coupon_info" style="@style/WmText"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/img_arrow_coupon_ll" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <include android:id="@+id/coupon_dot_bubble" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginLeft="4dp" android:layout_marginTop="-5dp" android:layout_marginRight="2dp" layout="@layout/wm_common_view_red_dot"/>
+            <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8dp" android:textColor="@color/wm_order_confirm_title_text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/img_arrow_coupon" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_c_iconfont_arrow_right_small"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wm_coupon_collect_order_tip_ll" android:background="@drawable/wm_order_confirm_collect_order_tip_bg_5" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="#ff8000" android:ellipsize="end" android:id="@+id/wm_coupon_collect_order_tip" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/wm_order_base_title_activity_coupon_wm" android:singleLine="true" android:layout_weight="1"/>
+        <com.meituan.roodesign.widgets.iconfont.RooIconFontTextView android:textSize="@dimen/text_size_12" android:textColor="#ff8000" android:gravity="center" android:id="@+id/wm_coupon_collect_order_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_confirm_collect_order_remind" android:includeFontPadding="false" app:iconDrawableRight="@string/wm_c_iconfont_arrow_right_small" app:iconDrawableColor="@color/wm_order_confirm_add_staple_color" app:iconDpSize="8dp"/>
+    </LinearLayout>
+</LinearLayout>

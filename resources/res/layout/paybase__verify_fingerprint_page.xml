@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/root" android:background="@color/paybase__white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#333333" android:layout_gravity="center_horizontal" android:id="@+id/fingerprint_pay_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="45dp" android:layout_marginRight="10dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/paybase__text_color_3" android:gravity="center" android:id="@+id/fingerprint_pay_subtip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="-10dp"/>
+    <ImageView android:id="@+id/fingerprint_pay_icon" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="60dp" android:src="@drawable/paybase__fingerprint_pay_icon" android:scaleType="fitXY"/>
+    <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center" android:id="@+id/fingerprint_pay_desc" android:visibility="gone" android:layout_width="112dp" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:maxLines="2"/>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="16sp" android:textColor="#06c1a1" android:id="@+id/fingerprint_pay_go_to_psw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="60dp" android:text="@string/paybase__use_psw_verify" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

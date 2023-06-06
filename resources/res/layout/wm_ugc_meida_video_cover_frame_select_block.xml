@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/wm_ugc_meida_video_cover_frame_select_block" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <TextView android:textSize="12dp" android:textColor="#575859" android:gravity="center" android:layout_gravity="center" android:id="@+id/select_cover_action_description" android:layout_width="match_parent" android:layout_height="16.5dp" android:text="左右滑动，选择最优的封面" app:layout_constraintTop_toTopOf="0"/>
+    <RelativeLayout android:paddingBottom="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/select_cover_action_description">
+        <View android:id="@+id/wm_ugc_media_video_indicator" android:background="#ffffffff" android:layout_width="1dp" android:layout_height="60dp" android:layout_marginTop="10dp" android:layout_alignParentTop="true" android:layout_centerInParent="true"/>
+        <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@+id/wm_ugc_media_video_cover_recycler_view" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp" android:layout_below="@+id/wm_ugc_media_video_indicator" android:layout_alignParentTop="true" android:layout_centerInParent="true" app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/layout_info" android:background="@color/wm_sg_color_F5F5F6" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/info_padding_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:id="@+id/info_padding_2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2"/>
+    <include android:id="@+id/progress_round_info" android:visibility="gone" layout="@layout/wm_st_common_view_progress_round"/>
+    <com.sankuai.waimai.store.newwidgets.AnimatableImageView android:id="@+id/progress_info" android:visibility="visible" android:layout_width="107.5dp" android:layout_height="112dp" app:drawableRes="@drawable/wm_sc_refreshing_center_animation"/>
+    <ImageView android:id="@+id/img_info" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textColor="@color/wm_sg_color_858687" android:gravity="center" android:id="@+id/txt_info" android:layout_marginTop="8dp" style="@style/WmStStoreText"/>
+    <TextView android:textSize="@dimen/wm_sc_common_dimen_textsize_11" android:textColor="@color/wm_sg_color_999999" android:id="@+id/txt_sub_info" android:layout_marginTop="14dp" style="@style/WmStStoreText.MultiLine"/>
+    <TextView android:id="@+id/btn_info" android:layout_height="30dp" android:layout_marginTop="16dp" style="@style/WmStStoreButton.CenterFixedWidth.Solid"/>
+    <View android:id="@+id/info_padding_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3"/>
+</LinearLayout>

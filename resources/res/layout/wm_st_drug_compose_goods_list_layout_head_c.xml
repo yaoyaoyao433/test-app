@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wm_sc_common_dimen_8">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/wm_sc_common_dimen_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sankuai.waimai.store.newwidgets.NoScrollGridView android:gravity="center" android:id="@+id/gv_major_poi_category" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.sankuai.waimai.store.newwidgets.NoScrollGridView android:gravity="center" android:orientation="vertical" android:id="@+id/gv_major_poi_category_new_navigation" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_10" android:layout_marginTop="@dimen/wm_sc_common_dimen_18" android:layout_marginRight="@dimen/wm_sc_common_dimen_10"/>
+    </LinearLayout>
+    <com.sankuai.waimai.store.goods.list.viewblocks.header.widget.MemberLevelLogoView android:id="@+id/rl_member_card_info" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_40" android:layout_marginTop="@dimen/wm_sc_common_dimen_8"/>
+    <com.sankuai.waimai.store.view.banner.AutoScrollPagerView android:id="@+id/rl_ad" android:background="@drawable/wm_st_spu_base_round_only_radius_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_92" android:layout_marginTop="@dimen/wm_sc_common_dimen_8"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout_delivery_coupon" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/coupon_icon" android:layout_marginRight="6dp" android:scaleType="fitXY" style="@style/WmIcon"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/wm_order_confirm_title_text_color" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/txt_delivery_coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_base_title_activity_coupon_delivery" android:singleLine="true" android:includeFontPadding="false"/>
+        <LinearLayout style="@style/WmText.Weighted.Right">
+            <TextView android:textSize="14sp" android:textColor="#ff4a26" android:gravity="center" android:id="@+id/txt_delivery_coupon_info" android:layout_marginLeft="@dimen/wm_common_margin_horizontal_element" style="@style/WmText"/>
+        </LinearLayout>
+        <com.meituan.roodesign.widgets.iconfont.RooIconFont android:textSize="8dp" android:textColor="@color/wm_order_confirm_title_text_color_hint" android:layout_gravity="center_vertical" android:id="@+id/img_arrow_delivery_coupon" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_c_iconfont_arrow_right_small"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/txt_poi_coupon_use_tip_ll" android:background="@drawable/wm_order_confirm_collect_order_tip_bg_4" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="#575859" android:ellipsize="end" android:id="@+id/txt_delivery_coupon_use_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_order_base_subtitle_activity_coupon_delivery" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

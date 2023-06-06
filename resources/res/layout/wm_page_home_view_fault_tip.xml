@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/fault_tip_layout" android:background="@drawable/wm_common_floatbar_yellow_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/wm_common_text_size_main" android:textColor="@color/wm_common_theme_dark" android:id="@+id/fault_tip_txt" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1" style="@style/WmText.MultiLine"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/fault_tip_close_img" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:src="@drawable/wm_page_home_ic_close"/>
+</LinearLayout>

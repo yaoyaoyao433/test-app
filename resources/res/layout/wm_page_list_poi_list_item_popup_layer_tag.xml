@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_float_tag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_similar" android:background="@drawable/wm_widget_float_layer_item_white_bg" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp">
+        <ImageView android:id="@+id/iv_similar" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/wm_page_similar"/>
+        <TextView android:textSize="12sp" android:textColor="@color/wm_common_text_main" android:id="@+id/txt_similar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/wm_page_list_poi_list_find_similar"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_dislike" android:background="@drawable/wm_widget_float_layer_item_white_bg" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+        <ImageView android:id="@+id/iv_dislike" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/wm_page_dislike"/>
+        <TextView android:textSize="12sp" android:textColor="@color/wm_common_text_main" android:id="@+id/txt_dislike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/wm_page_list_poi_list_dislike"/>
+    </LinearLayout>
+</LinearLayout>

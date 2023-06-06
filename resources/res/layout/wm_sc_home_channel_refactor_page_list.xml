@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/top_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="100dp"/>
+    <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/wm_st_poi_channel_list" android:background="@color/wm_sg_color_F5F5F6" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/WmStBaseListviewTheme"/>
+    <RelativeLayout android:id="@+id/rl_filterbar_tmp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/fl_filter_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/fl_filter_bar_dropdown" android:background="@color/wm_sc_half_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/wm_sc_common_dimen_28"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/rv_wm_sc_skeleton" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_below="@+id/rl_filterbar_tmp" android:layout_alignWithParentIfMissing="true"/>
+    <include android:id="@+id/rl_coming_so" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wm_sc_sugoo_coming_so"/>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/layout_net_info_sub" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

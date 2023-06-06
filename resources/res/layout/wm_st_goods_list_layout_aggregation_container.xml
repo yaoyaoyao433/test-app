@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/wm_sg_color_FFFFFF" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/gradient_helper_layout" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_25"/>
+    <include android:id="@+id/wm_action_bar" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_40" layout="@layout/wm_sc_view_simple_action_bar"/>
+    <com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView android:id="@+id/container_scrollview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/fl_poi_header_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:id="@+id/view_poi_head_line" android:background="@color/wm_sg_color_F1F1F2" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_6"/>
+            <FrameLayout android:id="@+id/layout_content_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </com.sankuai.waimai.store.newwidgets.PrioritySmoothNestedScrollView>
+</LinearLayout>

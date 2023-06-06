@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/quality_tag_container" android:background="@drawable/wm_page_home_qualification_rule_border" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="49dp" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_marginBottom="20dp" android:alpha="0.8">
+    <TextView android:textSize="10sp" android:textColor="@color/wm_common_text_hint" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="资质规则" android:alpha="0.8"/>
+</RelativeLayout>

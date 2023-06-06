@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/layout_info" android:background="@color/wm_common_white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/wm_common_layout_refresh_info"/>
+    <ViewStub android:id="@+id/info_skeleton" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

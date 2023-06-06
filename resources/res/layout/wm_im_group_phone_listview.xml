@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.business.im.group.View.WmGroupChatPhoneView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.platform.widget.RoundedLinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:cornerRadius="6dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/wm_im_group_chat_poi_phones_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#33312e" android:gravity="center_horizontal" android:background="@drawable/wm_im_group_chat_phone_title_border" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="商家电话"/>
+            <com.sankuai.waimai.business.im.group.View.WmGroupPhoneListView android:id="@+id/wm_im_group_chat_poi_phones_lv" android:background="@android:color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#f2f2f2" android:dividerHeight="0.5dp" android:overScrollMode="never"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/wm_im_group_chat_rider_phones_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#33312e" android:gravity="center_horizontal" android:background="@drawable/wm_im_group_chat_phone_title_border" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="骑手电话"/>
+            <com.sankuai.waimai.business.im.group.View.WmGroupPhoneListView android:id="@+id/wm_im_group_chat_rider_phones_lv" android:background="@android:color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="#f2f2f2" android:dividerHeight="0.5dp" android:overScrollMode="never"/>
+        </LinearLayout>
+    </com.sankuai.waimai.platform.widget.RoundedLinearLayout>
+    <com.sankuai.waimai.platform.widget.RoundedFrameLayout android:id="@+id/wm_im_group_btn_cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cornerRadius="6dp" app:cropBackground="true">
+        <TextView android:textSize="16sp" android:textColor="#33312e" android:gravity="center_horizontal" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="取消"/>
+    </com.sankuai.waimai.platform.widget.RoundedFrameLayout>
+</com.sankuai.waimai.business.im.group.View.WmGroupChatPhoneView>

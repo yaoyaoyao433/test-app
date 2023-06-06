@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/cover_actionbar_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/cover_select_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="34dp" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/cover_preview_container" android:layout_width="match_parent" android:layout_height="540dp" android:layout_above="@+id/cover_select_container" android:layout_below="@+id/cover_actionbar_container">
+        <com.sankuai.waimai.ugc.creator.widgets.imageview.CropImageView android:layout_gravity="center" android:id="@+id/cover_image_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    </FrameLayout>
+</RelativeLayout>

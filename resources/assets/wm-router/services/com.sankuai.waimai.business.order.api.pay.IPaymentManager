@@ -1,0 +1,1 @@
+IPaymentManager:com.sankuai.waimai.bussiness.order.base.pay.payment.PaymentManager:singleton

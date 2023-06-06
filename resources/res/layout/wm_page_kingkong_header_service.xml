@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/kingkong_header_service" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/img_service2_layout">
+        <ImageView android:id="@+id/img_service1" android:layout_width="15dp" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <TextView android:textSize="11sp" android:textColor="@color/wm_page_kingkong_service_text_color" android:layout_gravity="center_vertical" android:id="@+id/txt_service1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/wm_page_kingkong_timeout_payment"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/img_service2_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/img_service2" android:layout_width="15dp" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <TextView android:textSize="11sp" android:textColor="@color/wm_page_kingkong_service_text_color" android:layout_gravity="center_vertical" android:id="@+id/txt_service2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/wm_page_kingkong_timeout_payment"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/img_service2_layout" android:layout_alignParentRight="true">
+        <ImageView android:id="@+id/img_service3" android:layout_width="15dp" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <TextView android:textSize="11sp" android:textColor="@color/wm_page_kingkong_service_text_color" android:layout_gravity="center_vertical" android:id="@+id/txt_service3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/wm_page_kingkong_timeout_payment"/>
+    </LinearLayout>
+</RelativeLayout>

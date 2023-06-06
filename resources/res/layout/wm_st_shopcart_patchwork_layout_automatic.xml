@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/automatic_head" android:background="@drawable/wm_sc_shopcart_patchwork_bar_background" android:paddingTop="21dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/black_gap_view">
+        <RelativeLayout android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_close" android:padding="4dp" android:layout_width="@dimen/wm_sc_common_dimen_22" android:layout_height="@dimen/wm_sc_common_dimen_22" android:layout_marginRight="8dp" android:src="@drawable/wm_sc_goods_list_goods_ic_choosesku_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff222426" android:gravity="center" android:id="@+id/tv_patchwork_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/wm_sc_patch_work_add_cart_success" android:drawablePadding="3.5dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="11sp" android:textColor="#ff858687" android:id="@+id/tv_activity_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dp" android:singleLine="true" android:layout_below="@+id/top_layout" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</merge>

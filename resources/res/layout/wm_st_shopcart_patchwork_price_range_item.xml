@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:paddingRight="@dimen/wm_sc_common_dimen_7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.sankuai.waimai.store.goods.list.templet.market.view.custom.BorderTextView android:id="@+id/tv_price_range" android:layout_width="@dimen/wm_sc_common_dimen_76" android:layout_height="@dimen/wm_sc_common_dimen_32"/>
+</FrameLayout>

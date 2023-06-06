@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/takeout_white" android:layout_width="match_parent" android:layout_height="48dp">
+    <TextView android:textSize="14sp" android:textColor="@color/wm_order_confirm_title_text_color" android:id="@+id/txt_delivery_time_item" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/WmText"/>
+    <TextView android:textSize="12sp" android:textColor="@color/wm_order_confirm_title_text_color_hint" android:gravity="left" android:id="@+id/txt_adapter_ship_fee" android:visibility="gone" android:layout_toLeftOf="@+id/img_pre_delivery_time_check" android:layout_toRightOf="@+id/txt_delivery_time_item" android:layout_centerVertical="true" style="@style/WmText.Weighted.Right"/>
+    <ImageView android:gravity="center" android:layout_gravity="right" android:id="@+id/img_pre_delivery_time_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_order_base_selected_pic" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</com.dianping.widget.view.NovaRelativeLayout>

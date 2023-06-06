@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meituan.android.legwork.common.widget.CommonLoadingView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/legwork_white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/loading_finish_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp">
+        <ImageView android:id="@+id/loading_finish_img" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="14sp" android:textColor="@color/legwork_common_text_color_FF666666" android:id="@+id/loading_finish_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+        <TextView android:textColor="@color/legwork_submit_btn_selector" android:gravity="center" android:id="@+id/loading_finish_refresh" android:background="@color/legwork_btn_primary_color" android:layout_width="100dp" android:layout_height="30dp" android:layout_marginTop="10dp" android:text="@string/legwork_network_refresh"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/loading_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="@dimen/legwork_loading_pic_width" android:layout_height="@dimen/legwork_loading_pic_height" android:indeterminateDrawable="@drawable/legwork_loading_animation"/>
+        <TextView android:textSize="12sp" android:textColor="@color/legwork_common_text_color_FF666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/legwork_loading"/>
+    </LinearLayout>
+</com.meituan.android.legwork.common.widget.CommonLoadingView>

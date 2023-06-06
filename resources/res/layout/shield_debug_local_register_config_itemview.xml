@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="20dp" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_extra" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="@color/orange_text_ff6633" android:id="@+id/extra_key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EK"/>
+        <TextView android:textSize="16sp" android:textColor="@color/rose_red" android:id="@+id/extra_key_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_key" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="@color/orange_text_ff6633" android:id="@+id/key" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="K " android:layout_below="@+id/extra_key"/>
+        <TextView android:textSize="18sp" android:textColor="@color/gray_light_333333" android:id="@+id/key_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/orange_text_ff6633" android:id="@+id/module_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="P " android:layout_below="@+id/key"/>
+        <TextView android:textSize="14sp" android:textColor="@color/gray_light_666666" android:id="@+id/module_path_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+</LinearLayout>

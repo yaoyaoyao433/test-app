@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.sankuai.waimai.store.view.standard.FlashButton android:icon="@drawable/wm_st_goods_detail_shopcart_add_icon" android:layout_gravity="left" android:id="@+id/txt_add_shopcart" android:paddingLeft="@dimen/wm_sc_common_dimen_8" android:paddingRight="@dimen/wm_sc_common_dimen_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/wm_sc_common_dimen_5" android:text="@string/wm_sc_shop_add_good_to_shopping_cart"/>
+    <TextView android:textSize="10sp" android:textColor="@color/wm_st_common_white" android:gravity="center" android:layout_gravity="right" android:id="@+id/txt_skufood_count" android:background="@drawable/wm_sc_common_food_list_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

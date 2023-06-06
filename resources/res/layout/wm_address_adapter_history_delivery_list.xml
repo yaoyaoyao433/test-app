@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/confirm_address_list_item_layout" android:background="@drawable/wm_common_bg_clickable_cell_white" android:paddingLeft="36dp" android:paddingRight="@dimen/wm_address_margin_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingTop="11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/wm_address_black7" android:ellipsize="end" android:id="@+id/txt_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="309.5dp" android:maxLines="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_address_user_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+            <TextView android:textColor="#999999" android:id="@+id/txt_name" style="@style/wm_address_item_name"/>
+            <TextView android:textColor="@color/wm_address_text_color_gray" android:id="@+id/txt_gender" style="@style/wm_address_item_gender"/>
+            <TextView android:textColor="@color/wm_address_text_color_gray" android:id="@+id/txt_phone" style="@style/wm_address_item_phone"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/wm_address_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="11dp"/>
+</LinearLayout>

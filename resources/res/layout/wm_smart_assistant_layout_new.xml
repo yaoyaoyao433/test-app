@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/sa_root" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/content_container" android:background="#f2eef1f4" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/sa_input_container"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sa_input_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/sa_chat_input_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/sa_input_container"/>
+</RelativeLayout>

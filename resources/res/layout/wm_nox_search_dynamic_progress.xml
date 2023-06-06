@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.sankuai.waimai.platform.widget.dialog.view.AnimatableImageView android:layout_gravity="center" android:id="@+id/search_common_loading" android:background="@drawable/wm_core_bg_progress_round" android:visibility="gone" android:layout_width="@dimen/wm_common_progress_round_width" android:layout_height="@dimen/wm_common_progress_round_height" android:scaleType="centerInside" app:drawableRes="@drawable/wm_common_progress_rotate"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/search_kangaroo_loading" android:background="#fff5f6f8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.sankuai.waimai.platform.widget.dialog.view.AnimatableImageView android:layout_gravity="center" android:visibility="visible" android:layout_width="107dp" android:layout_height="112dp" app:drawableRes="@drawable/wm_nox_common_loading_animation"/>
+        <TextView android:textColor="@color/wm_common_text_auxiliary" android:gravity="center" android:layout_gravity="center" android:id="@+id/kangaroo_loading_text" android:visibility="invisible" android:layout_marginTop="14dp" android:text="努力加载中\10    " android:singleLine="false" style="@style/WmText"/>
+    </LinearLayout>
+</FrameLayout>

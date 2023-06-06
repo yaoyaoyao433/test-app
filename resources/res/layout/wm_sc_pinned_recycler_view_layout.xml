@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/top_pinned_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top_pinned_layout">
+        <com.sankuai.waimai.store.newwidgets.list.SCRecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <FrameLayout android:id="@+id/recycler_pinned_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <com.sankuai.waimai.store.newwidgets.NetInfoLoadView android:id="@+id/net_info" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

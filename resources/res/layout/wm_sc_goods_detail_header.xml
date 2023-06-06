@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/fl_food_header_container" layout="@layout/wm_st_goods_detail_layout_detail_room_pic"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/fl_food_header_container" layout="@layout/wm_sc_goods_detail_summary_price_bar"/>
+</RelativeLayout>

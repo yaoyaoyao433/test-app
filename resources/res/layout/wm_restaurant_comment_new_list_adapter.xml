@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/takeout_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <LinearLayout android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="36dp">
+            <com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout android:layout_gravity="start" android:layout_width="36dp" android:layout_height="36dp" app:borderColor="#fff1f1f2" app:borderWidth="1px" app:cornerRadius="18dp">
+                <com.meituan.roodesign.components.labelimage.RooLabelImage android:id="@+id/wm_comment_avatar_label_image" android:layout_width="36dp" android:layout_height="36dp" android:contentDescription="@string/wm_restaurant_poi_comment_item_user_avatar_desc" app:cornerRadius="18dp"/>
+            </com.sankuai.waimai.platform.widget.RoundedCornerFrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="44dp">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#33322e" android:ellipsize="end" android:id="@+id/wm_commment_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                <com.sankuai.waimai.platform.widget.HorizontalFlowLayout android:id="@+id/wm_comment_user_label_container" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="4dp" app:childHeight="16dp" app:childMarginHorizontal="4dp"/>
+                <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/wm_comment_more_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14dp" android:scaleType="centerInside" android:contentDescription="@string/wm_restaurant_poi_comment_item_more_desc" app:project="waimai_c" app:srcName="waimai_c_restaurantkit_comment_three_dot"/>
+                <TextView android:textSize="12sp" android:textColor="#999794" android:ellipsize="end" android:id="@+id/wm_comment_date_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="44dp">
+                <TextView android:textSize="12sp" android:textColor="#999794" android:ellipsize="end" android:id="@+id/wm_comment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                <com.meituan.roodesign.widgets.rate.RooRatingBar android:id="@+id/wm_comment_rating_bar_dp" android:stepSize="0.5" style="@style/WmRatingBar.Small.Indicator.DianPing"/>
+                <TextView android:textSize="12sp" android:textColor="#858687" android:ellipsize="end" android:id="@+id/wm_comment_score_text_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <com.meituan.roodesign.widgets.rate.RooRatingBar android:id="@+id/wm_comment_rating_bar_mt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="12dp" android:indeterminateDrawable="@drawable/wm_restaurant_comment_rating_item" android:progressDrawable="@drawable/wm_restaurant_comment_rating_item" android:minHeight="12dp" android:rating="3.5" android:stepSize="0.1" android:isIndicator="true"/>
+            <TextView android:textSize="12sp" android:textColor="#858687" android:ellipsize="end" android:id="@+id/wm_comment_score_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/wm_comment_content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:id="@+id/wm_comment_content_desc" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.sankuai.waimai.platform.widget.CommentTextView android:textSize="14sp" android:textColor="@color/wm_restaurant_222426" android:id="@+id/wm_comment_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:lineSpacingExtra="4dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/takeout_blue_5" android:id="@+id/wm_comment_fold" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_marginBottom="-8dp" android:text="@string/wm_comment_text_expand" style="@style/WmText"/>
+            <com.sankuai.waimai.business.restaurant.poicontainer.comment.widget.CommentImageGallery android:id="@+id/wm_comment_image_gallery" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/wm_comment_addition_info_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/wm_comment_recommend_food_and_useful_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <FrameLayout android:id="@+id/wm_comment_useful_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/wm_comment_useful_container" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                <com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wm_comment_recommend_food_container" android:background="#fff8e1" android:layout_width="wrap_content" android:layout_height="32dp" android:paddingStart="8dp" android:paddingEnd="8dp" app:cornerRadius="6dp">
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/wm_restaurant_222426" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TA的推荐"/>
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ff8000" android:ellipsize="end" android:id="@+id/wm_comment_recommend_food_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableEnd="@drawable/wm_comment_recommend_food_arrow" android:layout_marginStart="6dp"/>
+                </com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/wm_comment_etop_and_useful_container" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <FrameLayout android:layout_gravity="end|center_vertical" android:id="@+id/wm_comment_useful_container_in_e_top" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="11sp" android:textColor="#222426" android:gravity="center" android:layout_gravity="start|center_vertical" android:id="@+id/wm_comment_e_top" android:background="@drawable/wm_restaurant_comment_e_top_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商家优选"/>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|right" android:id="@+id/wm_comment_high_quality_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="62dp"/>
+    <View android:layout_gravity="bottom" android:id="@+id/wm_comment_divider" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1px"/>
+</FrameLayout>

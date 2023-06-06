@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/paybase__bg_alert_with_btn" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/alert_container" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="14dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/paybase__btn_text_enabled_color" android:ellipsize="end" android:id="@+id/alert_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:maxLines="2" android:layout_alignBottom="@+id/alert_close_icon" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/alert_close_icon" android:visibility="gone" android:layout_width="46dp" android:layout_height="46dp" android:src="@drawable/paybase__icon_cancel2" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/alert_divider_h" style="@style/paybase__horizonal_divider"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/alert_button_container" android:layout_width="match_parent" android:layout_height="49dp">
+        <TextView android:textSize="17sp" android:textColor="@color/paybase__text_color_3" android:gravity="center" android:id="@+id/alert_btn1" android:background="@drawable/paybase__bg_alert_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:id="@+id/alert_divider" style="@style/paybase__vertical_divider"/>
+        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/paybase__base_green" android:gravity="center" android:id="@+id/alert_btn2" android:background="@drawable/paybase__bg_alert_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

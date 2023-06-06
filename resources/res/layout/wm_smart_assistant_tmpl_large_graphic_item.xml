@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/large_graphic_container" android:background="@drawable/wm_smart_assistant_item_bg_shape" android:layout_width="106dp" android:layout_height="147dp">
+    <ImageView android:id="@+id/large_graphic_img" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="12sp" android:textColor="#333333" android:ellipsize="end" android:gravity="center" android:id="@+id/large_graphic_title" android:layout_width="wrap_content" android:layout_height="33dp" android:layout_marginLeft="11dp" android:layout_marginTop="8dp" android:layout_marginRight="11dp" android:maxLines="2" android:layout_below="@+id/large_graphic_img" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="11sp" android:textColor="#999999" android:gravity="center" android:id="@+id/large_graphic_content" android:background="@drawable/wm_smart_assistant_item_grey_bg_shape" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="18dp" android:layout_marginTop="13dp" android:maxLines="1" android:layout_below="@+id/large_graphic_title" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

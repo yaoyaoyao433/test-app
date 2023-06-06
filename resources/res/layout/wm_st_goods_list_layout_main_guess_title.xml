@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="10dp">
+    <TextView android:textSize="19sp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/wm_sc_tv_floor_title" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_sc_shop_guess_like" android:maxLines="1" android:maxEms="6" android:singleLine="true" android:includeFontPadding="false"/>
+</LinearLayout>

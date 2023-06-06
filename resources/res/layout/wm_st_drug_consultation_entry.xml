@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom|right" android:orientation="vertical" android:id="@+id/drug_im_entrance_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_drug_im_entrance_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_drug_im_entrance" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@+id/wm_sg_drug_im_entrance_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" layout="@layout/wm_sg_drug_im_entrance_new"/>
+            <include android:id="@+id/wm_sg_drug_im_entrance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" layout="@layout/wm_sg_drug_im_entrance"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

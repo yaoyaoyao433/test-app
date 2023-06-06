@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="60dp">
+        <TextView android:textSize="14sp" android:textColor="@color/wm_sg_color_333333" android:ellipsize="end" android:id="@+id/txt_box_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:singleLine="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/wm_st_common_text_money" android:id="@+id/txt_box_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/wm_sc_common_dimen_22"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/box_fee_detail" android:padding="@dimen/wm_sc_common_dimen_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_sc_order_confirm_ic_question"/>
+    </LinearLayout>
+    <View android:id="@+id/view_food_divider" android:background="@color/wm_st_common_e4e4e4" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.sankuai.waimai.platform.widget.dialog.view.AnimatableImageView android:layout_gravity="center" android:id="@+id/loading_progress" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="centerInside" app:drawableRes="@drawable/wm_sc_nox_search_non_delivery_loading"/>
+</LinearLayout>

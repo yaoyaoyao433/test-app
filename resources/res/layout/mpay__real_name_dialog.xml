@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/paybase__bg_alert_with_btn" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/mpay__mtwallet_title_black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/real_name_infos" android:background="@drawable/mpay__real_name_info_bg" android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingRight="15dp" android:paddingBottom="17dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="25dp" android:layout_marginRight="15dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="@color/mpay__mtwallet_title_black" android:ellipsize="end" android:id="@+id/info_name1" android:layout_width="47dp" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mpay__mtwallet_title_black" android:ellipsize="end" android:id="@+id/info_content1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/paybase__white" android:ellipsize="end" android:id="@+id/mark1" android:background="@drawable/mpay__real_name_mark_bg" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <TextView android:textSize="15sp" android:textColor="@color/mpay__mtwallet_title_black" android:ellipsize="end" android:id="@+id/info_name2" android:layout_width="47dp" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="15sp" android:textColor="@color/mpay__mtwallet_title_black" android:ellipsize="end" android:id="@+id/info_content2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:maxLines="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/paybase__white" android:ellipsize="end" android:id="@+id/mark2" android:background="@drawable/mpay__real_name_mark_bg" android:paddingLeft="7dp" android:paddingRight="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="15sp" android:textColor="@color/paybase__text_color_3" android:id="@+id/tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="26dp" style="@style/paybase__horizonal_divider"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/alert_button_container" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="17sp" android:textColor="@color/paybase__text_color_3" android:gravity="center" android:id="@+id/left_btn" android:background="@drawable/paybase__bg_alert_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <View android:id="@+id/alert_divider" style="@style/paybase__vertical_divider"/>
+        <TextView android:textSize="17sp" android:textColor="@color/paybase__base_green" android:gravity="center" android:id="@+id/right_btn" android:background="@drawable/paybase__bg_alert_btn_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/paycommon__alert_btn_default_text" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

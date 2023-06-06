@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="end|bottom" android:orientation="vertical" android:id="@+id/map_zoom_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="9dp">
+        <ImageView android:id="@+id/location_iv" android:background="@drawable/mtmapsdk_round_white_bg" android:padding="7dp" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginBottom="3dp" android:src="@drawable/mtmapsdk_ic_my_location" android:elevation="5dp"/>
+        <com.sankuai.meituan.mapsdk.core.widgets.ZoomControlView android:id="@+id/map_zoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="5dp"/>
+    </LinearLayout>
+    <com.sankuai.meituan.mapsdk.core.widgets.IndoorControlView android:layout_gravity="start|bottom" android:id="@+id/indoor_control_view" android:visibility="invisible" android:layout_width="38dp" android:layout_height="wrap_content" android:layout_marginBottom="58dp" android:layout_marginStart="9dp"/>
+</FrameLayout>

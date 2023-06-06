@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/legwork_common_bottom_dialog_fragment_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/balance_pay_close" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:src="@drawable/legwork_pay_mode_close" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="21sp" android:textStyle="bold" android:textColor="@color/legwork_common_text_color_FF333333" android:id="@+id/balance_pay_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="24dp" android:text="@string/legwork_pay_pop_title"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+        <ImageView android:id="@+id/balance_pay_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.5dp" android:src="@drawable/legwork_ic_money"/>
+        <TextView android:textSize="39sp" android:textStyle="bold" android:textColor="@color/legwork_common_text_color_FF333333" android:id="@+id/balance_pay_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="17.80" android:layout_toRightOf="@+id/balance_pay_unit"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/legwork_common_text_color_FF999999" android:id="@+id/balance_limit_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/legwork_pay_rest_time"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp">
+        <View android:background="#00000000" android:layout_width="15dp" android:layout_height="match_parent"/>
+        <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textSize="14sp" android:textColor="@color/legwork_common_text_color_FF666666" android:id="@+id/pay_mode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legwork_preview_pay_mode"/>
+        <TextView android:textSize="14sp" android:textColor="@color/legwork_common_text_color_FF333333" android:id="@+id/pay_mode_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legwork_pay_mode_balance_title" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textSize="14sp" android:textColor="@color/legwork_common_text_color_FF666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号"/>
+        <TextView android:textSize="14sp" android:textColor="@color/legwork_common_text_color_FF333333" android:id="@+id/balance_order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/balance_pay_container" android:background="@drawable/legwork_common_button_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="15dp" android:layout_marginTop="24dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp">
+        <ImageView android:id="@+id/balance_pay_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:src="@drawable/legwork_balance_pay_loading"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@+id/balance_pay_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/legwork_pay_right_now"/>
+    </LinearLayout>
+</LinearLayout>

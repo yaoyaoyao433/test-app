@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/bg_layout" android:background="@drawable/wm_order_detail_feed_back_food_comment_bg" android:layout_width="wrap_content" android:layout_height="30dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+        <TextView android:textSize="14dp" android:textColor="@color/wm_detail_feed_back_food_comment_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/comment_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/comment_img" android:layout_width="35dp" android:layout_height="35dp" app:layout_constraintLeft_toLeftOf="0"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_gravity="right" android:id="@+id/v_place_holder" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_40"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/new_user_mach_wrap" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/new_user_mach_container" android:layout_width="match_parent" android:layout_height="@dimen/wm_sc_common_dimen_40"/>
+    </LinearLayout>
+</FrameLayout>

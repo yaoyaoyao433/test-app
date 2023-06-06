@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sankuai.waimai.platform.widget.RoundedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="81dp" android:layout_margin="2dp" app:cornerRadius="6dp" app:cropBackground="true">
+    <com.sankuai.waimai.business.im.common.view.ContentLinearLayout android:background="@color/white" android:padding="6dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:WidthRatio="0.625" app:isWidthFixed="false">
+        <com.sankuai.waimai.platform.widget.roundview.RoundedImageView android:layout_gravity="center_vertical" android:id="@+id/img_im_custom_message_h5" android:layout_width="65dp" android:layout_height="65dp" android:scaleType="centerCrop" app:riv_corner_radius="2dp"/>
+        <RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp">
+            <TextView android:textSize="16sp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/txt_im_custom_message_h5_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:layout_above="@+id/holder" android:layout_alignParentTop="true"/>
+            <LinearLayout android:id="@+id/holder" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2dp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="18sp" android:textColor="#fb4e44" android:id="@+id/txt_im_custom_message_h5_price" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="11sp" android:textColor="#a9a9a9" android:id="@+id/txt_im_custom_message_h5_origin_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.sankuai.waimai.business.im.common.view.ContentLinearLayout>
+</com.sankuai.waimai.platform.widget.RoundedLinearLayout>

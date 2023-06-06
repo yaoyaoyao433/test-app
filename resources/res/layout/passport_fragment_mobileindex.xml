@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/passport_mobile_index" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/papssport_mobile_scrollview" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="28sp" android:textColor="#ff333333" android:id="@+id/passport_index_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="43dp" android:layout_marginTop="43dp" android:layout_marginRight="43dp" android:text="@string/passport_welcome_login" android:maxLines="2"/>
+            <com.meituan.passport.view.PassportMobileInputView android:id="@+id/passport_index_inputmobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="43dp" android:layout_marginTop="36dp" android:layout_marginRight="43dp"/>
+            <View android:id="@+id/view" android:background="@color/passport_black3" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="43dp" android:layout_marginTop="7dp" android:layout_marginRight="43dp" android:layout_marginBottom="10dp"/>
+            <LinearLayout android:orientation="vertical" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="13sp" android:textColor="#999999" android:id="@+id/passport_mobile_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="43dp" android:layout_marginRight="3dp" android:layout_marginBottom="10dp" android:text="@string/passport_mobile_login_tips"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/passport_center_tips" android:paddingLeft="40dp" android:paddingTop="11dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@+id/passport_mobile_privacy_tips" android:layout_width="match_parent" android:layout_height="27.8dp"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.4dp">
+                        <android.support.v7.widget.AppCompatCheckBox android:id="@+id/dynamic_checkbox" android:clickable="true" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="-3dp" style="@style/passportCheckboxStyle"/>
+                        <TextView android:textSize="12dp" android:textColor="#999999" android:textColorLink="?attr/passportPrivacyTextColor" android:layout_gravity="center_vertical" android:id="@+id/passport_index_tip_term_agree" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/passport_login_term_agreed" android:maxLines="3"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.meituan.passport.view.PassportButton android:theme="@style/PassportButtonStyleNew" android:textSize="@dimen/passport_text_size_h16" android:id="@+id/passport_mobile_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="15dp" android:minHeight="45dp" android:text="@string/passport_mobile_get_verify_code"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="43dp" android:layout_marginTop="17dp">
+                    <TextView android:textSize="13sp" android:textColor="?android:attr/textColorLink" android:id="@+id/user_password_login" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passport_password_login"/>
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <com.meituan.passport.view.TextButton android:textSize="13sp" android:textColor="?android:attr/textColorLink" android:id="@+id/user_password_login_question" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/passport_login_question"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/passport_index_other" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="47dp"/>
+</LinearLayout>

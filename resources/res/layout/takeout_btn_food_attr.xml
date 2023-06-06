@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/takeout_btn_food_attr_layout" android:layout_width="wrap_content" android:layout_height="37dp">
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/ll_spu_item" android:background="@drawable/takeout_bg_sku" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="7dp" android:minWidth="90dp">
+        <TextView android:textSize="12sp" android:textColor="@color/takeout_txt_sku" android:ellipsize="end" android:gravity="center" android:id="@+id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240dp" android:minWidth="40dp" android:singleLine="true" android:layout_toLeftOf="@+id/layout_price" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/layout_price" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:id="@+id/divider_line" android:background="@drawable/takeout_sku_price_divider" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_marginLeft="7dp" android:layout_marginRight="7dp"/>
+            <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="@color/takeout_txt_price" android:gravity="bottom" android:id="@+id/tv_rmb_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wm_restaurant_common_sign_yuan" android:singleLine="true" android:layout_toRightOf="@+id/divider_line" android:layout_alignBaseline="@+id/txt_price"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/takeout_txt_price" android:id="@+id/txt_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_toRightOf="@+id/tv_rmb_sign" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

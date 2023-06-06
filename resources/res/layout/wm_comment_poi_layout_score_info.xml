@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginBottom="10dp" layout="@layout/wm_comment_poi_layout_score"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/score_header_tips" android:background="@color/wm_common_divider" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:background="#ffffff" android:paddingLeft="21dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="70dp">
+            <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/wm_non_score_img" android:layout_width="37dp" android:layout_height="35dp" app:project="waimai_c" app:srcName="waimai_c_restaurantkit_icon_comment_non_score"/>
+            <TextView android:textSize="12dp" android:textColor="#858687" android:id="@+id/wm_non_score_text_bot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/wm_non_score_img" android:layout_alignBottom="@+id/wm_non_score_img"/>
+            <TextView android:textSize="14dp" android:textColor="@color/wm_restaurant_222426" android:id="@+id/wm_non_score_text_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_toRightOf="@+id/wm_non_score_img" android:layout_alignLeft="@+id/wm_non_score_text_bot"/>
+        </RelativeLayout>
+        <View android:background="#f5f5f6" android:layout_width="match_parent" android:layout_height="8dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/layout_dianping_comment_info" android:background="@android:color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@+id/txt_dianping_left" style="@style/WmText.Weighted"/>
+            <TextView android:textColor="@color/wm_common_text_auxiliary" android:id="@+id/txt_dianping_right" style="@style/WmText"/>
+        </LinearLayout>
+        <View android:background="@color/wm_common_divider" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+</LinearLayout>

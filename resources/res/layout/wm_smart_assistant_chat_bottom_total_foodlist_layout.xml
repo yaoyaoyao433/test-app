@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="#424242" android:layout_width="match_parent" android:layout_height="40dp" android:alpha="0.85">
+        <RelativeLayout android:background="@drawable/wm_smart_assistant_bg_bottom_top" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="14sp" android:textColor="@color/wm_common_text_main" android:gravity="center_vertical" android:id="@+id/txt_package_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="11sp" android:textColor="#fb4f44" android:id="@+id/txt_activity_name" android:background="@drawable/wm_smart_assistant_btn_bg_red_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/txt_package_name" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/img_close" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/wm_smart_assistant_bottom_dialog_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <View android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.sankuai.waimai.sa.ui.assistant.view.MaxHeightScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:maxHeight="360dp">
+        <com.sankuai.waimai.platform.widget.listforscrollview.LinearLayoutForList android:orientation="vertical" android:id="@+id/food_list_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="#f4f4f4" android:showDividers="middle"/>
+    </com.sankuai.waimai.sa.ui.assistant.view.MaxHeightScrollView>
+    <RelativeLayout android:background="#424242" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp" android:alpha="0.85">
+        <RelativeLayout android:background="@drawable/wm_smart_assistant_bg_bottom_bottom" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12sp" android:textColor="@color/wm_common_text_hint" android:id="@+id/wm_smart_assistant_multi_person_merchant_original_price" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="18sp" android:textColor="#fb4f44" android:gravity="center" android:id="@+id/wm_smart_assistant_multi_person_merchant_actual_price" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/wm_smart_assistant_multi_person_merchant_original_price" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/wm_common_text_hint" android:id="@+id/txt_box_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/wm_smart_assistant_multi_person_merchant_actual_price" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="#424242" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="72dp" android:alpha="0.85">
+        <Button android:textSize="17sp" android:textColor="@color/wm_common_theme_dark" android:gravity="center" android:id="@+id/btn_add_to_shopcart" android:background="@drawable/wm_smart_assistant_bg_bottom_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/wm_sa_add_to_shopping_cart" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

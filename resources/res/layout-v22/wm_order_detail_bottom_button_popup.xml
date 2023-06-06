@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="4dp">
+    <com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout android:orientation="vertical" android:background="#cc222426" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cornerRadius="6dp">
+        <TextView android:textSize="11sp" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/wm_order_detail_bottom_button_popup_content" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </com.sankuai.waimai.platform.widget.RoundedCornerLinearLayout>
+</FrameLayout>

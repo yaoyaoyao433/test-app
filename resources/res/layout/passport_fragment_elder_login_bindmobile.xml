@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/passport_login_left_margin" android:layout_marginRight="@dimen/passport_login_right_margin">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.meituan.passport.view.InputMobileView android:id="@+id/passport_bindmobile_mobile" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp"/>
+        <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <com.meituan.passport.view.PassportEditText android:textSize="19dp" android:textColorHint="#767676" android:id="@+id/passport_bindmobile_dynamicCode" android:paddingTop="22dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:hint="@string/passport_bindmobile_enter_code" android:layout_weight="1" android:inputType="phone" style="@style/passport_bindmobile_editText"/>
+            <com.meituan.passport.view.PassportClearTextView android:id="@+id/passport_bindmobile_clear_code" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="7.5dp" android:src="@drawable/passport_bindmobile_close" android:scaleType="center"/>
+            <com.meituan.passport.view.PassportButton android:textSize="19dp" android:textColor="@color/passport_elder_sso_login_tips_color" android:gravity="center" android:id="@+id/passport_bindmobile_getCode" android:layout_width="96dp" android:layout_height="27dp" android:layout_marginTop="6.5dp" android:text="@string/passport_bindmobile_retrieve_code" android:elevation="0dp" android:stateListAnimator="@null"/>
+        </LinearLayout>
+        <View android:background="#1a000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <com.meituan.passport.view.PassportButton android:theme="@style/PassportButtonStyleNewElder" android:id="@+id/passport_bindmobile_login" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="39dp" android:minHeight="58dp" android:text="@string/passport_bind_completed"/>
+</LinearLayout>

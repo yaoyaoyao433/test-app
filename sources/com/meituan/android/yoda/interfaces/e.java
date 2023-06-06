@@ -1,0 +1,6 @@
+package com.meituan.android.yoda.interfaces;
+/* compiled from: ProGuard */
+/* loaded from: classes3.dex */
+public interface e {
+    void a();
+}

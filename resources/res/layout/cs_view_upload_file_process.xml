@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/cs_bg_upload_file_process" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="47.5dp" android:layout_marginRight="47.5dp">
+    <TextView android:textSize="18sp" android:textColor="#000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="上传凭证中，请稍侯…"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="38.5dp" android:layout_marginTop="17dp" android:layout_marginRight="39dp">
+        <ProgressBar android:gravity="center_vertical" android:id="@+id/progressBar" android:layout_width="0dp" android:layout_height="5dp" android:max="100" android:progressDrawable="@drawable/cs_progress_bar_style" android:layout_weight="1" style="?android:attr/progressBarStyleHorizontal"/>
+        <TextView android:textSize="12sp" android:textColor="#222222" android:layout_gravity="center_vertical" android:id="@+id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+    <View android:background="#d2d3d5" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="23dp"/>
+    <TextView android:textSize="18sp" android:textColor="#333333" android:gravity="center" android:id="@+id/btn_cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.5dp" android:layout_marginBottom="12.5dp" android:text="取消"/>
+</LinearLayout>

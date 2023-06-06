@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/qr_code_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/iv_qr_code_container" android:background="@drawable/wm_order_confirm_base_card_bg" android:padding="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_qr_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+    </FrameLayout>
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="35dp" android:layout_below="@+id/iv_qr_code_container" android:layout_centerHorizontal="true" app:project="waimai_c" app:srcName="waimai_c_order_icon_detail_cabinet_dialog_close"/>
+</RelativeLayout>

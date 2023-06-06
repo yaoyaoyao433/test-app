@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient android:startColor="@color/wm_order_confirm_bg_yellow" android:endColor="@color/wm_order_confirm_bg_opaque" android:angle="270" android:type="linear" android:centerX="0.5" android:centerY="0.8" android:centerColor="@color/wm_order_confirm_bg_yellow"/>
+</shape>

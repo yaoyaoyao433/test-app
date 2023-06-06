@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/legwork_common_bottom_dialog_fragment_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/legwork_send_picker_include_pickerview_topbar"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/legwork_send_picker_optionspicker" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.meituan.android.legwork.ui.component.pickerview.lib.WheelView android:id="@+id/legwork_send_picker_options1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.meituan.android.legwork.ui.component.pickerview.lib.WheelView android:id="@+id/legwork_send_picker_options2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.meituan.android.legwork.ui.component.pickerview.lib.WheelView android:id="@+id/legwork_send_picker_options3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ff333333" android:gravity="center" android:id="@+id/legwork_picker_confirm" android:background="@drawable/legwork_common_button_bg" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="15dp" android:layout_marginTop="24dp" android:layout_marginRight="15dp" android:layout_marginBottom="15dp" android:text="确定"/>
+</LinearLayout>

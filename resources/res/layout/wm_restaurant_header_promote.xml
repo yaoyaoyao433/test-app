@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:id="@+id/shop_header_promote" android:background="@drawable/wm_restaurant_common_bg_6dp_fff3f2" android:layout_width="match_parent" android:layout_height="32dp">
+    <com.meituan.roodesign.resfetcher.widgets.RooImageView android:id="@+id/promote_icon" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginLeft="4dp" app:project="waimai_c" app:srcName="waimai_c_restaurant_icon_promote_load_fail"/>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="#ffff4a26" android:id="@+id/promote_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="冰点优惠"/>
+    <View android:background="#ffffd0cd" android:layout_width="1px" android:layout_height="24px" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+    <TextView android:textSize="11sp" android:textColor="#ffff4a26" android:ellipsize="end" android:id="@+id/promote_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="211.5dp" android:singleLine="true"/>
+    <FrameLayout android:id="@+id/promote_detail" android:paddingLeft="3dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.meituan.roodesign.resfetcher.widgets.RooImageView android:layout_gravity="center_vertical" android:layout_width="10dp" android:layout_height="10dp" app:project="waimai_c" app:srcName="waimai_c_restaurant_shop_head_promote_desc"/>
+    </FrameLayout>
+</LinearLayout>
